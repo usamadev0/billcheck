@@ -6,6 +6,7 @@ import BillChecker from '../../../components/BillChecker';
 import TableOfContents from '../../../components/TableOfContents';
 import {
   CATEGORIES,
+  SLUG_TYPES,
   parseSlug,
   getTopStaticParams,
   getCategoryLabel,
@@ -85,6 +86,19 @@ export default async function ProgrammaticPage({
     .filter(s => s.startsWith(city.slug + '-') && s !== slug)
     .slice(0, 6);
 
+  // Cross-category links for same city (internal linking network)
+  const crossCategoryLinks = CATEGORIES
+    .filter(c => c !== category)
+    .map(c => {
+      const topType = SLUG_TYPES[c]?.[0] ?? '';
+      return {
+        cat: c,
+        label: getCategoryLabel(c),
+        href: `/sngpl/${c}/${city.slug}-${topType}`,
+        cityHubHref: `/sngpl/cities/${city.slug}`,
+      };
+    });
+
   // JSON-LD schemas
   const breadcrumbSchema = {
     '@context': 'https://schema.org',
@@ -119,6 +133,23 @@ export default async function ProgrammaticPage({
     })),
   } : null;
 
+  const articleSchema = {
+    '@context': 'https://schema.org',
+    '@type': 'Article',
+    headline: content.h1,
+    description: content.metaDescription,
+    url: canonicalUrl,
+    publisher: {
+      '@type': 'Organization',
+      name: 'SNGPL Bill Check Hub',
+      url: 'https://sngplbillcheck.pk',
+    },
+    about: {
+      '@type': 'Thing',
+      name: `SNGPL ${city.name}`,
+    },
+  };
+
   return (
     <>
       {/* JSON-LD */}
@@ -127,6 +158,7 @@ export default async function ProgrammaticPage({
       {howToSchema && (
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(howToSchema) }} />
       )}
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(articleSchema) }} />
 
       {/* ── HERO ── */}
       <section className="bg-gradient-to-br from-blue-900 to-blue-700 text-white py-14 px-4">
@@ -333,29 +365,73 @@ export default async function ProgrammaticPage({
               </div>
             )}
 
+            {/* City Hub Link */}
+            <div className="card bg-blue-50 border-blue-200">
+              <h3 className="font-bold text-blue-900 mb-2 text-sm">🏙️ {city.name} Complete Guide</h3>
+              <p className="text-xs text-blue-700 mb-3">All 5 SNGPL guide categories for {city.name} in one place.</p>
+              <Link href={`/sngpl/cities/${city.slug}`}
+                className="block text-center text-xs font-bold text-white bg-blue-600 hover:bg-blue-700 py-2 rounded-lg transition-colors no-underline">
+                View City Hub →
+              </Link>
+            </div>
+
           </aside>
         </div>
       </div>
 
       {/* ── BOTTOM INTERNAL LINKS ── */}
       <section className="bg-gray-50 border-t border-gray-200 py-10 px-4">
-        <div className="max-w-5xl mx-auto">
-          <h2 className="text-lg font-bold text-gray-900 mb-6 text-center">Explore More SNGPL Resources</h2>
-          <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-4">
-            {[
-              { href: '/sngpl/bill-check', label: 'Bill Check Guides', icon: '🔍', desc: `City-specific bill check guides` },
-              { href: '/sngpl/consumer-number', label: 'Consumer Number', icon: '🔢', desc: `Find and recover your consumer number` },
-              { href: '/sngpl/duplicate-bill', label: 'Duplicate Bills', icon: '📄', desc: `Download duplicate gas bills` },
-              { href: '/sngpl/payment', label: 'Payment Guides', icon: '💳', desc: `Easypaisa, JazzCash, bank payment` },
-            ].map(l => (
-              <Link key={l.href} href={l.href}
-                className="card hover:border-blue-200 hover:shadow-md transition-all no-underline text-center">
-                <span className="text-2xl mb-2 block">{l.icon}</span>
-                <span className="text-sm font-bold text-blue-700">{l.label}</span>
-                <p className="text-xs text-gray-500 mt-1">{l.desc}</p>
+        <div className="max-w-5xl mx-auto space-y-10">
+
+          {/* Cross-category same-city links */}
+          <div>
+            <h2 className="text-lg font-bold text-gray-900 mb-2 text-center">More {city.name} SNGPL Guides</h2>
+            <p className="text-sm text-gray-500 text-center mb-6">Complete guide series for {city.name} consumers across all topics</p>
+            <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-3">
+              {crossCategoryLinks.map(l => (
+                <Link key={l.cat} href={l.href}
+                  className="card hover:border-blue-200 hover:shadow-md transition-all no-underline">
+                  <div className="font-bold text-blue-700 text-sm mb-1">{l.label}</div>
+                  <div className="text-xs text-gray-500">{city.name} guide →</div>
+                </Link>
+              ))}
+              <Link href={`/sngpl/cities/${city.slug}`}
+                className="card hover:border-blue-200 hover:shadow-md transition-all no-underline bg-blue-50 border-blue-100">
+                <div className="font-bold text-blue-900 text-sm mb-1">🏙️ {city.name} Hub</div>
+                <div className="text-xs text-blue-700">All 5 categories →</div>
               </Link>
-            ))}
+            </div>
           </div>
+
+          {/* Category browse */}
+          <div>
+            <h2 className="text-lg font-bold text-gray-900 mb-5 text-center">Browse by Category</h2>
+            <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-3">
+              {[
+                { href: '/sngpl/bill-check',      icon: '🔍', label: 'Bill Check',       desc: '45 cities' },
+                { href: '/sngpl/consumer-number',  icon: '🔢', label: 'Consumer No.',     desc: '45 cities' },
+                { href: '/sngpl/duplicate-bill',   icon: '📄', label: 'Duplicate Bill',   desc: '45 cities' },
+                { href: '/sngpl/payment',          icon: '💳', label: 'Payment',          desc: '45 cities' },
+                { href: '/sngpl/troubleshooting',  icon: '⚠️', label: 'Troubleshoot',    desc: '45 cities' },
+              ].map(l => (
+                <Link key={l.href} href={l.href}
+                  className="card hover:border-blue-200 hover:shadow-md transition-all no-underline text-center py-4">
+                  <span className="text-2xl mb-2 block">{l.icon}</span>
+                  <span className="text-xs font-bold text-blue-700 block">{l.label}</span>
+                  <span className="text-xs text-gray-400">{l.desc}</span>
+                </Link>
+              ))}
+            </div>
+          </div>
+
+          {/* All Cities link */}
+          <div className="text-center">
+            <Link href="/sngpl/cities"
+              className="inline-flex items-center gap-2 text-blue-600 font-semibold text-sm hover:text-blue-800 transition-colors">
+              Browse All 44 City Guides →
+            </Link>
+          </div>
+
         </div>
       </section>
     </>
