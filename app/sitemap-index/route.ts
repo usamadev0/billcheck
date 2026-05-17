@@ -12,7 +12,7 @@ export async function GET() {
   const today = new Date().toISOString().split('T')[0];
 
   const sitemaps = [
-    `${baseUrl}/sitemap.xml`, // core pages
+    `${baseUrl}/sitemap.xml`, // core + category hub + city hub pages
     ...CATEGORIES.map(cat => `${baseUrl}/sitemaps/${cat}`),
   ];
 

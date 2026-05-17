@@ -11,6 +11,7 @@ const nav = [
   { href: '/payment-guide',  label: 'Payment' },
   { href: '/calculator',     label: 'Calculator' },
   { href: '/guides',         label: 'Guides' },
+  { href: '/sngpl/cities',   label: 'Cities' },
 ];
 
 export default function Header() {
