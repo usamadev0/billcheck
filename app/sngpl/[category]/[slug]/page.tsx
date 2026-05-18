@@ -15,6 +15,7 @@ import {
   type Category,
 } from '../../../../lib/seo-data';
 import { generatePageContent } from '../../../../lib/content-generator';
+import { applyInlineLinks } from '../../../../lib/inline-links';
 
 // ─── ISR CONFIG ───────────────────────────────────────────────────
 export const dynamic = 'force-static';
@@ -23,7 +24,7 @@ export const revalidate = 86400; // 24-hour ISR
 
 // ─── STATIC PARAMS (top 400 pre-built at deploy) ─────────────────
 export async function generateStaticParams() {
-  return getTopStaticParams(400);
+  return getTopStaticParams(600);
 }
 
 // ─── METADATA ────────────────────────────────────────────────────
@@ -150,6 +151,22 @@ export default async function ProgrammaticPage({
     },
   };
 
+  // ItemList schema — related articles in same city/category
+  const relatedArticlesSchema = relatedSlugs.length > 0 ? {
+    '@context': 'https://schema.org',
+    '@type': 'ItemList',
+    name: `More SNGPL ${city.name} ${catLabel} Guides`,
+    itemListElement: relatedSlugs.slice(0, 5).map((rs, idx) => {
+      const rsType = rs.slice(city.slug.length + 1);
+      return {
+        '@type': 'ListItem',
+        position: idx + 1,
+        name: `SNGPL ${city.name} — ${getTypeLabel(rsType)}`,
+        url: `https://sngplbillcheck.pk/sngpl/${category}/${rs}`,
+      };
+    }),
+  } : null;
+
   return (
     <>
       {/* JSON-LD */}
@@ -159,6 +176,9 @@ export default async function ProgrammaticPage({
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(howToSchema) }} />
       )}
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(articleSchema) }} />
+      {relatedArticlesSchema && (
+        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(relatedArticlesSchema) }} />
+      )}
 
       {/* ── HERO ── */}
       <section className="bg-gradient-to-br from-blue-900 to-blue-700 text-white py-14 px-4">
@@ -220,10 +240,13 @@ export default async function ProgrammaticPage({
                 <h2 className="text-xl md:text-2xl font-bold text-gray-900 mb-4 pb-2 border-b border-gray-200">
                   {section.h2}
                 </h2>
-                {section.body.split('\n\n').map((para, pi) => {
-                  // Render bold markdown inline
-                  const rendered = para.replace(/\*\*(.+?)\*\*/g, '<strong>$1</strong>');
-                  if (para.trim().startsWith('- ') || para.trim().startsWith('**') && para.includes('\n-')) {
+                {applyInlineLinks(section.body, `/sngpl/${category}/${slug}`)
+                  .split('\n\n').map((para, pi) => {
+                  // Render inline links [text](href) → <a>, then **bold** → <strong>
+                  const rendered = para
+                    .replace(/\[([^\]]+)\]\((\/[^)]+)\)/g, '<a href="$2" class="text-blue-600 hover:text-blue-800 underline underline-offset-2">$1</a>')
+                    .replace(/\*\*(.+?)\*\*/g, '<strong>$1</strong>');
+                  if (para.trim().startsWith('- ') || (para.trim().startsWith('**') && para.includes('\n-'))) {
                     return (
                       <div key={pi} className="mb-3 text-gray-700 leading-relaxed text-base"
                         dangerouslySetInnerHTML={{ __html: rendered }} />

@@ -168,13 +168,13 @@ export function parseSlug(category: Category, slug: string): { city: CityData; t
   return null;
 }
 
-export function getTopStaticParams(limit = 400): { category: string; slug: string }[] {
-  // Pre-build top 400 pages: 10 cities × 8 types × 5 categories
+export function getTopStaticParams(limit = 600): { category: string; slug: string }[] {
+  // Pre-build top 600 pages: 12 cities × 10 types × 5 categories
   const results: { category: string; slug: string }[] = [];
-  const topCities = CITIES.slice(0, 10);
+  const topCities = CITIES.slice(0, 12);
   for (const cat of CATEGORIES) {
     for (const city of topCities) {
-      for (const type of (SLUG_TYPES[cat] ?? []).slice(0, 8)) {
+      for (const type of (SLUG_TYPES[cat] ?? []).slice(0, 10)) {
         results.push({ category: cat, slug: `${city.slug}-${type}` });
         if (results.length >= limit) return results;
       }
