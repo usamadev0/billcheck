@@ -14,6 +14,8 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${base}/calculator`,        lastModified: now, changeFrequency: 'monthly', priority: 0.8 },
     { url: `${base}/guides`,            lastModified: now, changeFrequency: 'weekly',  priority: 0.8 },
     { url: `${base}/sngpl/cities`,      lastModified: now, changeFrequency: 'weekly',  priority: 0.85 },
+    { url: `${base}/hhm-explained`,          lastModified: now, changeFrequency: 'monthly' as const, priority: 0.85 },
+    { url: `${base}/sngpl-taxes-explained`,   lastModified: now, changeFrequency: 'monthly' as const, priority: 0.85 },
   ];
 
   const categoryPages: MetadataRoute.Sitemap = CATEGORIES.map(cat => ({

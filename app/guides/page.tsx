@@ -40,6 +40,26 @@ const guides = [
     href: '/guides#troubleshoot',
     sections: ['Wrong bill amount disputed', 'Payment not showing on portal', 'Disconnection notice help', 'Complaint registration process', 'Helpline numbers & contacts'],
   },
+  {
+    icon: '📊',
+    title: 'HHM & Meter Reading Guide',
+    id: 'hhm-explained',
+    desc: 'What is HHM? How meters work, GCV, appliance consumption estimates and bill calculation.',
+    href: '/hhm-explained',
+    badge: 'Reference',
+    bc: 'bg-teal-100 text-teal-700',
+    sections: ['What is HHM (Hundred Cubic Meters)?', 'How your gas meter works', 'GCV and calorific value explained', 'Appliance consumption estimates', 'Manual bill calculation walkthrough'],
+  },
+  {
+    icon: '🏛️',
+    title: 'Gas Bill Taxes Explained',
+    id: 'sngpl-taxes-explained',
+    desc: 'GIDC, GST, meter rent, OGRA regulation and complete bill tax calculation guide.',
+    href: '/sngpl-taxes-explained',
+    badge: 'Reference',
+    bc: 'bg-indigo-100 text-indigo-700',
+    sections: ['GIDC — what it funds and how it is calculated', 'GST on gas bills (17%)', 'Meter rent and fixed charges', 'OGRA tariff regulation process', 'Full bill tax breakdown example'],
+  },
 ];
 
 export default function GuidesPage() {

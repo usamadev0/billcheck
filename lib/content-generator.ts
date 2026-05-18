@@ -80,17 +80,17 @@ function billCheckContent(city: CityData, type: string): PageContent {
   const isWinter = month ? WINTER_MONTHS.has(month.toLowerCase()) : false;
   const isSummer = month ? SUMMER_MONTHS.has(month.toLowerCase()) : false;
   const typeLabel = getTypeLabel(type);
-  const yearNote = type.includes('2025') ? '2025' : type.includes('2024') ? '2024' : '2025';
+  const yearNote = type.includes('2024') ? '2024' : '2026';
 
   const title = month
-    ? `SNGPL ${city.name} ${month} Gas Bill Check — View & Download ${yearNote}`
-    : `SNGPL ${city.name} Bill Check Online — ${typeLabel} | Pakistan`;
+    ? `SNGPL ${city.name} ${month} Bill Check ${yearNote} — View, Download & Pay Free`
+    : `Check SNGPL ${city.name} Bill Online ${yearNote} — ${typeLabel}`;
   const metaDescription = safeMeta(month
-    ? `Check SNGPL ${city.name} gas bill for ${month}. View amount due, download PDF and pay online. Official portal redirect — free.`
-    : `Check SNGPL gas bill online for ${city.name}. ${typeLabel} — enter consumer number and view your bill instantly. Free official redirect.`);
+    ? `Check & download your SNGPL ${city.name} gas bill for ${month} ${yearNote}. View amount due, pay via Easypaisa or JazzCash. Official portal redirect — free.`
+    : `Check SNGPL gas bill for ${city.name} instantly in ${yearNote}. ${typeLabel} — enter consumer number, view bill, download PDF. 100% free, official redirect.`);
   const h1 = month
-    ? `SNGPL ${city.name} ${month} Bill Check Online`
-    : `SNGPL ${city.name} Gas Bill Check — ${typeLabel}`;
+    ? `SNGPL ${city.name} ${month} ${yearNote} Bill Check — View & Download`
+    : `SNGPL ${city.name} Gas Bill Check ${yearNote} — ${typeLabel}`;
 
   const intro = `Managing your natural gas bill in ${city.name} has never been easier. Sui Northern Gas Pipelines Limited (SNGPL) serves over ${city.consumers} consumers across ${city.areas} and the wider ${city.division} with reliable piped natural gas. This guide explains exactly how to check your SNGPL gas bill online if you live in ${city.name}, whether you need to view this month's bill, download a duplicate copy, verify payment status, or simply understand what each line item means.
 
@@ -287,9 +287,9 @@ function consumerNumberContent(city: CityData, type: string): PageContent {
   const isLost = type.includes('lost') || type.includes('recover') || type.includes('recovery');
   const isFormat = type.includes('format') || type.includes('digit') || type.includes('meaning') || type.includes('region');
 
-  const title = `SNGPL ${city.name} Consumer Number — ${typeLabel} | Complete Guide`;
-  const metaDescription = safeMeta(`SNGPL consumer number guide for ${city.name} — ${typeLabel}. Find, recover & understand your gas account number. Free ${city.province} consumer guide.`);
-  const h1 = `SNGPL ${city.name} Consumer Number — ${typeLabel}`;
+  const title = `Find SNGPL ${city.name} Consumer Number 2026 — ${typeLabel}`;
+  const metaDescription = safeMeta(`Find, recover & verify your SNGPL consumer number in ${city.name}. ${typeLabel} — step-by-step guide, free.`);
+  const h1 = `SNGPL ${city.name} Consumer Number Guide 2026 — ${typeLabel}`;
 
   const intro = `Your SNGPL consumer number is the single most important piece of information for managing your gas connection in ${city.name}. This unique identifier — printed on every SNGPL gas bill and on your meter card — links you to SNGPL's billing system and is required for every official interaction: checking bills online, making payments through Easypaisa or JazzCash, registering complaints, applying for new services, and verifying your account status.
 
@@ -477,9 +477,9 @@ function duplicateBillContent(city: CityData, type: string): PageContent {
   const isSMS = type.includes('sms');
   const isOffice = type.includes('office');
 
-  const title = `Download SNGPL ${city.name} Duplicate Bill — ${typeLabel} | 2025 Guide`;
-  const metaDescription = safeMeta(`Download SNGPL ${city.name} duplicate bill instantly. ${typeLabel} — portal, app, WhatsApp & SMS methods explained. Official & free. No registration needed.`);
-  const h1 = `SNGPL ${city.name} Duplicate Bill Download — ${typeLabel}`;
+  const title = `Download SNGPL ${city.name} Duplicate Bill 2026 — ${typeLabel}`;
+  const metaDescription = safeMeta(`Download SNGPL ${city.name} duplicate gas bill 2026 instantly. ${typeLabel} — PDF, WhatsApp, app — free. No registration needed. Official portal redirect.`);
+  const h1 = `SNGPL ${city.name} Duplicate Bill Download 2026 — ${typeLabel}`;
 
   const intro = `Lost your SNGPL gas bill? Need a copy to make a payment or settle a billing dispute? As an SNGPL consumer in ${city.name}, you have multiple official channels to download or obtain a duplicate gas bill within minutes — no need to visit the SNGPL office unless you prefer in-person service.
 
@@ -657,9 +657,9 @@ function paymentContent(city: CityData, type: string): PageContent {
   const isATM = type.includes('atm');
   const isLate = type.includes('late') || type.includes('overdue') || type.includes('disconnection') || type.includes('avoid');
 
-  const title = `Pay SNGPL ${city.name} Gas Bill Online — ${typeLabel} | Step-by-Step 2025`;
-  const metaDescription = safeMeta(`Pay SNGPL gas bill in ${city.name} — ${typeLabel}. Easypaisa, JazzCash, HBL, ATM & bank branch guide. Avoid disconnection. Free step-by-step 2025 guide.`);
-  const h1 = `SNGPL ${city.name} Gas Bill Payment — ${typeLabel}`;
+  const title = `Pay SNGPL ${city.name} Gas Bill Online 2026 — ${typeLabel}`;
+  const metaDescription = safeMeta(`Pay SNGPL gas bill in ${city.name} 2026 — ${typeLabel}. Easypaisa, JazzCash, bank transfer, ATM guide. Avoid disconnection. Free step-by-step guide.`);
+  const h1 = `SNGPL ${city.name} Gas Bill Payment 2026 — ${typeLabel}`;
 
   const intro = `Paying your SNGPL gas bill in ${city.name} on time is essential to maintain uninterrupted gas supply to your home or business. With ${city.consumers} consumers in ${city.name}'s ${city.division}, SNGPL processes thousands of payments every day through digital and physical channels.
 
@@ -869,9 +869,9 @@ function troubleshootingContent(city: CityData, type: string): PageContent {
   const isComplaint = type.includes('complaint') || type.includes('helpline') || type.includes('customer-care');
   const isEmergency = type.includes('emergency') || type.includes('leakage');
 
-  const title = `SNGPL ${city.name} — ${typeLabel} | Fix Your Gas Bill Problem 2025`;
-  const metaDescription = safeMeta(`Fix SNGPL ${city.name} issues: ${typeLabel}. Solutions for billing disputes, disconnection, meter faults & complaints. SNGPL helpline 1199 guide. Free.`);
-  const h1 = `SNGPL ${city.name} — ${typeLabel} | Complete Solution Guide`;
+  const title = `Fix SNGPL ${city.name} ${typeLabel} 2026 — Step-by-Step Guide`;
+  const metaDescription = safeMeta(`Resolve SNGPL ${city.name} ${typeLabel} in 2026. Solutions for billing disputes, disconnection, meter faults & complaints. SNGPL helpline 1199 guide. Free.`);
+  const h1 = `SNGPL ${city.name} ${typeLabel} — Troubleshooting Guide 2026`;
 
   const intro = `Encountering a problem with your SNGPL gas bill or service in ${city.name} can be frustrating — especially when you do not know the right channel to report it. Sui Northern Gas Pipelines Limited serves ${city.consumers} consumers in ${city.name} across ${city.areas}, and billing issues, service interruptions, and complaints are handled through established procedures.
 

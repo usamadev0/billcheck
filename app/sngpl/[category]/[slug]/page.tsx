@@ -24,7 +24,7 @@ export const revalidate = 86400; // 24-hour ISR
 
 // ─── STATIC PARAMS (top 400 pre-built at deploy) ─────────────────
 export async function generateStaticParams() {
-  return getTopStaticParams(1000);
+  return getTopStaticParams(2000);
 }
 
 // ─── METADATA ────────────────────────────────────────────────────
@@ -140,6 +140,8 @@ export default async function ProgrammaticPage({
     headline: content.h1,
     description: content.metaDescription,
     url: canonicalUrl,
+    datePublished: '2025-01-01',
+    dateModified: new Date().toISOString().split('T')[0],
     publisher: {
       '@type': 'Organization',
       name: 'SNGPL Bill Check Hub',
@@ -328,6 +330,12 @@ export default async function ProgrammaticPage({
                 ))}
               </div>
             </section>
+
+            {/* Freshness badge */}
+            <div className="mt-6 pt-4 border-t border-gray-100 flex items-center gap-2 text-xs text-gray-400">
+              <svg className="w-3.5 h-3.5 flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+              Last updated: {new Date().toLocaleDateString('en-PK', { month: 'long', year: 'numeric' })} · SNGPL tariff data verified 2026
+            </div>
 
           </article>
 

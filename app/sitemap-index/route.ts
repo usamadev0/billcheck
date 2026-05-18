@@ -1,5 +1,5 @@
 // Sitemap Index — /sitemap-index
-// Lists all category sitemaps for Google/Bing discovery
+// Lists all sitemaps for Google/Bing discovery
 
 import { NextResponse } from 'next/server';
 import { CATEGORIES } from '../../lib/seo-data';
@@ -8,22 +8,17 @@ export const dynamic = 'force-static';
 export const revalidate = 86400;
 
 export async function GET() {
-  const baseUrl = 'https://sngplbillcheck.pk';
+  const base  = 'https://sngplbillcheck.pk';
   const today = new Date().toISOString().split('T')[0];
 
-  const sitemaps = [
-    `${baseUrl}/sitemap.xml`, // core + category hub + city hub pages
-    ...CATEGORIES.map(cat => `${baseUrl}/sitemaps/${cat}`),
+  const sitemapUrls = [
+    `${base}/sitemap.xml`,           // core + city hub pages
+    `${base}/sitemaps/priority`,     // top 5 cities × all types (priority crawl)
+    ...CATEGORIES.map(cat => `${base}/sitemaps/${cat}`), // all category slugs
   ];
 
-  const entries = sitemaps
-    .map(
-      loc =>
-        `  <sitemap>
-    <loc>${loc}</loc>
-    <lastmod>${today}</lastmod>
-  </sitemap>`
-    )
+  const entries = sitemapUrls
+    .map(loc => `  <sitemap>\n    <loc>${loc}</loc>\n    <lastmod>${today}</lastmod>\n  </sitemap>`)
     .join('\n');
 
   const xml = `<?xml version="1.0" encoding="UTF-8"?>
