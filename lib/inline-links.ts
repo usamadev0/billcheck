@@ -83,9 +83,9 @@ const LINK_RULES: LinkRule[] = [
     label: 'check your bill online',
   },
   {
-    pattern: /\bbillchecker\.sngpl\.com\.pk\b/i,
+    pattern: /\bsngpl\.com\.pk\/web\/DownloadBill\b/i,
     href: '/bill-check',
-    label: 'billchecker.sngpl.com.pk',
+    label: 'sngpl.com.pk/web/DownloadBill',
   },
 
   // Payment guide

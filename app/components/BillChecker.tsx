@@ -3,11 +3,15 @@ import { useState, useEffect } from 'react';
 
 interface RecentSearch { num: string; ts: number; }
 
+// Official SNGPL bill portal (billchecker.sngpl.com.pk was decommissioned)
+const BILL_PORTAL = 'https://www.sngpl.com.pk/web/DownloadBill';
+
 export default function BillChecker({ compact = false }: { compact?: boolean }) {
-  const [val, setVal]       = useState('');
-  const [err, setErr]       = useState('');
-  const [recent, setRecent] = useState<RecentSearch[]>([]);
-  const [copied, setCopied] = useState(false);
+  const [val, setVal]         = useState('');
+  const [err, setErr]         = useState('');
+  const [recent, setRecent]   = useState<RecentSearch[]>([]);
+  const [copied, setCopied]   = useState(false);
+  const [redirected, setRedirected] = useState(false);
 
   useEffect(() => {
     try { const s = localStorage.getItem('sngpl_recent'); if (s) setRecent(JSON.parse(s)); } catch {}
@@ -30,11 +34,15 @@ export default function BillChecker({ compact = false }: { compact?: boolean }) 
     return clean;
   };
 
-  const handleCheck = () => {
+  const handleCheck = async () => {
     const clean = validate(val);
     if (!clean) return;
     save(clean);
-    window.open(`https://billchecker.sngpl.com.pk/?cust_id=${clean}`, '_blank', 'noopener,noreferrer');
+    // Auto-copy consumer number so user can paste it directly on the portal
+    try { await navigator.clipboard.writeText(clean); } catch {}
+    setRedirected(true);
+    setTimeout(() => setRedirected(false), 6000);
+    window.open(BILL_PORTAL, '_blank', 'noopener,noreferrer');
   };
 
   const handleCopy = () => {
@@ -43,20 +51,28 @@ export default function BillChecker({ compact = false }: { compact?: boolean }) 
 
   if (compact) {
     return (
-      <div className="flex flex-col sm:flex-row gap-2 items-stretch">
-        <input
-          type="tel" inputMode="numeric" autoComplete="off"
-          value={val}
-          onChange={e => { setVal(e.target.value.replace(/\D/g, '')); setErr(''); }}
-          onKeyDown={e => e.key === 'Enter' && handleCheck()}
-          placeholder="Consumer number (10–13 digits)"
-          maxLength={13}
-          className="input-field flex-1 font-mono"
-        />
-        <button onClick={handleCheck} className="btn-primary px-5 py-3 whitespace-nowrap text-sm font-bold">
-          Check Bill →
-        </button>
-        {err && <p className="text-xs text-red-600 mt-1 w-full">{err}</p>}
+      <div className="flex flex-col gap-2">
+        <div className="flex flex-col sm:flex-row gap-2 items-stretch">
+          <input
+            type="tel" inputMode="numeric" autoComplete="off"
+            value={val}
+            onChange={e => { setVal(e.target.value.replace(/\D/g, '')); setErr(''); setRedirected(false); }}
+            onKeyDown={e => e.key === 'Enter' && handleCheck()}
+            placeholder="Consumer number (10–13 digits)"
+            maxLength={13}
+            className="input-field flex-1 font-mono"
+          />
+          <button onClick={handleCheck} className="btn-primary px-5 py-3 whitespace-nowrap text-sm font-bold">
+            Check Bill →
+          </button>
+        </div>
+        {err && <p className="text-xs text-red-600 mt-1">{err}</p>}
+        {redirected && (
+          <p className="text-xs text-green-700 bg-green-50 border border-green-200 rounded-lg px-3 py-2 flex items-center gap-1.5">
+            <svg className="w-3.5 h-3.5 shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7"/></svg>
+            Consumer number copied — paste it on the SNGPL portal that just opened.
+          </p>
+        )}
       </div>
     );
   }
@@ -74,7 +90,7 @@ export default function BillChecker({ compact = false }: { compact?: boolean }) 
             </div>
             <div>
               <h2 className="text-white font-bold text-lg leading-tight">Check SNGPL Gas Bill</h2>
-              <p className="text-blue-100 text-xs mt-0.5">Enter consumer number → Official portal redirect</p>
+              <p className="text-blue-100 text-xs mt-0.5">Enter consumer number → Opens sngpl.com.pk portal</p>
             </div>
           </div>
         </div>
@@ -88,7 +104,7 @@ export default function BillChecker({ compact = false }: { compact?: boolean }) 
               <input
                 id="consumerNo" type="tel" inputMode="numeric" autoComplete="off"
                 value={val}
-                onChange={e => { setVal(e.target.value.replace(/\D/g, '')); setErr(''); }}
+                onChange={e => { setVal(e.target.value.replace(/\D/g, '')); setErr(''); setRedirected(false); }}
                 onKeyDown={e => e.key === 'Enter' && handleCheck()}
                 placeholder="e.g. 1100123456"
                 maxLength={13}
@@ -120,12 +136,21 @@ export default function BillChecker({ compact = false }: { compact?: boolean }) 
             Check SNGPL Bill Now
           </button>
 
-          <div className="flex items-start gap-2.5 p-3.5 bg-green-50 rounded-xl border border-green-100">
-            <svg className="w-4 h-4 text-green-600 mt-0.5 shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"/></svg>
-            <p className="text-xs text-green-700 leading-relaxed">
-              You will be redirected to the <strong>official SNGPL bill portal</strong>. We never store or share your consumer number.
-            </p>
-          </div>
+          {redirected ? (
+            <div className="flex items-start gap-2.5 p-3.5 bg-green-50 rounded-xl border border-green-200 animate-fade-in">
+              <svg className="w-4 h-4 text-green-600 mt-0.5 shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7"/></svg>
+              <p className="text-xs text-green-700 leading-relaxed">
+                <strong>Portal opened &amp; consumer number copied!</strong> Paste your number (<span className="font-mono">{val}</span>) in the field on the SNGPL portal.
+              </p>
+            </div>
+          ) : (
+            <div className="flex items-start gap-2.5 p-3.5 bg-green-50 rounded-xl border border-green-100">
+              <svg className="w-4 h-4 text-green-600 mt-0.5 shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"/></svg>
+              <p className="text-xs text-green-700 leading-relaxed">
+                Opens the <strong>official SNGPL bill portal</strong> (sngpl.com.pk) in a new tab. Your number is copied automatically — just paste it there.
+              </p>
+            </div>
+          )}
         </div>
       </div>
 

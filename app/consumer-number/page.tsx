@@ -64,7 +64,7 @@ export default function ConsumerNumberPage() {
 
         <h2>What is an SNGPL Consumer Number?</h2>
         <p>Your SNGPL consumer number (also referred to as account number, customer number, or Cust. No. on your bill) is a unique numeric identifier permanently linked to your specific gas connection address. When SNGPL installs a new gas connection at a premises, it assigns a consumer number that stays associated with that address for the lifetime of the connection — regardless of who lives there or who owns the property.</p>
-        <p>The consumer number is the master key to all of SNGPL&apos;s digital services. Without it, you cannot check your bill on the official portal (billchecker.sngpl.com.pk), make payments through Easypaisa, JazzCash, or internet banking, register the SNGPL Consumer mobile app, submit complaints online at selfservice.sngpl.com.pk, or verify your bill amount before paying at a bank or ATM. It is the single most critical piece of information for every SNGPL consumer.</p>
+        <p>The consumer number is the master key to all of SNGPL&apos;s digital services. Without it, you cannot check your bill on the official portal (sngpl.com.pk), make payments through Easypaisa, JazzCash, or internet banking, register the SNGPL Consumer mobile app, submit complaints online at selfservice.sngpl.com.pk, or verify your bill amount before paying at a bank or ATM. It is the single most critical piece of information for every SNGPL consumer.</p>
         <p>Consumer numbers are assigned at the regional and distribution circle level, meaning they are unique within SNGPL&apos;s entire network. No two connections in Pakistan share the same SNGPL consumer number. The number encodes geographic and administrative information about your connection while also serving as your unique account identifier.</p>
 
         <h2>Where to Find Your SNGPL Consumer Number</h2>
@@ -122,7 +122,7 @@ export default function ConsumerNumberPage() {
         <h2>Using Your Consumer Number Across All SNGPL Services</h2>
         <p>Your consumer number is required for every SNGPL digital interaction. Here is a comprehensive guide to exactly how to use it in each service:</p>
 
-        <h3>Online Bill Check (billchecker.sngpl.com.pk)</h3>
+        <h3>Online Bill Check (sngpl.com.pk)</h3>
         <p>Visit the portal, enter your 10–13 digit consumer number in the search field, click &ldquo;Get Bill&rdquo; or search, and your current month&apos;s bill loads with full details: amount due, due date, meter readings, consumption, and charge breakdown. No login or registration required. The portal typically shows the most recent 1–2 bills.</p>
 
         <h3>Easypaisa Payment</h3>
@@ -168,7 +168,7 @@ export default function ConsumerNumberPage() {
           <li><strong>Error: &ldquo;Invalid Consumer Number&rdquo;</strong> — You entered an incorrect digit. Verify each digit from your physical bill, one by one. Pay special attention to pairs of digits that look similar: 1 vs 7, 6 vs 0, 8 vs 3. Use the physical bill, not a photo or handwritten copy, as your reference.</li>
           <li><strong>Error: &ldquo;Account Not Found&rdquo;</strong> — Your consumer number format for your region may include or exclude a leading zero. Try the number with and without a leading zero. If neither works, your connection may be newly installed or recently transferred — allow 48 hours and try again. If still unresolved, call 1199.</li>
           <li><strong>Error: Bill shows another person&apos;s name</strong> — You entered a consumer number that belongs to a different account. Double-check that you are using your own consumer number and not a neighbor&apos;s or a previously noted number from another address.</li>
-          <li><strong>Payment app shows wrong amount:</strong> Easypaisa and JazzCash fetch bill amounts from SNGPL&apos;s payment system, which may update on a different schedule than the bill portal. If there is a discrepancy, trust the bill portal amount (billchecker.sngpl.com.pk) and pay that amount manually rather than the app-fetched figure.</li>
+          <li><strong>Payment app shows wrong amount:</strong> Easypaisa and JazzCash fetch bill amounts from SNGPL&apos;s payment system, which may update on a different schedule than the bill portal. If there is a discrepancy, trust the bill portal amount (sngpl.com.pk) and pay that amount manually rather than the app-fetched figure.</li>
         </ul>
 
         <h2>Frequently Asked Questions</h2>
