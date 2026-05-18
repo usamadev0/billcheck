@@ -109,7 +109,7 @@ SNGPL is the largest natural gas utility company in Pakistan, operating an exten
         },
         {
           h3: 'Step 2: Visit the Official SNGPL Portal',
-          body: `Open any web browser on your phone, tablet, or computer and go to sngpl.com.pk — then click "Customer Services" → "Consumer Bill" (or navigate directly to sngpl.com.pk/web/DownloadBill). This is the official SNGPL bill checking page — avoid third-party sites that claim to show bill information, as these may be outdated or inaccurate. The official portal always shows real-time billing data pulled directly from SNGPL's systems.`,
+          body: `Open any web browser on your phone, tablet, or computer and go to sngpl.com.pk — then click "Customer Services" → "Consumer Bill" (or navigate directly to sngpl.com.pk). This is the official SNGPL bill checking page — avoid third-party sites that claim to show bill information, as these may be outdated or inaccurate. The official portal always shows real-time billing data pulled directly from SNGPL's systems.`,
         },
         {
           h3: 'Step 3: Enter Your Consumer Number',

@@ -3,8 +3,8 @@ import { useState, useEffect } from 'react';
 
 interface RecentSearch { num: string; ts: number; }
 
-// Official SNGPL bill portal (billchecker.sngpl.com.pk was decommissioned)
-const BILL_PORTAL = 'https://www.sngpl.com.pk/web/DownloadBill';
+// Official SNGPL bill portal (billchecker.sngpl.com.pk was decommissioned, /DownloadBill returns 404)
+const BILL_PORTAL = 'https://www.sngpl.com.pk/login.jsp?mdids=85';
 
 export default function BillChecker({ compact = false }: { compact?: boolean }) {
   const [val, setVal]         = useState('');
@@ -90,7 +90,7 @@ export default function BillChecker({ compact = false }: { compact?: boolean }) 
             </div>
             <div>
               <h2 className="text-white font-bold text-lg leading-tight">Check SNGPL Gas Bill</h2>
-              <p className="text-blue-100 text-xs mt-0.5">Enter consumer number → Opens sngpl.com.pk portal</p>
+              <p className="text-blue-100 text-xs mt-0.5">Enter consumer number → Opens official sngpl.com.pk bill page</p>
             </div>
           </div>
         </div>
