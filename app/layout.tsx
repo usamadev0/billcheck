@@ -41,6 +41,7 @@ export const metadata: Metadata = {
     description: 'Check SNGPL gas bills instantly. Official portal redirect + guides + calculator.',
   },
   alternates: { canonical: 'https://www.checkgasbills.pk' },
+  verification: { google: 'LcX_ouViZIkyjMAUQz5B4oZQLhI9nkgtQenOHos6wQk' },
 };
 
 export const viewport: Viewport = {
