@@ -4,11 +4,11 @@ import Link from 'next/link';
 export const metadata: Metadata = {
   title: 'What is HHM in SNGPL Gas Bill? Complete Guide 2026 — HHM, GCV & Meter Readings',
   description: 'HHM (Hundred Heat Meter) is how SNGPL measures gas consumption. Learn how to read your meter, calculate HHM consumed, understand GCV, and estimate your bill. Free guide.',
-  alternates: { canonical: 'https://sngplbillcheck.pk/hhm-explained' },
+  alternates: { canonical: 'https://www.checkgasbills.pk/hhm-explained' },
   openGraph: {
     title: 'What is HHM in SNGPL Gas Bill? Complete HHM Guide 2026',
     description: 'Comprehensive reference guide to HHM, GCV, gas meter readings, and SNGPL bill calculation. Learn what HHM means and how your gas bill is calculated.',
-    url: 'https://sngplbillcheck.pk/hhm-explained',
+    url: 'https://www.checkgasbills.pk/hhm-explained',
     siteName: 'SNGPL Bill Check Hub',
   },
 };
@@ -41,18 +41,18 @@ export default function HHMExplainedPage() {
         '@type': 'Article',
         headline: 'What is HHM in SNGPL Gas Bill? Complete Guide to HHM, GCV & Meter Readings',
         description: 'Comprehensive reference guide to understanding HHM, GCV, gas meter readings, and how SNGPL calculates your monthly gas bill.',
-        url: 'https://sngplbillcheck.pk/hhm-explained',
+        url: 'https://www.checkgasbills.pk/hhm-explained',
         datePublished: '2026-01-01',
         dateModified: new Date().toISOString().split('T')[0],
-        publisher: { '@type': 'Organization', name: 'SNGPL Bill Check Hub', url: 'https://sngplbillcheck.pk' },
+        publisher: { '@type': 'Organization', name: 'SNGPL Bill Check Hub', url: 'https://www.checkgasbills.pk' },
         about: { '@type': 'Thing', name: 'SNGPL HHM Gas Measurement' },
       }) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({
         '@context': 'https://schema.org',
         '@type': 'BreadcrumbList',
         itemListElement: [
-          { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://sngplbillcheck.pk' },
-          { '@type': 'ListItem', position: 2, name: 'HHM & Meter Reading Guide', item: 'https://sngplbillcheck.pk/hhm-explained' },
+          { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://www.checkgasbills.pk' },
+          { '@type': 'ListItem', position: 2, name: 'HHM & Meter Reading Guide', item: 'https://www.checkgasbills.pk/hhm-explained' },
         ],
       }) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({

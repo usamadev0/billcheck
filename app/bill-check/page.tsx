@@ -5,11 +5,11 @@ import BillChecker from '../components/BillChecker';
 export const metadata: Metadata = {
   title: 'SNGPL Bill Check Online 2026 — Step-by-Step Complete Guide',
   description: 'How to check SNGPL gas bill online using consumer number. Desktop, mobile, app methods explained. Bill components, common errors & FAQs — full guide.',
-  alternates: { canonical: 'https://sngplbillcheck.pk/bill-check' },
+  alternates: { canonical: 'https://www.checkgasbills.pk/bill-check' },
   openGraph: {
     title: 'SNGPL Bill Check Online 2026 — Complete Step-by-Step Guide',
     description: 'How to check SNGPL gas bill online using consumer number. Desktop, mobile, app methods. Bill components, FAQs — complete free guide.',
-    url: 'https://sngplbillcheck.pk/bill-check',
+    url: 'https://www.checkgasbills.pk/bill-check',
   },
   twitter: {
     card: 'summary_large_image',
@@ -70,8 +70,8 @@ export default function BillCheckPage() {
     '@context': 'https://schema.org',
     '@type': 'BreadcrumbList',
     itemListElement: [
-      { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://sngplbillcheck.pk' },
-      { '@type': 'ListItem', position: 2, name: 'Bill Check Guide', item: 'https://sngplbillcheck.pk/bill-check' },
+      { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://www.checkgasbills.pk' },
+      { '@type': 'ListItem', position: 2, name: 'Bill Check Guide', item: 'https://www.checkgasbills.pk/bill-check' },
     ],
   };
   const faqSchema = {

@@ -4,7 +4,7 @@ import Header from './components/Header';
 import Footer from './components/Footer';
 
 export const metadata: Metadata = {
-  metadataBase: new URL('https://sngplbillcheck.pk'),
+  metadataBase: new URL('https://www.checkgasbills.pk'),
   title: {
     default: 'SNGPL Bill Check Online | Pakistan Gas Bill Checker Hub',
     template: '%s | SNGPL Bill Check Hub',
@@ -29,7 +29,7 @@ export const metadata: Metadata = {
   },
   openGraph: {
     type: 'website', locale: 'en_PK',
-    url: 'https://sngplbillcheck.pk',
+    url: 'https://www.checkgasbills.pk',
     siteName: 'SNGPL Bill Check Hub',
     title: 'SNGPL Gas Bill Check Online | Pakistan Gas Bill Hub',
     description: 'Check SNGPL gas bills online. Consumer number guide, duplicate bill download, bill calculator & more.',
@@ -40,7 +40,7 @@ export const metadata: Metadata = {
     title: 'SNGPL Gas Bill Check Online | Pakistan',
     description: 'Check SNGPL gas bills instantly. Official portal redirect + guides + calculator.',
   },
-  alternates: { canonical: 'https://sngplbillcheck.pk' },
+  alternates: { canonical: 'https://www.checkgasbills.pk' },
 };
 
 export const viewport: Viewport = {

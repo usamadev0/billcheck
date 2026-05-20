@@ -5,11 +5,11 @@ import BillChecker from '../components/BillChecker';
 export const metadata: Metadata = {
   title: 'SNGPL Consumer Number — Find, Recover & Understand | Complete Guide',
   description: 'Find your SNGPL consumer number on your gas bill, meter card, or via helpline 1199. Format explained, recovery steps, and all usage methods. Free guide.',
-  alternates: { canonical: 'https://sngplbillcheck.pk/consumer-number' },
+  alternates: { canonical: 'https://www.checkgasbills.pk/consumer-number' },
   openGraph: {
     title: 'SNGPL Consumer Number Guide — Find, Recover & Understand',
     description: 'Everything about your SNGPL consumer number: where to find it, format, recovery options and usage for bill check, payment, and complaints.',
-    url: 'https://sngplbillcheck.pk/consumer-number',
+    url: 'https://www.checkgasbills.pk/consumer-number',
   },
 };
 
@@ -38,8 +38,8 @@ export default function ConsumerNumberPage() {
         '@context': 'https://schema.org',
         '@type': 'BreadcrumbList',
         itemListElement: [
-          { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://sngplbillcheck.pk' },
-          { '@type': 'ListItem', position: 2, name: 'Consumer Number Guide', item: 'https://sngplbillcheck.pk/consumer-number' },
+          { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://www.checkgasbills.pk' },
+          { '@type': 'ListItem', position: 2, name: 'Consumer Number Guide', item: 'https://www.checkgasbills.pk/consumer-number' },
         ],
       }) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({

@@ -5,11 +5,11 @@ import BillChecker from '../components/BillChecker';
 export const metadata: Metadata = {
   title: 'SNGPL Duplicate Bill Download — Portal, App, WhatsApp & SMS Guide',
   description: 'Download SNGPL duplicate gas bill instantly via official portal, mobile app, WhatsApp or SMS. Step-by-step guide for all methods. Free — no registration.',
-  alternates: { canonical: 'https://sngplbillcheck.pk/duplicate-bill' },
+  alternates: { canonical: 'https://www.checkgasbills.pk/duplicate-bill' },
   openGraph: {
     title: 'SNGPL Duplicate Bill Download — All Methods Guide',
     description: 'Get your SNGPL duplicate bill in minutes. Portal PDF download, mobile app, WhatsApp service, and office methods all explained step by step.',
-    url: 'https://sngplbillcheck.pk/duplicate-bill',
+    url: 'https://www.checkgasbills.pk/duplicate-bill',
   },
 };
 
@@ -99,8 +99,8 @@ export default function DuplicateBillPage() {
         '@context': 'https://schema.org',
         '@type': 'BreadcrumbList',
         itemListElement: [
-          { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://sngplbillcheck.pk' },
-          { '@type': 'ListItem', position: 2, name: 'Duplicate Bill Download', item: 'https://sngplbillcheck.pk/duplicate-bill' },
+          { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://www.checkgasbills.pk' },
+          { '@type': 'ListItem', position: 2, name: 'Duplicate Bill Download', item: 'https://www.checkgasbills.pk/duplicate-bill' },
         ],
       }) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({

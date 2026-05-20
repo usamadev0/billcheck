@@ -5,11 +5,11 @@ import BillChecker from '../components/BillChecker';
 export const metadata: Metadata = {
   title: 'SNGPL Bill Payment Guide — Easypaisa, JazzCash, HBL, ATM | 2026',
   description: 'Pay your SNGPL gas bill online via Easypaisa, JazzCash, HBL internet banking, ATM, or bank branch. Step-by-step guide for every payment method. Free.',
-  alternates: { canonical: 'https://sngplbillcheck.pk/payment-guide' },
+  alternates: { canonical: 'https://www.checkgasbills.pk/payment-guide' },
   openGraph: {
     title: 'SNGPL Gas Bill Payment Guide — All Methods 2026',
     description: 'Complete guide to paying your SNGPL bill: Easypaisa, JazzCash, HBL, UBL, MCB internet banking, ATM, bank branch. Avoid disconnection with timely payment.',
-    url: 'https://sngplbillcheck.pk/payment-guide',
+    url: 'https://www.checkgasbills.pk/payment-guide',
   },
 };
 
@@ -135,8 +135,8 @@ export default function PaymentGuidePage() {
         '@context': 'https://schema.org',
         '@type': 'BreadcrumbList',
         itemListElement: [
-          { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://sngplbillcheck.pk' },
-          { '@type': 'ListItem', position: 2, name: 'Payment Guide', item: 'https://sngplbillcheck.pk/payment-guide' },
+          { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://www.checkgasbills.pk' },
+          { '@type': 'ListItem', position: 2, name: 'Payment Guide', item: 'https://www.checkgasbills.pk/payment-guide' },
         ],
       }) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({

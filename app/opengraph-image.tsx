@@ -115,7 +115,7 @@ export default function OGImage() {
             fontWeight: '500',
           }}
         >
-          sngplbillcheck.pk
+          www.checkgasbills.pk
         </div>
       </div>
     ),

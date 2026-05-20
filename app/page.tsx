@@ -5,11 +5,11 @@ import BillChecker from './components/BillChecker';
 export const metadata: Metadata = {
   title: 'SNGPL Bill Check Online | Pakistan Gas Bill Hub — Free Tool',
   description: 'Check SNGPL gas bill online instantly. Enter consumer number for official portal redirect. Duplicate bill, payment guide & calculator. Free — no login.',
-  alternates: { canonical: 'https://sngplbillcheck.pk' },
+  alternates: { canonical: 'https://www.checkgasbills.pk' },
   openGraph: {
     title: 'SNGPL Bill Check Online | Pakistan Gas Bill Hub',
     description: 'Check SNGPL gas bill online instantly. Consumer number guide, duplicate bill, payment methods & calculator. 100% free Pakistan gas utility resource.',
-    url: 'https://sngplbillcheck.pk',
+    url: 'https://www.checkgasbills.pk',
     siteName: 'SNGPL Bill Check Hub',
     locale: 'en_PK',
     type: 'website',
@@ -90,11 +90,11 @@ export default function HomePage() {
         '@context': 'https://schema.org',
         '@type': 'WebSite',
         name: 'SNGPL Bill Check Hub',
-        url: 'https://sngplbillcheck.pk',
+        url: 'https://www.checkgasbills.pk',
         description: 'Pakistan SNGPL gas bill checker, guides, calculator and consumer help.',
         potentialAction: {
           '@type': 'SearchAction',
-          target: 'https://sngplbillcheck.pk/?q={search_term_string}',
+          target: 'https://www.checkgasbills.pk/?q={search_term_string}',
           'query-input': 'required name=search_term_string',
         },
       }) }} />
@@ -105,12 +105,12 @@ export default function HomePage() {
         name: 'SNGPL Consumer Tools & Guides',
         description: 'Complete set of free SNGPL gas bill tools and consumer guides for Pakistan',
         itemListElement: [
-          { '@type': 'ListItem', position: 1, name: 'SNGPL Bill Check Guide',   url: 'https://sngplbillcheck.pk/bill-check' },
-          { '@type': 'ListItem', position: 2, name: 'Consumer Number Help',     url: 'https://sngplbillcheck.pk/consumer-number' },
-          { '@type': 'ListItem', position: 3, name: 'Duplicate Bill Download',  url: 'https://sngplbillcheck.pk/duplicate-bill' },
-          { '@type': 'ListItem', position: 4, name: 'Bill Payment Guide',       url: 'https://sngplbillcheck.pk/payment-guide' },
-          { '@type': 'ListItem', position: 5, name: 'Gas Bill Calculator',      url: 'https://sngplbillcheck.pk/calculator' },
-          { '@type': 'ListItem', position: 6, name: 'All SNGPL Guides',         url: 'https://sngplbillcheck.pk/guides' },
+          { '@type': 'ListItem', position: 1, name: 'SNGPL Bill Check Guide',   url: 'https://www.checkgasbills.pk/bill-check' },
+          { '@type': 'ListItem', position: 2, name: 'Consumer Number Help',     url: 'https://www.checkgasbills.pk/consumer-number' },
+          { '@type': 'ListItem', position: 3, name: 'Duplicate Bill Download',  url: 'https://www.checkgasbills.pk/duplicate-bill' },
+          { '@type': 'ListItem', position: 4, name: 'Bill Payment Guide',       url: 'https://www.checkgasbills.pk/payment-guide' },
+          { '@type': 'ListItem', position: 5, name: 'Gas Bill Calculator',      url: 'https://www.checkgasbills.pk/calculator' },
+          { '@type': 'ListItem', position: 6, name: 'All SNGPL Guides',         url: 'https://www.checkgasbills.pk/guides' },
         ],
       }) }} />
 

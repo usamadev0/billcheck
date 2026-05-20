@@ -28,11 +28,11 @@ export async function generateMetadata({
   return {
     title: `SNGPL ${city.name} — Bill Check, Consumer Number, Payment & Guides 2025`,
     description: `Complete SNGPL guide for ${city.name} consumers. Bill check, consumer number, duplicate bill, payment methods, troubleshooting — all in one place. ${city.consumers} consumers served.`,
-    alternates: { canonical: `https://sngplbillcheck.pk/sngpl/cities/${citySlug}` },
+    alternates: { canonical: `https://www.checkgasbills.pk/sngpl/cities/${citySlug}` },
     openGraph: {
       title: `SNGPL ${city.name} Complete Consumer Guide 2025`,
       description: `Everything SNGPL consumers in ${city.name} need: bill check, consumer number, payment, troubleshooting. Serving ${city.consumers} consumers in ${city.division}.`,
-      url: `https://sngplbillcheck.pk/sngpl/cities/${citySlug}`,
+      url: `https://www.checkgasbills.pk/sngpl/cities/${citySlug}`,
     },
   };
 }
@@ -94,14 +94,14 @@ export default async function CityHubPage({
   const city = CITIES.find(c => c.slug === citySlug);
   if (!city) notFound();
 
-  const canonicalUrl = `https://sngplbillcheck.pk/sngpl/cities/${citySlug}`;
+  const canonicalUrl = `https://www.checkgasbills.pk/sngpl/cities/${citySlug}`;
 
   const breadcrumbSchema = {
     '@context': 'https://schema.org',
     '@type': 'BreadcrumbList',
     itemListElement: [
-      { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://sngplbillcheck.pk' },
-      { '@type': 'ListItem', position: 2, name: 'City Guides', item: 'https://sngplbillcheck.pk/sngpl/cities' },
+      { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://www.checkgasbills.pk' },
+      { '@type': 'ListItem', position: 2, name: 'City Guides', item: 'https://www.checkgasbills.pk/sngpl/cities' },
       { '@type': 'ListItem', position: 3, name: city.name, item: canonicalUrl },
     ],
   };

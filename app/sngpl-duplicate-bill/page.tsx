@@ -10,7 +10,7 @@ export const metadata: Metadata = {
   title: 'SNGPL Duplicate Bill Download 2024 | How to Get Duplicate Gas Bill',
   description: 'How to download your SNGPL duplicate gas bill online in Pakistan. Step-by-step guide for PDF download, mobile app, WhatsApp method, printing instructions, and troubleshooting.',
   keywords: ['SNGPL duplicate bill', 'SNGPL bill download', 'duplicate gas bill Pakistan', 'SNGPL bill PDF download', 'how to get duplicate SNGPL bill'],
-  alternates: { canonical: 'https://sngplbillcheck.pk/sngpl-duplicate-bill' },
+  alternates: { canonical: 'https://www.checkgasbills.pk/sngpl-duplicate-bill' },
 };
 
 const toc = [
@@ -46,8 +46,8 @@ export default function SNGPLDuplicateBillPage() {
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({
         '@context': 'https://schema.org', '@type': 'BreadcrumbList',
         itemListElement: [
-          { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://sngplbillcheck.pk' },
-          { '@type': 'ListItem', position: 2, name: 'SNGPL Duplicate Bill', item: 'https://sngplbillcheck.pk/sngpl-duplicate-bill' },
+          { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://www.checkgasbills.pk' },
+          { '@type': 'ListItem', position: 2, name: 'SNGPL Duplicate Bill', item: 'https://www.checkgasbills.pk/sngpl-duplicate-bill' },
         ],
       }) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({

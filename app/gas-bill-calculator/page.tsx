@@ -10,7 +10,7 @@ export const metadata: Metadata = {
   title: 'SNGPL Gas Bill Calculator 2024 | Pakistan Gas Bill Estimator',
   description: 'Free SNGPL gas bill calculator for Pakistan. Estimate your monthly gas bill using current slab rates. Enter HHM or meter readings for instant calculation with full breakdown.',
   keywords: ['SNGPL gas bill calculator', 'gas bill calculator Pakistan', 'SNGPL bill estimator', 'Pakistan gas bill calculation', 'SNGPL tariff calculator 2024'],
-  alternates: { canonical: 'https://sngplbillcheck.pk/gas-bill-calculator' },
+  alternates: { canonical: 'https://www.checkgasbills.pk/gas-bill-calculator' },
 };
 
 const toc = [
@@ -46,8 +46,8 @@ export default function GasBillCalculatorPage() {
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({
         '@context': 'https://schema.org', '@type': 'BreadcrumbList',
         itemListElement: [
-          { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://sngplbillcheck.pk' },
-          { '@type': 'ListItem', position: 2, name: 'Gas Bill Calculator', item: 'https://sngplbillcheck.pk/gas-bill-calculator' },
+          { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://www.checkgasbills.pk' },
+          { '@type': 'ListItem', position: 2, name: 'Gas Bill Calculator', item: 'https://www.checkgasbills.pk/gas-bill-calculator' },
         ],
       }) }} />
 

@@ -40,7 +40,7 @@ export async function generateMetadata({
   if (!parsed) return {};
 
   const content = generatePageContent(category as Category, parsed.city, parsed.type);
-  const canonicalUrl = `https://sngplbillcheck.pk/sngpl/${category}/${slug}`;
+  const canonicalUrl = `https://www.checkgasbills.pk/sngpl/${category}/${slug}`;
 
   return {
     title: content.title,
@@ -79,7 +79,7 @@ export default async function ProgrammaticPage({
   const content = generatePageContent(category as Category, city, type);
   const catLabel = getCategoryLabel(category as Category);
   const typeLabel = getTypeLabel(type);
-  const canonicalUrl = `https://sngplbillcheck.pk/sngpl/${category}/${slug}`;
+  const canonicalUrl = `https://www.checkgasbills.pk/sngpl/${category}/${slug}`;
 
   // Related pages (3 other types for same city, same category)
   const allSlugs = getAllSlugsForCategory(category as Category);
@@ -105,8 +105,8 @@ export default async function ProgrammaticPage({
     '@context': 'https://schema.org',
     '@type': 'BreadcrumbList',
     itemListElement: [
-      { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://sngplbillcheck.pk' },
-      { '@type': 'ListItem', position: 2, name: catLabel, item: `https://sngplbillcheck.pk/sngpl/${category}` },
+      { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://www.checkgasbills.pk' },
+      { '@type': 'ListItem', position: 2, name: catLabel, item: `https://www.checkgasbills.pk/sngpl/${category}` },
       { '@type': 'ListItem', position: 3, name: content.h1, item: canonicalUrl },
     ],
   };
@@ -145,7 +145,7 @@ export default async function ProgrammaticPage({
     publisher: {
       '@type': 'Organization',
       name: 'SNGPL Bill Check Hub',
-      url: 'https://sngplbillcheck.pk',
+      url: 'https://www.checkgasbills.pk',
     },
     about: {
       '@type': 'Thing',
@@ -164,7 +164,7 @@ export default async function ProgrammaticPage({
         '@type': 'ListItem',
         position: idx + 1,
         name: `SNGPL ${city.name} — ${getTypeLabel(rsType)}`,
-        url: `https://sngplbillcheck.pk/sngpl/${category}/${rs}`,
+        url: `https://www.checkgasbills.pk/sngpl/${category}/${rs}`,
       };
     }),
   } : null;

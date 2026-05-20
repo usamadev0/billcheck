@@ -10,7 +10,7 @@ export const metadata: Metadata = {
   title: 'SNGPL Consumer Number Guide 2024 | Where to Find Your Gas Bill Number',
   description: 'Complete guide to your SNGPL consumer number — what it is, where to find it on your bill and meter, region codes, how to recover it if lost, and FAQs.',
   keywords: ['SNGPL consumer number', 'SNGPL account number', 'how to find SNGPL consumer number', 'SNGPL consumer number guide Pakistan'],
-  alternates: { canonical: 'https://sngplbillcheck.pk/sngpl-consumer-number-guide' },
+  alternates: { canonical: 'https://www.checkgasbills.pk/sngpl-consumer-number-guide' },
 };
 
 const toc = [
@@ -45,8 +45,8 @@ export default function ConsumerNumberGuidePage() {
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({
         '@context': 'https://schema.org', '@type': 'BreadcrumbList',
         itemListElement: [
-          { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://sngplbillcheck.pk' },
-          { '@type': 'ListItem', position: 2, name: 'SNGPL Consumer Number Guide', item: 'https://sngplbillcheck.pk/sngpl-consumer-number-guide' },
+          { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://www.checkgasbills.pk' },
+          { '@type': 'ListItem', position: 2, name: 'SNGPL Consumer Number Guide', item: 'https://www.checkgasbills.pk/sngpl-consumer-number-guide' },
         ],
       }) }} />
 

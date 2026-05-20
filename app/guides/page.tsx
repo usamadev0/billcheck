@@ -4,7 +4,7 @@ import Link from 'next/link';
 export const metadata: Metadata = {
   title: 'SNGPL Guides — Consumer Number, Duplicate Bill, Payment & Troubleshooting 2026',
   description: 'Complete SNGPL guides: consumer number lookup, duplicate bill download, online payment methods, and troubleshooting. Free step-by-step guides for every SNGPL service in Pakistan.',
-  alternates: { canonical: 'https://sngplbillcheck.pk/guides' },
+  alternates: { canonical: 'https://www.checkgasbills.pk/guides' },
 };
 
 const guides = [
@@ -69,8 +69,8 @@ export default function GuidesPage() {
         '@context': 'https://schema.org',
         '@type': 'BreadcrumbList',
         itemListElement: [
-          { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://sngplbillcheck.pk' },
-          { '@type': 'ListItem', position: 2, name: 'SNGPL Guides', item: 'https://sngplbillcheck.pk/guides' },
+          { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://www.checkgasbills.pk' },
+          { '@type': 'ListItem', position: 2, name: 'SNGPL Guides', item: 'https://www.checkgasbills.pk/guides' },
         ],
       }) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({

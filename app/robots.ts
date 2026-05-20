@@ -18,7 +18,7 @@ export default function robots(): MetadataRoute.Robots {
         crawlDelay: 10,
       },
     ],
-    sitemap: 'https://sngplbillcheck.pk/sitemap-index',
-    host: 'https://sngplbillcheck.pk',
+    sitemap: 'https://www.checkgasbills.pk/sitemap-index',
+    host: 'https://www.checkgasbills.pk',
   };
 }

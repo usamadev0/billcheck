@@ -2,7 +2,7 @@ import { MetadataRoute } from 'next';
 import { CATEGORIES, CITIES } from '../lib/seo-data';
 
 export default function sitemap(): MetadataRoute.Sitemap {
-  const base = 'https://sngplbillcheck.pk';
+  const base = 'https://www.checkgasbills.pk';
   const now  = new Date();
 
   const corePages: MetadataRoute.Sitemap = [

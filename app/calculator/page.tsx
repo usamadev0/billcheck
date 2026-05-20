@@ -5,11 +5,11 @@ import Link from 'next/link';
 export const metadata: Metadata = {
   title: 'SNGPL Gas Bill Calculator 2026 — Estimate Monthly Bill Online',
   description: 'Calculate your SNGPL gas bill instantly. Enter HHM units or meter readings — full breakdown with GST, GIDC and slab rates. Free online tool 2026.',
-  alternates: { canonical: 'https://sngplbillcheck.pk/calculator' },
+  alternates: { canonical: 'https://www.checkgasbills.pk/calculator' },
   openGraph: {
     title: 'SNGPL Gas Bill Calculator 2026 — Estimate Monthly Gas Bill',
     description: 'Free SNGPL gas bill calculator. Enter HHM units or meter readings for a full breakdown with GST, GIDC, and OGRA slab rates.',
-    url: 'https://sngplbillcheck.pk/calculator',
+    url: 'https://www.checkgasbills.pk/calculator',
   },
   twitter: {
     card: 'summary_large_image',
@@ -71,8 +71,8 @@ export default function CalculatorPage() {
         '@context': 'https://schema.org',
         '@type': 'BreadcrumbList',
         itemListElement: [
-          { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://sngplbillcheck.pk' },
-          { '@type': 'ListItem', position: 2, name: 'Gas Bill Calculator', item: 'https://sngplbillcheck.pk/calculator' },
+          { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://www.checkgasbills.pk' },
+          { '@type': 'ListItem', position: 2, name: 'Gas Bill Calculator', item: 'https://www.checkgasbills.pk/calculator' },
         ],
       }) }} />
 

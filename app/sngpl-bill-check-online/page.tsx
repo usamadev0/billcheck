@@ -10,7 +10,7 @@ export const metadata: Metadata = {
   title: 'SNGPL Bill Check Online 2024 | Complete Step-by-Step Guide Pakistan',
   description: 'Learn how to check your SNGPL gas bill online in Pakistan. Step-by-step guide for desktop and mobile, consumer number help, duplicate bill download, troubleshooting and FAQs.',
   keywords: ['SNGPL bill check online', 'sui northern gas bill check', 'SNGPL online bill Pakistan', 'gas bill check online Pakistan', 'SNGPL bill checker'],
-  alternates: { canonical: 'https://sngplbillcheck.pk/sngpl-bill-check-online' },
+  alternates: { canonical: 'https://www.checkgasbills.pk/sngpl-bill-check-online' },
 };
 
 const toc = [
@@ -45,8 +45,8 @@ export default function SNGPLBillCheckOnlinePage() {
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({
         '@context': 'https://schema.org', '@type': 'BreadcrumbList',
         itemListElement: [
-          { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://sngplbillcheck.pk' },
-          { '@type': 'ListItem', position: 2, name: 'SNGPL Bill Check Online', item: 'https://sngplbillcheck.pk/sngpl-bill-check-online' },
+          { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://www.checkgasbills.pk' },
+          { '@type': 'ListItem', position: 2, name: 'SNGPL Bill Check Online', item: 'https://www.checkgasbills.pk/sngpl-bill-check-online' },
         ],
       }) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({

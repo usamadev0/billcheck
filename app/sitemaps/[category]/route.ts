@@ -53,7 +53,7 @@ export async function GET(
   }
 
   const slugs = getAllSlugsForCategory(category as Category);
-  const base  = 'https://sngplbillcheck.pk';
+  const base  = 'https://www.checkgasbills.pk';
 
   const urls = slugs.map(slug =>
     `  <url>

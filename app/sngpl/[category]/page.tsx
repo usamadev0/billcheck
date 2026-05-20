@@ -25,7 +25,7 @@ export async function generateMetadata({
   return {
     title: `SNGPL ${label} — All Cities Comprehensive Guide 2025`,
     description: `Complete SNGPL ${label.toLowerCase()} guides for all cities in Punjab, KPK, and Islamabad. Detailed city-specific information, step-by-step instructions, and expert tips for every consumer.`,
-    alternates: { canonical: `https://sngplbillcheck.pk/sngpl/${category}` },
+    alternates: { canonical: `https://www.checkgasbills.pk/sngpl/${category}` },
   };
 }
 

@@ -4,11 +4,11 @@ import Link from 'next/link';
 export const metadata: Metadata = {
   title: 'SNGPL Gas Bill Taxes Explained 2026 — GIDC, GST, OGRA Charges & Calculation',
   description: 'Understand every tax on your SNGPL gas bill: GIDC (10%), GST (17%), meter rent, and OGRA levies. Complete calculation guide with examples. Free reference 2026.',
-  alternates: { canonical: 'https://sngplbillcheck.pk/sngpl-taxes-explained' },
+  alternates: { canonical: 'https://www.checkgasbills.pk/sngpl-taxes-explained' },
   openGraph: {
     title: 'SNGPL Gas Bill Taxes Explained 2026 — GIDC, GST & All Charges',
     description: 'Comprehensive breakdown of every charge on your SNGPL gas bill — GIDC, GST, meter rent, OGRA regulation, and how tariff revisions happen.',
-    url: 'https://sngplbillcheck.pk/sngpl-taxes-explained',
+    url: 'https://www.checkgasbills.pk/sngpl-taxes-explained',
     siteName: 'SNGPL Bill Check Hub',
   },
 };
@@ -39,8 +39,8 @@ export default function TaxesExplainedPage() {
         '@context': 'https://schema.org',
         '@type': 'BreadcrumbList',
         itemListElement: [
-          { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://sngplbillcheck.pk' },
-          { '@type': 'ListItem', position: 2, name: 'Gas Bill Taxes Explained', item: 'https://sngplbillcheck.pk/sngpl-taxes-explained' },
+          { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://www.checkgasbills.pk' },
+          { '@type': 'ListItem', position: 2, name: 'Gas Bill Taxes Explained', item: 'https://www.checkgasbills.pk/sngpl-taxes-explained' },
         ],
       }) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({
@@ -48,10 +48,10 @@ export default function TaxesExplainedPage() {
         '@type': 'Article',
         headline: 'SNGPL Gas Bill Taxes Explained 2026 — GIDC, GST, OGRA Charges',
         description: 'Complete reference guide to every tax and charge on your SNGPL gas bill including GIDC, GST, meter rent, and OGRA tariff regulation.',
-        url: 'https://sngplbillcheck.pk/sngpl-taxes-explained',
+        url: 'https://www.checkgasbills.pk/sngpl-taxes-explained',
         datePublished: '2026-01-01',
         dateModified: new Date().toISOString().split('T')[0],
-        publisher: { '@type': 'Organization', name: 'SNGPL Bill Check Hub', url: 'https://sngplbillcheck.pk' },
+        publisher: { '@type': 'Organization', name: 'SNGPL Bill Check Hub', url: 'https://www.checkgasbills.pk' },
       }) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({
         '@context': 'https://schema.org',

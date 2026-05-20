@@ -13,7 +13,7 @@ function escapeXml(s: string) {
 }
 
 export async function GET() {
-  const base    = 'https://sngplbillcheck.pk';
+  const base    = 'https://www.checkgasbills.pk';
   const today   = new Date().toISOString().split('T')[0];
   const topCities = CITIES.slice(0, 5);
 

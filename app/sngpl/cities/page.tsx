@@ -5,7 +5,7 @@ import { CITIES } from '../../../lib/seo-data';
 export const metadata: Metadata = {
   title: 'SNGPL City Guides — All 44 Cities in Punjab, KPK & Islamabad 2025',
   description: 'Complete SNGPL consumer guides for all 44 cities. Bill check, consumer number, payment, duplicate bill and troubleshooting guides for every SNGPL city in Pakistan.',
-  alternates: { canonical: 'https://sngplbillcheck.pk/sngpl/cities' },
+  alternates: { canonical: 'https://www.checkgasbills.pk/sngpl/cities' },
 };
 
 const byProvince: Record<string, typeof CITIES> = {};
@@ -22,8 +22,8 @@ export default function CitiesIndexPage() {
         '@context': 'https://schema.org',
         '@type': 'BreadcrumbList',
         itemListElement: [
-          { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://sngplbillcheck.pk' },
-          { '@type': 'ListItem', position: 2, name: 'All City Guides', item: 'https://sngplbillcheck.pk/sngpl/cities' },
+          { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://www.checkgasbills.pk' },
+          { '@type': 'ListItem', position: 2, name: 'All City Guides', item: 'https://www.checkgasbills.pk/sngpl/cities' },
         ],
       }) }} />
 
