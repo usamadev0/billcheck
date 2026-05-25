@@ -9,7 +9,7 @@ export const revalidate = 86400;
 
 export async function GET() {
   const base  = 'https://www.checkgasbills.pk';
-  const today = new Date().toISOString().split('T')[0];
+  const today = '2026-05-25'; // update this when sitemaps change
 
   const sitemapUrls = [
     `${base}/sitemap.xml`,           // core + city hub pages

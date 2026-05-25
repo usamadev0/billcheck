@@ -12,6 +12,11 @@ import {
 export const dynamic = 'force-static';
 export const revalidate = 86400; // 24 h
 
+// Pre-build all 5 category sitemaps at deploy time
+export function generateStaticParams() {
+  return CATEGORIES.map(cat => ({ category: cat }));
+}
+
 // Build a rank map: city slug → priority tier
 const TOP5_SLUGS  = new Set(CITIES.slice(0,  5).map(c => c.slug));
 const TOP15_SLUGS = new Set(CITIES.slice(0, 15).map(c => c.slug));
