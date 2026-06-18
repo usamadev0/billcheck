@@ -10,7 +10,7 @@ import {
 } from '../../../lib/seo-data';
 
 export const dynamic = 'force-static';
-export const revalidate = 86400; // 24 h
+export const revalidate = 2592000; // 30 days
 
 // Pre-build all 5 category sitemaps at deploy time
 export function generateStaticParams() {
@@ -77,7 +77,7 @@ ${urls.join('\n')}
   return new NextResponse(xml, {
     headers: {
       'Content-Type': 'application/xml; charset=utf-8',
-      'Cache-Control': 'public, max-age=86400, s-maxage=86400',
+      'Cache-Control': 'public, max-age=2592000, s-maxage=2592000, stale-while-revalidate=86400',
     },
   });
 }
