@@ -91,7 +91,12 @@ export default function Footer() {
 
         <div className="border-t border-gray-800 pt-6 flex flex-col sm:flex-row items-center justify-between gap-3 text-xs text-gray-500">
           <p>© {year} SNGPL Bill Check Hub. All rights reserved.</p>
-          <p>Informational use only. No data scraping or storage of consumer data.</p>
+          <nav aria-label="Legal links" className="flex flex-wrap gap-4">
+            <Link href="/privacy-policy" className="hover:text-gray-300 transition-colors">Privacy Policy</Link>
+            <Link href="/terms" className="hover:text-gray-300 transition-colors">Terms of Use</Link>
+            <Link href="/about" className="hover:text-gray-300 transition-colors">About</Link>
+            <Link href="/contact" className="hover:text-gray-300 transition-colors">Contact</Link>
+          </nav>
         </div>
       </div>
     </footer>

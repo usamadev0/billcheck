@@ -55,6 +55,9 @@ export default function BillChecker({ compact = false }: { compact?: boolean }) 
         <div className="flex flex-col sm:flex-row gap-2 items-stretch">
           <input
             type="tel" inputMode="numeric" autoComplete="off"
+            id="consumerNoCompact"
+            aria-label="SNGPL consumer number (10 to 13 digits)"
+            aria-describedby={err ? 'consumerNoCompactError' : undefined}
             value={val}
             onChange={e => { setVal(e.target.value.replace(/\D/g, '')); setErr(''); setRedirected(false); }}
             onKeyDown={e => e.key === 'Enter' && handleCheck()}
@@ -66,7 +69,7 @@ export default function BillChecker({ compact = false }: { compact?: boolean }) 
             Check Bill →
           </button>
         </div>
-        {err && <p className="text-xs text-red-600 mt-1">{err}</p>}
+        {err && <p id="consumerNoCompactError" role="alert" className="text-xs text-red-600 mt-1">{err}</p>}
         {redirected && (
           <p className="text-xs text-green-700 bg-green-50 border border-green-200 rounded-lg px-3 py-2 flex items-center gap-1.5">
             <svg className="w-3.5 h-3.5 shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7"/></svg>

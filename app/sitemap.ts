@@ -20,6 +20,10 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${base}/sngpl/cities`,           lastModified: LAST_UPDATED, changeFrequency: 'weekly',  priority: 0.85 },
     { url: `${base}/hhm-explained`,          lastModified: LAST_UPDATED, changeFrequency: 'monthly', priority: 0.85 },
     { url: `${base}/sngpl-taxes-explained`,  lastModified: LAST_UPDATED, changeFrequency: 'monthly', priority: 0.85 },
+    { url: `${base}/about`,                  lastModified: LAST_UPDATED, changeFrequency: 'yearly',  priority: 0.6 },
+    { url: `${base}/contact`,                lastModified: LAST_UPDATED, changeFrequency: 'yearly',  priority: 0.6 },
+    { url: `${base}/privacy-policy`,         lastModified: LAST_UPDATED, changeFrequency: 'yearly',  priority: 0.3 },
+    { url: `${base}/terms`,                  lastModified: LAST_UPDATED, changeFrequency: 'yearly',  priority: 0.3 },
   ];
 
   const categoryPages: MetadataRoute.Sitemap = CATEGORIES.map(cat => ({
