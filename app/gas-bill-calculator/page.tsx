@@ -196,7 +196,7 @@ export default function GasBillCalculatorPage() {
         <section id="sngpl-tariff-slabs" className="mb-14">
           <h2 className="text-2xl md:text-3xl font-black text-gray-900 mb-4">SNGPL Tariff Slabs 2024-25 — Complete Rate Table</h2>
           <div className="prose-content">
-            <p>SNGPL&apos;s residential tariff is structured in progressive slabs set by OGRA (Oil and Gas Regulatory Authority). Here is the complete rate structure for 2024-25:</p>
+            <p>SNGPL&apos;s residential tariff is structured in progressive slabs set by OGRA (Oil and Gas Regulatory Authority). The table below reflects this calculator&apos;s working rate assumptions. For a dated, sourced history of OGRA&apos;s actual tariff determinations and how they reach your bill, see our <Link href="/tariffs">Pakistan Gas Tariffs hub</Link>.</p>
 
             <table>
               <thead>

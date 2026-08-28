@@ -61,9 +61,46 @@ export default function AboutPage() {
         </section>
 
         <section>
+          <h2 className="text-2xl font-bold text-gray-900 mb-4">Our Scope</h2>
+          <p>
+            This site currently focuses on <strong>SNGPL</strong> — the utility serving Punjab, Khyber
+            Pakhtunkhwa, Azad Jammu &amp; Kashmir, and the Islamabad Capital Territory. Sindh and
+            Balochistan are served by a different company, <strong>SSGC</strong> (Sui Southern Gas
+            Company); step-by-step SSGC guides are planned but not yet published here. Where we reference
+            SSGC or OGRA today, it is for regulatory or company context only — see our{' '}
+            <Link href="/sources-references">Sources &amp; References</Link> page for exactly what each
+            source is used for.
+          </p>
+        </section>
+
+        <section>
+          <h2 className="text-2xl font-bold text-gray-900 mb-4">Independence &amp; Editorial Standards</h2>
+          <p>
+            We are an independent publisher, not an arm of any utility company or regulator. What we
+            publish is checked against official sources before it goes live, and revised when those
+            sources change — not on a fixed schedule for its own sake. The specifics are documented on
+            three pages we treat as the foundation of everything else on this site:
+          </p>
+          <div className="grid sm:grid-cols-3 gap-3 mt-4">
+            <Link href="/editorial-policy" className="block p-4 border border-gray-200 rounded-xl hover:border-blue-300 hover:bg-blue-50 transition-colors">
+              <div className="font-semibold text-blue-700 text-sm mb-1">Editorial Policy</div>
+              <div className="text-xs text-gray-500">The standards every page follows</div>
+            </Link>
+            <Link href="/research-methodology" className="block p-4 border border-gray-200 rounded-xl hover:border-blue-300 hover:bg-blue-50 transition-colors">
+              <div className="font-semibold text-blue-700 text-sm mb-1">Research Methodology</div>
+              <div className="text-xs text-gray-500">How we gather and verify information</div>
+            </Link>
+            <Link href="/sources-references" className="block p-4 border border-gray-200 rounded-xl hover:border-blue-300 hover:bg-blue-50 transition-colors">
+              <div className="font-semibold text-blue-700 text-sm mb-1">Sources &amp; References</div>
+              <div className="text-xs text-gray-500">Every official source we rely on</div>
+            </Link>
+          </div>
+        </section>
+
+        <section>
           <h2 className="text-2xl font-bold text-gray-900 mb-4">Our Expertise</h2>
           <p>
-            Our team has deep knowledge of Pakistan&apos;s gas utility sector, including:
+            This site&apos;s guides cover:
           </p>
           <ul className="list-disc pl-5 mt-3 space-y-2">
             <li>SNGPL tariff structures and slab-based billing</li>
@@ -72,6 +109,10 @@ export default function AboutPage() {
             <li>Official SNGPL portal workflows and consumer self-service systems</li>
             <li>Regional gas billing patterns across 44+ cities</li>
           </ul>
+          <p className="mt-3 text-sm text-gray-500">
+            See our <Link href="/research-methodology" className="text-blue-600 hover:underline">Research
+            Methodology</Link> for how this information is gathered and checked.
+          </p>
         </section>
 
         <section>
@@ -79,8 +120,9 @@ export default function AboutPage() {
           <div className="bg-amber-50 border border-amber-200 rounded-xl p-5">
             <p className="text-amber-900 font-medium">
               ⚠️ SNGPL Bill Check Hub is <strong>not affiliated with</strong> Sui Northern Gas Pipelines
-              Limited (SNGPL) or any Pakistani government body. This is an independent informational
-              resource. For official billing queries, contact SNGPL directly at{' '}
+              Limited (SNGPL), Sui Southern Gas Company (SSGC), the Oil and Gas Regulatory Authority
+              (OGRA), or any Pakistani government body. This is an independent informational resource. For
+              official billing queries, contact SNGPL directly at{' '}
               <strong>1199</strong> or visit{' '}
               <a href="https://www.sngpl.com.pk" target="_blank" rel="noopener noreferrer" className="text-blue-700 underline">
                 sngpl.com.pk

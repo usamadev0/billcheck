@@ -134,6 +134,8 @@ export default function TaxesExplainedPage() {
 
           <p>Consumers wishing to participate in the tariff revision process can register comments on OGRA's website during the public consultation period. Consumer Rights Commission of Pakistan (CRCP) also files representations at OGRA hearings on behalf of domestic consumers.</p>
 
+          <p>For a fuller explanation of OGRA itself — including the difference between the price OGRA determines and the price the Federal Government actually notifies to consumers — see our <Link href="/ogra" className="text-blue-600 hover:underline">dedicated OGRA authority page</Link>. For a fuller profile of SNGPL itself — including its official new-connection process, complaint channels, and contact details — see our <Link href="/companies/sngpl" className="text-blue-600 hover:underline">SNGPL company profile</Link>. For a dated, sourced history of how these tariffs have moved over time, see our <Link href="/tariffs" className="text-blue-600 hover:underline">Pakistan Gas Tariffs hub</Link>.</p>
+
           <h2>Complete Bill Calculation Example</h2>
           <p>Here is a complete calculation example for a household consuming <strong>450 HHM</strong> in December (winter peak):</p>
           <ul>
