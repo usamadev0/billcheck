@@ -299,7 +299,7 @@ export default function ComplaintsHubPage() {
               </thead>
               <tbody className="divide-y divide-gray-100">
                 {ssgcTimelines.map((r, i) => (
-                  <tr key={i} className={i % 2 === 0 ? 'bg-white' : 'bg-gray-50'}>
+                  <tr key={i} className={i % 2 === 0 ? 'bg-white' : 'bg-marine-50'}>
                     <td className="p-3 text-xs font-semibold text-marine-700 whitespace-nowrap">{r.dept}</td>
                     <td className="p-3">{r.type}</td>
                     <td className="p-3 text-gray-600">{r.timeline}</td>

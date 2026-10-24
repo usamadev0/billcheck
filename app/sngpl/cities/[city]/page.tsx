@@ -284,7 +284,7 @@ export default async function CityHubPage({
               { q: `My SNGPL bill is very high this month in ${city.name}. Why?`, a: `Common reasons: winter heating increased consumption into higher tariff slabs, an estimated reading was used that overestimated usage, or arrears from a previous month were added. Compare your meter reading to the billed reading — if different, call 1199.` },
             ].map((faq, i) => (
               <details key={i} className="group bg-white border border-gray-200 rounded-xl overflow-hidden">
-                <summary className="flex items-center justify-between cursor-pointer p-4 hover:bg-gray-50 transition-colors">
+                <summary className="flex items-center justify-between cursor-pointer p-4 hover:bg-marine-50 transition-colors">
                   <span className="font-semibold text-gray-900 text-sm pr-4">{faq.q}</span>
                   <span className="flex-shrink-0 text-marine-500 group-open:rotate-180 transition-transform">▾</span>
                 </summary>
@@ -304,7 +304,7 @@ export default async function CityHubPage({
               <Link
                 key={c.slug}
                 href={`/sngpl/cities/${c.slug}`}
-                className="block p-3 bg-gray-50 hover:bg-marine-50 border border-gray-200 hover:border-marine-300 rounded-xl transition-all no-underline"
+                className="block p-3 bg-marine-50 hover:bg-marine-50 border border-gray-200 hover:border-marine-300 rounded-xl transition-all no-underline"
               >
                 <div className="font-semibold text-gray-900 text-xs">{c.name}</div>
                 <div className="text-[11px] text-gray-400 mt-0.5">{c.province}</div>

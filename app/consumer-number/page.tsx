@@ -183,7 +183,7 @@ export default function ConsumerNumberPage() {
         <div className="not-prose space-y-3 mt-6">
           {faqs.map((f, i) => (
             <details key={i} className="group border border-gray-200 rounded-xl overflow-hidden bg-white">
-              <summary className="flex items-center justify-between cursor-pointer p-4 hover:bg-gray-50 transition-colors select-none">
+              <summary className="flex items-center justify-between cursor-pointer p-4 hover:bg-marine-50 transition-colors select-none">
                 <span className="font-semibold text-gray-900 text-sm pr-4">{f.q}</span>
                 <span className="flex-shrink-0 text-marine-500 group-open:rotate-180 transition-transform duration-200">▾</span>
               </summary>
@@ -197,7 +197,7 @@ export default function ConsumerNumberPage() {
 
       {/* Internal links */}
       <div className="max-w-4xl mx-auto px-4 pb-12">
-        <div className="bg-gray-50 rounded-2xl p-6 grid sm:grid-cols-3 gap-4 text-center border border-gray-200">
+        <div className="bg-marine-50 rounded-2xl p-6 grid sm:grid-cols-3 gap-4 text-center border border-gray-200">
           {[
             { href: '/',               label: '🔍 Check Bill Now',    desc: 'Official portal redirect' },
             { href: '/duplicate-bill', label: '📄 Duplicate Bill',    desc: 'Download your bill PDF' },

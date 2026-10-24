@@ -248,7 +248,7 @@ export default function BillCheckPage() {
             <div className="not-prose space-y-3">
               {faqs.map((f, i) => (
                 <details key={i} className="group border border-gray-200 rounded-xl overflow-hidden bg-white">
-                  <summary className="flex items-center justify-between cursor-pointer p-4 hover:bg-gray-50 transition-colors select-none">
+                  <summary className="flex items-center justify-between cursor-pointer p-4 hover:bg-marine-50 transition-colors select-none">
                     <span className="font-semibold text-gray-900 text-sm pr-4">{f.q}</span>
                     <span className="flex-shrink-0 text-marine-500 group-open:rotate-180 transition-transform duration-200">▾</span>
                   </summary>

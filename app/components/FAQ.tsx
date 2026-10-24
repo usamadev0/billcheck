@@ -6,7 +6,7 @@ export interface FAQItem { q: string; a: string; }
 export default function FAQ({ items, title = 'Frequently Asked Questions' }: { items: FAQItem[]; title?: string }) {
   const [open, setOpen] = useState<number | null>(0);
   return (
-    <section className="section-pad bg-gray-50">
+    <section className="section-pad bg-marine-50">
       <div className="max-w-3xl mx-auto px-4">
         <div className="text-center mb-10">
           <span className="badge bg-marine-100 text-marine-700 mb-3">FAQ</span>
@@ -20,7 +20,7 @@ export default function FAQ({ items, title = 'Frequently Asked Questions' }: { i
           {items.map((item, i) => (
             <div key={i} className="border border-gray-200 rounded-xl overflow-hidden hover:border-marine-200 transition-colors">
               <button onClick={() => setOpen(open === i ? null : i)}
-                className="w-full flex items-center justify-between px-5 py-4 text-left bg-white hover:bg-gray-50 transition-colors"
+                className="w-full flex items-center justify-between px-5 py-4 text-left bg-white hover:bg-marine-50 transition-colors"
                 aria-expanded={open === i}>
                 <span className="font-semibold text-gray-900 text-sm md:text-base pr-4">{item.q}</span>
                 <svg className={`w-5 h-5 text-marine-600 shrink-0 transition-transform duration-200 ${open === i ? 'rotate-180' : ''}`}

@@ -79,7 +79,7 @@ export default function GasBillCalculatorPage() {
       </section>
 
       {/* Calculator section */}
-      <section id="calculator-tool" className="section-pad bg-gray-50">
+      <section id="calculator-tool" className="section-pad bg-marine-50">
         <div className="max-w-4xl mx-auto px-4">
           <div className="text-center mb-10">
             <h2 className="text-2xl md:text-3xl font-bold text-gray-900">SNGPL Gas Bill Estimator</h2>
@@ -323,7 +323,7 @@ export default function GasBillCalculatorPage() {
                 { reason: 'Accumulated Arrears', detail: 'If previous bills were partially paid or missed, arrears accumulate and are added to current bills, making them appear much higher. Check the arrears section of your bill and settle outstanding balances to normalize billing.' },
               ].map(item => (
                 <details key={item.reason} className="border border-gray-200 rounded-xl overflow-hidden group">
-                  <summary className="flex items-center justify-between px-5 py-4 cursor-pointer font-semibold text-gray-900 text-sm hover:bg-gray-50 transition-colors list-none">
+                  <summary className="flex items-center justify-between px-5 py-4 cursor-pointer font-semibold text-gray-900 text-sm hover:bg-marine-50 transition-colors list-none">
                     <span>❓ {item.reason}</span>
                     <svg className="w-4 h-4 text-gray-400 group-open:rotate-180 transition-transform" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7"/></svg>
                   </summary>
