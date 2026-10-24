@@ -189,7 +189,7 @@ export default function TariffsHubPage() {
             against a slab-rate structure — higher consumption bands are billed at a higher per-HHM rate. A
             fixed monthly charge and applicable taxes are added on top. We walk through this calculation, with
             a worked example, on our <Link href="/sngpl-taxes-explained">Gas Bill Taxes Explained</Link> guide,
-            and our <Link href="/gas-bill-calculator">bill calculator</Link> lets you estimate a bill using the
+            and our <Link href="/calculator">bill calculator</Link> lets you estimate a bill using the
             site&apos;s working slab assumptions.
           </p>
           <div className="warning-box">
@@ -204,7 +204,7 @@ export default function TariffsHubPage() {
           </div>
           <div className="warning-box">
             <p className="mb-0 text-sm">
-              <strong>On the current domestic slab table:</strong> Our <Link href="/gas-bill-calculator">bill
+              <strong>On the current domestic slab table:</strong> Our <Link href="/calculator">bill
               calculator</Link> uses a working slab-rate table set in an earlier phase of this site&apos;s
               development. We have not re-verified every individual slab rate in that table against a specific,
               dated OGRA/SNGPL notification this session, so we present it as an estimator, not as a confirmed
@@ -296,7 +296,7 @@ export default function TariffsHubPage() {
             that subtotal, then + GST on the subtotal-plus-GIDC.</strong> Each of those inputs traces back to a
             different authority — the slab rate and fixed charge to OGRA/Federal Government notification, GIDC
             to federal levy legislation, and GST to FBR. Use our{' '}
-            <Link href="/gas-bill-calculator">gas bill calculator</Link> to see this applied to a specific
+            <Link href="/calculator">gas bill calculator</Link> to see this applied to a specific
             consumption figure, or our <Link href="/calculator">general calculator tool</Link>.
           </p>
 

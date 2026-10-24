@@ -14,8 +14,8 @@ export default function NotFound() {
       <p className="text-gray-500 max-w-sm mb-8">The page you&apos;re looking for doesn&apos;t exist. Let&apos;s get you back on track.</p>
       <div className="flex flex-wrap gap-3 justify-center">
         <Link href="/" className="btn-primary">🏠 Home</Link>
-        <Link href="/sngpl-bill-check-online" className="btn-secondary">🔍 Bill Check Guide</Link>
-        <Link href="/gas-bill-calculator" className="btn-secondary">🧮 Calculator</Link>
+        <Link href="/bill-check" className="btn-secondary">🔍 Bill Check Guide</Link>
+        <Link href="/calculator" className="btn-secondary">🧮 Calculator</Link>
       </div>
     </div>
   );
