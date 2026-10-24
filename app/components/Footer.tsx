@@ -72,11 +72,11 @@ export default function Footer() {
             <h3 className="font-semibold text-white mt-5 mb-3 text-sm">City Guides</h3>
             <ul className="space-y-1.5 text-sm">
               {[
-                { href: '/sngpl/bill-check/lahore-check-online',     label: 'Lahore' },
-                { href: '/sngpl/bill-check/islamabad-check-online',  label: 'Islamabad' },
-                { href: '/sngpl/bill-check/rawalpindi-check-online', label: 'Rawalpindi' },
-                { href: '/sngpl/bill-check/peshawar-check-online',   label: 'Peshawar' },
-                { href: '/sngpl/bill-check/faisalabad-check-online', label: 'Faisalabad' },
+                { href: '/sngpl/cities/lahore',     label: 'Lahore' },
+                { href: '/sngpl/cities/islamabad',  label: 'Islamabad' },
+                { href: '/sngpl/cities/rawalpindi', label: 'Rawalpindi' },
+                { href: '/sngpl/cities/peshawar',   label: 'Peshawar' },
+                { href: '/sngpl/cities/faisalabad', label: 'Faisalabad' },
               ].map(l => (
                 <li key={l.href}>
                   <Link href={l.href} className="hover:text-marine-400 transition-colors text-gray-400">{l.label} SNGPL Guide</Link>

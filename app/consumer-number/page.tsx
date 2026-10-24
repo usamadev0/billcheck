@@ -3,8 +3,8 @@ import Link from 'next/link';
 import BillChecker from '../components/BillChecker';
 
 export const metadata: Metadata = {
-  title: 'SNGPL Consumer Number — Find, Recover & Understand | Complete Guide',
-  description: 'Find your SNGPL consumer number on your gas bill, meter card, or via helpline 1199. Format explained, recovery steps, and all usage methods. Free guide.',
+  title: 'SNGPL Consumer Number, Account ID & Reference Number Guide',
+  description: 'Find your SNGPL consumer number (11, 12 or 13-digit), account ID, or bill reference number on your gas bill, meter card, or via helpline 1199. Format explained, recovery steps, and all usage methods. Free guide.',
   alternates: { canonical: 'https://checkgasbills.pk/consumer-number' },
   openGraph: {
     title: 'SNGPL Consumer Number Guide — Find, Recover & Understand',

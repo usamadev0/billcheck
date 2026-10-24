@@ -4,12 +4,12 @@ import BillChecker from './components/BillChecker';
 import SectionImage from './components/SectionImage';
 
 export const metadata: Metadata = {
-  title: 'SNGPL Bill Check Online | Pakistan Gas Bill Hub — Free Tool',
-  description: 'Check SNGPL gas bill online instantly. Enter consumer number for official portal redirect. Duplicate bill, payment guide & calculator. Free — no login.',
+  title: 'Sui Gas Bill Check Online (SNGPL) 2026 | Pakistan Gas Bill Hub',
+  description: 'Check your Sui Gas (SNGPL) bill online instantly — 11, 12 or 14-digit consumer number, account ID or reference number. Official portal redirect, duplicate bill, payment guide & calculator. Free — no login.',
   alternates: { canonical: 'https://checkgasbills.pk' },
   openGraph: {
-    title: 'SNGPL Bill Check Online | Pakistan Gas Bill Hub',
-    description: 'Check SNGPL gas bill online instantly. Consumer number guide, duplicate bill, payment methods & calculator. 100% free Pakistan gas utility resource.',
+    title: 'Sui Gas Bill Check Online (SNGPL) 2026 | Pakistan Gas Bill Hub',
+    description: 'Check your Sui Gas (SNGPL) bill online instantly using your consumer number, account ID or reference number. Duplicate bill, payment methods & calculator. 100% free.',
     url: 'https://checkgasbills.pk',
     siteName: 'SNGPL Bill Check Hub',
     locale: 'en_PK',
@@ -61,25 +61,28 @@ const faqItems = [
   { q: 'What is HHM in SNGPL gas bill?', a: 'HHM stands for Hundred Heat Meter — the unit SNGPL uses to measure natural gas consumption. One HHM equals 100 cubic feet of gas. Your meter display shows cumulative HHM readings. The difference between current and previous month readings gives your HHM consumed, which is applied to SNGPL\'s slab tariff to calculate your bill.' },
   { q: 'What is GIDC on my gas bill?', a: 'GIDC is the Gas Infrastructure Development Cess — a government levy charged at 10% of your base gas consumption amount. It funds gas infrastructure development projects across Pakistan. GIDC appears as a separate line item on your SNGPL bill and is applied before the 17% GST calculation.' },
   { q: 'What happens if I miss the SNGPL payment due date?', a: 'A 10% late payment surcharge is added to your next bill for overdue payment. If the bill remains unpaid for multiple months, SNGPL may issue a disconnection notice and eventually disconnect your gas supply. After disconnection, a reconnection fee applies. Always pay by the due date printed on your bill.' },
+  { q: 'Is Sui Gas bill the same as SNGPL bill?', a: '"Sui Gas" is the common name Pakistani consumers use for natural gas supplied by Sui Northern Gas Pipelines Limited (SNGPL) in Punjab, KPK, and Islamabad, or Sui Southern Gas Company (SSGC) in Sindh and Balochistan. If your bill is issued by SNGPL, "Sui Gas bill" and "SNGPL bill" refer to the exact same bill — there is no separate "Sui Gas" company billing you.' },
+  { q: 'My consumer number, account ID, and reference number look different — which one do I use?', a: 'On most SNGPL bills, the "Consumer Number" (10–13 digits, labeled "Consumer No." or "Cust. No.") is the one used for online bill checking and payments. Some bills also print a separate "Reference Number" or internal account ID for bank reconciliation — these are not interchangeable with the consumer number. If a payment channel asks for a different field than the consumer number, check the specific label printed next to each number on your bill, or call 1199 to confirm which one applies to your connection.' },
+  { q: 'Why does my SNGPL consumer number have a different number of digits than someone else\'s?', a: 'Consumer number length (typically 10 to 13 digits) depends on when your connection was established and which SNGPL distribution circle administers it — older connections and newer ones can have different digit counts. This is normal. Always use the exact number printed on your own bill rather than assuming a fixed length.' },
 ];
 
 const cities = [
-  { city: 'Lahore',      province: 'Punjab',  href: '/sngpl/bill-check/lahore-check-online' },
-  { city: 'Islamabad',   province: 'Capital', href: '/sngpl/bill-check/islamabad-check-online' },
-  { city: 'Rawalpindi',  province: 'Punjab',  href: '/sngpl/bill-check/rawalpindi-check-online' },
-  { city: 'Faisalabad',  province: 'Punjab',  href: '/sngpl/bill-check/faisalabad-check-online' },
-  { city: 'Peshawar',    province: 'KPK',     href: '/sngpl/bill-check/peshawar-check-online' },
-  { city: 'Gujranwala',  province: 'Punjab',  href: '/sngpl/bill-check/gujranwala-check-online' },
-  { city: 'Sialkot',     province: 'Punjab',  href: '/sngpl/bill-check/sialkot-check-online' },
-  { city: 'Multan',      province: 'Punjab',  href: '/sngpl/bill-check/multan-check-online' },
-  { city: 'Abbottabad',  province: 'KPK',     href: '/sngpl/bill-check/abbottabad-check-online' },
-  { city: 'Sargodha',    province: 'Punjab',  href: '/sngpl/bill-check/sargodha-check-online' },
-  { city: 'Bahawalpur',  province: 'Punjab',  href: '/sngpl/bill-check/bahawalpur-check-online' },
-  { city: 'Mardan',      province: 'KPK',     href: '/sngpl/bill-check/mardan-check-online' },
-  { city: 'Gujrat',      province: 'Punjab',  href: '/sngpl/bill-check/gujrat-check-online' },
-  { city: 'Sheikhupura', province: 'Punjab',  href: '/sngpl/bill-check/sheikhupura-check-online' },
-  { city: 'Sahiwal',     province: 'Punjab',  href: '/sngpl/bill-check/sahiwal-check-online' },
-  { city: 'Nowshera',    province: 'KPK',     href: '/sngpl/bill-check/nowshera-check-online' },
+  { city: 'Lahore',      province: 'Punjab',  href: '/sngpl/cities/lahore' },
+  { city: 'Islamabad',   province: 'Capital', href: '/sngpl/cities/islamabad' },
+  { city: 'Rawalpindi',  province: 'Punjab',  href: '/sngpl/cities/rawalpindi' },
+  { city: 'Faisalabad',  province: 'Punjab',  href: '/sngpl/cities/faisalabad' },
+  { city: 'Peshawar',    province: 'KPK',     href: '/sngpl/cities/peshawar' },
+  { city: 'Gujranwala',  province: 'Punjab',  href: '/sngpl/cities/gujranwala' },
+  { city: 'Sialkot',     province: 'Punjab',  href: '/sngpl/cities/sialkot' },
+  { city: 'Multan',      province: 'Punjab',  href: '/sngpl/cities/multan' },
+  { city: 'Abbottabad',  province: 'KPK',     href: '/sngpl/cities/abbottabad' },
+  { city: 'Sargodha',    province: 'Punjab',  href: '/sngpl/cities/sargodha' },
+  { city: 'Bahawalpur',  province: 'Punjab',  href: '/sngpl/cities/bahawalpur' },
+  { city: 'Mardan',      province: 'KPK',     href: '/sngpl/cities/mardan' },
+  { city: 'Gujrat',      province: 'Punjab',  href: '/sngpl/cities/gujrat' },
+  { city: 'Sheikhupura', province: 'Punjab',  href: '/sngpl/cities/sheikhupura' },
+  { city: 'Sahiwal',     province: 'Punjab',  href: '/sngpl/cities/sahiwal' },
+  { city: 'Nowshera',    province: 'KPK',     href: '/sngpl/cities/nowshera' },
 ];
 
 /* ─── COMPONENT ─────────────────────────────────────────────────────────── */
@@ -142,11 +145,11 @@ export default function HomePage() {
                 Free · Official Redirect · No Data Stored
               </div>
               <h1 className="text-3xl sm:text-4xl xl:text-5xl font-black leading-tight mb-4">
-                Check Your SNGPL Gas Bill{' '}
+                Check Your Sui Gas (SNGPL) Bill{' '}
                 <span className="text-yellow-300">Online Instantly</span>
               </h1>
               <p className="text-marine-100 text-base md:text-lg mb-6 leading-relaxed max-w-lg mx-auto lg:mx-0">
-                Enter your consumer number and get redirected straight to the official SNGPL portal — no registration, no waiting, completely free.
+                Enter your consumer number, account ID, or bill reference number and get redirected straight to the official SNGPL portal — no registration, no waiting, completely free.
               </p>
               <div className="flex flex-wrap gap-3 justify-center lg:justify-start mb-7">
                 <Link href="#checker"
