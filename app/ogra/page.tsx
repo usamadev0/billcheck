@@ -91,7 +91,7 @@ export default function OgraPage() {
           </p>
         </div>
 
-        <div className="bg-marine-50 border border-marine-200 rounded-2xl p-4 mb-10">
+        <div className="bg-marine-100 border border-marine-200 rounded-2xl p-4 mb-10">
           <h3 className="font-bold text-marine-900 text-sm mb-3">On this page</h3>
           <ol className="grid sm:grid-cols-2 gap-x-6 gap-y-1">
             {toc.map((item, i) => (
@@ -217,19 +217,19 @@ export default function OgraPage() {
 
           <h2 id="resources">Official OGRA Resources</h2>
           <div className="grid sm:grid-cols-2 gap-3 not-prose">
-            <a href="https://ogra.org.pk" target="_blank" rel="noopener noreferrer" className="block p-4 bg-white rounded-xl border border-gray-200 hover:border-marine-300 hover:bg-marine-50 transition-colors">
+            <a href="https://ogra.org.pk" target="_blank" rel="noopener noreferrer" className="block p-4 bg-white rounded-xl border border-gray-200 hover:border-marine-300 hover:bg-marine-100 transition-colors">
               <div className="font-semibold text-marine-700 text-sm mb-1">OGRA Official Website ↗</div>
               <div className="text-xs text-gray-500">ogra.org.pk</div>
             </a>
-            <a href="https://www.ogra.org.pk/introduction" target="_blank" rel="noopener noreferrer" className="block p-4 bg-white rounded-xl border border-gray-200 hover:border-marine-300 hover:bg-marine-50 transition-colors">
+            <a href="https://www.ogra.org.pk/introduction" target="_blank" rel="noopener noreferrer" className="block p-4 bg-white rounded-xl border border-gray-200 hover:border-marine-300 hover:bg-marine-100 transition-colors">
               <div className="font-semibold text-marine-700 text-sm mb-1">OGRA — Introduction ↗</div>
               <div className="text-xs text-gray-500">ogra.org.pk/introduction</div>
             </a>
-            <a href="https://ogra.org.pk/ordinance" target="_blank" rel="noopener noreferrer" className="block p-4 bg-white rounded-xl border border-gray-200 hover:border-marine-300 hover:bg-marine-50 transition-colors">
+            <a href="https://ogra.org.pk/ordinance" target="_blank" rel="noopener noreferrer" className="block p-4 bg-white rounded-xl border border-gray-200 hover:border-marine-300 hover:bg-marine-100 transition-colors">
               <div className="font-semibold text-marine-700 text-sm mb-1">OGRA Ordinance, 2002 (amended, full text) ↗</div>
               <div className="text-xs text-gray-500">ogra.org.pk/ordinance</div>
             </a>
-            <Link href="/sngpl-taxes-explained" className="block p-4 bg-white rounded-xl border border-gray-200 hover:border-marine-300 hover:bg-marine-50 transition-colors">
+            <Link href="/sngpl-taxes-explained" className="block p-4 bg-white rounded-xl border border-gray-200 hover:border-marine-300 hover:bg-marine-100 transition-colors">
               <div className="font-semibold text-marine-700 text-sm mb-1">How OGRA Tariff Regulation Affects Your Bill</div>
               <div className="text-xs text-gray-500">Our existing guide to gas bill taxes</div>
             </Link>
@@ -259,7 +259,7 @@ export default function OgraPage() {
           </div>
         </article>
 
-        <section className="mt-12 bg-marine-50 rounded-2xl p-6 border border-marine-100">
+        <section className="mt-12 bg-marine-100 rounded-2xl p-6 border border-marine-100">
           <h3 className="font-bold text-marine-900 mb-4">Related Pages</h3>
           <div className="grid sm:grid-cols-3 gap-3">
             <Link href="/government-sources" className="block p-4 bg-white rounded-xl border border-marine-100 hover:shadow-sm transition-shadow">

@@ -88,7 +88,7 @@ export default function CalculatorPage() {
       </section>
 
       {/* Breadcrumb */}
-      <nav className="bg-marine-50 border-b border-gray-100 py-2 px-4 text-sm text-gray-500">
+      <nav className="bg-marine-100 border-b border-gray-100 py-2 px-4 text-sm text-gray-500">
         <div className="max-w-5xl mx-auto flex items-center gap-1">
           <Link href="/" className="hover:text-marine-600">Home</Link>
           <span>/</span>
@@ -127,7 +127,7 @@ export default function CalculatorPage() {
             </thead>
             <tbody>
               {slabTable.map((r, i) => (
-                <tr key={r.slab} className={`${i % 2 === 0 ? 'bg-white' : 'bg-marine-50'} border-t border-gray-100`}>
+                <tr key={r.slab} className={`${i % 2 === 0 ? 'bg-white' : 'bg-marine-100'} border-t border-gray-100`}>
                   <td className="px-4 py-3 font-bold text-marine-700">{r.slab}</td>
                   <td className="px-4 py-3 font-semibold text-gray-900">{r.range}</td>
                   <td className="px-4 py-3 text-gray-700">{r.rate}</td>
@@ -217,7 +217,7 @@ export default function CalculatorPage() {
             </thead>
             <tbody>
               {appliances.map((a, i) => (
-                <tr key={a.name} className={`${i % 2 === 0 ? 'bg-white' : 'bg-marine-50'} border-t border-gray-100`}>
+                <tr key={a.name} className={`${i % 2 === 0 ? 'bg-white' : 'bg-marine-100'} border-t border-gray-100`}>
                   <td className="px-4 py-3 font-semibold text-gray-900">{a.name}</td>
                   <td className="px-4 py-3 text-marine-700 font-bold">{a.usage}</td>
                   <td className="px-4 py-3 text-gray-500 hidden sm:table-cell">{a.season}</td>
@@ -274,7 +274,7 @@ export default function CalculatorPage() {
         <div className="not-prose space-y-3 mt-6">
           {faqItems.map((f, i) => (
             <details key={i} className="group bg-white border border-gray-200 rounded-2xl overflow-hidden">
-              <summary className="flex items-center justify-between cursor-pointer p-5 hover:bg-marine-50 transition-colors select-none">
+              <summary className="flex items-center justify-between cursor-pointer p-5 hover:bg-marine-100 transition-colors select-none">
                 <span className="font-semibold text-gray-900 text-sm pr-4">{f.q}</span>
                 <span className="flex-shrink-0 text-marine-500 group-open:rotate-180 transition-transform duration-200 text-lg leading-none">▾</span>
               </summary>

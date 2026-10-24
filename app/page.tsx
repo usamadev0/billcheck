@@ -149,7 +149,7 @@ export default function HomePage() {
               </p>
               <div className="flex flex-wrap gap-3 justify-center lg:justify-start mb-7">
                 <Link href="#checker"
-                  className="bg-white text-marine-700 font-bold px-6 py-3 rounded-xl hover:bg-marine-50 transition-colors text-sm shadow-lg">
+                  className="bg-white text-marine-700 font-bold px-6 py-3 rounded-xl hover:bg-marine-100 transition-colors text-sm shadow-lg">
                   Check Bill Now ↓
                 </Link>
                 <Link href="/guides"
@@ -224,7 +224,7 @@ export default function HomePage() {
       </section>
 
       {/* ══════════════════════ QUICK ACCESS CARDS ══════════════════════ */}
-      <section className="section-pad bg-marine-50">
+      <section className="section-pad bg-marine-100">
         <div className="max-w-7xl mx-auto px-4 sm:px-6">
           <div className="text-center mb-10">
             <span className="badge bg-purple-100 text-purple-700 mb-3">Guides &amp; Tools</span>
@@ -268,7 +268,7 @@ export default function HomePage() {
               </thead>
               <tbody>
                 {slabRates.map((r, i) => (
-                  <tr key={r.slab} className={`${i % 2 === 0 ? 'bg-white' : 'bg-marine-50'} border-t border-gray-100 hover:bg-marine-50 transition-colors`}>
+                  <tr key={r.slab} className={`${i % 2 === 0 ? 'bg-white' : 'bg-marine-100'} border-t border-gray-100 hover:bg-marine-100 transition-colors`}>
                     <td className="px-4 py-3 font-bold text-marine-700">{r.slab}</td>
                     <td className="px-4 py-3 font-semibold text-gray-900">{r.range}</td>
                     <td className="px-4 py-3 text-gray-700">{r.rate}</td>
@@ -291,7 +291,7 @@ export default function HomePage() {
       </section>
 
       {/* ══════════════════════ SEO CONTENT A ══════════════════════ */}
-      <section className="section-pad bg-marine-50">
+      <section className="section-pad bg-marine-100">
         <div className="max-w-4xl mx-auto px-4 sm:px-6">
           <div className="text-center mb-8">
             <span className="badge bg-marine-100 text-marine-700 mb-3">About SNGPL</span>
@@ -340,7 +340,7 @@ export default function HomePage() {
       </section>
 
       {/* ══════════════════════ SEO CONTENT B ══════════════════════ */}
-      <section className="section-pad bg-marine-50">
+      <section className="section-pad bg-marine-100">
         <div className="max-w-4xl mx-auto px-4 sm:px-6">
           <div className="text-center mb-8">
             <span className="badge bg-purple-100 text-purple-700 mb-3">Consumer Guides</span>
@@ -387,7 +387,7 @@ export default function HomePage() {
           <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-3">
             {cities.map(c => (
               <Link key={c.city} href={c.href}
-                className="flex items-center justify-between p-3.5 bg-marine-50 hover:bg-marine-50 border border-gray-200 hover:border-marine-300 rounded-xl transition-all group no-underline">
+                className="flex items-center justify-between p-3.5 bg-marine-100 hover:bg-marine-100 border border-gray-200 hover:border-marine-300 rounded-xl transition-all group no-underline">
                 <div>
                   <div className="font-semibold text-gray-900 text-sm group-hover:text-marine-700 transition-colors">{c.city}</div>
                   <div className="text-[11px] text-gray-400 mt-0.5">{c.province}</div>
@@ -406,7 +406,7 @@ export default function HomePage() {
       </section>
 
       {/* ══════════════════════ FAQ ══════════════════════ */}
-      <section className="section-pad bg-marine-50">
+      <section className="section-pad bg-marine-100">
         <div className="max-w-4xl mx-auto px-4 sm:px-6">
           <div className="text-center mb-10">
             <span className="badge bg-green-100 text-green-700 mb-3">FAQ</span>
@@ -416,7 +416,7 @@ export default function HomePage() {
           <div className="space-y-3">
             {faqItems.map((f, i) => (
               <details key={i} className="group bg-white border border-gray-200 rounded-2xl overflow-hidden">
-                <summary className="flex items-center justify-between cursor-pointer p-5 hover:bg-marine-50 transition-colors select-none">
+                <summary className="flex items-center justify-between cursor-pointer p-5 hover:bg-marine-100 transition-colors select-none">
                   <span className="font-semibold text-gray-900 text-sm pr-4">{f.q}</span>
                   <span className="flex-shrink-0 text-marine-500 group-open:rotate-180 transition-transform duration-200 text-lg leading-none">▾</span>
                 </summary>
@@ -438,7 +438,7 @@ export default function HomePage() {
               Enter your consumer number above or go directly to the official SNGPL portal — free, instant, and 100% safe.
             </p>
             <div className="flex flex-wrap gap-3 justify-center">
-              <Link href="#checker" className="bg-white text-marine-700 font-bold px-8 py-3.5 rounded-xl hover:bg-marine-50 transition-colors">
+              <Link href="#checker" className="bg-white text-marine-700 font-bold px-8 py-3.5 rounded-xl hover:bg-marine-100 transition-colors">
                 Check Bill Now
               </Link>
               <a href="https://sngpl.com.pk/" target="_blank" rel="noopener noreferrer"
@@ -451,7 +451,7 @@ export default function HomePage() {
       </section>
 
       {/* ══════════════════════ PROGRAMMATIC PAGES GRID ══════════════════════ */}
-      <section className="section-pad bg-marine-50">
+      <section className="section-pad bg-marine-100">
         <div className="max-w-6xl mx-auto px-4 sm:px-6">
           <div className="text-center mb-10">
             <span className="badge bg-marine-100 text-marine-700 mb-3">City-by-City Guides</span>

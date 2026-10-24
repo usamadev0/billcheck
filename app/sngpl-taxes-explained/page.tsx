@@ -100,7 +100,7 @@ export default function TaxesExplainedPage() {
               </thead>
               <tbody>
                 {chargesBreakdown.map((row, i) => (
-                  <tr key={i} className={`${i % 2 === 0 ? 'bg-white' : 'bg-marine-50'} border-t border-gray-100`}>
+                  <tr key={i} className={`${i % 2 === 0 ? 'bg-white' : 'bg-marine-100'} border-t border-gray-100`}>
                     <td className="px-4 py-3 font-semibold text-gray-900">{row.charge}</td>
                     <td className="px-4 py-3 text-gray-700 text-xs sm:text-sm">{row.basis}</td>
                     <td className="px-4 py-3 text-gray-500 text-xs hidden sm:table-cell">{row.tax}</td>
@@ -165,7 +165,7 @@ export default function TaxesExplainedPage() {
           <div className="space-y-3">
             {faqItems.map((f, i) => (
               <details key={i} className="group bg-white border border-gray-200 rounded-2xl overflow-hidden">
-                <summary className="flex items-center justify-between cursor-pointer p-5 hover:bg-marine-50 transition-colors">
+                <summary className="flex items-center justify-between cursor-pointer p-5 hover:bg-marine-100 transition-colors">
                   <span className="font-semibold text-gray-900 text-sm pr-4">{f.q}</span>
                   <span className="flex-shrink-0 text-marine-500 group-open:rotate-180 transition-transform">▾</span>
                 </summary>
@@ -177,7 +177,7 @@ export default function TaxesExplainedPage() {
           </div>
         </section>
 
-        <section className="mt-12 bg-marine-50 rounded-2xl p-6 border border-marine-100">
+        <section className="mt-12 bg-marine-100 rounded-2xl p-6 border border-marine-100">
           <h3 className="font-bold text-marine-900 mb-4">Related Guides</h3>
           <div className="grid sm:grid-cols-2 gap-3">
             {[

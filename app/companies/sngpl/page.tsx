@@ -113,7 +113,7 @@ export default function SngplCompanyPage() {
           </p>
         </div>
 
-        <div className="bg-marine-50 border border-marine-200 rounded-2xl p-4 mb-10">
+        <div className="bg-marine-100 border border-marine-200 rounded-2xl p-4 mb-10">
           <h3 className="font-bold text-marine-900 text-sm mb-3">On this page</h3>
           <ol className="grid sm:grid-cols-2 gap-x-6 gap-y-1">
             {toc.map((item, i) => (
@@ -235,7 +235,7 @@ export default function SngplCompanyPage() {
           </ol>
           <div className="not-prose overflow-x-auto my-4">
             <table className="w-full text-sm border border-gray-200 rounded-xl overflow-hidden">
-              <thead className="bg-marine-50">
+              <thead className="bg-marine-100">
                 <tr>
                   <th className="text-left p-3 font-semibold text-gray-700">Plot size</th>
                   <th className="text-left p-3 font-semibold text-gray-700">Service line charge</th>
@@ -343,35 +343,35 @@ export default function SngplCompanyPage() {
 
           <h2 id="online-services">Official SNGPL Online Services</h2>
           <div className="not-prose grid sm:grid-cols-2 gap-3">
-            <a href="https://www.sngpl.com.pk/login.jsp?mdids=85" target="_blank" rel="noopener noreferrer" className="block p-4 bg-white rounded-xl border border-gray-200 hover:border-marine-300 hover:bg-marine-50 transition-colors">
+            <a href="https://www.sngpl.com.pk/login.jsp?mdids=85" target="_blank" rel="noopener noreferrer" className="block p-4 bg-white rounded-xl border border-gray-200 hover:border-marine-300 hover:bg-marine-100 transition-colors">
               <div className="font-semibold text-marine-700 text-sm mb-1">View / Pay Your Gas Bill ↗</div>
               <div className="text-xs text-gray-500">sngpl.com.pk online billing portal</div>
             </a>
-            <a href="https://www.sngpl.com.pk/complaints.jsp?mdids=89" target="_blank" rel="noopener noreferrer" className="block p-4 bg-white rounded-xl border border-gray-200 hover:border-marine-300 hover:bg-marine-50 transition-colors">
+            <a href="https://www.sngpl.com.pk/complaints.jsp?mdids=89" target="_blank" rel="noopener noreferrer" className="block p-4 bg-white rounded-xl border border-gray-200 hover:border-marine-300 hover:bg-marine-100 transition-colors">
               <div className="font-semibold text-marine-700 text-sm mb-1">Lodge a Complaint ↗</div>
               <div className="text-xs text-gray-500">sngpl.com.pk/complaints.jsp</div>
             </a>
-            <a href="https://www.sngpl.com.pk/complaintshistory.jsp?mdids=90" target="_blank" rel="noopener noreferrer" className="block p-4 bg-white rounded-xl border border-gray-200 hover:border-marine-300 hover:bg-marine-50 transition-colors">
+            <a href="https://www.sngpl.com.pk/complaintshistory.jsp?mdids=90" target="_blank" rel="noopener noreferrer" className="block p-4 bg-white rounded-xl border border-gray-200 hover:border-marine-300 hover:bg-marine-100 transition-colors">
               <div className="font-semibold text-marine-700 text-sm mb-1">Track Your Complaint ↗</div>
               <div className="text-xs text-gray-500">sngpl.com.pk/complaintshistory.jsp</div>
             </a>
-            <a href="https://www.sngpl.com.pk/appstatus.jsp?mdids=291" target="_blank" rel="noopener noreferrer" className="block p-4 bg-white rounded-xl border border-gray-200 hover:border-marine-300 hover:bg-marine-50 transition-colors">
+            <a href="https://www.sngpl.com.pk/appstatus.jsp?mdids=291" target="_blank" rel="noopener noreferrer" className="block p-4 bg-white rounded-xl border border-gray-200 hover:border-marine-300 hover:bg-marine-100 transition-colors">
               <div className="font-semibold text-marine-700 text-sm mb-1">Track New Connection Application ↗</div>
               <div className="text-xs text-gray-500">sngpl.com.pk/appstatus.jsp</div>
             </a>
-            <a href="https://www.sngpl.com.pk/billcalc.jsp?mdids=92" target="_blank" rel="noopener noreferrer" className="block p-4 bg-white rounded-xl border border-gray-200 hover:border-marine-300 hover:bg-marine-50 transition-colors">
+            <a href="https://www.sngpl.com.pk/billcalc.jsp?mdids=92" target="_blank" rel="noopener noreferrer" className="block p-4 bg-white rounded-xl border border-gray-200 hover:border-marine-300 hover:bg-marine-100 transition-colors">
               <div className="font-semibold text-marine-700 text-sm mb-1">SNGPL Bill Estimator ↗</div>
               <div className="text-xs text-gray-500">sngpl.com.pk/billcalc.jsp</div>
             </a>
-            <a href="https://www.sngpl.com.pk/cname.jsp?mdids=94" target="_blank" rel="noopener noreferrer" className="block p-4 bg-white rounded-xl border border-gray-200 hover:border-marine-300 hover:bg-marine-50 transition-colors">
+            <a href="https://www.sngpl.com.pk/cname.jsp?mdids=94" target="_blank" rel="noopener noreferrer" className="block p-4 bg-white rounded-xl border border-gray-200 hover:border-marine-300 hover:bg-marine-100 transition-colors">
               <div className="font-semibold text-marine-700 text-sm mb-1">Transfer of Gas Connection ↗</div>
               <div className="text-xs text-gray-500">sngpl.com.pk/cname.jsp</div>
             </a>
-            <a href="https://www.sngpl.com.pk/domrecon.jsp?mdids=286" target="_blank" rel="noopener noreferrer" className="block p-4 bg-white rounded-xl border border-gray-200 hover:border-marine-300 hover:bg-marine-50 transition-colors">
+            <a href="https://www.sngpl.com.pk/domrecon.jsp?mdids=286" target="_blank" rel="noopener noreferrer" className="block p-4 bg-white rounded-xl border border-gray-200 hover:border-marine-300 hover:bg-marine-100 transition-colors">
               <div className="font-semibold text-marine-700 text-sm mb-1">Reconnection of Domestic Consumer ↗</div>
               <div className="text-xs text-gray-500">sngpl.com.pk/domrecon.jsp</div>
             </a>
-            <a href="https://play.google.com/store/apps/details?id=com.sngpl.sngpl_connection_app_flutter" target="_blank" rel="noopener noreferrer" className="block p-4 bg-white rounded-xl border border-gray-200 hover:border-marine-300 hover:bg-marine-50 transition-colors">
+            <a href="https://play.google.com/store/apps/details?id=com.sngpl.sngpl_connection_app_flutter" target="_blank" rel="noopener noreferrer" className="block p-4 bg-white rounded-xl border border-gray-200 hover:border-marine-300 hover:bg-marine-100 transition-colors">
               <div className="font-semibold text-marine-700 text-sm mb-1">ConnectOn (SNGPL mobile app) ↗</div>
               <div className="text-xs text-gray-500">Google Play</div>
             </a>
@@ -463,7 +463,7 @@ export default function SngplCompanyPage() {
           </p>
         </article>
 
-        <section className="mt-12 bg-marine-50 rounded-2xl p-6 border border-marine-100">
+        <section className="mt-12 bg-marine-100 rounded-2xl p-6 border border-marine-100">
           <h3 className="font-bold text-marine-900 mb-4">Related Pages</h3>
           <div className="grid sm:grid-cols-3 gap-3">
             <Link href="/ogra" className="block p-4 bg-white rounded-xl border border-marine-100 hover:shadow-sm transition-shadow">

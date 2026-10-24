@@ -187,7 +187,7 @@ export default function GovernmentSourcesPage() {
           </div>
         </section>
 
-        <section className="mt-12 bg-marine-50 rounded-2xl p-6 border border-marine-100">
+        <section className="mt-12 bg-marine-100 rounded-2xl p-6 border border-marine-100">
           <h3 className="font-bold text-marine-900 mb-4">Related Trust Pages</h3>
           <div className="grid sm:grid-cols-3 gap-3">
             <Link href="/sources-references" className="block p-4 bg-white rounded-xl border border-marine-100 hover:shadow-sm transition-shadow">

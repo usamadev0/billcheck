@@ -134,7 +134,7 @@ export default function SsgcPage() {
           </p>
         </div>
 
-        <div className="bg-marine-50 border border-marine-200 rounded-2xl p-4 mb-10">
+        <div className="bg-marine-100 border border-marine-200 rounded-2xl p-4 mb-10">
           <div className="font-bold text-marine-900 mb-3 text-sm">On this page</div>
           <div className="grid sm:grid-cols-2 gap-x-6 gap-y-2 text-sm">
             <a href="#overview" className="toc-link">1. Entity Overview</a>
@@ -511,7 +511,7 @@ export default function SsgcPage() {
             <div className="flex flex-wrap items-center gap-2 text-sm">
               <span className="badge bg-marine-100 text-marine-700">SSGC</span>
               <span className="text-gray-400">→</span>
-              <Link href="/ogra" className="badge bg-marine-50 text-marine-700 hover:bg-marine-100">OGRA</Link>
+              <Link href="/ogra" className="badge bg-marine-100 text-marine-700 hover:bg-marine-100">OGRA</Link>
               <span className="text-gray-400">→</span>
               <span className="badge bg-gray-100 text-gray-700">Sindh</span>
               <span className="text-gray-400">→</span>
@@ -529,9 +529,9 @@ export default function SsgcPage() {
               <span className="text-gray-400">→</span>
               <span className="badge bg-gray-100 text-gray-700">New connections</span>
               <span className="text-gray-400">→</span>
-              <Link href="/complaints" className="badge bg-marine-50 text-marine-700 hover:bg-marine-100">Complaints</Link>
+              <Link href="/complaints" className="badge bg-marine-100 text-marine-700 hover:bg-marine-100">Complaints</Link>
               <span className="text-gray-400">→</span>
-              <Link href="/safety" className="badge bg-marine-50 text-marine-700 hover:bg-marine-100">Safety</Link>
+              <Link href="/safety" className="badge bg-marine-100 text-marine-700 hover:bg-marine-100">Safety</Link>
               <span className="text-gray-400">→</span>
               <span className="badge bg-gray-100 text-gray-700">RLNG</span>
               <span className="text-gray-400">→</span>
@@ -593,7 +593,7 @@ export default function SsgcPage() {
           </div>
         </article>
 
-        <section className="mt-12 bg-marine-50 rounded-2xl p-6 border border-marine-100">
+        <section className="mt-12 bg-marine-100 rounded-2xl p-6 border border-marine-100">
           <h3 className="font-bold text-marine-900 mb-4">Related Pages</h3>
           <div className="grid sm:grid-cols-3 gap-3">
             <Link href="/ogra" className="block p-4 bg-white rounded-xl border border-marine-100 hover:shadow-sm transition-shadow">

@@ -127,7 +127,7 @@ export default function SNGPLChecker() {
             {recent.map((r, i) => (
               <li key={i}>
                 <button onClick={() => { setVal(r.num); setErr(''); }}
-                  className="w-full flex items-center gap-2 px-3 py-2 rounded-lg hover:bg-marine-50 text-left transition-colors group">
+                  className="w-full flex items-center gap-2 px-3 py-2 rounded-lg hover:bg-marine-100 text-left transition-colors group">
                   <svg className="w-3.5 h-3.5 text-gray-300 group-hover:text-marine-400" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
                   <span className="text-sm font-mono text-gray-700 group-hover:text-marine-700">{r.num}</span>
                 </button>

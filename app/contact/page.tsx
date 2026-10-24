@@ -30,7 +30,7 @@ export default function ContactPage() {
       <div className="max-w-3xl mx-auto px-4 py-12 space-y-10">
 
         {/* SNGPL Official Contact — most important */}
-        <section className="bg-marine-50 border border-marine-200 rounded-2xl p-6">
+        <section className="bg-marine-100 border border-marine-200 rounded-2xl p-6">
           <h2 className="text-xl font-bold text-marine-900 mb-3">SNGPL Official Contact</h2>
           <p className="text-marine-800 mb-4 text-sm">
             For billing disputes, meter issues, new connections, or official SNGPL queries — contact SNGPL
@@ -88,7 +88,7 @@ export default function ContactPage() {
               { q: 'What are GIDC and other taxes on my gas bill?', href: '/sngpl-taxes-explained' },
             ].map(item => (
               <a key={item.href} href={item.href}
-                className="flex items-center justify-between p-4 border border-gray-200 rounded-xl hover:border-marine-300 hover:bg-marine-50 transition-colors group">
+                className="flex items-center justify-between p-4 border border-gray-200 rounded-xl hover:border-marine-300 hover:bg-marine-100 transition-colors group">
                 <span className="text-gray-700 text-sm group-hover:text-marine-700">{item.q}</span>
                 <span className="text-marine-500 text-xs shrink-0 ml-2">Read guide →</span>
               </a>

@@ -164,7 +164,7 @@ export default function SNGPLDuplicateBillPage() {
                 { icon: '🏢', title: 'Rental Purposes', desc: 'Landlords and tenants often need copies of utility bills for rental agreements.' },
                 { icon: '📱', title: 'Digital Payments', desc: 'Some payment apps require you to manually enter bill details — having the bill handy ensures accuracy.' },
               ].map(item => (
-                <div key={item.title} className="flex gap-3 p-4 bg-marine-50 rounded-xl border border-gray-100">
+                <div key={item.title} className="flex gap-3 p-4 bg-marine-100 rounded-xl border border-gray-100">
                   <span className="text-2xl shrink-0">{item.icon}</span>
                   <div>
                     <h4 className="font-semibold text-gray-900 text-sm">{item.title}</h4>
@@ -444,7 +444,7 @@ export default function SNGPLDuplicateBillPage() {
                 { p: 'Duplicate bill showing wrong details', s: 'If the bill shows incorrect details (wrong name, address, or amount), do not use it for payment. Contact SNGPL immediately at 1199 or visit the subdivision office. Billing errors need to be corrected at the source before payment.' },
               ].map((item, i) => (
                 <details key={i} className="border border-gray-200 rounded-xl overflow-hidden group">
-                  <summary className="flex items-center justify-between px-5 py-4 cursor-pointer font-semibold text-gray-900 text-sm hover:bg-marine-50 transition-colors list-none">
+                  <summary className="flex items-center justify-between px-5 py-4 cursor-pointer font-semibold text-gray-900 text-sm hover:bg-marine-100 transition-colors list-none">
                     <span>⚠️ Problem: {item.p}</span>
                     <svg className="w-4 h-4 text-gray-400 group-open:rotate-180 transition-transform" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7"/></svg>
                   </summary>

@@ -368,7 +368,7 @@ export default function GuidesPage() {
 
       {/* ── Internal Links ────────────────────────────────────────── */}
       <div className="max-w-4xl mx-auto px-4 pb-12">
-        <div className="bg-marine-50 rounded-2xl p-6 grid sm:grid-cols-3 gap-4 text-center border border-gray-200">
+        <div className="bg-marine-100 rounded-2xl p-6 grid sm:grid-cols-3 gap-4 text-center border border-gray-200">
           {[
             { href: '/', label: '🔍 Check Bill Now', desc: 'Official portal redirect' },
             { href: '/calculator', label: '🧮 Bill Calculator', desc: 'Estimate gas charges' },

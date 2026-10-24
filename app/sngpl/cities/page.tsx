@@ -69,7 +69,7 @@ export default function CitiesIndexPage() {
           </section>
         ))}
 
-        <div className="bg-marine-50 border border-marine-200 rounded-2xl p-8 text-center">
+        <div className="bg-marine-100 border border-marine-200 rounded-2xl p-8 text-center">
           <h2 className="text-xl font-bold text-marine-900 mb-2">Check Your SNGPL Bill</h2>
           <p className="text-marine-700 text-sm mb-4">Enter consumer number for an instant redirect to the official SNGPL portal.</p>
           <Link href="/" className="btn-primary inline-flex">Check Bill Now →</Link>

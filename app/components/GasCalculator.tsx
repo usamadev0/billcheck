@@ -168,14 +168,14 @@ export default function GasCalculator() {
         <h3 className="font-bold text-gray-800 mb-4 flex items-center gap-2 text-sm">📊 SNGPL Domestic Slab Rates (2024-25)</h3>
         <div className="overflow-x-auto">
           <table className="w-full text-sm">
-            <thead><tr className="bg-marine-50 text-xs font-bold text-gray-700 uppercase tracking-wide">
+            <thead><tr className="bg-marine-100 text-xs font-bold text-gray-700 uppercase tracking-wide">
               <th className="px-3 py-2 text-left">Consumption Slab</th>
               <th className="px-3 py-2 text-right">Rate / HHM</th>
               <th className="px-3 py-2 text-right">Notes</th>
             </tr></thead>
             <tbody>
               {[['0–100 HHM','Rs. 200 flat','Low use subsidy'],['101–300 HHM','Rs. 130','Basic domestic'],['301–500 HHM','Rs. 150','Medium use'],['501–800 HHM','Rs. 170','Higher use'],['801–1200 HHM','Rs. 200','High use'],['1201+ HHM','Rs. 250','Commercial/bulk']].map(([r,v,n],i)=>(
-                <tr key={i} className={i%2===0?'bg-white':'bg-marine-50'}>
+                <tr key={i} className={i%2===0?'bg-white':'bg-marine-100'}>
                   <td className="px-3 py-2.5 font-medium">{r}</td>
                   <td className="px-3 py-2.5 text-right text-marine-700 font-semibold">{v}</td>
                   <td className="px-3 py-2.5 text-right text-gray-500 text-xs">{n}</td>

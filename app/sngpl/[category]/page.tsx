@@ -233,7 +233,7 @@ export default async function CategoryIndexPage({
         </section>
 
         {/* ── How This Guide Network Works ─────────────────────── */}
-        <section className="mb-14 bg-marine-50 border border-marine-100 rounded-2xl p-6 md:p-8">
+        <section className="mb-14 bg-marine-100 border border-marine-100 rounded-2xl p-6 md:p-8">
           <h2 className="text-xl font-bold text-marine-900 mb-4">How Our City-Specific Guide Network Works</h2>
           <div className="grid md:grid-cols-3 gap-6">
             <div>
@@ -269,13 +269,13 @@ export default async function CategoryIndexPage({
                       <h3 className="font-bold text-gray-900">{city.name}</h3>
                       <p className="text-xs text-gray-500">{city.division}</p>
                     </div>
-                    <span className="text-xs font-medium text-marine-600 bg-marine-50 px-2 py-0.5 rounded-full">
+                    <span className="text-xs font-medium text-marine-600 bg-marine-100 px-2 py-0.5 rounded-full">
                       {city.consumers}
                     </span>
                   </div>
                   <Link
                     href={`/sngpl/cities/${city.slug}`}
-                    className="inline-block text-xs font-semibold bg-marine-50 hover:bg-marine-100 text-marine-700 rounded-lg px-3 py-1.5 transition-colors no-underline"
+                    className="inline-block text-xs font-semibold bg-marine-100 hover:bg-marine-100 text-marine-700 rounded-lg px-3 py-1.5 transition-colors no-underline"
                   >
                     View {city.name} Guide →
                   </Link>
@@ -308,7 +308,7 @@ export default async function CategoryIndexPage({
         </section>
 
         {/* ── Bottom CTA ────────────────────────────────────────── */}
-        <section className="bg-marine-50 border border-marine-200 rounded-2xl p-8 text-center mt-8">
+        <section className="bg-marine-100 border border-marine-200 rounded-2xl p-8 text-center mt-8">
           <h2 className="text-xl font-bold text-marine-900 mb-2">Check Your SNGPL Bill Now</h2>
           <p className="text-marine-700 text-sm mb-4 max-w-md mx-auto">
             Enter your consumer number to instantly redirect to the official SNGPL bill portal and check your latest bill.
@@ -317,7 +317,7 @@ export default async function CategoryIndexPage({
             <Link href="/" className="btn-primary inline-flex">
               Check Bill → Official Portal
             </Link>
-            <Link href="/guides" className="bg-white border border-marine-300 text-marine-700 hover:bg-marine-50 font-semibold px-5 py-2.5 rounded-xl transition-colors inline-flex items-center gap-2 text-sm">
+            <Link href="/guides" className="bg-white border border-marine-300 text-marine-700 hover:bg-marine-100 font-semibold px-5 py-2.5 rounded-xl transition-colors inline-flex items-center gap-2 text-sm">
               Read Full Guides
             </Link>
           </div>

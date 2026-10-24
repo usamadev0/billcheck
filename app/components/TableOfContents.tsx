@@ -6,7 +6,7 @@ export interface TOCItem { id: string; label: string; }
 export default function TableOfContents({ items }: { items: TOCItem[] }) {
   const [collapsed, setCollapsed] = useState(false);
   return (
-    <div className="bg-marine-50 border border-marine-200 rounded-2xl p-4 my-8">
+    <div className="bg-marine-100 border border-marine-200 rounded-2xl p-4 my-8">
       <div className="flex items-center justify-between mb-3">
         <h3 className="font-bold text-marine-900 text-sm flex items-center gap-2">
           <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 6h16M4 12h16M4 18h7"/></svg>

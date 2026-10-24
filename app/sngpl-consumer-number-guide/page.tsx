@@ -456,7 +456,7 @@ export default function ConsumerNumberGuidePage() {
         </section>
 
         {/* Internal links */}
-        <section className="p-5 bg-marine-50 rounded-2xl border border-marine-100 mb-12">
+        <section className="p-5 bg-marine-100 rounded-2xl border border-marine-100 mb-12">
           <h3 className="font-bold text-gray-900 mb-3">Continue Reading</h3>
           <div className="flex flex-wrap gap-3">
             <Link href="/sngpl-bill-check-online" className="btn-primary py-2.5 px-5 text-sm">🔍 Bill Check Guide</Link>

@@ -52,8 +52,8 @@ export default function Header() {
               <Link key={l.href} href={l.href}
                 className={`px-3 py-2 rounded-lg text-sm font-medium transition-all whitespace-nowrap ${
                   pathname === l.href
-                    ? 'bg-marine-50 text-marine-700 font-semibold'
-                    : 'text-gray-600 hover:text-marine-600 hover:bg-marine-50'
+                    ? 'bg-marine-100 text-marine-700 font-semibold'
+                    : 'text-gray-600 hover:text-marine-600 hover:bg-marine-100'
                 }`}>
                 {l.label}
               </Link>
@@ -91,8 +91,8 @@ export default function Header() {
               <Link key={l.href} href={l.href}
                 className={`flex items-center gap-3 px-4 py-3 text-sm font-medium rounded-xl transition-all ${
                   pathname === l.href
-                    ? 'bg-marine-50 text-marine-700 font-semibold'
-                    : 'text-gray-700 hover:text-marine-600 hover:bg-marine-50'
+                    ? 'bg-marine-100 text-marine-700 font-semibold'
+                    : 'text-gray-700 hover:text-marine-600 hover:bg-marine-100'
                 }`}>
                 {l.label}
               </Link>

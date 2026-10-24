@@ -145,7 +145,7 @@ export default function TariffsHubPage() {
           </p>
         </div>
 
-        <div className="bg-marine-50 border border-marine-200 rounded-2xl p-4 mb-10">
+        <div className="bg-marine-100 border border-marine-200 rounded-2xl p-4 mb-10">
           <h3 className="font-bold text-marine-900 text-sm mb-3">On this page</h3>
           <ol className="grid sm:grid-cols-2 gap-x-6 gap-y-1">
             {toc.map((item, i) => (
@@ -308,7 +308,7 @@ export default function TariffsHubPage() {
           </p>
           <div className="not-prose overflow-x-auto my-4">
             <table className="w-full text-sm border border-gray-200 rounded-xl overflow-hidden">
-              <thead className="bg-marine-50">
+              <thead className="bg-marine-100">
                 <tr>
                   <th className="text-left p-3 font-semibold text-gray-700">Fiscal year</th>
                   <th className="text-left p-3 font-semibold text-gray-700">SNGPL prescribed price</th>
@@ -400,7 +400,7 @@ export default function TariffsHubPage() {
           </div>
         </article>
 
-        <section className="mt-12 bg-marine-50 rounded-2xl p-6 border border-marine-100">
+        <section className="mt-12 bg-marine-100 rounded-2xl p-6 border border-marine-100">
           <h3 className="font-bold text-marine-900 mb-4">Related Pages</h3>
           <div className="grid sm:grid-cols-3 gap-3">
             <Link href="/ogra" className="block p-4 bg-white rounded-xl border border-marine-100 hover:shadow-sm transition-shadow">

@@ -150,7 +150,7 @@ export default function ComplaintsHubPage() {
           </p>
         </div>
 
-        <div className="bg-marine-50 border border-marine-200 rounded-2xl p-4 mb-10">
+        <div className="bg-marine-100 border border-marine-200 rounded-2xl p-4 mb-10">
           <h3 className="font-bold text-marine-900 text-sm mb-3">On this page</h3>
           <ol className="grid sm:grid-cols-2 gap-x-6 gap-y-1">
             {toc.map((item, i) => (
@@ -219,19 +219,19 @@ export default function ComplaintsHubPage() {
 
           <h2 id="sngpl-channels">SNGPL Complaint Channels</h2>
           <div className="not-prose grid sm:grid-cols-2 gap-3">
-            <a href="https://www.sngpl.com.pk/complaints.jsp?mdids=89" target="_blank" rel="noopener noreferrer" className="block p-4 bg-white rounded-xl border border-gray-200 hover:border-marine-300 hover:bg-marine-50 transition-colors">
+            <a href="https://www.sngpl.com.pk/complaints.jsp?mdids=89" target="_blank" rel="noopener noreferrer" className="block p-4 bg-white rounded-xl border border-gray-200 hover:border-marine-300 hover:bg-marine-100 transition-colors">
               <div className="font-semibold text-marine-700 text-sm mb-1">Lodge a Complaint ↗</div>
               <div className="text-xs text-gray-500">sngpl.com.pk/complaints.jsp</div>
             </a>
-            <a href="https://www.sngpl.com.pk/complaintshistory.jsp?mdids=90" target="_blank" rel="noopener noreferrer" className="block p-4 bg-white rounded-xl border border-gray-200 hover:border-marine-300 hover:bg-marine-50 transition-colors">
+            <a href="https://www.sngpl.com.pk/complaintshistory.jsp?mdids=90" target="_blank" rel="noopener noreferrer" className="block p-4 bg-white rounded-xl border border-gray-200 hover:border-marine-300 hover:bg-marine-100 transition-colors">
               <div className="font-semibold text-marine-700 text-sm mb-1">Track Your Complaint ↗</div>
               <div className="text-xs text-gray-500">sngpl.com.pk/complaintshistory.jsp</div>
             </a>
-            <a href="https://www.sngpl.com.pk/page.jsp?pgids=4265" target="_blank" rel="noopener noreferrer" className="block p-4 bg-white rounded-xl border border-gray-200 hover:border-marine-300 hover:bg-marine-50 transition-colors">
+            <a href="https://www.sngpl.com.pk/page.jsp?pgids=4265" target="_blank" rel="noopener noreferrer" className="block p-4 bg-white rounded-xl border border-gray-200 hover:border-marine-300 hover:bg-marine-100 transition-colors">
               <div className="font-semibold text-marine-700 text-sm mb-1">Guidelines for Feedback/Complaints ↗</div>
               <div className="text-xs text-gray-500">sngpl.com.pk (published as an image; see note below)</div>
             </a>
-            <a href="https://www.sngpl.com.pk/domrecon.jsp?mdids=286" target="_blank" rel="noopener noreferrer" className="block p-4 bg-white rounded-xl border border-gray-200 hover:border-marine-300 hover:bg-marine-50 transition-colors">
+            <a href="https://www.sngpl.com.pk/domrecon.jsp?mdids=286" target="_blank" rel="noopener noreferrer" className="block p-4 bg-white rounded-xl border border-gray-200 hover:border-marine-300 hover:bg-marine-100 transition-colors">
               <div className="font-semibold text-marine-700 text-sm mb-1">Reconnection of Domestic Consumer ↗</div>
               <div className="text-xs text-gray-500">sngpl.com.pk/domrecon.jsp</div>
             </a>
@@ -259,19 +259,19 @@ export default function ComplaintsHubPage() {
             <Link href="/companies/ssgc">SSGC company profile</Link>.
           </p>
           <div className="not-prose grid sm:grid-cols-2 gap-3">
-            <a href="https://www.ssgc.com.pk/web/?page_id=132" target="_blank" rel="noopener noreferrer" className="block p-4 bg-white rounded-xl border border-gray-200 hover:border-marine-300 hover:bg-marine-50 transition-colors">
+            <a href="https://www.ssgc.com.pk/web/?page_id=132" target="_blank" rel="noopener noreferrer" className="block p-4 bg-white rounded-xl border border-gray-200 hover:border-marine-300 hover:bg-marine-100 transition-colors">
               <div className="font-semibold text-marine-700 text-sm mb-1">Complaints / Feedback Form ↗</div>
               <div className="text-xs text-gray-500">ssgc.com.pk — Customer Type, Customer/Meter Number, Address required</div>
             </a>
-            <a href="https://www.ssgc.com.pk/web/?page_id=5058" target="_blank" rel="noopener noreferrer" className="block p-4 bg-white rounded-xl border border-gray-200 hover:border-marine-300 hover:bg-marine-50 transition-colors">
+            <a href="https://www.ssgc.com.pk/web/?page_id=5058" target="_blank" rel="noopener noreferrer" className="block p-4 bg-white rounded-xl border border-gray-200 hover:border-marine-300 hover:bg-marine-100 transition-colors">
               <div className="font-semibold text-marine-700 text-sm mb-1">How Customers Can Complain ↗</div>
               <div className="text-xs text-gray-500">ssgc.com.pk</div>
             </a>
-            <a href="https://www.ssgc.com.pk/web/?page_id=5472" target="_blank" rel="noopener noreferrer" className="block p-4 bg-white rounded-xl border border-gray-200 hover:border-marine-300 hover:bg-marine-50 transition-colors">
+            <a href="https://www.ssgc.com.pk/web/?page_id=5472" target="_blank" rel="noopener noreferrer" className="block p-4 bg-white rounded-xl border border-gray-200 hover:border-marine-300 hover:bg-marine-100 transition-colors">
               <div className="font-semibold text-marine-700 text-sm mb-1">Public Complaints Resolution Mechanism ↗</div>
               <div className="text-xs text-gray-500">ssgc.com.pk</div>
             </a>
-            <a href="https://www.ssgc.com.pk/web/?page_id=128" target="_blank" rel="noopener noreferrer" className="block p-4 bg-white rounded-xl border border-gray-200 hover:border-marine-300 hover:bg-marine-50 transition-colors">
+            <a href="https://www.ssgc.com.pk/web/?page_id=128" target="_blank" rel="noopener noreferrer" className="block p-4 bg-white rounded-xl border border-gray-200 hover:border-marine-300 hover:bg-marine-100 transition-colors">
               <div className="font-semibold text-marine-700 text-sm mb-1">Customer Facilitation Centers ↗</div>
               <div className="text-xs text-gray-500">ssgc.com.pk</div>
             </a>
@@ -290,7 +290,7 @@ export default function ComplaintsHubPage() {
           </p>
           <div className="not-prose overflow-x-auto my-4">
             <table className="w-full text-sm border border-gray-200 rounded-xl overflow-hidden">
-              <thead className="bg-marine-50">
+              <thead className="bg-marine-100">
                 <tr>
                   <th className="text-left p-3 font-semibold text-gray-700">Department</th>
                   <th className="text-left p-3 font-semibold text-gray-700">Complaint type</th>
@@ -299,7 +299,7 @@ export default function ComplaintsHubPage() {
               </thead>
               <tbody className="divide-y divide-gray-100">
                 {ssgcTimelines.map((r, i) => (
-                  <tr key={i} className={i % 2 === 0 ? 'bg-white' : 'bg-marine-50'}>
+                  <tr key={i} className={i % 2 === 0 ? 'bg-white' : 'bg-marine-100'}>
                     <td className="p-3 text-xs font-semibold text-marine-700 whitespace-nowrap">{r.dept}</td>
                     <td className="p-3">{r.type}</td>
                     <td className="p-3 text-gray-600">{r.timeline}</td>
@@ -335,11 +335,11 @@ export default function ComplaintsHubPage() {
             officers at regional offices in Karachi, Lahore, Quetta, and Peshawar.
           </p>
           <div className="not-prose grid sm:grid-cols-2 gap-3 my-4">
-            <a href="https://complaint.ogra.org.pk/complaint" target="_blank" rel="noopener noreferrer" className="block p-4 bg-white rounded-xl border border-gray-200 hover:border-marine-300 hover:bg-marine-50 transition-colors">
+            <a href="https://complaint.ogra.org.pk/complaint" target="_blank" rel="noopener noreferrer" className="block p-4 bg-white rounded-xl border border-gray-200 hover:border-marine-300 hover:bg-marine-100 transition-colors">
               <div className="font-semibold text-marine-700 text-sm mb-1">OGRA Online Complaint Form ↗</div>
               <div className="text-xs text-gray-500">complaint.ogra.org.pk/complaint</div>
             </a>
-            <a href="https://ogra.org.pk/lodge-complaints" target="_blank" rel="noopener noreferrer" className="block p-4 bg-white rounded-xl border border-gray-200 hover:border-marine-300 hover:bg-marine-50 transition-colors">
+            <a href="https://ogra.org.pk/lodge-complaints" target="_blank" rel="noopener noreferrer" className="block p-4 bg-white rounded-xl border border-gray-200 hover:border-marine-300 hover:bg-marine-100 transition-colors">
               <div className="font-semibold text-marine-700 text-sm mb-1">OGRA Complaint &amp; Tracking Portal ↗</div>
               <div className="text-xs text-gray-500">ogra.org.pk/lodge-complaints</div>
             </a>
@@ -471,7 +471,7 @@ export default function ComplaintsHubPage() {
           </div>
         </article>
 
-        <section className="mt-12 bg-marine-50 rounded-2xl p-6 border border-marine-100">
+        <section className="mt-12 bg-marine-100 rounded-2xl p-6 border border-marine-100">
           <h3 className="font-bold text-marine-900 mb-4">Related Pages</h3>
           <div className="grid sm:grid-cols-3 gap-3">
             <Link href="/ogra" className="block p-4 bg-white rounded-xl border border-marine-100 hover:shadow-sm transition-shadow">

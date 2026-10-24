@@ -71,7 +71,7 @@ const categoryMeta: Record<Category, { icon: string; color: string; topTypes: st
 };
 
 const colorMap: Record<string, string> = {
-  blue:   'bg-marine-50 border-marine-200 hover:border-marine-400',
+  blue:   'bg-marine-100 border-marine-200 hover:border-marine-400',
   green:  'bg-green-50 border-green-200 hover:border-green-400',
   purple: 'bg-purple-50 border-purple-200 hover:border-purple-400',
   orange: 'bg-orange-50 border-orange-200 hover:border-orange-400',
@@ -226,7 +226,7 @@ export default async function CityHubPage({
             <div>
               <h3 className="font-bold text-gray-900 mb-3 text-sm">Areas Served in {city.name}</h3>
               <p className="text-gray-700 text-sm leading-relaxed">{city.areas}</p>
-              <div className="mt-4 p-3 bg-marine-50 rounded-xl">
+              <div className="mt-4 p-3 bg-marine-100 rounded-xl">
                 <p className="text-xs text-marine-800 font-semibold mb-1">Quick Emergency Contact</p>
                 <p className="text-xs text-marine-700">For gas leakage or emergency: Call 1199 immediately, evacuate premises, do not use electrical switches.</p>
               </div>
@@ -284,7 +284,7 @@ export default async function CityHubPage({
               { q: `My SNGPL bill is very high this month in ${city.name}. Why?`, a: `Common reasons: winter heating increased consumption into higher tariff slabs, an estimated reading was used that overestimated usage, or arrears from a previous month were added. Compare your meter reading to the billed reading — if different, call 1199.` },
             ].map((faq, i) => (
               <details key={i} className="group bg-white border border-gray-200 rounded-xl overflow-hidden">
-                <summary className="flex items-center justify-between cursor-pointer p-4 hover:bg-marine-50 transition-colors">
+                <summary className="flex items-center justify-between cursor-pointer p-4 hover:bg-marine-100 transition-colors">
                   <span className="font-semibold text-gray-900 text-sm pr-4">{faq.q}</span>
                   <span className="flex-shrink-0 text-marine-500 group-open:rotate-180 transition-transform">▾</span>
                 </summary>
@@ -304,7 +304,7 @@ export default async function CityHubPage({
               <Link
                 key={c.slug}
                 href={`/sngpl/cities/${c.slug}`}
-                className="block p-3 bg-marine-50 hover:bg-marine-50 border border-gray-200 hover:border-marine-300 rounded-xl transition-all no-underline"
+                className="block p-3 bg-marine-100 hover:bg-marine-100 border border-gray-200 hover:border-marine-300 rounded-xl transition-all no-underline"
               >
                 <div className="font-semibold text-gray-900 text-xs">{c.name}</div>
                 <div className="text-[11px] text-gray-400 mt-0.5">{c.province}</div>
@@ -317,7 +317,7 @@ export default async function CityHubPage({
         <div className="bg-marine-600 rounded-2xl p-6 md:p-8 text-white text-center">
           <h2 className="text-xl font-black mb-2">Check Your {city.name} SNGPL Bill Now</h2>
           <p className="text-marine-100 text-sm mb-4">Instant redirect to official SNGPL portal. Free — no registration needed.</p>
-          <Link href="/" className="inline-flex items-center gap-2 bg-white text-marine-700 font-bold px-6 py-3 rounded-xl hover:bg-marine-50 transition-colors text-sm">
+          <Link href="/" className="inline-flex items-center gap-2 bg-white text-marine-700 font-bold px-6 py-3 rounded-xl hover:bg-marine-100 transition-colors text-sm">
             Check Bill Now →
           </Link>
         </div>

@@ -181,7 +181,7 @@ export default function SafetyPage() {
           </p>
         </div>
 
-        <div className="bg-marine-50 border border-marine-200 rounded-2xl p-4 mb-10">
+        <div className="bg-marine-100 border border-marine-200 rounded-2xl p-4 mb-10">
           <div className="font-bold text-marine-900 mb-3 text-sm">On this page</div>
           <div className="grid sm:grid-cols-2 gap-x-6 gap-y-2 text-sm">
             <a href="#overview" className="toc-link">1. Overview &amp; source priority</a>
@@ -235,7 +235,7 @@ export default function SafetyPage() {
                 <div className="font-semibold text-red-800 mb-1">Is there fire, explosion risk, or building damage?</div>
                 <div className="text-gray-700">→ <strong>Emergency.</strong> Evacuate the area and contact both emergency services and your utility&apos;s emergency line.</div>
               </div>
-              <div className="border border-marine-200 bg-marine-50 rounded-xl p-4">
+              <div className="border border-marine-200 bg-marine-100 rounded-xl p-4">
                 <div className="font-semibold text-marine-800 mb-1">Is it low pressure, a billing issue, a meter reading, or a connection request?</div>
                 <div className="text-gray-700">→ <strong>Not an emergency.</strong> Use the normal complaint channel — see our <Link href="/complaints">Complaints &amp; Consumer Rights hub</Link>.</div>
               </div>
@@ -553,7 +553,7 @@ export default function SafetyPage() {
           </div>
         </article>
 
-        <section className="mt-12 bg-marine-50 rounded-2xl p-6 border border-marine-100">
+        <section className="mt-12 bg-marine-100 rounded-2xl p-6 border border-marine-100">
           <h3 className="font-bold text-marine-900 mb-4">Related Pages</h3>
           <div className="grid sm:grid-cols-3 gap-3">
             <Link href="/ogra" className="block p-4 bg-white rounded-xl border border-marine-100 hover:shadow-sm transition-shadow">

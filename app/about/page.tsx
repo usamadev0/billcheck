@@ -82,15 +82,15 @@ export default function AboutPage() {
             three pages we treat as the foundation of everything else on this site:
           </p>
           <div className="grid sm:grid-cols-3 gap-3 mt-4">
-            <Link href="/editorial-policy" className="block p-4 border border-gray-200 rounded-xl hover:border-marine-300 hover:bg-marine-50 transition-colors">
+            <Link href="/editorial-policy" className="block p-4 border border-gray-200 rounded-xl hover:border-marine-300 hover:bg-marine-100 transition-colors">
               <div className="font-semibold text-marine-700 text-sm mb-1">Editorial Policy</div>
               <div className="text-xs text-gray-500">The standards every page follows</div>
             </Link>
-            <Link href="/research-methodology" className="block p-4 border border-gray-200 rounded-xl hover:border-marine-300 hover:bg-marine-50 transition-colors">
+            <Link href="/research-methodology" className="block p-4 border border-gray-200 rounded-xl hover:border-marine-300 hover:bg-marine-100 transition-colors">
               <div className="font-semibold text-marine-700 text-sm mb-1">Research Methodology</div>
               <div className="text-xs text-gray-500">How we gather and verify information</div>
             </Link>
-            <Link href="/sources-references" className="block p-4 border border-gray-200 rounded-xl hover:border-marine-300 hover:bg-marine-50 transition-colors">
+            <Link href="/sources-references" className="block p-4 border border-gray-200 rounded-xl hover:border-marine-300 hover:bg-marine-100 transition-colors">
               <div className="font-semibold text-marine-700 text-sm mb-1">Sources &amp; References</div>
               <div className="text-xs text-gray-500">Every official source we rely on</div>
             </Link>
@@ -141,7 +141,7 @@ export default function AboutPage() {
               { href: '/sngpl/cities', label: 'City Guides', desc: 'Gas bill guides for 44+ cities in Pakistan' },
             ].map(item => (
               <Link key={item.href} href={item.href}
-                className="block p-4 border border-gray-200 rounded-xl hover:border-marine-300 hover:bg-marine-50 transition-colors">
+                className="block p-4 border border-gray-200 rounded-xl hover:border-marine-300 hover:bg-marine-100 transition-colors">
                 <div className="font-semibold text-marine-700 mb-1">{item.label}</div>
                 <div className="text-sm text-gray-500">{item.desc}</div>
               </Link>

@@ -103,7 +103,7 @@ export default function BillCheckPage() {
           {/* Sidebar */}
           <aside className="hidden lg:block w-64 flex-shrink-0">
             <div className="sticky top-24 space-y-4">
-              <div className="bg-marine-50 rounded-2xl p-4 border border-marine-100">
+              <div className="bg-marine-100 rounded-2xl p-4 border border-marine-100">
                 <p className="text-xs font-bold text-marine-700 uppercase tracking-wide mb-3">📋 Contents</p>
                 <nav className="space-y-0.5">
                   {tocItems.map(t => (
@@ -248,7 +248,7 @@ export default function BillCheckPage() {
             <div className="not-prose space-y-3">
               {faqs.map((f, i) => (
                 <details key={i} className="group border border-gray-200 rounded-xl overflow-hidden bg-white">
-                  <summary className="flex items-center justify-between cursor-pointer p-4 hover:bg-marine-50 transition-colors select-none">
+                  <summary className="flex items-center justify-between cursor-pointer p-4 hover:bg-marine-100 transition-colors select-none">
                     <span className="font-semibold text-gray-900 text-sm pr-4">{f.q}</span>
                     <span className="flex-shrink-0 text-marine-500 group-open:rotate-180 transition-transform duration-200">▾</span>
                   </summary>
@@ -259,7 +259,7 @@ export default function BillCheckPage() {
               ))}
             </div>
 
-            <div className="mt-10 p-6 bg-marine-50 rounded-2xl border border-marine-200 text-center">
+            <div className="mt-10 p-6 bg-marine-100 rounded-2xl border border-marine-200 text-center">
               <h3 className="font-bold text-marine-900 text-lg mb-2">Check Your SNGPL Bill Now</h3>
               <p className="text-marine-700 text-sm mb-4">Use our free checker above or go directly to the official SNGPL portal.</p>
               <div className="flex flex-wrap gap-3 justify-center">
