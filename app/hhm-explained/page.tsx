@@ -76,7 +76,7 @@ export default function HHMExplainedPage() {
           </div>
           <h1 className="text-3xl md:text-4xl font-black mb-4 leading-tight">
             What is HHM in SNGPL Gas Bill?<br />
-            <span className="text-yellow-300">Complete HHM & GCV Reference Guide</span>
+            <span className="text-flame-300 drop-shadow-[0_1px_8px_rgba(253,126,12,0.35)]">Complete HHM & GCV Reference Guide</span>
           </h1>
           <p className="text-marine-100 text-base md:text-lg max-w-3xl leading-relaxed">
             HHM (Hundred Heat Meter) is the unit SNGPL uses to measure your gas consumption. This guide explains exactly what HHM means, how your meter works, what GCV is, how to calculate your bill, and how much each appliance consumes.

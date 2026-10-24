@@ -146,7 +146,7 @@ export default function HomePage() {
               </div>
               <h1 className="text-3xl sm:text-4xl xl:text-5xl font-black leading-tight mb-4">
                 Check Your Sui Gas (SNGPL) Bill{' '}
-                <span className="text-yellow-300">Online Instantly</span>
+                <span className="text-flame-300 drop-shadow-[0_1px_8px_rgba(253,126,12,0.35)]">Online Instantly</span>
               </h1>
               <p className="text-marine-100 text-base md:text-lg mb-6 leading-relaxed max-w-lg mx-auto lg:mx-0">
                 Enter your consumer number, account ID, or bill reference number and get redirected straight to the official SNGPL portal — no registration, no waiting, completely free.
@@ -190,7 +190,7 @@ export default function HomePage() {
               { v: 'Free', l: 'No Registration' },
             ].map(s => (
               <div key={s.l} className="text-center py-4 px-2">
-                <div className="text-xl font-black text-yellow-300">{s.v}</div>
+                <div className="text-xl font-black text-flame-300">{s.v}</div>
                 <div className="text-[11px] text-marine-200 mt-0.5">{s.l}</div>
               </div>
             ))}

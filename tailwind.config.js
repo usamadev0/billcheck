@@ -5,19 +5,21 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        // Primary brand scale — deep petrol/marine teal (replaces generic blue)
+        // Primary brand scale — matched to SNGPL's own official navy-to-sky-blue
+        // identity (sampled from sngpl.com.pk's header gradient) instead of a
+        // generic teal, so the site reads as the real brand, not a lookalike.
         marine: {
-          50:  '#eff8f8',
-          100: '#d6eeee',
-          200: '#afdcdd',
-          300: '#7ec4c6',
-          400: '#49a3a6',
-          500: '#2f868a',
-          600: '#226b70',
-          700: '#1e575c',
-          800: '#1c484c',
-          900: '#193c40',
-          950: '#0c2124',
+          50:  '#eef8fc',
+          100: '#d4ebf7',
+          200: '#a9d3ee',
+          300: '#74b8e3',
+          400: '#3d9bd4',
+          500: '#1384c6',
+          600: '#1a6bb3',
+          700: '#15437f',
+          800: '#123a6e',
+          900: '#0f3258',
+          950: '#0a2440',
         },
         // Accent scale — amber "gas flame" (used for primary CTAs)
         flame: {

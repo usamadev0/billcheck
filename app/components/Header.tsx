@@ -35,13 +35,14 @@ export default function Header() {
 
           {/* ── Logo ── */}
           <Link href="/" className="flex items-center gap-2.5 flex-shrink-0">
-            <div className="w-9 h-9 bg-gradient-to-br from-marine-500 to-marine-600 rounded-xl flex items-center justify-center shadow-md">
-              <svg className="w-5 h-5 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2.5}>
+            <div className="relative w-10 h-10 rounded-full bg-gradient-to-br from-marine-600 to-marine-800 ring-2 ring-marine-100 shadow-md flex items-center justify-center">
+              <svg className="w-[18px] h-[18px] text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2.5}>
                 <path strokeLinecap="round" strokeLinejoin="round" d="M15.362 5.214A8.252 8.252 0 0112 21 8.25 8.25 0 016.038 7.048 8.287 8.287 0 009 9.6a8.983 8.983 0 013.361-6.867 8.21 8.21 0 003 2.48z" />
               </svg>
+              <span className="absolute -bottom-0.5 -right-0.5 w-3 h-3 rounded-full bg-flame-400 ring-2 ring-white" aria-hidden="true" />
             </div>
             <div className="leading-tight">
-              <span className="font-black text-marine-700 text-sm block">SNGPL</span>
+              <span className="font-black text-marine-800 text-sm block tracking-tight">SNGPL</span>
               <span className="font-semibold text-gray-500 text-[11px] block">Bill Check Hub</span>
             </div>
           </Link>

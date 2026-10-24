@@ -74,7 +74,7 @@ export default function TaxesExplainedPage() {
           </div>
           <h1 className="text-3xl md:text-4xl font-black mb-4 leading-tight">
             SNGPL Gas Bill Taxes Explained 2026<br />
-            <span className="text-yellow-300">GIDC, GST, Meter Rent & OGRA Charges</span>
+            <span className="text-flame-300 drop-shadow-[0_1px_8px_rgba(253,126,12,0.35)]">GIDC, GST, Meter Rent & OGRA Charges</span>
           </h1>
           <p className="text-marine-100 text-base md:text-lg max-w-3xl leading-relaxed">
             Every line item on your SNGPL gas bill — base gas charges, GIDC, GST, meter rent, and late fees — explained clearly. Includes calculation examples, legal basis, and how OGRA regulates tariff revisions.

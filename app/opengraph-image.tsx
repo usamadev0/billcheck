@@ -18,7 +18,7 @@ export default function OGImage() {
           flexDirection: 'column',
           alignItems: 'center',
           justifyContent: 'center',
-          background: 'linear-gradient(135deg, #226b70 0%, #2f868a 60%, #fd7e0c 100%)',
+          background: 'linear-gradient(135deg, #1a6bb3 0%, #1384c6 60%, #fd7e0c 100%)',
           fontFamily: 'system-ui, -apple-system, sans-serif',
           padding: '60px',
         }}

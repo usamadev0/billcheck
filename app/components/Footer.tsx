@@ -10,10 +10,11 @@ export default function Footer() {
           {/* Brand */}
           <div className="md:col-span-2">
             <div className="flex items-center gap-2 mb-3">
-              <div className="w-8 h-8 bg-gradient-to-br from-marine-500 to-marine-600 rounded-lg flex items-center justify-center">
+              <div className="relative w-9 h-9 rounded-full bg-gradient-to-br from-marine-600 to-marine-800 ring-2 ring-marine-700/60 flex items-center justify-center">
                 <svg className="w-4 h-4 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2.5}>
                   <path strokeLinecap="round" strokeLinejoin="round" d="M15.362 5.214A8.252 8.252 0 0112 21 8.25 8.25 0 016.038 7.048 8.287 8.287 0 009 9.6a8.983 8.983 0 013.361-6.867 8.21 8.21 0 003 2.48z"/>
                 </svg>
+                <span className="absolute -bottom-0.5 -right-0.5 w-2.5 h-2.5 rounded-full bg-flame-400 ring-2 ring-gray-900" aria-hidden="true" />
               </div>
               <span className="font-bold text-white">SNGPL Bill Check Hub</span>
             </div>

@@ -78,8 +78,8 @@
 
 @layer utilities {
   .text-gradient { @apply bg-gradient-to-r from-marine-600 to-flame-500 bg-clip-text text-transparent; }
-  .bg-hero-sngpl { background: linear-gradient(135deg, #226b70 0%, #2f868a 55%, #fd7e0c 130%); }
-  .bg-hero-blue  { background: linear-gradient(135deg, #226b70 0%, #2f868a 60%, #49a3a6 100%); }
+  .bg-hero-sngpl { background: linear-gradient(135deg, #1a6bb3 0%, #1384c6 55%, #fd7e0c 130%); }
+  .bg-hero-blue  { background: linear-gradient(135deg, #1a6bb3 0%, #1384c6 60%, #3d9bd4 100%); }
   .section-pad   { @apply py-12 md:py-20; }
   /* Mobile touch targets */
   .touch-target { min-height: 44px; min-width: 44px; }
