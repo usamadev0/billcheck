@@ -15,11 +15,17 @@ const GIDC_RATE = 0.10;
 
 function calcBill(hhm: number) {
   const breakdown: { label: string; units: number; amount: number }[] = [];
+
+  // First 100 HHM is always a flat Rs. 200 charge — this applies whether
+  // total consumption stays within slab 1 or continues into higher slabs
+  // (cumulative slab structure, matching the published slab-rate example).
+  const fixed = 200;
   let variable = 0;
 
   if (hhm <= 100) {
     breakdown.push({ label: '0–100 HHM (Flat Rate)', units: hhm, amount: 0 });
   } else {
+    breakdown.push({ label: '0–100 HHM (Flat Rate)', units: 100, amount: 0 });
     for (const s of SLABS) {
       if (s.min === 0) continue;
       if (hhm < s.min) break;
@@ -32,7 +38,6 @@ function calcBill(hhm: number) {
     }
   }
 
-  const fixed   = hhm <= 100 ? 200 : 50;
   const base    = fixed + variable;
   const gidc    = Math.round(base * GIDC_RATE);
   const gst     = Math.round((base + gidc) * GST_RATE);
