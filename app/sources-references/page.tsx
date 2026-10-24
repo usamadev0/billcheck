@@ -4,12 +4,12 @@ import Link from 'next/link';
 export const metadata: Metadata = {
   title: 'Sources & References | SNGPL Bill Check Hub',
   description: 'Every official government body, regulator, and utility company SNGPL Bill Check Hub relies on for tariff, tax, and regulatory information.',
-  alternates: { canonical: 'https://www.checkgasbills.pk/sources-references' },
+  alternates: { canonical: 'https://checkgasbills.pk/sources-references' },
   robots: { index: true, follow: true },
   openGraph: {
     title: 'Sources & References | SNGPL Bill Check Hub',
     description: 'The official sources — OGRA, SNGPL, SSGC, FBR — behind the information on this site, with what each one is referenced for.',
-    url: 'https://www.checkgasbills.pk/sources-references',
+    url: 'https://checkgasbills.pk/sources-references',
     siteName: 'SNGPL Bill Check Hub',
     type: 'website',
   },
@@ -109,18 +109,18 @@ export default function SourcesReferencesPage() {
         '@context': 'https://schema.org',
         '@type': 'BreadcrumbList',
         itemListElement: [
-          { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://www.checkgasbills.pk' },
-          { '@type': 'ListItem', position: 2, name: 'About', item: 'https://www.checkgasbills.pk/about' },
-          { '@type': 'ListItem', position: 3, name: 'Sources & References', item: 'https://www.checkgasbills.pk/sources-references' },
+          { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://checkgasbills.pk' },
+          { '@type': 'ListItem', position: 2, name: 'About', item: 'https://checkgasbills.pk/about' },
+          { '@type': 'ListItem', position: 3, name: 'Sources & References', item: 'https://checkgasbills.pk/sources-references' },
         ],
       }) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({
         '@context': 'https://schema.org',
         '@type': 'WebPage',
         name: 'Sources & References',
-        url: 'https://www.checkgasbills.pk/sources-references',
-        isPartOf: { '@id': 'https://www.checkgasbills.pk/#website' },
-        about: { '@id': 'https://www.checkgasbills.pk/#organization' },
+        url: 'https://checkgasbills.pk/sources-references',
+        isPartOf: { '@id': 'https://checkgasbills.pk/#website' },
+        about: { '@id': 'https://checkgasbills.pk/#organization' },
       }) }} />
 
       <section className="bg-gradient-to-br from-blue-900 to-blue-700 text-white py-14 px-4">

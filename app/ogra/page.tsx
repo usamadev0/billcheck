@@ -4,12 +4,12 @@ import Link from 'next/link';
 export const metadata: Metadata = {
   title: 'OGRA — Oil & Gas Regulatory Authority Explained | SNGPL Bill Check Hub',
   description: 'What OGRA is, how it regulates SNGPL and SSGC, how gas tariffs are determined, and the difference between OGRA\'s prescribed price and the consumer sale price notified by the Federal Government.',
-  alternates: { canonical: 'https://www.checkgasbills.pk/ogra' },
+  alternates: { canonical: 'https://checkgasbills.pk/ogra' },
   robots: { index: true, follow: true },
   openGraph: {
     title: 'OGRA — Oil & Gas Regulatory Authority Explained',
     description: 'An independent reference page on OGRA: its mandate, its role in gas tariff determination, and how it interacts with SNGPL and SSGC.',
-    url: 'https://www.checkgasbills.pk/ogra',
+    url: 'https://checkgasbills.pk/ogra',
     siteName: 'SNGPL Bill Check Hub',
     type: 'website',
   },
@@ -35,17 +35,17 @@ export default function OgraPage() {
         '@context': 'https://schema.org',
         '@type': 'BreadcrumbList',
         itemListElement: [
-          { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://www.checkgasbills.pk' },
-          { '@type': 'ListItem', position: 2, name: 'OGRA', item: 'https://www.checkgasbills.pk/ogra' },
+          { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://checkgasbills.pk' },
+          { '@type': 'ListItem', position: 2, name: 'OGRA', item: 'https://checkgasbills.pk/ogra' },
         ],
       }) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({
         '@context': 'https://schema.org',
         '@type': 'WebPage',
         name: 'OGRA — Oil & Gas Regulatory Authority',
-        url: 'https://www.checkgasbills.pk/ogra',
-        isPartOf: { '@id': 'https://www.checkgasbills.pk/#website' },
-        publisher: { '@id': 'https://www.checkgasbills.pk/#organization' },
+        url: 'https://checkgasbills.pk/ogra',
+        isPartOf: { '@id': 'https://checkgasbills.pk/#website' },
+        publisher: { '@id': 'https://checkgasbills.pk/#organization' },
         mainEntity: {
           '@type': 'GovernmentOrganization',
           name: 'Oil and Gas Regulatory Authority',

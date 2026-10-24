@@ -3,7 +3,7 @@ import type { Metadata } from 'next';
 export const metadata: Metadata = {
   title: 'Privacy Policy | SNGPL Bill Check Hub',
   description: 'Privacy Policy for SNGPL Bill Check Hub. Learn how we handle your data, what information we collect, and your rights as a user.',
-  alternates: { canonical: 'https://www.checkgasbills.pk/privacy-policy' },
+  alternates: { canonical: 'https://checkgasbills.pk/privacy-policy' },
   robots: { index: true, follow: true },
 };
 

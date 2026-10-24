@@ -4,12 +4,12 @@ import Link from 'next/link';
 export const metadata: Metadata = {
   title: 'SNGPL — Sui Northern Gas Pipelines Limited Explained | SNGPL Bill Check Hub',
   description: 'The independent reference profile for SNGPL: what it does, its OGRA-regulated tariffs, service area, consumer number, meter reading, new connections, complaints, and official contact channels.',
-  alternates: { canonical: 'https://www.checkgasbills.pk/companies/sngpl' },
+  alternates: { canonical: 'https://checkgasbills.pk/companies/sngpl' },
   robots: { index: true, follow: true },
   openGraph: {
     title: 'SNGPL — Sui Northern Gas Pipelines Limited Explained',
     description: 'An independent profile of SNGPL: company facts, OGRA relationship, consumer lifecycle, and official service channels — verified against SNGPL\'s own published material.',
-    url: 'https://www.checkgasbills.pk/companies/sngpl',
+    url: 'https://checkgasbills.pk/companies/sngpl',
     siteName: 'SNGPL Bill Check Hub',
     type: 'website',
   },
@@ -54,17 +54,17 @@ export default function SngplCompanyPage() {
         '@context': 'https://schema.org',
         '@type': 'BreadcrumbList',
         itemListElement: [
-          { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://www.checkgasbills.pk' },
-          { '@type': 'ListItem', position: 2, name: 'SNGPL', item: 'https://www.checkgasbills.pk/companies/sngpl' },
+          { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://checkgasbills.pk' },
+          { '@type': 'ListItem', position: 2, name: 'SNGPL', item: 'https://checkgasbills.pk/companies/sngpl' },
         ],
       }) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({
         '@context': 'https://schema.org',
         '@type': 'WebPage',
         name: 'SNGPL — Sui Northern Gas Pipelines Limited',
-        url: 'https://www.checkgasbills.pk/companies/sngpl',
-        isPartOf: { '@id': 'https://www.checkgasbills.pk/#website' },
-        publisher: { '@id': 'https://www.checkgasbills.pk/#organization' },
+        url: 'https://checkgasbills.pk/companies/sngpl',
+        isPartOf: { '@id': 'https://checkgasbills.pk/#website' },
+        publisher: { '@id': 'https://checkgasbills.pk/#organization' },
         mainEntity: {
           '@type': 'Corporation',
           name: 'Sui Northern Gas Pipelines Limited',

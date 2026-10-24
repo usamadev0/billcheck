@@ -5,7 +5,7 @@ import { CITIES } from '../../../lib/seo-data';
 export const metadata: Metadata = {
   title: 'SNGPL City Guides — All 44 Cities in Punjab, KPK & Islamabad 2025',
   description: 'Complete SNGPL consumer guides for all 44 cities. Bill check, consumer number, payment, duplicate bill and troubleshooting guides for every SNGPL city in Pakistan.',
-  alternates: { canonical: 'https://www.checkgasbills.pk/sngpl/cities' },
+  alternates: { canonical: 'https://checkgasbills.pk/sngpl/cities' },
 };
 
 const byProvince: Record<string, typeof CITIES> = {};
@@ -22,8 +22,8 @@ export default function CitiesIndexPage() {
         '@context': 'https://schema.org',
         '@type': 'BreadcrumbList',
         itemListElement: [
-          { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://www.checkgasbills.pk' },
-          { '@type': 'ListItem', position: 2, name: 'All City Guides', item: 'https://www.checkgasbills.pk/sngpl/cities' },
+          { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://checkgasbills.pk' },
+          { '@type': 'ListItem', position: 2, name: 'All City Guides', item: 'https://checkgasbills.pk/sngpl/cities' },
         ],
       }) }} />
 
@@ -39,7 +39,7 @@ export default function CitiesIndexPage() {
             Complete SNGPL consumer resource hub for every city in Punjab, Khyber Pakhtunkhwa, and Islamabad Capital Territory.
           </p>
           <div className="mt-4 flex flex-wrap gap-2">
-            {['44 Cities', 'Punjab', 'KPK', 'ICT', '10,000+ Guides'].map(t => (
+            {['44 Cities', 'Punjab', 'KPK', 'ICT', 'All-in-One Guides'].map(t => (
               <span key={t} className="bg-white/15 border border-white/20 rounded-full px-3 py-1 text-xs font-medium">{t}</span>
             ))}
           </div>

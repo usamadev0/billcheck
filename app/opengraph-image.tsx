@@ -115,7 +115,7 @@ export default function OGImage() {
             fontWeight: '500',
           }}
         >
-          www.checkgasbills.pk
+          checkgasbills.pk
         </div>
       </div>
     ),

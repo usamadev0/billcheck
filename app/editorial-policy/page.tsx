@@ -4,12 +4,12 @@ import Link from 'next/link';
 export const metadata: Metadata = {
   title: 'Editorial Policy | SNGPL Bill Check Hub',
   description: 'The editorial standards SNGPL Bill Check Hub follows: accuracy, independence, neutrality, government-first sourcing, and how errors are corrected.',
-  alternates: { canonical: 'https://www.checkgasbills.pk/editorial-policy' },
+  alternates: { canonical: 'https://checkgasbills.pk/editorial-policy' },
   robots: { index: true, follow: true },
   openGraph: {
     title: 'Editorial Policy | SNGPL Bill Check Hub',
     description: 'The editorial standards this site follows before anything is published: accuracy, independence, neutrality, and government-first sourcing.',
-    url: 'https://www.checkgasbills.pk/editorial-policy',
+    url: 'https://checkgasbills.pk/editorial-policy',
     siteName: 'SNGPL Bill Check Hub',
     type: 'website',
   },
@@ -35,18 +35,18 @@ export default function EditorialPolicyPage() {
         '@context': 'https://schema.org',
         '@type': 'BreadcrumbList',
         itemListElement: [
-          { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://www.checkgasbills.pk' },
-          { '@type': 'ListItem', position: 2, name: 'About', item: 'https://www.checkgasbills.pk/about' },
-          { '@type': 'ListItem', position: 3, name: 'Editorial Policy', item: 'https://www.checkgasbills.pk/editorial-policy' },
+          { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://checkgasbills.pk' },
+          { '@type': 'ListItem', position: 2, name: 'About', item: 'https://checkgasbills.pk/about' },
+          { '@type': 'ListItem', position: 3, name: 'Editorial Policy', item: 'https://checkgasbills.pk/editorial-policy' },
         ],
       }) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({
         '@context': 'https://schema.org',
         '@type': 'WebPage',
         name: 'Editorial Policy',
-        url: 'https://www.checkgasbills.pk/editorial-policy',
-        isPartOf: { '@id': 'https://www.checkgasbills.pk/#website' },
-        about: { '@id': 'https://www.checkgasbills.pk/#organization' },
+        url: 'https://checkgasbills.pk/editorial-policy',
+        isPartOf: { '@id': 'https://checkgasbills.pk/#website' },
+        about: { '@id': 'https://checkgasbills.pk/#organization' },
       }) }} />
 
       {/* Hero */}

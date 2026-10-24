@@ -4,12 +4,12 @@ import Link from 'next/link';
 export const metadata: Metadata = {
   title: 'Corrections Policy | SNGPL Bill Check Hub',
   description: 'How to report an error on SNGPL Bill Check Hub, how corrections are reviewed, and the difference between a factual correction and an editorial improvement.',
-  alternates: { canonical: 'https://www.checkgasbills.pk/corrections-policy' },
+  alternates: { canonical: 'https://checkgasbills.pk/corrections-policy' },
   robots: { index: true, follow: true },
   openGraph: {
     title: 'Corrections Policy | SNGPL Bill Check Hub',
     description: 'How errors are reported, reviewed, and corrected on this site.',
-    url: 'https://www.checkgasbills.pk/corrections-policy',
+    url: 'https://checkgasbills.pk/corrections-policy',
     siteName: 'SNGPL Bill Check Hub',
     type: 'website',
   },
@@ -30,18 +30,18 @@ export default function CorrectionsPolicyPage() {
         '@context': 'https://schema.org',
         '@type': 'BreadcrumbList',
         itemListElement: [
-          { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://www.checkgasbills.pk' },
-          { '@type': 'ListItem', position: 2, name: 'About', item: 'https://www.checkgasbills.pk/about' },
-          { '@type': 'ListItem', position: 3, name: 'Corrections Policy', item: 'https://www.checkgasbills.pk/corrections-policy' },
+          { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://checkgasbills.pk' },
+          { '@type': 'ListItem', position: 2, name: 'About', item: 'https://checkgasbills.pk/about' },
+          { '@type': 'ListItem', position: 3, name: 'Corrections Policy', item: 'https://checkgasbills.pk/corrections-policy' },
         ],
       }) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({
         '@context': 'https://schema.org',
         '@type': 'WebPage',
         name: 'Corrections Policy',
-        url: 'https://www.checkgasbills.pk/corrections-policy',
-        isPartOf: { '@id': 'https://www.checkgasbills.pk/#website' },
-        about: { '@id': 'https://www.checkgasbills.pk/#organization' },
+        url: 'https://checkgasbills.pk/corrections-policy',
+        isPartOf: { '@id': 'https://checkgasbills.pk/#website' },
+        about: { '@id': 'https://checkgasbills.pk/#organization' },
       }) }} />
 
       <section className="bg-gradient-to-br from-blue-900 to-blue-700 text-white py-14 px-4">

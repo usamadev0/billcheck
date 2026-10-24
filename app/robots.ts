@@ -33,7 +33,7 @@ export default function robots(): MetadataRoute.Robots {
       { userAgent: 'MJ12bot',        crawlDelay: 10 },
       { userAgent: 'DotBot',         crawlDelay: 10 },
     ],
-    sitemap: 'https://www.checkgasbills.pk/sitemap-index',
-    host: 'https://www.checkgasbills.pk',
+    sitemap: 'https://checkgasbills.pk/sitemap.xml',
+    host: 'https://checkgasbills.pk',
   };
 }

@@ -3,7 +3,7 @@ import type { Metadata } from 'next';
 export const metadata: Metadata = {
   title: 'Contact Us | SNGPL Bill Check Hub',
   description: 'Contact SNGPL Bill Check Hub. For SNGPL billing queries, contact SNGPL directly at 1199. For website feedback, use the details on this page.',
-  alternates: { canonical: 'https://www.checkgasbills.pk/contact' },
+  alternates: { canonical: 'https://checkgasbills.pk/contact' },
   robots: { index: true, follow: true },
 };
 
@@ -11,8 +11,8 @@ const contactSchema = {
   '@context': 'https://schema.org',
   '@type': 'ContactPage',
   name: 'Contact SNGPL Bill Check Hub',
-  url: 'https://www.checkgasbills.pk/contact',
-  isPartOf: { '@id': 'https://www.checkgasbills.pk/#website' },
+  url: 'https://checkgasbills.pk/contact',
+  isPartOf: { '@id': 'https://checkgasbills.pk/#website' },
 };
 
 export default function ContactPage() {

@@ -4,12 +4,12 @@ import Link from 'next/link';
 export const metadata: Metadata = {
   title: 'Gas Safety & Emergency Guide | SNGPL Bill Check Hub',
   description: 'How to recognise and respond to a gas leak or emergency in Pakistan, official SNGPL and SSGC emergency channels, and OGRA\'s published safety and response-time standards — verified against primary sources.',
-  alternates: { canonical: 'https://www.checkgasbills.pk/safety' },
+  alternates: { canonical: 'https://checkgasbills.pk/safety' },
   robots: { index: true, follow: true },
   openGraph: {
     title: 'Gas Safety & Emergency Guide | SNGPL Bill Check Hub',
     description: 'Recognising a gas emergency, official SNGPL/SSGC emergency channels, and OGRA\'s published safety standards — sourced and verified before publishing.',
-    url: 'https://www.checkgasbills.pk/safety',
+    url: 'https://checkgasbills.pk/safety',
     siteName: 'SNGPL Bill Check Hub',
     type: 'website',
   },
@@ -136,18 +136,18 @@ export default function SafetyPage() {
         '@context': 'https://schema.org',
         '@type': 'BreadcrumbList',
         itemListElement: [
-          { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://www.checkgasbills.pk' },
-          { '@type': 'ListItem', position: 2, name: 'Gas Safety & Emergency Guide', item: 'https://www.checkgasbills.pk/safety' },
+          { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://checkgasbills.pk' },
+          { '@type': 'ListItem', position: 2, name: 'Gas Safety & Emergency Guide', item: 'https://checkgasbills.pk/safety' },
         ],
       }) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({
         '@context': 'https://schema.org',
         '@type': 'WebPage',
         name: 'Gas Safety & Emergency Guide',
-        url: 'https://www.checkgasbills.pk/safety',
-        isPartOf: { '@id': 'https://www.checkgasbills.pk/#website' },
-        publisher: { '@id': 'https://www.checkgasbills.pk/#organization' },
-        about: { '@id': 'https://www.checkgasbills.pk/#organization' },
+        url: 'https://checkgasbills.pk/safety',
+        isPartOf: { '@id': 'https://checkgasbills.pk/#website' },
+        publisher: { '@id': 'https://checkgasbills.pk/#organization' },
+        about: { '@id': 'https://checkgasbills.pk/#organization' },
       }) }} />
 
       <section className="bg-gradient-to-br from-blue-900 to-blue-700 text-white py-14 px-4">

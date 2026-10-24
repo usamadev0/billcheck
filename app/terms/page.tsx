@@ -3,7 +3,7 @@ import type { Metadata } from 'next';
 export const metadata: Metadata = {
   title: 'Terms of Use | SNGPL Bill Check Hub',
   description: 'Terms of Use for SNGPL Bill Check Hub. Read our terms before using the gas bill check, calculator, and guide services.',
-  alternates: { canonical: 'https://www.checkgasbills.pk/terms' },
+  alternates: { canonical: 'https://checkgasbills.pk/terms' },
   robots: { index: true, follow: true },
 };
 

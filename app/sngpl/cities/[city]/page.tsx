@@ -28,11 +28,11 @@ export async function generateMetadata({
   return {
     title: `SNGPL ${city.name} — Bill Check, Consumer Number, Payment & Guides 2025`,
     description: `Complete SNGPL guide for ${city.name} consumers. Bill check, consumer number, duplicate bill, payment methods, troubleshooting — all in one place. ${city.consumers} consumers served.`,
-    alternates: { canonical: `https://www.checkgasbills.pk/sngpl/cities/${citySlug}` },
+    alternates: { canonical: `https://checkgasbills.pk/sngpl/cities/${citySlug}` },
     openGraph: {
       title: `SNGPL ${city.name} Complete Consumer Guide 2025`,
       description: `Everything SNGPL consumers in ${city.name} need: bill check, consumer number, payment, troubleshooting. Serving ${city.consumers} consumers in ${city.division}.`,
-      url: `https://www.checkgasbills.pk/sngpl/cities/${citySlug}`,
+      url: `https://checkgasbills.pk/sngpl/cities/${citySlug}`,
     },
   };
 }
@@ -94,14 +94,14 @@ export default async function CityHubPage({
   const city = CITIES.find(c => c.slug === citySlug);
   if (!city) notFound();
 
-  const canonicalUrl = `https://www.checkgasbills.pk/sngpl/cities/${citySlug}`;
+  const canonicalUrl = `https://checkgasbills.pk/sngpl/cities/${citySlug}`;
 
   const breadcrumbSchema = {
     '@context': 'https://schema.org',
     '@type': 'BreadcrumbList',
     itemListElement: [
-      { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://www.checkgasbills.pk' },
-      { '@type': 'ListItem', position: 2, name: 'City Guides', item: 'https://www.checkgasbills.pk/sngpl/cities' },
+      { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://checkgasbills.pk' },
+      { '@type': 'ListItem', position: 2, name: 'City Guides', item: 'https://checkgasbills.pk/sngpl/cities' },
       { '@type': 'ListItem', position: 3, name: city.name, item: canonicalUrl },
     ],
   };
@@ -189,19 +189,18 @@ export default async function CityHubPage({
                   </div>
                   <div className="grid grid-cols-2 sm:grid-cols-3 gap-2">
                     {meta.topTypes.map(type => (
-                      <Link
+                      <span
                         key={type}
-                        href={`/sngpl/${cat}/${city.slug}-${type}`}
-                        className="bg-white border border-gray-200 hover:border-blue-300 hover:bg-blue-50 rounded-xl px-3 py-2 text-xs font-medium text-gray-700 hover:text-blue-700 transition-all no-underline block"
+                        className="bg-white border border-gray-200 rounded-xl px-3 py-2 text-xs font-medium text-gray-600 block"
                       >
                         {getTypeLabel(type)}
-                      </Link>
+                      </span>
                     ))}
                     <Link
                       href={`/sngpl/${cat}`}
-                      className="bg-white border border-dashed border-gray-300 hover:border-blue-400 rounded-xl px-3 py-2 text-xs font-medium text-gray-400 hover:text-blue-600 transition-all no-underline flex items-center justify-center"
+                      className="bg-white border border-dashed border-gray-300 hover:border-blue-400 rounded-xl px-3 py-2 text-xs font-medium text-blue-600 hover:text-blue-700 transition-all no-underline flex items-center justify-center col-span-2 sm:col-span-1"
                     >
-                      + More guides
+                      Read full {getCategoryLabel(cat)} guide →
                     </Link>
                   </div>
                 </div>

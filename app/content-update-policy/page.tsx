@@ -4,12 +4,12 @@ import Link from 'next/link';
 export const metadata: Metadata = {
   title: 'Content Update Policy | SNGPL Bill Check Hub',
   description: 'What triggers an update on SNGPL Bill Check Hub, how often pages are reviewed, and what "Last Reviewed" actually means on this site.',
-  alternates: { canonical: 'https://www.checkgasbills.pk/content-update-policy' },
+  alternates: { canonical: 'https://checkgasbills.pk/content-update-policy' },
   robots: { index: true, follow: true },
   openGraph: {
     title: 'Content Update Policy | SNGPL Bill Check Hub',
     description: 'What triggers a content update, how review cadence works, and what "Last Reviewed" means on this site.',
-    url: 'https://www.checkgasbills.pk/content-update-policy',
+    url: 'https://checkgasbills.pk/content-update-policy',
     siteName: 'SNGPL Bill Check Hub',
     type: 'website',
   },
@@ -29,18 +29,18 @@ export default function ContentUpdatePolicyPage() {
         '@context': 'https://schema.org',
         '@type': 'BreadcrumbList',
         itemListElement: [
-          { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://www.checkgasbills.pk' },
-          { '@type': 'ListItem', position: 2, name: 'About', item: 'https://www.checkgasbills.pk/about' },
-          { '@type': 'ListItem', position: 3, name: 'Content Update Policy', item: 'https://www.checkgasbills.pk/content-update-policy' },
+          { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://checkgasbills.pk' },
+          { '@type': 'ListItem', position: 2, name: 'About', item: 'https://checkgasbills.pk/about' },
+          { '@type': 'ListItem', position: 3, name: 'Content Update Policy', item: 'https://checkgasbills.pk/content-update-policy' },
         ],
       }) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({
         '@context': 'https://schema.org',
         '@type': 'WebPage',
         name: 'Content Update Policy',
-        url: 'https://www.checkgasbills.pk/content-update-policy',
-        isPartOf: { '@id': 'https://www.checkgasbills.pk/#website' },
-        about: { '@id': 'https://www.checkgasbills.pk/#organization' },
+        url: 'https://checkgasbills.pk/content-update-policy',
+        isPartOf: { '@id': 'https://checkgasbills.pk/#website' },
+        about: { '@id': 'https://checkgasbills.pk/#organization' },
       }) }} />
 
       <section className="bg-gradient-to-br from-blue-900 to-blue-700 text-white py-14 px-4">

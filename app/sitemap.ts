@@ -7,7 +7,7 @@ const LAUNCH       = new Date('2025-01-01');
 const LAST_UPDATED = new Date('2026-05-25'); // update when site content changes
 
 export default function sitemap(): MetadataRoute.Sitemap {
-  const base = 'https://www.checkgasbills.pk';
+  const base = 'https://checkgasbills.pk';
 
   const corePages: MetadataRoute.Sitemap = [
     { url: base,                             lastModified: LAST_UPDATED, changeFrequency: 'weekly',  priority: 1.0 },

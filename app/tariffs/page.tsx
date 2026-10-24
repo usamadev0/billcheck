@@ -4,12 +4,12 @@ import Link from 'next/link';
 export const metadata: Metadata = {
   title: 'Pakistan Gas Tariffs Explained — OGRA, SNGPL & SSGC | SNGPL Bill Check Hub',
   description: 'The independent authority hub for Pakistan natural gas tariffs: how OGRA determines prices, how SNGPL and SSGC bill consumers, what goes into a gas bill, and a dated, sourced history of prescribed-price determinations.',
-  alternates: { canonical: 'https://www.checkgasbills.pk/tariffs' },
+  alternates: { canonical: 'https://checkgasbills.pk/tariffs' },
   robots: { index: true, follow: true },
   openGraph: {
     title: 'Pakistan Gas Tariffs Explained — OGRA, SNGPL & SSGC',
     description: 'How gas tariffs are determined and billed in Pakistan, with a dated, sourced historical record of OGRA prescribed-price determinations.',
-    url: 'https://www.checkgasbills.pk/tariffs',
+    url: 'https://checkgasbills.pk/tariffs',
     siteName: 'SNGPL Bill Check Hub',
     type: 'website',
   },
@@ -89,17 +89,17 @@ export default function TariffsHubPage() {
         '@context': 'https://schema.org',
         '@type': 'BreadcrumbList',
         itemListElement: [
-          { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://www.checkgasbills.pk' },
-          { '@type': 'ListItem', position: 2, name: 'Gas Tariffs', item: 'https://www.checkgasbills.pk/tariffs' },
+          { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://checkgasbills.pk' },
+          { '@type': 'ListItem', position: 2, name: 'Gas Tariffs', item: 'https://checkgasbills.pk/tariffs' },
         ],
       }) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({
         '@context': 'https://schema.org',
         '@type': 'WebPage',
         name: 'Pakistan Gas Tariffs — OGRA, SNGPL & SSGC Explained',
-        url: 'https://www.checkgasbills.pk/tariffs',
-        isPartOf: { '@id': 'https://www.checkgasbills.pk/#website' },
-        publisher: { '@id': 'https://www.checkgasbills.pk/#organization' },
+        url: 'https://checkgasbills.pk/tariffs',
+        isPartOf: { '@id': 'https://checkgasbills.pk/#website' },
+        publisher: { '@id': 'https://checkgasbills.pk/#organization' },
       }) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({
         '@context': 'https://schema.org',
@@ -107,10 +107,10 @@ export default function TariffsHubPage() {
         name: 'Pakistan Gas Tariff History — SNGPL & SSGC Prescribed Prices',
         description: 'A growing, dated, source-attributed record of OGRA prescribed-price determinations for SNGPL and SSGC, and whether the Federal Government passed each determination through to consumer sale prices.',
         temporalCoverage: '2024-05-21/2026-07-07',
-        creator: { '@id': 'https://www.checkgasbills.pk/#organization' },
+        creator: { '@id': 'https://checkgasbills.pk/#organization' },
         variableMeasured: ['Average prescribed price per utility (Rs/MMBtu)', 'Consumer tariff pass-through outcome'],
         isAccessibleForFree: true,
-        url: 'https://www.checkgasbills.pk/tariffs#history',
+        url: 'https://checkgasbills.pk/tariffs#history',
       }) }} />
 
       {/* Hero */}

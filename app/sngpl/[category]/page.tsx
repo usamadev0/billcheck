@@ -25,7 +25,7 @@ export async function generateMetadata({
   return {
     title: `SNGPL ${label} — All Cities Comprehensive Guide 2025`,
     description: `Complete SNGPL ${label.toLowerCase()} guides for all cities in Punjab, KPK, and Islamabad. Detailed city-specific information, step-by-step instructions, and expert tips for every consumer.`,
-    alternates: { canonical: `https://www.checkgasbills.pk/sngpl/${category}` },
+    alternates: { canonical: `https://checkgasbills.pk/sngpl/${category}` },
   };
 }
 
@@ -203,12 +203,6 @@ export default async function CategoryIndexPage({
               {CITIES.length} Cities Covered
             </span>
             <span className="bg-white/15 border border-white/20 rounded-full px-3 py-1 text-xs font-medium">
-              {types.length} Guide Topics
-            </span>
-            <span className="bg-white/15 border border-white/20 rounded-full px-3 py-1 text-xs font-medium">
-              {CITIES.length * types.length}+ Specific Guides
-            </span>
-            <span className="bg-white/15 border border-white/20 rounded-full px-3 py-1 text-xs font-medium">
               Free — No Registration
             </span>
           </div>
@@ -228,23 +222,11 @@ export default async function CategoryIndexPage({
 
         {/* ── Popular Guide Types ───────────────────────────────── */}
         <section className="mb-14">
-          <h2 className="text-xl font-bold text-gray-900 mb-6">Popular {label} Topics</h2>
+          <h2 className="text-xl font-bold text-gray-900 mb-6">What This Guide Covers</h2>
           <div className="grid sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-3">
             {featuredTypes.map(type => (
-              <div key={type} className="bg-white border border-gray-200 rounded-xl p-3 hover:border-blue-300 transition-colors">
-                <p className="text-xs font-semibold text-gray-900 mb-2">{getTypeLabel(type)}</p>
-                <div className="flex flex-wrap gap-1">
-                  {CITIES.slice(0, 6).map(city => (
-                    <Link
-                      key={city.slug}
-                      href={`/sngpl/${cat}/${city.slug}-${type}`}
-                      className="text-xs text-blue-600 hover:text-blue-800 hover:underline"
-                    >
-                      {city.name}
-                    </Link>
-                  ))}
-                  <span className="text-xs text-gray-400">+{CITIES.length - 6} more</span>
-                </div>
+              <div key={type} className="bg-white border border-gray-200 rounded-xl p-3">
+                <p className="text-xs font-semibold text-gray-900">{getTypeLabel(type)}</p>
               </div>
             ))}
           </div>
@@ -291,20 +273,12 @@ export default async function CategoryIndexPage({
                       {city.consumers}
                     </span>
                   </div>
-                  <div className="flex flex-wrap gap-1">
-                    {types.slice(0, 5).map(type => (
-                      <Link
-                        key={type}
-                        href={`/sngpl/${cat}/${city.slug}-${type}`}
-                        className="text-xs bg-gray-100 hover:bg-blue-100 hover:text-blue-700 text-gray-600 rounded-lg px-2 py-1 transition-colors no-underline"
-                      >
-                        {getTypeLabel(type)}
-                      </Link>
-                    ))}
-                    {types.length > 5 && (
-                      <span className="text-xs text-gray-400 px-2 py-1">+{types.length - 5} more</span>
-                    )}
-                  </div>
+                  <Link
+                    href={`/sngpl/cities/${city.slug}`}
+                    className="inline-block text-xs font-semibold bg-blue-50 hover:bg-blue-100 text-blue-700 rounded-lg px-3 py-1.5 transition-colors no-underline"
+                  >
+                    View {city.name} Guide →
+                  </Link>
                 </div>
               ))}
             </div>

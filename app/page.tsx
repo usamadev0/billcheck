@@ -5,11 +5,11 @@ import BillChecker from './components/BillChecker';
 export const metadata: Metadata = {
   title: 'SNGPL Bill Check Online | Pakistan Gas Bill Hub — Free Tool',
   description: 'Check SNGPL gas bill online instantly. Enter consumer number for official portal redirect. Duplicate bill, payment guide & calculator. Free — no login.',
-  alternates: { canonical: 'https://www.checkgasbills.pk' },
+  alternates: { canonical: 'https://checkgasbills.pk' },
   openGraph: {
     title: 'SNGPL Bill Check Online | Pakistan Gas Bill Hub',
     description: 'Check SNGPL gas bill online instantly. Consumer number guide, duplicate bill, payment methods & calculator. 100% free Pakistan gas utility resource.',
-    url: 'https://www.checkgasbills.pk',
+    url: 'https://checkgasbills.pk',
     siteName: 'SNGPL Bill Check Hub',
     locale: 'en_PK',
     type: 'website',
@@ -90,11 +90,11 @@ export default function HomePage() {
         '@context': 'https://schema.org',
         '@type': 'WebSite',
         name: 'SNGPL Bill Check Hub',
-        url: 'https://www.checkgasbills.pk',
+        url: 'https://checkgasbills.pk',
         description: 'Pakistan SNGPL gas bill checker, guides, calculator and consumer help.',
         potentialAction: {
           '@type': 'SearchAction',
-          target: 'https://www.checkgasbills.pk/?q={search_term_string}',
+          target: 'https://checkgasbills.pk/?q={search_term_string}',
           'query-input': 'required name=search_term_string',
         },
       }) }} />
@@ -105,12 +105,12 @@ export default function HomePage() {
         name: 'SNGPL Consumer Tools & Guides',
         description: 'Complete set of free SNGPL gas bill tools and consumer guides for Pakistan',
         itemListElement: [
-          { '@type': 'ListItem', position: 1, name: 'SNGPL Bill Check Guide',   url: 'https://www.checkgasbills.pk/bill-check' },
-          { '@type': 'ListItem', position: 2, name: 'Consumer Number Help',     url: 'https://www.checkgasbills.pk/consumer-number' },
-          { '@type': 'ListItem', position: 3, name: 'Duplicate Bill Download',  url: 'https://www.checkgasbills.pk/duplicate-bill' },
-          { '@type': 'ListItem', position: 4, name: 'Bill Payment Guide',       url: 'https://www.checkgasbills.pk/payment-guide' },
-          { '@type': 'ListItem', position: 5, name: 'Gas Bill Calculator',      url: 'https://www.checkgasbills.pk/calculator' },
-          { '@type': 'ListItem', position: 6, name: 'All SNGPL Guides',         url: 'https://www.checkgasbills.pk/guides' },
+          { '@type': 'ListItem', position: 1, name: 'SNGPL Bill Check Guide',   url: 'https://checkgasbills.pk/bill-check' },
+          { '@type': 'ListItem', position: 2, name: 'Consumer Number Help',     url: 'https://checkgasbills.pk/consumer-number' },
+          { '@type': 'ListItem', position: 3, name: 'Duplicate Bill Download',  url: 'https://checkgasbills.pk/duplicate-bill' },
+          { '@type': 'ListItem', position: 4, name: 'Bill Payment Guide',       url: 'https://checkgasbills.pk/payment-guide' },
+          { '@type': 'ListItem', position: 5, name: 'Gas Bill Calculator',      url: 'https://checkgasbills.pk/calculator' },
+          { '@type': 'ListItem', position: 6, name: 'All SNGPL Guides',         url: 'https://checkgasbills.pk/guides' },
         ],
       }) }} />
 
@@ -399,7 +399,7 @@ export default function HomePage() {
           <div className="mt-6 text-center">
             <Link href="/sngpl/bill-check"
               className="inline-flex items-center gap-2 text-blue-600 font-semibold text-sm hover:text-blue-800 transition-colors">
-              View all 45 city bill-check guides →
+              View all 44 city bill-check guides →
             </Link>
           </div>
         </div>
@@ -454,17 +454,17 @@ export default function HomePage() {
       <section className="section-pad bg-gray-50">
         <div className="max-w-6xl mx-auto px-4 sm:px-6">
           <div className="text-center mb-10">
-            <span className="badge bg-blue-100 text-blue-700 mb-3">10,000+ Guides</span>
+            <span className="badge bg-blue-100 text-blue-700 mb-3">City-by-City Guides</span>
             <h2 className="text-2xl md:text-3xl font-bold text-gray-900">SNGPL Guide Categories</h2>
-            <p className="text-gray-500 mt-2 text-sm">Comprehensive guides organized by topic — covering all 45 SNGPL cities</p>
+            <p className="text-gray-500 mt-2 text-sm">Comprehensive guides organized by topic — covering all 44 SNGPL cities</p>
           </div>
           <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-4">
             {[
-              { href: '/sngpl/bill-check',      icon: '🔍', label: 'Bill Check',       count: '45 cities' },
-              { href: '/sngpl/consumer-number',  icon: '🔢', label: 'Consumer Number',  count: '45 cities' },
-              { href: '/sngpl/duplicate-bill',   icon: '📄', label: 'Duplicate Bill',   count: '45 cities' },
-              { href: '/sngpl/payment',          icon: '💳', label: 'Payment Guides',   count: '45 cities' },
-              { href: '/sngpl/troubleshooting',  icon: '⚠️', label: 'Troubleshooting', count: '45 cities' },
+              { href: '/sngpl/bill-check',      icon: '🔍', label: 'Bill Check',       count: '44 cities' },
+              { href: '/sngpl/consumer-number',  icon: '🔢', label: 'Consumer Number',  count: '44 cities' },
+              { href: '/sngpl/duplicate-bill',   icon: '📄', label: 'Duplicate Bill',   count: '44 cities' },
+              { href: '/sngpl/payment',          icon: '💳', label: 'Payment Guides',   count: '44 cities' },
+              { href: '/sngpl/troubleshooting',  icon: '⚠️', label: 'Troubleshooting', count: '44 cities' },
             ].map(l => (
               <Link key={l.href} href={l.href}
                 className="card text-center hover:border-blue-200 hover:shadow-md transition-all no-underline">

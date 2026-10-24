@@ -4,12 +4,12 @@ import Link from 'next/link';
 export const metadata: Metadata = {
   title: 'Gas Complaints & Consumer Rights in Pakistan — SNGPL, SSGC, OGRA | SNGPL Bill Check Hub',
   description: 'How to escalate a gas complaint in Pakistan: SNGPL and SSGC complaint channels, OGRA\'s formal Complaint Resolution Procedure, the Federal Ombudsman, and a verified consumer-rights reference — all independently sourced.',
-  alternates: { canonical: 'https://www.checkgasbills.pk/complaints' },
+  alternates: { canonical: 'https://checkgasbills.pk/complaints' },
   robots: { index: true, follow: true },
   openGraph: {
     title: 'Gas Complaints & Consumer Rights in Pakistan',
     description: 'A sourced, independent guide to escalating a gas complaint: utility channels, OGRA\'s formal process, the Federal Ombudsman, and what actually happens at each step.',
-    url: 'https://www.checkgasbills.pk/complaints',
+    url: 'https://checkgasbills.pk/complaints',
     siteName: 'SNGPL Bill Check Hub',
     type: 'website',
   },
@@ -105,17 +105,17 @@ export default function ComplaintsHubPage() {
         '@context': 'https://schema.org',
         '@type': 'BreadcrumbList',
         itemListElement: [
-          { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://www.checkgasbills.pk' },
-          { '@type': 'ListItem', position: 2, name: 'Complaints', item: 'https://www.checkgasbills.pk/complaints' },
+          { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://checkgasbills.pk' },
+          { '@type': 'ListItem', position: 2, name: 'Complaints', item: 'https://checkgasbills.pk/complaints' },
         ],
       }) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({
         '@context': 'https://schema.org',
         '@type': 'WebPage',
         name: 'Gas Complaints & Consumer Rights in Pakistan',
-        url: 'https://www.checkgasbills.pk/complaints',
-        isPartOf: { '@id': 'https://www.checkgasbills.pk/#website' },
-        publisher: { '@id': 'https://www.checkgasbills.pk/#organization' },
+        url: 'https://checkgasbills.pk/complaints',
+        isPartOf: { '@id': 'https://checkgasbills.pk/#website' },
+        publisher: { '@id': 'https://checkgasbills.pk/#organization' },
       }) }} />
 
       {/* Hero */}

@@ -3,7 +3,7 @@ import './globals.css';
 import Header from './components/Header';
 import Footer from './components/Footer';
 
-const BASE = 'https://www.checkgasbills.pk';
+const BASE = 'https://checkgasbills.pk';
 
 export const metadata: Metadata = {
   metadataBase: new URL(BASE),

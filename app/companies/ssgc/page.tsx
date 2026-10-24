@@ -4,12 +4,12 @@ import Link from 'next/link';
 export const metadata: Metadata = {
   title: 'SSGC — Sui Southern Gas Company Profile | SNGPL Bill Check Hub',
   description: 'An independently verified profile of Sui Southern Gas Company (SSGC): service area, OGRA licence, customer channels, new connections, billing, and safety — sourced directly from SSGC and OGRA.',
-  alternates: { canonical: 'https://www.checkgasbills.pk/companies/ssgc' },
+  alternates: { canonical: 'https://checkgasbills.pk/companies/ssgc' },
   robots: { index: true, follow: true },
   openGraph: {
     title: 'SSGC — Sui Southern Gas Company Profile | SNGPL Bill Check Hub',
     description: 'SSGC\'s service area, OGRA licence, customer channels, billing, and new-connection process — verified against SSGC\'s own current sources.',
-    url: 'https://www.checkgasbills.pk/companies/ssgc',
+    url: 'https://checkgasbills.pk/companies/ssgc',
     siteName: 'SNGPL Bill Check Hub',
     type: 'website',
   },
@@ -82,18 +82,18 @@ export default function SsgcPage() {
         '@context': 'https://schema.org',
         '@type': 'BreadcrumbList',
         itemListElement: [
-          { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://www.checkgasbills.pk' },
-          { '@type': 'ListItem', position: 2, name: 'Companies', item: 'https://www.checkgasbills.pk/companies/sngpl' },
-          { '@type': 'ListItem', position: 3, name: 'SSGC', item: 'https://www.checkgasbills.pk/companies/ssgc' },
+          { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://checkgasbills.pk' },
+          { '@type': 'ListItem', position: 2, name: 'Companies', item: 'https://checkgasbills.pk/companies/sngpl' },
+          { '@type': 'ListItem', position: 3, name: 'SSGC', item: 'https://checkgasbills.pk/companies/ssgc' },
         ],
       }) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({
         '@context': 'https://schema.org',
         '@type': 'WebPage',
         name: 'SSGC — Sui Southern Gas Company Profile',
-        url: 'https://www.checkgasbills.pk/companies/ssgc',
-        isPartOf: { '@id': 'https://www.checkgasbills.pk/#website' },
-        publisher: { '@id': 'https://www.checkgasbills.pk/#organization' },
+        url: 'https://checkgasbills.pk/companies/ssgc',
+        isPartOf: { '@id': 'https://checkgasbills.pk/#website' },
+        publisher: { '@id': 'https://checkgasbills.pk/#organization' },
         mainEntity: {
           '@type': 'Corporation',
           name: 'Sui Southern Gas Company Limited',

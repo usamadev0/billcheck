@@ -4,7 +4,7 @@ import Link from 'next/link';
 export const metadata: Metadata = {
   title: 'About SNGPL Bill Check Hub | Pakistan Gas Bill Resource',
   description: 'Learn about SNGPL Bill Check Hub — Pakistan\'s independent resource for gas bill checking, consumer number guides, duplicate bill downloads, and SNGPL calculators.',
-  alternates: { canonical: 'https://www.checkgasbills.pk/about' },
+  alternates: { canonical: 'https://checkgasbills.pk/about' },
   robots: { index: true, follow: true },
 };
 
@@ -12,10 +12,10 @@ const aboutSchema = {
   '@context': 'https://schema.org',
   '@type': 'AboutPage',
   name: 'About SNGPL Bill Check Hub',
-  url: 'https://www.checkgasbills.pk/about',
+  url: 'https://checkgasbills.pk/about',
   description: 'Pakistan\'s independent resource for SNGPL gas bill checking, consumer number guides, and gas bill calculators.',
-  isPartOf: { '@id': 'https://www.checkgasbills.pk/#website' },
-  about: { '@id': 'https://www.checkgasbills.pk/#organization' },
+  isPartOf: { '@id': 'https://checkgasbills.pk/#website' },
+  about: { '@id': 'https://checkgasbills.pk/#organization' },
 };
 
 export default function AboutPage() {

@@ -4,12 +4,12 @@ import Link from 'next/link';
 export const metadata: Metadata = {
   title: 'Transparency Statement | SNGPL Bill Check Hub',
   description: 'Ownership, independence, monetization, and conflict-of-interest disclosures for SNGPL Bill Check Hub.',
-  alternates: { canonical: 'https://www.checkgasbills.pk/transparency-statement' },
+  alternates: { canonical: 'https://checkgasbills.pk/transparency-statement' },
   robots: { index: true, follow: true },
   openGraph: {
     title: 'Transparency Statement | SNGPL Bill Check Hub',
     description: 'Who operates this site, how it is funded, and what independence and conflict-of-interest commitments apply to its content.',
-    url: 'https://www.checkgasbills.pk/transparency-statement',
+    url: 'https://checkgasbills.pk/transparency-statement',
     siteName: 'SNGPL Bill Check Hub',
     type: 'website',
   },
@@ -31,18 +31,18 @@ export default function TransparencyStatementPage() {
         '@context': 'https://schema.org',
         '@type': 'BreadcrumbList',
         itemListElement: [
-          { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://www.checkgasbills.pk' },
-          { '@type': 'ListItem', position: 2, name: 'About', item: 'https://www.checkgasbills.pk/about' },
-          { '@type': 'ListItem', position: 3, name: 'Transparency Statement', item: 'https://www.checkgasbills.pk/transparency-statement' },
+          { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://checkgasbills.pk' },
+          { '@type': 'ListItem', position: 2, name: 'About', item: 'https://checkgasbills.pk/about' },
+          { '@type': 'ListItem', position: 3, name: 'Transparency Statement', item: 'https://checkgasbills.pk/transparency-statement' },
         ],
       }) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({
         '@context': 'https://schema.org',
         '@type': 'WebPage',
         name: 'Transparency Statement',
-        url: 'https://www.checkgasbills.pk/transparency-statement',
-        isPartOf: { '@id': 'https://www.checkgasbills.pk/#website' },
-        about: { '@id': 'https://www.checkgasbills.pk/#organization' },
+        url: 'https://checkgasbills.pk/transparency-statement',
+        isPartOf: { '@id': 'https://checkgasbills.pk/#website' },
+        about: { '@id': 'https://checkgasbills.pk/#organization' },
       }) }} />
 
       <section className="bg-gradient-to-br from-blue-900 to-blue-700 text-white py-14 px-4">
