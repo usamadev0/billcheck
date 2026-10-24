@@ -10,6 +10,12 @@
   * { box-sizing: border-box; }
   h1,h2,h3,h4,h5,h6 { @apply font-bold text-gray-900 leading-tight; }
   p { @apply leading-relaxed; }
+  /* Headings inside a white-on-color hero (any ancestor with .text-white)
+     must inherit that white instead of the forced gray-900 above —
+     otherwise every hero title on the site renders near-black on a
+     dark background. */
+  .text-white h1, .text-white h2, .text-white h3,
+  .text-white h4, .text-white h5, .text-white h6 { color: inherit; }
 }
 
 @layer components {
