@@ -62,9 +62,9 @@ export default function HHMExplainedPage() {
       }) }} />
 
       {/* Hero */}
-      <section className="bg-gradient-to-br from-blue-900 to-blue-700 text-white py-14 px-4">
+      <section className="bg-gradient-to-br from-marine-600 to-marine-500 text-white py-14 px-4">
         <div className="max-w-4xl mx-auto">
-          <nav className="flex items-center gap-2 text-xs text-blue-200 mb-5">
+          <nav className="flex items-center gap-2 text-xs text-marine-200 mb-5">
             <Link href="/" className="hover:text-white">Home</Link>
             <span>/</span>
             <Link href="/guides" className="hover:text-white">Guides</Link>
@@ -78,7 +78,7 @@ export default function HHMExplainedPage() {
             What is HHM in SNGPL Gas Bill?<br />
             <span className="text-yellow-300">Complete HHM & GCV Reference Guide</span>
           </h1>
-          <p className="text-blue-100 text-base md:text-lg max-w-3xl leading-relaxed">
+          <p className="text-marine-100 text-base md:text-lg max-w-3xl leading-relaxed">
             HHM (Hundred Heat Meter) is the unit SNGPL uses to measure your gas consumption. This guide explains exactly what HHM means, how your meter works, what GCV is, how to calculate your bill, and how much each appliance consumes.
           </p>
         </div>
@@ -135,7 +135,7 @@ export default function HHMExplainedPage() {
           <div className="overflow-x-auto rounded-xl border border-gray-200 my-6">
             <table className="w-full text-sm">
               <thead>
-                <tr className="bg-blue-700 text-white">
+                <tr className="bg-marine-700 text-white">
                   <th className="px-4 py-3 text-left font-semibold">Appliance</th>
                   <th className="px-4 py-3 text-left font-semibold">Winter (HHM/mo)</th>
                   <th className="px-4 py-3 text-left font-semibold">Summer (HHM/mo)</th>
@@ -146,7 +146,7 @@ export default function HHMExplainedPage() {
                 {applianceData.map((row, i) => (
                   <tr key={i} className={`${i % 2 === 0 ? 'bg-white' : 'bg-gray-50'} border-t border-gray-100`}>
                     <td className="px-4 py-3 font-medium text-gray-900 text-xs sm:text-sm">{row.appliance}</td>
-                    <td className="px-4 py-3 text-blue-700 font-semibold">{row.winter}</td>
+                    <td className="px-4 py-3 text-marine-700 font-semibold">{row.winter}</td>
                     <td className="px-4 py-3 text-gray-700">{row.summer}</td>
                     <td className="px-4 py-3 text-gray-500 text-xs hidden sm:table-cell">{row.notes}</td>
                   </tr>
@@ -195,7 +195,7 @@ export default function HHMExplainedPage() {
               <details key={i} className="group bg-white border border-gray-200 rounded-2xl overflow-hidden">
                 <summary className="flex items-center justify-between cursor-pointer p-5 hover:bg-gray-50 transition-colors">
                   <span className="font-semibold text-gray-900 text-sm pr-4">{f.q}</span>
-                  <span className="flex-shrink-0 text-blue-500 group-open:rotate-180 transition-transform">▾</span>
+                  <span className="flex-shrink-0 text-marine-500 group-open:rotate-180 transition-transform">▾</span>
                 </summary>
                 <div className="px-5 pb-5 border-t border-gray-100">
                   <p className="text-gray-600 text-sm leading-relaxed pt-4">{f.a}</p>
@@ -206,8 +206,8 @@ export default function HHMExplainedPage() {
         </section>
 
         {/* Related Links */}
-        <section className="mt-12 bg-blue-50 rounded-2xl p-6 border border-blue-100">
-          <h3 className="font-bold text-blue-900 mb-4">Related SNGPL Guides</h3>
+        <section className="mt-12 bg-marine-50 rounded-2xl p-6 border border-marine-100">
+          <h3 className="font-bold text-marine-900 mb-4">Related SNGPL Guides</h3>
           <div className="grid sm:grid-cols-2 gap-3">
             {[
               { href: '/calculator', label: '🧮 Gas Bill Calculator', desc: 'Calculate exact bill from HHM reading' },
@@ -215,8 +215,8 @@ export default function HHMExplainedPage() {
               { href: '/sngpl-taxes-explained', label: '📊 Gas Bill Taxes Explained', desc: 'GIDC, GST & OGRA charges guide' },
               { href: '/duplicate-bill', label: '📄 Duplicate Bill Download', desc: 'Download previous bills as PDF' },
             ].map(l => (
-              <Link key={l.href} href={l.href} className="flex items-start gap-3 p-3 bg-white rounded-xl hover:shadow-sm transition-shadow no-underline border border-blue-100">
-                <span className="font-semibold text-blue-700 text-sm">{l.label}</span>
+              <Link key={l.href} href={l.href} className="flex items-start gap-3 p-3 bg-white rounded-xl hover:shadow-sm transition-shadow no-underline border border-marine-100">
+                <span className="font-semibold text-marine-700 text-sm">{l.label}</span>
               </Link>
             ))}
           </div>

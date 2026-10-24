@@ -10,7 +10,7 @@ export default function Footer() {
           {/* Brand */}
           <div className="md:col-span-2">
             <div className="flex items-center gap-2 mb-3">
-              <div className="w-8 h-8 bg-gradient-to-br from-blue-600 to-blue-800 rounded-lg flex items-center justify-center">
+              <div className="w-8 h-8 bg-gradient-to-br from-marine-600 to-marine-800 rounded-lg flex items-center justify-center">
                 <svg className="w-4 h-4 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2.5}>
                   <path strokeLinecap="round" strokeLinejoin="round" d="M15.362 5.214A8.252 8.252 0 0112 21 8.25 8.25 0 016.038 7.048 8.287 8.287 0 009 9.6a8.983 8.983 0 013.361-6.867 8.21 8.21 0 003 2.48z"/>
                 </svg>
@@ -39,7 +39,7 @@ export default function Footer() {
                 { href: '/guides',          label: 'All Guides' },
               ].map(l => (
                 <li key={l.href}>
-                  <Link href={l.href} className="hover:text-blue-400 transition-colors">{l.label}</Link>
+                  <Link href={l.href} className="hover:text-marine-400 transition-colors">{l.label}</Link>
                 </li>
               ))}
             </ul>
@@ -79,11 +79,11 @@ export default function Footer() {
                 { href: '/sngpl/bill-check/faisalabad-check-online', label: 'Faisalabad' },
               ].map(l => (
                 <li key={l.href}>
-                  <Link href={l.href} className="hover:text-blue-400 transition-colors text-gray-400">{l.label} SNGPL Guide</Link>
+                  <Link href={l.href} className="hover:text-marine-400 transition-colors text-gray-400">{l.label} SNGPL Guide</Link>
                 </li>
               ))}
             </ul>
-            <Link href="/sngpl/cities" className="inline-block mt-2 text-xs text-blue-400 hover:text-blue-300 transition-colors">
+            <Link href="/sngpl/cities" className="inline-block mt-2 text-xs text-marine-400 hover:text-marine-300 transition-colors">
               View all 44 cities →
             </Link>
           </div>

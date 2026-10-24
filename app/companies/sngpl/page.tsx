@@ -79,9 +79,9 @@ export default function SngplCompanyPage() {
       }) }} />
 
       {/* Hero */}
-      <section className="bg-gradient-to-br from-blue-900 to-blue-700 text-white py-14 px-4">
+      <section className="bg-gradient-to-br from-marine-600 to-marine-500 text-white py-14 px-4">
         <div className="max-w-4xl mx-auto">
-          <nav className="flex items-center gap-2 text-xs text-blue-200 mb-5">
+          <nav className="flex items-center gap-2 text-xs text-marine-200 mb-5">
             <Link href="/" className="hover:text-white">Home</Link>
             <span>/</span>
             <span className="text-white">SNGPL</span>
@@ -92,7 +92,7 @@ export default function SngplCompanyPage() {
           <h1 className="text-3xl md:text-4xl font-black mb-4 leading-tight">
             SNGPL — Sui Northern Gas Pipelines Limited
           </h1>
-          <p className="text-blue-100 text-base md:text-lg max-w-3xl leading-relaxed">
+          <p className="text-marine-100 text-base md:text-lg max-w-3xl leading-relaxed">
             What SNGPL is, how it&apos;s regulated, and everything a consumer actually needs to know — billing,
             meters, connections, complaints, and official contact channels — verified against SNGPL&apos;s own
             published material.
@@ -107,14 +107,14 @@ export default function SngplCompanyPage() {
             <strong>Independence notice:</strong> SNGPL Bill Check Hub is an independent informational resource
             and is <strong>not affiliated with, endorsed by, owned by, or operated on behalf of SNGPL</strong>.
             Facts on this page are drawn from SNGPL&apos;s own website and cross-checked wherever possible — see{' '}
-            <a href="#sources" className="text-blue-700 underline">Sources Used</a>. For official information or
+            <a href="#sources" className="text-marine-700 underline">Sources Used</a>. For official information or
             to take any action on your account, always go to{' '}
-            <a href="https://www.sngpl.com.pk" target="_blank" rel="noopener noreferrer" className="text-blue-700 underline">sngpl.com.pk</a>.
+            <a href="https://www.sngpl.com.pk" target="_blank" rel="noopener noreferrer" className="text-marine-700 underline">sngpl.com.pk</a>.
           </p>
         </div>
 
-        <div className="bg-blue-50 border border-blue-200 rounded-2xl p-4 mb-10">
-          <h3 className="font-bold text-blue-900 text-sm mb-3">On this page</h3>
+        <div className="bg-marine-50 border border-marine-200 rounded-2xl p-4 mb-10">
+          <h3 className="font-bold text-marine-900 text-sm mb-3">On this page</h3>
           <ol className="grid sm:grid-cols-2 gap-x-6 gap-y-1">
             {toc.map((item, i) => (
               <li key={item.id}>
@@ -127,7 +127,7 @@ export default function SngplCompanyPage() {
         {/* Entity relationship strip */}
         <div className="not-prose grid grid-cols-2 sm:grid-cols-4 gap-2 mb-10 text-center text-xs font-medium">
           {['SNGPL', 'OGRA', 'Consumer', 'Gas Bill'].map((n) => (
-            <div key={n} className="bg-white border border-blue-100 rounded-xl py-3 text-blue-800">{n}</div>
+            <div key={n} className="bg-white border border-marine-100 rounded-xl py-3 text-marine-800">{n}</div>
           ))}
         </div>
 
@@ -181,13 +181,13 @@ export default function SngplCompanyPage() {
           <div className="not-prose bg-white border border-gray-200 rounded-2xl p-4 my-4">
             <div className="text-xs font-semibold text-gray-500 uppercase tracking-wide mb-2">Regulatory relationship, simplified</div>
             <div className="flex flex-wrap items-center gap-2 text-sm font-medium">
-              <span className="badge bg-blue-100 text-blue-700">OGRA (regulator)</span>
+              <span className="badge bg-marine-100 text-marine-700">OGRA (regulator)</span>
               <span className="text-gray-400">→</span>
-              <span className="badge bg-blue-100 text-blue-700">Federal Government (notifies price)</span>
+              <span className="badge bg-marine-100 text-marine-700">Federal Government (notifies price)</span>
               <span className="text-gray-400">→</span>
-              <span className="badge bg-blue-100 text-blue-700">SNGPL (bills consumer)</span>
+              <span className="badge bg-marine-100 text-marine-700">SNGPL (bills consumer)</span>
               <span className="text-gray-400">→</span>
-              <span className="badge bg-blue-100 text-blue-700">Consumer</span>
+              <span className="badge bg-marine-100 text-marine-700">Consumer</span>
             </div>
           </div>
 
@@ -197,7 +197,7 @@ export default function SngplCompanyPage() {
             slab rate), GIDC, GST, meter rent, and any arrears or adjustments. We cover this in full, with a
             worked example, on our <Link href="/sngpl-taxes-explained">Gas Bill Taxes Explained</Link> guide.
             Consumers can view and pay bills through SNGPL&apos;s own portal — see{' '}
-            <a href="#online-services" className="text-blue-600 hover:underline">Official Online Services</a>{' '}
+            <a href="#online-services" className="text-marine-600 hover:underline">Official Online Services</a>{' '}
             below.
           </p>
 
@@ -235,7 +235,7 @@ export default function SngplCompanyPage() {
           </ol>
           <div className="not-prose overflow-x-auto my-4">
             <table className="w-full text-sm border border-gray-200 rounded-xl overflow-hidden">
-              <thead className="bg-blue-50">
+              <thead className="bg-marine-50">
                 <tr>
                   <th className="text-left p-3 font-semibold text-gray-700">Plot size</th>
                   <th className="text-left p-3 font-semibold text-gray-700">Service line charge</th>
@@ -337,42 +337,42 @@ export default function SngplCompanyPage() {
           </div>
           <p className="text-sm text-gray-600 mt-3">
             To find a Customer Services Center or regional office near you, use SNGPL&apos;s own{' '}
-            <a href="https://www.sngpl.com.pk/page.jsp?pgids=1561&pgname=PAGES_NAME_a&secs=ss7xa852op845&cats=ct456712337&artcl=artuyh709123465" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:underline">Locate Customer Care Centers</a> tool. Our own{' '}
+            <a href="https://www.sngpl.com.pk/page.jsp?pgids=1561&pgname=PAGES_NAME_a&secs=ss7xa852op845&cats=ct456712337&artcl=artuyh709123465" target="_blank" rel="noopener noreferrer" className="text-marine-600 hover:underline">Locate Customer Care Centers</a> tool. Our own{' '}
             <Link href="/contact">Contact page</Link> lists these same official channels for quick reference.
           </p>
 
           <h2 id="online-services">Official SNGPL Online Services</h2>
           <div className="not-prose grid sm:grid-cols-2 gap-3">
-            <a href="https://www.sngpl.com.pk/login.jsp?mdids=85" target="_blank" rel="noopener noreferrer" className="block p-4 bg-white rounded-xl border border-gray-200 hover:border-blue-300 hover:bg-blue-50 transition-colors">
-              <div className="font-semibold text-blue-700 text-sm mb-1">View / Pay Your Gas Bill ↗</div>
+            <a href="https://www.sngpl.com.pk/login.jsp?mdids=85" target="_blank" rel="noopener noreferrer" className="block p-4 bg-white rounded-xl border border-gray-200 hover:border-marine-300 hover:bg-marine-50 transition-colors">
+              <div className="font-semibold text-marine-700 text-sm mb-1">View / Pay Your Gas Bill ↗</div>
               <div className="text-xs text-gray-500">sngpl.com.pk online billing portal</div>
             </a>
-            <a href="https://www.sngpl.com.pk/complaints.jsp?mdids=89" target="_blank" rel="noopener noreferrer" className="block p-4 bg-white rounded-xl border border-gray-200 hover:border-blue-300 hover:bg-blue-50 transition-colors">
-              <div className="font-semibold text-blue-700 text-sm mb-1">Lodge a Complaint ↗</div>
+            <a href="https://www.sngpl.com.pk/complaints.jsp?mdids=89" target="_blank" rel="noopener noreferrer" className="block p-4 bg-white rounded-xl border border-gray-200 hover:border-marine-300 hover:bg-marine-50 transition-colors">
+              <div className="font-semibold text-marine-700 text-sm mb-1">Lodge a Complaint ↗</div>
               <div className="text-xs text-gray-500">sngpl.com.pk/complaints.jsp</div>
             </a>
-            <a href="https://www.sngpl.com.pk/complaintshistory.jsp?mdids=90" target="_blank" rel="noopener noreferrer" className="block p-4 bg-white rounded-xl border border-gray-200 hover:border-blue-300 hover:bg-blue-50 transition-colors">
-              <div className="font-semibold text-blue-700 text-sm mb-1">Track Your Complaint ↗</div>
+            <a href="https://www.sngpl.com.pk/complaintshistory.jsp?mdids=90" target="_blank" rel="noopener noreferrer" className="block p-4 bg-white rounded-xl border border-gray-200 hover:border-marine-300 hover:bg-marine-50 transition-colors">
+              <div className="font-semibold text-marine-700 text-sm mb-1">Track Your Complaint ↗</div>
               <div className="text-xs text-gray-500">sngpl.com.pk/complaintshistory.jsp</div>
             </a>
-            <a href="https://www.sngpl.com.pk/appstatus.jsp?mdids=291" target="_blank" rel="noopener noreferrer" className="block p-4 bg-white rounded-xl border border-gray-200 hover:border-blue-300 hover:bg-blue-50 transition-colors">
-              <div className="font-semibold text-blue-700 text-sm mb-1">Track New Connection Application ↗</div>
+            <a href="https://www.sngpl.com.pk/appstatus.jsp?mdids=291" target="_blank" rel="noopener noreferrer" className="block p-4 bg-white rounded-xl border border-gray-200 hover:border-marine-300 hover:bg-marine-50 transition-colors">
+              <div className="font-semibold text-marine-700 text-sm mb-1">Track New Connection Application ↗</div>
               <div className="text-xs text-gray-500">sngpl.com.pk/appstatus.jsp</div>
             </a>
-            <a href="https://www.sngpl.com.pk/billcalc.jsp?mdids=92" target="_blank" rel="noopener noreferrer" className="block p-4 bg-white rounded-xl border border-gray-200 hover:border-blue-300 hover:bg-blue-50 transition-colors">
-              <div className="font-semibold text-blue-700 text-sm mb-1">SNGPL Bill Estimator ↗</div>
+            <a href="https://www.sngpl.com.pk/billcalc.jsp?mdids=92" target="_blank" rel="noopener noreferrer" className="block p-4 bg-white rounded-xl border border-gray-200 hover:border-marine-300 hover:bg-marine-50 transition-colors">
+              <div className="font-semibold text-marine-700 text-sm mb-1">SNGPL Bill Estimator ↗</div>
               <div className="text-xs text-gray-500">sngpl.com.pk/billcalc.jsp</div>
             </a>
-            <a href="https://www.sngpl.com.pk/cname.jsp?mdids=94" target="_blank" rel="noopener noreferrer" className="block p-4 bg-white rounded-xl border border-gray-200 hover:border-blue-300 hover:bg-blue-50 transition-colors">
-              <div className="font-semibold text-blue-700 text-sm mb-1">Transfer of Gas Connection ↗</div>
+            <a href="https://www.sngpl.com.pk/cname.jsp?mdids=94" target="_blank" rel="noopener noreferrer" className="block p-4 bg-white rounded-xl border border-gray-200 hover:border-marine-300 hover:bg-marine-50 transition-colors">
+              <div className="font-semibold text-marine-700 text-sm mb-1">Transfer of Gas Connection ↗</div>
               <div className="text-xs text-gray-500">sngpl.com.pk/cname.jsp</div>
             </a>
-            <a href="https://www.sngpl.com.pk/domrecon.jsp?mdids=286" target="_blank" rel="noopener noreferrer" className="block p-4 bg-white rounded-xl border border-gray-200 hover:border-blue-300 hover:bg-blue-50 transition-colors">
-              <div className="font-semibold text-blue-700 text-sm mb-1">Reconnection of Domestic Consumer ↗</div>
+            <a href="https://www.sngpl.com.pk/domrecon.jsp?mdids=286" target="_blank" rel="noopener noreferrer" className="block p-4 bg-white rounded-xl border border-gray-200 hover:border-marine-300 hover:bg-marine-50 transition-colors">
+              <div className="font-semibold text-marine-700 text-sm mb-1">Reconnection of Domestic Consumer ↗</div>
               <div className="text-xs text-gray-500">sngpl.com.pk/domrecon.jsp</div>
             </a>
-            <a href="https://play.google.com/store/apps/details?id=com.sngpl.sngpl_connection_app_flutter" target="_blank" rel="noopener noreferrer" className="block p-4 bg-white rounded-xl border border-gray-200 hover:border-blue-300 hover:bg-blue-50 transition-colors">
-              <div className="font-semibold text-blue-700 text-sm mb-1">ConnectOn (SNGPL mobile app) ↗</div>
+            <a href="https://play.google.com/store/apps/details?id=com.sngpl.sngpl_connection_app_flutter" target="_blank" rel="noopener noreferrer" className="block p-4 bg-white rounded-xl border border-gray-200 hover:border-marine-300 hover:bg-marine-50 transition-colors">
+              <div className="font-semibold text-marine-700 text-sm mb-1">ConnectOn (SNGPL mobile app) ↗</div>
               <div className="text-xs text-gray-500">Google Play</div>
             </a>
           </div>
@@ -433,12 +433,12 @@ export default function SngplCompanyPage() {
 
           <h2 id="sources">Sources Used</h2>
           <ul className="text-sm">
-            <li>SNGPL official website, &quot;About Us / Company Profile&quot; — <a href="https://www.sngpl.com.pk/page.jsp?pgids=322" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:underline">sngpl.com.pk</a> (company facts, registration identifiers, network figures)</li>
-            <li>SNGPL official website, &quot;Brief Procedure For Domestic RLNG Connections&quot; — <a href="https://www.sngpl.com.pk/page.jsp?pgids=861" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:underline">sngpl.com.pk</a> (new connection process and fee table)</li>
-            <li>SNGPL homepage notice, &quot;Resumption Of Domestic Gas Connections&quot; — <a href="https://www.sngpl.com.pk" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:underline">sngpl.com.pk</a> (current RLNG-only connection policy)</li>
-            <li>SNGPL &quot;Consumer Gas Prices&quot; — <a href="https://www.sngpl.com.pk/page.jsp?pgids=2205" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:underline">sngpl.com.pk</a></li>
-            <li>SNGPL Customer Care Center locator — <a href="https://www.sngpl.com.pk/page.jsp?pgids=1561" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:underline">sngpl.com.pk</a></li>
-            <li>&quot;Sui Northern Gas Pipelines Limited,&quot; Wikipedia — <a href="https://en.wikipedia.org/wiki/Sui_Northern_Gas_Pipelines_Limited" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:underline">en.wikipedia.org</a>, used only as a corroborating cross-check against SNGPL&apos;s own published figures</li>
+            <li>SNGPL official website, &quot;About Us / Company Profile&quot; — <a href="https://www.sngpl.com.pk/page.jsp?pgids=322" target="_blank" rel="noopener noreferrer" className="text-marine-600 hover:underline">sngpl.com.pk</a> (company facts, registration identifiers, network figures)</li>
+            <li>SNGPL official website, &quot;Brief Procedure For Domestic RLNG Connections&quot; — <a href="https://www.sngpl.com.pk/page.jsp?pgids=861" target="_blank" rel="noopener noreferrer" className="text-marine-600 hover:underline">sngpl.com.pk</a> (new connection process and fee table)</li>
+            <li>SNGPL homepage notice, &quot;Resumption Of Domestic Gas Connections&quot; — <a href="https://www.sngpl.com.pk" target="_blank" rel="noopener noreferrer" className="text-marine-600 hover:underline">sngpl.com.pk</a> (current RLNG-only connection policy)</li>
+            <li>SNGPL &quot;Consumer Gas Prices&quot; — <a href="https://www.sngpl.com.pk/page.jsp?pgids=2205" target="_blank" rel="noopener noreferrer" className="text-marine-600 hover:underline">sngpl.com.pk</a></li>
+            <li>SNGPL Customer Care Center locator — <a href="https://www.sngpl.com.pk/page.jsp?pgids=1561" target="_blank" rel="noopener noreferrer" className="text-marine-600 hover:underline">sngpl.com.pk</a></li>
+            <li>&quot;Sui Northern Gas Pipelines Limited,&quot; Wikipedia — <a href="https://en.wikipedia.org/wiki/Sui_Northern_Gas_Pipelines_Limited" target="_blank" rel="noopener noreferrer" className="text-marine-600 hover:underline">en.wikipedia.org</a>, used only as a corroborating cross-check against SNGPL&apos;s own published figures</li>
             <li>Our own <Link href="/ogra">OGRA page</Link>, for the regulatory relationship and tariff-determination mechanism</li>
           </ul>
 
@@ -463,19 +463,19 @@ export default function SngplCompanyPage() {
           </p>
         </article>
 
-        <section className="mt-12 bg-blue-50 rounded-2xl p-6 border border-blue-100">
-          <h3 className="font-bold text-blue-900 mb-4">Related Pages</h3>
+        <section className="mt-12 bg-marine-50 rounded-2xl p-6 border border-marine-100">
+          <h3 className="font-bold text-marine-900 mb-4">Related Pages</h3>
           <div className="grid sm:grid-cols-3 gap-3">
-            <Link href="/ogra" className="block p-4 bg-white rounded-xl border border-blue-100 hover:shadow-sm transition-shadow">
-              <div className="font-semibold text-blue-700 text-sm mb-1">OGRA</div>
+            <Link href="/ogra" className="block p-4 bg-white rounded-xl border border-marine-100 hover:shadow-sm transition-shadow">
+              <div className="font-semibold text-marine-700 text-sm mb-1">OGRA</div>
               <div className="text-xs text-gray-500">The regulator behind SNGPL&apos;s tariffs</div>
             </Link>
-            <Link href="/sngpl-taxes-explained" className="block p-4 bg-white rounded-xl border border-blue-100 hover:shadow-sm transition-shadow">
-              <div className="font-semibold text-blue-700 text-sm mb-1">Gas Bill Taxes Explained</div>
+            <Link href="/sngpl-taxes-explained" className="block p-4 bg-white rounded-xl border border-marine-100 hover:shadow-sm transition-shadow">
+              <div className="font-semibold text-marine-700 text-sm mb-1">Gas Bill Taxes Explained</div>
               <div className="text-xs text-gray-500">GIDC, GST, and tariff calculation</div>
             </Link>
-            <Link href="/consumer-number" className="block p-4 bg-white rounded-xl border border-blue-100 hover:shadow-sm transition-shadow">
-              <div className="font-semibold text-blue-700 text-sm mb-1">Consumer Number Guide</div>
+            <Link href="/consumer-number" className="block p-4 bg-white rounded-xl border border-marine-100 hover:shadow-sm transition-shadow">
+              <div className="font-semibold text-marine-700 text-sm mb-1">Consumer Number Guide</div>
               <div className="text-xs text-gray-500">Where to find yours and what it means</div>
             </Link>
           </div>

@@ -104,9 +104,9 @@ export default function SsgcPage() {
         },
       }) }} />
 
-      <section className="bg-gradient-to-br from-blue-900 to-blue-700 text-white py-14 px-4">
+      <section className="bg-gradient-to-br from-marine-600 to-marine-500 text-white py-14 px-4">
         <div className="max-w-4xl mx-auto">
-          <nav className="flex items-center gap-2 text-xs text-blue-200 mb-5">
+          <nav className="flex items-center gap-2 text-xs text-marine-200 mb-5">
             <Link href="/" className="hover:text-white">Home</Link>
             <span>/</span>
             <span className="text-white">SSGC</span>
@@ -115,7 +115,7 @@ export default function SsgcPage() {
             🏢 South Pakistan Gas Authority
           </div>
           <h1 className="text-3xl md:text-4xl font-black mb-4 leading-tight">SSGC — Sui Southern Gas Company Limited</h1>
-          <p className="text-blue-100 text-base md:text-lg max-w-3xl leading-relaxed">
+          <p className="text-marine-100 text-base md:text-lg max-w-3xl leading-relaxed">
             An independently verified profile of the natural gas utility serving Sindh and Balochistan — service
             area, OGRA licence, customer channels, billing, new connections, and safety, each traced to SSGC&apos;s
             or OGRA&apos;s own current sources.
@@ -134,8 +134,8 @@ export default function SsgcPage() {
           </p>
         </div>
 
-        <div className="bg-blue-50 border border-blue-200 rounded-2xl p-4 mb-10">
-          <div className="font-bold text-blue-900 mb-3 text-sm">On this page</div>
+        <div className="bg-marine-50 border border-marine-200 rounded-2xl p-4 mb-10">
+          <div className="font-bold text-marine-900 mb-3 text-sm">On this page</div>
           <div className="grid sm:grid-cols-2 gap-x-6 gap-y-2 text-sm">
             <a href="#overview" className="toc-link">1. Entity Overview</a>
             <a href="#at-a-glance" className="toc-link">2. SSGC at a Glance</a>
@@ -198,7 +198,7 @@ export default function SsgcPage() {
           </div>
           <p className="text-xs text-gray-500">
             Source: SSGC official Profile page, footer-dated &quot;Updated: May, 2025&quot; —{' '}
-            <a href="https://www.ssgc.com.pk/web/?page_id=68" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:underline">ssgc.com.pk ↗</a>.
+            <a href="https://www.ssgc.com.pk/web/?page_id=68" target="_blank" rel="noopener noreferrer" className="text-marine-600 hover:underline">ssgc.com.pk ↗</a>.
             This is SSGC&apos;s current stated figure and supersedes older third-party numbers.
           </p>
 
@@ -254,9 +254,9 @@ export default function SsgcPage() {
           <h2 id="consumer-ecosystem">Consumer Ecosystem</h2>
           <p>
             SSGC organizes its rate structure around three main consumer categories with dedicated official rate
-            and connection pages: <a href="https://www.ssgc.com.pk/web/?page_id=103" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:underline">Domestic</a>,{' '}
-            <a href="https://www.ssgc.com.pk/web/?page_id=102" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:underline">Commercial</a>, and{' '}
-            <a href="https://www.ssgc.com.pk/web/?page_id=106" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:underline">Industrial</a>. Its
+            and connection pages: <a href="https://www.ssgc.com.pk/web/?page_id=103" target="_blank" rel="noopener noreferrer" className="text-marine-600 hover:underline">Domestic</a>,{' '}
+            <a href="https://www.ssgc.com.pk/web/?page_id=102" target="_blank" rel="noopener noreferrer" className="text-marine-600 hover:underline">Commercial</a>, and{' '}
+            <a href="https://www.ssgc.com.pk/web/?page_id=106" target="_blank" rel="noopener noreferrer" className="text-marine-600 hover:underline">Industrial</a>. Its
             authorized-usage rule for a standard domestic connection, per its own Gas Sale Agreement (FAQ Q18), is
             &quot;one meter — for one kitchen and one geyser utilization for purely domestic purposes.&quot; Across
             these categories, SSGC&apos;s current profile states supply to 3.5 million customers in its areas of
@@ -288,15 +288,15 @@ export default function SsgcPage() {
             </div>
             <div className="bg-white rounded-2xl border border-gray-200 p-5">
               <div className="font-bold text-gray-900 mb-2">Online &amp; In-Person</div>
-              <p className="text-sm text-gray-600 mb-1">View bill: <a href="https://viewbill.ssgc.com.pk" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:underline">viewbill.ssgc.com.pk</a></p>
+              <p className="text-sm text-gray-600 mb-1">View bill: <a href="https://viewbill.ssgc.com.pk" target="_blank" rel="noopener noreferrer" className="text-marine-600 hover:underline">viewbill.ssgc.com.pk</a></p>
               <p className="text-sm text-gray-600 mb-1">23 Customer Facilitation Centers across Sindh &amp; Balochistan</p>
               <p className="text-sm text-gray-600">SSGC Customer Connect App (application-status updates)</p>
             </div>
           </div>
           <p className="text-xs text-gray-500">
             Source: SSGC official Profile (&quot;23 Customer Facilitation Centers... and 1199 call centres&quot;) and FAQs —{' '}
-            <a href="https://www.ssgc.com.pk/web/?page_id=68" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:underline">ssgc.com.pk/profile</a>,{' '}
-            <a href="https://www.ssgc.com.pk/web/?page_id=111824" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:underline">ssgc.com.pk/faqs</a>.
+            <a href="https://www.ssgc.com.pk/web/?page_id=68" target="_blank" rel="noopener noreferrer" className="text-marine-600 hover:underline">ssgc.com.pk/profile</a>,{' '}
+            <a href="https://www.ssgc.com.pk/web/?page_id=111824" target="_blank" rel="noopener noreferrer" className="text-marine-600 hover:underline">ssgc.com.pk/faqs</a>.
           </p>
 
           <h2 id="emergency">Emergency &amp; Gas Leak</h2>
@@ -325,7 +325,7 @@ export default function SsgcPage() {
             <li>A Late Payment Surcharge applies on default: 10% of the current bill for domestic customers; 1.5%/month (first year) then 2%/month for industrial and commercial customers.</li>
             <li>Billing-related complaints go through SSGC&apos;s own complaint channel first; if unresolved, they can be escalated to OGRA — see our <Link href="/complaints">Complaints &amp; Consumer Rights hub</Link>.</li>
           </ul>
-          <p className="text-xs text-gray-500">Source: SSGC FAQs (Q2, Q3, Q4, Q11, Q23) — <a href="https://www.ssgc.com.pk/web/?page_id=111824" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:underline">ssgc.com.pk/faqs</a>.</p>
+          <p className="text-xs text-gray-500">Source: SSGC FAQs (Q2, Q3, Q4, Q11, Q23) — <a href="https://www.ssgc.com.pk/web/?page_id=111824" target="_blank" rel="noopener noreferrer" className="text-marine-600 hover:underline">ssgc.com.pk/faqs</a>.</p>
 
           <h2 id="payment-safety">Payment Safety / Fraud Prevention</h2>
           <p>
@@ -345,7 +345,7 @@ export default function SsgcPage() {
             contractor or intermediary claiming to act on SSGC&apos;s behalf. A dedicated Payments &amp; Fraud
             Authority page is planned as a future addition to this hub.
           </p>
-          <p className="text-xs text-gray-500">Source: SSGC, &quot;Public Announcement,&quot; New RLNG Domestic Gas Connection Application (Sept 2025) — <a href="https://www.ssgc.com.pk/web/wp-content/uploads/2025/09/new_rlng_domestic_form.pdf" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:underline">ssgc.com.pk ↗</a>.</p>
+          <p className="text-xs text-gray-500">Source: SSGC, &quot;Public Announcement,&quot; New RLNG Domestic Gas Connection Application (Sept 2025) — <a href="https://www.ssgc.com.pk/web/wp-content/uploads/2025/09/new_rlng_domestic_form.pdf" target="_blank" rel="noopener noreferrer" className="text-marine-600 hover:underline">ssgc.com.pk ↗</a>.</p>
 
           <h2 id="new-connections">New Gas Connections</h2>
           <p>
@@ -403,7 +403,7 @@ export default function SsgcPage() {
               tax (Sindh also adds Rs. 1,000/1,000 stamp duty). Cost of internal houseline, pipe fitting and labour
               is separately arranged and borne by the customer. Figures are SSGC&apos;s own, explicitly labeled{' '}
               <strong>&quot;Subject to Change,&quot;</strong> verified 28 Aug 2026 —{' '}
-              <a href="https://www.ssgc.com.pk/web/?page_id=112530" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:underline">ssgc.com.pk ↗</a>.
+              <a href="https://www.ssgc.com.pk/web/?page_id=112530" target="_blank" rel="noopener noreferrer" className="text-marine-600 hover:underline">ssgc.com.pk ↗</a>.
             </p>
           </div>
 
@@ -429,7 +429,7 @@ export default function SsgcPage() {
             changes and is officially maintained), we link directly to it:
           </p>
           <p>
-            <a href="https://www.ssgc.com.pk/web/?page_id=128" target="_blank" rel="noopener noreferrer" className="text-blue-600 font-medium hover:underline">Full Customer Facilitation Center directory (ssgc.com.pk) ↗</a>
+            <a href="https://www.ssgc.com.pk/web/?page_id=128" target="_blank" rel="noopener noreferrer" className="text-marine-600 font-medium hover:underline">Full Customer Facilitation Center directory (ssgc.com.pk) ↗</a>
           </p>
 
           <h2 id="disconnection-restoration">Disconnection &amp; Restoration</h2>
@@ -509,9 +509,9 @@ export default function SsgcPage() {
           <h2 id="relationship-map">Entity Relationship Map</h2>
           <div className="not-prose bg-white border border-gray-200 rounded-2xl p-5 my-6">
             <div className="flex flex-wrap items-center gap-2 text-sm">
-              <span className="badge bg-blue-100 text-blue-700">SSGC</span>
+              <span className="badge bg-marine-100 text-marine-700">SSGC</span>
               <span className="text-gray-400">→</span>
-              <Link href="/ogra" className="badge bg-blue-50 text-blue-700 hover:bg-blue-100">OGRA</Link>
+              <Link href="/ogra" className="badge bg-marine-50 text-marine-700 hover:bg-marine-100">OGRA</Link>
               <span className="text-gray-400">→</span>
               <span className="badge bg-gray-100 text-gray-700">Sindh</span>
               <span className="text-gray-400">→</span>
@@ -529,9 +529,9 @@ export default function SsgcPage() {
               <span className="text-gray-400">→</span>
               <span className="badge bg-gray-100 text-gray-700">New connections</span>
               <span className="text-gray-400">→</span>
-              <Link href="/complaints" className="badge bg-blue-50 text-blue-700 hover:bg-blue-100">Complaints</Link>
+              <Link href="/complaints" className="badge bg-marine-50 text-marine-700 hover:bg-marine-100">Complaints</Link>
               <span className="text-gray-400">→</span>
-              <Link href="/safety" className="badge bg-blue-50 text-blue-700 hover:bg-blue-100">Safety</Link>
+              <Link href="/safety" className="badge bg-marine-50 text-marine-700 hover:bg-marine-100">Safety</Link>
               <span className="text-gray-400">→</span>
               <span className="badge bg-gray-100 text-gray-700">RLNG</span>
               <span className="text-gray-400">→</span>
@@ -557,7 +557,7 @@ export default function SsgcPage() {
                   <tr key={r.service} className="border-t border-gray-100 align-top">
                     <td className="p-3 text-gray-800 font-medium">
                       {r.service}
-                      <div><a href={r.sourceUrl} target="_blank" rel="noopener noreferrer" className="text-blue-600 text-xs hover:underline">{r.source} ↗</a></div>
+                      <div><a href={r.sourceUrl} target="_blank" rel="noopener noreferrer" className="text-marine-600 text-xs hover:underline">{r.source} ↗</a></div>
                     </td>
                     <td className="p-3 text-gray-600">{r.confirms}</td>
                     <td className="p-3 text-gray-500 text-xs whitespace-nowrap">{r.verified}</td>
@@ -569,14 +569,14 @@ export default function SsgcPage() {
 
           <h2 id="sources">Sources Used</h2>
           <ul className="text-sm">
-            <li>SSGC Official Profile (updated May 2025) — <a href="https://www.ssgc.com.pk/web/?page_id=68" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:underline">ssgc.com.pk</a></li>
-            <li>SSGC Frequently Asked Questions — <a href="https://www.ssgc.com.pk/web/?page_id=111824" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:underline">ssgc.com.pk</a></li>
-            <li>SSGC New RLNG Domestic Gas Connection Application &amp; Public Announcement (Sept 2025) — <a href="https://www.ssgc.com.pk/web/?page_id=112530" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:underline">ssgc.com.pk</a></li>
-            <li>SSGC General Guidelines for Laying of Internal Gas Houseline (Sept 2025) — <a href="https://www.ssgc.com.pk/web/wp-content/uploads/2025/09/new_rlng_connection_general_guidelines.pdf" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:underline">ssgc.com.pk</a></li>
-            <li>SSGC License for Transmission, Distribution, and Sale of Natural Gas — <a href="https://www.ssgc.com.pk/web/?page_id=6227" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:underline">ssgc.com.pk</a></li>
-            <li>SSGC Meter Manufacturing Plant — <a href="https://www.ssgc.com.pk/web/?page_id=113199" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:underline">ssgc.com.pk</a></li>
-            <li>SSGC Customer Facilitation Centers directory — <a href="https://www.ssgc.com.pk/web/?page_id=128" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:underline">ssgc.com.pk</a></li>
-            <li>SSGC Complaint Types &amp; Estimated Resolution Timelines — <a href="https://www.ssgc.com.pk/web/?page_id=111676" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:underline">ssgc.com.pk</a></li>
+            <li>SSGC Official Profile (updated May 2025) — <a href="https://www.ssgc.com.pk/web/?page_id=68" target="_blank" rel="noopener noreferrer" className="text-marine-600 hover:underline">ssgc.com.pk</a></li>
+            <li>SSGC Frequently Asked Questions — <a href="https://www.ssgc.com.pk/web/?page_id=111824" target="_blank" rel="noopener noreferrer" className="text-marine-600 hover:underline">ssgc.com.pk</a></li>
+            <li>SSGC New RLNG Domestic Gas Connection Application &amp; Public Announcement (Sept 2025) — <a href="https://www.ssgc.com.pk/web/?page_id=112530" target="_blank" rel="noopener noreferrer" className="text-marine-600 hover:underline">ssgc.com.pk</a></li>
+            <li>SSGC General Guidelines for Laying of Internal Gas Houseline (Sept 2025) — <a href="https://www.ssgc.com.pk/web/wp-content/uploads/2025/09/new_rlng_connection_general_guidelines.pdf" target="_blank" rel="noopener noreferrer" className="text-marine-600 hover:underline">ssgc.com.pk</a></li>
+            <li>SSGC License for Transmission, Distribution, and Sale of Natural Gas — <a href="https://www.ssgc.com.pk/web/?page_id=6227" target="_blank" rel="noopener noreferrer" className="text-marine-600 hover:underline">ssgc.com.pk</a></li>
+            <li>SSGC Meter Manufacturing Plant — <a href="https://www.ssgc.com.pk/web/?page_id=113199" target="_blank" rel="noopener noreferrer" className="text-marine-600 hover:underline">ssgc.com.pk</a></li>
+            <li>SSGC Customer Facilitation Centers directory — <a href="https://www.ssgc.com.pk/web/?page_id=128" target="_blank" rel="noopener noreferrer" className="text-marine-600 hover:underline">ssgc.com.pk</a></li>
+            <li>SSGC Complaint Types &amp; Estimated Resolution Timelines — <a href="https://www.ssgc.com.pk/web/?page_id=111676" target="_blank" rel="noopener noreferrer" className="text-marine-600 hover:underline">ssgc.com.pk</a></li>
             <li>OGRA — for the regulator&apos;s full mandate, see our <Link href="/ogra">OGRA authority page</Link></li>
             <li>Dawn.com, contemporaneous September 2003 reporting on OGRA&apos;s licensing decision (secondary, used only to corroborate the licence timeframe)</li>
           </ul>
@@ -593,19 +593,19 @@ export default function SsgcPage() {
           </div>
         </article>
 
-        <section className="mt-12 bg-blue-50 rounded-2xl p-6 border border-blue-100">
-          <h3 className="font-bold text-blue-900 mb-4">Related Pages</h3>
+        <section className="mt-12 bg-marine-50 rounded-2xl p-6 border border-marine-100">
+          <h3 className="font-bold text-marine-900 mb-4">Related Pages</h3>
           <div className="grid sm:grid-cols-3 gap-3">
-            <Link href="/ogra" className="block p-4 bg-white rounded-xl border border-blue-100 hover:shadow-sm transition-shadow">
-              <div className="font-semibold text-blue-700 text-sm mb-1">OGRA Authority Page</div>
+            <Link href="/ogra" className="block p-4 bg-white rounded-xl border border-marine-100 hover:shadow-sm transition-shadow">
+              <div className="font-semibold text-marine-700 text-sm mb-1">OGRA Authority Page</div>
               <div className="text-xs text-gray-500">The regulator behind SSGC&apos;s licence</div>
             </Link>
-            <Link href="/companies/sngpl" className="block p-4 bg-white rounded-xl border border-blue-100 hover:shadow-sm transition-shadow">
-              <div className="font-semibold text-blue-700 text-sm mb-1">SNGPL Company Profile</div>
+            <Link href="/companies/sngpl" className="block p-4 bg-white rounded-xl border border-marine-100 hover:shadow-sm transition-shadow">
+              <div className="font-semibold text-marine-700 text-sm mb-1">SNGPL Company Profile</div>
               <div className="text-xs text-gray-500">The other licensed gas utility</div>
             </Link>
-            <Link href="/safety" className="block p-4 bg-white rounded-xl border border-blue-100 hover:shadow-sm transition-shadow">
-              <div className="font-semibold text-blue-700 text-sm mb-1">Gas Safety &amp; Emergency Guide</div>
+            <Link href="/safety" className="block p-4 bg-white rounded-xl border border-marine-100 hover:shadow-sm transition-shadow">
+              <div className="font-semibold text-marine-700 text-sm mb-1">Gas Safety &amp; Emergency Guide</div>
               <div className="text-xs text-gray-500">Emergency channels &amp; OGRA standards</div>
             </Link>
           </div>

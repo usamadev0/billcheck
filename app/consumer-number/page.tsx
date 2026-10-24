@@ -49,21 +49,21 @@ export default function ConsumerNumberPage() {
       }) }} />
 
       {/* Hero */}
-      <section className="bg-gradient-to-br from-blue-900 to-blue-700 text-white py-14 px-4">
+      <section className="bg-gradient-to-br from-marine-600 to-marine-500 text-white py-14 px-4">
         <div className="max-w-4xl mx-auto">
-          <nav className="flex items-center gap-2 text-xs text-blue-200 mb-5">
+          <nav className="flex items-center gap-2 text-xs text-marine-200 mb-5">
             <Link href="/" className="hover:text-white">Home</Link><span>/</span>
             <span className="text-white font-medium">Consumer Number</span>
           </nav>
           <h1 className="text-3xl md:text-4xl font-black mb-4">SNGPL Consumer Number — Complete Guide 2025</h1>
-          <p className="text-blue-100 text-lg max-w-2xl">Find your consumer number, understand its format and regional coding, recover it if lost, manage multiple connections, and use it across all SNGPL services.</p>
+          <p className="text-marine-100 text-lg max-w-2xl">Find your consumer number, understand its format and regional coding, recover it if lost, manage multiple connections, and use it across all SNGPL services.</p>
         </div>
       </section>
 
       {/* Quick bill check */}
-      <section className="bg-blue-50 border-b border-blue-100 py-7 px-4">
+      <section className="bg-marine-50 border-b border-marine-100 py-7 px-4">
         <div className="max-w-xl mx-auto text-center">
-          <p className="text-sm text-blue-700 font-semibold mb-3">Have your consumer number? Check your bill instantly:</p>
+          <p className="text-sm text-marine-700 font-semibold mb-3">Have your consumer number? Check your bill instantly:</p>
           <BillChecker compact />
         </div>
       </section>
@@ -185,7 +185,7 @@ export default function ConsumerNumberPage() {
             <details key={i} className="group border border-gray-200 rounded-xl overflow-hidden bg-white">
               <summary className="flex items-center justify-between cursor-pointer p-4 hover:bg-gray-50 transition-colors select-none">
                 <span className="font-semibold text-gray-900 text-sm pr-4">{f.q}</span>
-                <span className="flex-shrink-0 text-blue-500 group-open:rotate-180 transition-transform duration-200">▾</span>
+                <span className="flex-shrink-0 text-marine-500 group-open:rotate-180 transition-transform duration-200">▾</span>
               </summary>
               <div className="p-4 pt-0 bg-white border-t border-gray-100">
                 <p className="text-gray-600 text-sm leading-relaxed">{f.a}</p>
@@ -203,8 +203,8 @@ export default function ConsumerNumberPage() {
             { href: '/duplicate-bill', label: '📄 Duplicate Bill',    desc: 'Download your bill PDF' },
             { href: '/payment-guide',  label: '💳 Payment Guide',     desc: 'Easypaisa, JazzCash & more' },
           ].map(l => (
-            <Link key={l.href} href={l.href} className="block p-4 bg-white rounded-xl border border-gray-200 hover:border-blue-300 hover:shadow-md transition-all no-underline group">
-              <div className="font-bold text-blue-700 group-hover:text-blue-800">{l.label}</div>
+            <Link key={l.href} href={l.href} className="block p-4 bg-white rounded-xl border border-gray-200 hover:border-marine-300 hover:shadow-md transition-all no-underline group">
+              <div className="font-bold text-marine-700 group-hover:text-marine-800">{l.label}</div>
               <div className="text-xs text-gray-500 mt-1">{l.desc}</div>
             </Link>
           ))}

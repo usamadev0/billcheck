@@ -110,21 +110,21 @@ export default function DuplicateBillPage() {
       }) }} />
 
       {/* Hero */}
-      <section className="bg-gradient-to-br from-blue-900 to-blue-700 text-white py-14 px-4">
+      <section className="bg-gradient-to-br from-marine-600 to-marine-500 text-white py-14 px-4">
         <div className="max-w-4xl mx-auto">
-          <nav className="flex items-center gap-2 text-xs text-blue-200 mb-5">
+          <nav className="flex items-center gap-2 text-xs text-marine-200 mb-5">
             <Link href="/" className="hover:text-white">Home</Link><span>/</span>
             <span className="text-white font-medium">Duplicate Bill</span>
           </nav>
           <h1 className="text-3xl md:text-4xl font-black mb-4">SNGPL Duplicate Bill Download — All Methods</h1>
-          <p className="text-blue-100 text-lg max-w-2xl">Lost your gas bill or need a copy for address proof? Get an official SNGPL duplicate in under a minute — via portal, app, WhatsApp, SMS, or office. Full guide with every method explained.</p>
+          <p className="text-marine-100 text-lg max-w-2xl">Lost your gas bill or need a copy for address proof? Get an official SNGPL duplicate in under a minute — via portal, app, WhatsApp, SMS, or office. Full guide with every method explained.</p>
         </div>
       </section>
 
       {/* Quick checker */}
-      <section className="bg-blue-50 border-b border-blue-100 py-7 px-4">
+      <section className="bg-marine-50 border-b border-marine-100 py-7 px-4">
         <div className="max-w-xl mx-auto text-center">
-          <p className="text-sm text-blue-700 font-semibold mb-3">Check &amp; download your bill instantly:</p>
+          <p className="text-sm text-marine-700 font-semibold mb-3">Check &amp; download your bill instantly:</p>
           <BillChecker compact />
         </div>
       </section>
@@ -173,7 +173,7 @@ export default function DuplicateBillPage() {
                   <span className="text-3xl">{m.icon}</span>
                   <div>
                     <h3 className="font-bold text-gray-900 text-base">{m.title}</h3>
-                    <span className="inline-block mt-1 text-xs bg-blue-100 text-blue-700 px-2 py-0.5 rounded-full font-semibold">{m.badge}</span>
+                    <span className="inline-block mt-1 text-xs bg-marine-100 text-marine-700 px-2 py-0.5 rounded-full font-semibold">{m.badge}</span>
                   </div>
                 </div>
               </div>
@@ -181,7 +181,7 @@ export default function DuplicateBillPage() {
                 <ol className="space-y-2 flex-1">
                   {m.steps.map((step, si) => (
                     <li key={si} className="flex gap-2.5 text-sm text-gray-700">
-                      <span className="flex-shrink-0 w-5 h-5 bg-blue-100 text-blue-700 rounded-full flex items-center justify-center text-xs font-bold">{si + 1}</span>
+                      <span className="flex-shrink-0 w-5 h-5 bg-marine-100 text-marine-700 rounded-full flex items-center justify-center text-xs font-bold">{si + 1}</span>
                       <span className="leading-relaxed">{step}</span>
                     </li>
                   ))}
@@ -248,7 +248,7 @@ export default function DuplicateBillPage() {
             <details key={i} className="group border border-gray-200 rounded-xl overflow-hidden bg-white">
               <summary className="flex items-center justify-between cursor-pointer p-4 hover:bg-gray-50 transition-colors select-none">
                 <span className="font-semibold text-gray-900 text-sm pr-4">{f.q}</span>
-                <span className="flex-shrink-0 text-blue-500 group-open:rotate-180 transition-transform duration-200">▾</span>
+                <span className="flex-shrink-0 text-marine-500 group-open:rotate-180 transition-transform duration-200">▾</span>
               </summary>
               <div className="p-4 pt-0 bg-white border-t border-gray-100">
                 <p className="text-gray-600 text-sm leading-relaxed">{f.a}</p>
@@ -265,8 +265,8 @@ export default function DuplicateBillPage() {
             { href: '/consumer-number', label: '🔢 Consumer Number',    desc: 'Find your account number' },
             { href: '/payment-guide',   label: '💳 Payment Guide',      desc: 'All payment methods' },
           ].map(l => (
-            <Link key={l.href} href={l.href} className="block p-4 bg-white rounded-xl border border-gray-200 hover:border-blue-300 hover:shadow-md transition-all no-underline group">
-              <div className="font-bold text-blue-700 group-hover:text-blue-800">{l.label}</div>
+            <Link key={l.href} href={l.href} className="block p-4 bg-white rounded-xl border border-gray-200 hover:border-marine-300 hover:shadow-md transition-all no-underline group">
+              <div className="font-bold text-marine-700 group-hover:text-marine-800">{l.label}</div>
               <div className="text-xs text-gray-500 mt-1">{l.desc}</div>
             </Link>
           ))}

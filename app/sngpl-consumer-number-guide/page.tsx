@@ -115,8 +115,8 @@ export default function ConsumerNumberGuidePage() {
             <p>Without your consumer number, you cannot access any SNGPL online services. It is the foundational identifier for your gas account, and knowing it is essential for every Pakistani household connected to the SNGPL network.</p>
 
             <div className="highlight-box">
-              <p className="font-semibold text-blue-900">🔑 Key Facts</p>
-              <ul className="text-blue-800 text-sm mt-2 space-y-1">
+              <p className="font-semibold text-marine-900">🔑 Key Facts</p>
+              <ul className="text-marine-800 text-sm mt-2 space-y-1">
                 <li>• Unique 10-digit number per connection</li>
                 <li>• Assigned at the time of connection</li>
                 <li>• Does not change unless connection is terminated</li>
@@ -250,8 +250,8 @@ export default function ConsumerNumberGuidePage() {
             <p>SNGPL meter readers visit each consumer&apos;s premises monthly to record the current meter reading. They record the reading on a handheld device that is pre-loaded with your consumer number and address. The difference between this month&apos;s and last month&apos;s readings gives your consumption in cubic meters, which is converted to HHM for billing.</p>
 
             <div className="highlight-box">
-              <p className="font-semibold text-blue-900">📌 Important Distinction</p>
-              <p className="text-blue-800 text-sm mt-1">Always use your <strong>Consumer Number</strong> (from your bill) for online bill checking and payments. The meter number on your physical meter is a different identifier and is NOT accepted on the SNGPL online portal for bill checking.</p>
+              <p className="font-semibold text-marine-900">📌 Important Distinction</p>
+              <p className="text-marine-800 text-sm mt-1">Always use your <strong>Consumer Number</strong> (from your bill) for online bill checking and payments. The meter number on your physical meter is a different identifier and is NOT accepted on the SNGPL online portal for bill checking.</p>
             </div>
           </div>
         </section>
@@ -449,14 +449,14 @@ export default function ConsumerNumberGuidePage() {
         </section>
 
         {/* Quick Checker CTA */}
-        <section className="p-6 bg-gradient-to-br from-green-50 to-blue-50 rounded-2xl border border-green-100 mb-12">
+        <section className="p-6 bg-gradient-to-br from-green-50 to-marine-50 rounded-2xl border border-green-100 mb-12">
           <h3 className="font-bold text-gray-900 mb-2">Found Your Consumer Number? Check Your Bill Now!</h3>
           <p className="text-gray-600 text-sm mb-4">Use our SNGPL bill checker above to get instantly redirected to the official portal.</p>
           <SNGPLChecker />
         </section>
 
         {/* Internal links */}
-        <section className="p-5 bg-blue-50 rounded-2xl border border-blue-100 mb-12">
+        <section className="p-5 bg-marine-50 rounded-2xl border border-marine-100 mb-12">
           <h3 className="font-bold text-gray-900 mb-3">Continue Reading</h3>
           <div className="flex flex-wrap gap-3">
             <Link href="/sngpl-bill-check-online" className="btn-primary py-2.5 px-5 text-sm">🔍 Bill Check Guide</Link>

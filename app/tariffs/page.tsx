@@ -114,9 +114,9 @@ export default function TariffsHubPage() {
       }) }} />
 
       {/* Hero */}
-      <section className="bg-gradient-to-br from-blue-900 to-blue-700 text-white py-14 px-4">
+      <section className="bg-gradient-to-br from-marine-600 to-marine-500 text-white py-14 px-4">
         <div className="max-w-4xl mx-auto">
-          <nav className="flex items-center gap-2 text-xs text-blue-200 mb-5">
+          <nav className="flex items-center gap-2 text-xs text-marine-200 mb-5">
             <Link href="/" className="hover:text-white">Home</Link>
             <span>/</span>
             <span className="text-white">Gas Tariffs</span>
@@ -127,7 +127,7 @@ export default function TariffsHubPage() {
           <h1 className="text-3xl md:text-4xl font-black mb-4 leading-tight">
             Pakistan Gas Tariffs — OGRA, SNGPL &amp; SSGC Explained
           </h1>
-          <p className="text-blue-100 text-base md:text-lg max-w-3xl leading-relaxed">
+          <p className="text-marine-100 text-base md:text-lg max-w-3xl leading-relaxed">
             How a gas tariff actually gets set, how it becomes your bill, and a dated, sourced record of how
             prices have moved — built to be expanded every time OGRA publishes a new determination.
           </p>
@@ -140,13 +140,13 @@ export default function TariffsHubPage() {
           <p className="mb-0 text-sm">
             <strong>Independence notice:</strong> This is an independent informational resource, not affiliated
             with OGRA, SNGPL, SSGC, or any government body. Official regulatory and utility sources remain the
-            final authority on any figure on this page — see <a href="#sources" className="text-blue-700 underline">Sources Used</a>.
+            final authority on any figure on this page — see <a href="#sources" className="text-marine-700 underline">Sources Used</a>.
             Where we could not verify a figure, we have left it out rather than estimated it.
           </p>
         </div>
 
-        <div className="bg-blue-50 border border-blue-200 rounded-2xl p-4 mb-10">
-          <h3 className="font-bold text-blue-900 text-sm mb-3">On this page</h3>
+        <div className="bg-marine-50 border border-marine-200 rounded-2xl p-4 mb-10">
+          <h3 className="font-bold text-marine-900 text-sm mb-3">On this page</h3>
           <ol className="grid sm:grid-cols-2 gap-x-6 gap-y-1">
             {toc.map((item, i) => (
               <li key={item.id}>
@@ -168,7 +168,7 @@ export default function TariffsHubPage() {
             <div className="flex flex-wrap items-center gap-2 text-sm font-medium justify-center">
               {['OGRA determination', 'Federal Govt. advice/notification', 'SNGPL / SSGC', 'Consumer category', 'Prescribed price', 'Consumer sale price', 'Fixed charges', 'GST', 'GIDC', 'Final bill'].map((step, i, arr) => (
                 <span key={step} className="flex items-center gap-2">
-                  <span className="badge bg-blue-100 text-blue-700">{step}</span>
+                  <span className="badge bg-marine-100 text-marine-700">{step}</span>
                   {i < arr.length - 1 && <span className="text-gray-400">→</span>}
                 </span>
               ))}
@@ -177,7 +177,7 @@ export default function TariffsHubPage() {
           <p>
             Two links in this chain are the most commonly misunderstood: the gap between OGRA&apos;s
             &quot;prescribed price&quot; and the Federal Government&apos;s &quot;consumer sale price&quot;
-            (explained fully <a href="#prescribed-vs-sale" className="text-blue-600 hover:underline">below</a>),
+            (explained fully <a href="#prescribed-vs-sale" className="text-marine-600 hover:underline">below</a>),
             and the fact that OGRA&apos;s role is to <em>determine and recommend</em> — the Federal Government
             still has a distinct statutory notification step before any figure reaches a consumer bill. For the
             regulator&apos;s full mandate and legal basis, see our <Link href="/ogra">OGRA authority page</Link>.
@@ -256,16 +256,16 @@ export default function TariffsHubPage() {
           <p>This is the single most commonly misunderstood part of Pakistan&apos;s gas pricing system:</p>
           <div className="not-prose grid sm:grid-cols-2 gap-4 my-4">
             <div className="bg-white border border-gray-200 rounded-2xl p-5">
-              <div className="text-xs font-semibold text-blue-700 uppercase tracking-wide mb-2">Prescribed price</div>
+              <div className="text-xs font-semibold text-marine-700 uppercase tracking-wide mb-2">Prescribed price</div>
               <p className="text-sm text-gray-700 mb-0">Determined by OGRA. An average, per-utility figure (Rs/MMBtu) reflecting the utility&apos;s allowed revenue requirement. This is a regulatory input, not what appears on your bill.</p>
             </div>
             <div className="bg-white border border-gray-200 rounded-2xl p-5">
-              <div className="text-xs font-semibold text-blue-700 uppercase tracking-wide mb-2">Consumer sale price</div>
+              <div className="text-xs font-semibold text-marine-700 uppercase tracking-wide mb-2">Consumer sale price</div>
               <p className="text-sm text-gray-700 mb-0">Notified by the Federal Government, category-by-category, in the Official Gazette. This is what actually determines your bill — and it can diverge from OGRA&apos;s prescribed price, sometimes substantially, as our FY2026-27 example shows.</p>
             </div>
           </div>
           <p>
-            All three data points in our <a href="#history" className="text-blue-600 hover:underline">Tariff
+            All three data points in our <a href="#history" className="text-marine-600 hover:underline">Tariff
             History Dataset</a> below show this same pattern: OGRA determines a prescribed price, but the
             consumer-facing outcome depends on a separate Federal Government decision that does not always
             follow OGRA&apos;s number. For the full legal mechanism (Section 8(3) of the OGRA Ordinance and the
@@ -308,7 +308,7 @@ export default function TariffsHubPage() {
           </p>
           <div className="not-prose overflow-x-auto my-4">
             <table className="w-full text-sm border border-gray-200 rounded-xl overflow-hidden">
-              <thead className="bg-blue-50">
+              <thead className="bg-marine-50">
                 <tr>
                   <th className="text-left p-3 font-semibold text-gray-700">Fiscal year</th>
                   <th className="text-left p-3 font-semibold text-gray-700">SNGPL prescribed price</th>
@@ -325,7 +325,7 @@ export default function TariffsHubPage() {
                     <td className="p-3">{r.ssgcPrescribed}</td>
                     <td className="p-3 text-gray-600">{r.consumerOutcome}</td>
                     <td className="p-3">
-                      <a href={r.sourceUrl} target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:underline text-xs">{r.source}</a>
+                      <a href={r.sourceUrl} target="_blank" rel="noopener noreferrer" className="text-marine-600 hover:underline text-xs">{r.source}</a>
                       <div className="text-xs text-gray-400 mt-1">{r.sourceDate}</div>
                     </td>
                   </tr>
@@ -336,7 +336,7 @@ export default function TariffsHubPage() {
           <p className="text-xs text-gray-500">
             &quot;Prescribed price&quot; figures are OGRA&apos;s average determination per utility (Rs/MMBtu),
             not a per-category consumer slab rate — see{' '}
-            <a href="#prescribed-vs-sale" className="text-blue-600 hover:underline">Prescribed Price vs. Consumer Sale Price</a>{' '}
+            <a href="#prescribed-vs-sale" className="text-marine-600 hover:underline">Prescribed Price vs. Consumer Sale Price</a>{' '}
             above before using these figures for any bill calculation.
           </p>
 
@@ -352,7 +352,7 @@ export default function TariffsHubPage() {
               { date: '7 Jul 2026', text: 'Reported: average prescribed price for FY2026-27 cut to Rs. 1,705/MMBtu (SNGPL Rs. 1,719, SSGC Rs. 1,691), but consumer tariffs held unchanged.' },
             ].map((e) => (
               <div key={e.date} className="flex gap-4 bg-white border border-gray-200 rounded-xl p-4">
-                <div className="text-xs font-semibold text-blue-700 whitespace-nowrap w-28 shrink-0">{e.date}</div>
+                <div className="text-xs font-semibold text-marine-700 whitespace-nowrap w-28 shrink-0">{e.date}</div>
                 <div className="text-sm text-gray-700">{e.text}</div>
               </div>
             ))}
@@ -380,11 +380,11 @@ export default function TariffsHubPage() {
 
           <h2 id="sources">Sources Used</h2>
           <ul className="text-sm">
-            <li>OGRA official notification index — <a href="https://ogra.org.pk/consumer-gas-prices" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:underline">ogra.org.pk/consumer-gas-prices</a> (confirms OGRA&apos;s own published consumer gas price notifications going back to 2008; used to confirm OGRA directly publishes this category of document)</li>
-            <li>Profit by Pakistan Today — <a href="https://profit.pakistantoday.com.pk/2024/05/21/ogra-cuts-gas-prices-by-10-for-sngpl-4-for-ssgc-for-fy2024-25" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:underline">FY2024-25 determination</a>, published 21 May 2024</li>
-            <li>Profit by Pakistan Today — <a href="https://profit.pakistantoday.com.pk/2025/11/25/ogra-slashes-sngpl-gas-price-by-3-and-ssgcl-by-8-for-fy2025-26" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:underline">FY2025-26 determination</a>, published 25 Nov 2025</li>
-            <li>Profit by Pakistan Today — <a href="https://profit.pakistantoday.com.pk/2026/07/07/govt-keeps-gas-tariffs-unchanged-despite-ogra-cut-in-prescribed-prices" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:underline">FY2026-27 determination and consumer outcome</a>, published 7 Jul 2026, citing <em>The News</em></li>
-            <li>SNGPL official website, &quot;Consumer Gas Prices&quot; — <a href="https://www.sngpl.com.pk/page.jsp?pgids=2205" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:underline">sngpl.com.pk</a></li>
+            <li>OGRA official notification index — <a href="https://ogra.org.pk/consumer-gas-prices" target="_blank" rel="noopener noreferrer" className="text-marine-600 hover:underline">ogra.org.pk/consumer-gas-prices</a> (confirms OGRA&apos;s own published consumer gas price notifications going back to 2008; used to confirm OGRA directly publishes this category of document)</li>
+            <li>Profit by Pakistan Today — <a href="https://profit.pakistantoday.com.pk/2024/05/21/ogra-cuts-gas-prices-by-10-for-sngpl-4-for-ssgc-for-fy2024-25" target="_blank" rel="noopener noreferrer" className="text-marine-600 hover:underline">FY2024-25 determination</a>, published 21 May 2024</li>
+            <li>Profit by Pakistan Today — <a href="https://profit.pakistantoday.com.pk/2025/11/25/ogra-slashes-sngpl-gas-price-by-3-and-ssgcl-by-8-for-fy2025-26" target="_blank" rel="noopener noreferrer" className="text-marine-600 hover:underline">FY2025-26 determination</a>, published 25 Nov 2025</li>
+            <li>Profit by Pakistan Today — <a href="https://profit.pakistantoday.com.pk/2026/07/07/govt-keeps-gas-tariffs-unchanged-despite-ogra-cut-in-prescribed-prices" target="_blank" rel="noopener noreferrer" className="text-marine-600 hover:underline">FY2026-27 determination and consumer outcome</a>, published 7 Jul 2026, citing <em>The News</em></li>
+            <li>SNGPL official website, &quot;Consumer Gas Prices&quot; — <a href="https://www.sngpl.com.pk/page.jsp?pgids=2205" target="_blank" rel="noopener noreferrer" className="text-marine-600 hover:underline">sngpl.com.pk</a></li>
             <li>Our own <Link href="/ogra">OGRA page</Link> and <Link href="/companies/sngpl">SNGPL profile</Link>, for the regulatory mechanism and utility-specific detail</li>
           </ul>
 
@@ -400,19 +400,19 @@ export default function TariffsHubPage() {
           </div>
         </article>
 
-        <section className="mt-12 bg-blue-50 rounded-2xl p-6 border border-blue-100">
-          <h3 className="font-bold text-blue-900 mb-4">Related Pages</h3>
+        <section className="mt-12 bg-marine-50 rounded-2xl p-6 border border-marine-100">
+          <h3 className="font-bold text-marine-900 mb-4">Related Pages</h3>
           <div className="grid sm:grid-cols-3 gap-3">
-            <Link href="/ogra" className="block p-4 bg-white rounded-xl border border-blue-100 hover:shadow-sm transition-shadow">
-              <div className="font-semibold text-blue-700 text-sm mb-1">OGRA</div>
+            <Link href="/ogra" className="block p-4 bg-white rounded-xl border border-marine-100 hover:shadow-sm transition-shadow">
+              <div className="font-semibold text-marine-700 text-sm mb-1">OGRA</div>
               <div className="text-xs text-gray-500">The regulator behind every tariff</div>
             </Link>
-            <Link href="/companies/sngpl" className="block p-4 bg-white rounded-xl border border-blue-100 hover:shadow-sm transition-shadow">
-              <div className="font-semibold text-blue-700 text-sm mb-1">SNGPL Profile</div>
+            <Link href="/companies/sngpl" className="block p-4 bg-white rounded-xl border border-marine-100 hover:shadow-sm transition-shadow">
+              <div className="font-semibold text-marine-700 text-sm mb-1">SNGPL Profile</div>
               <div className="text-xs text-gray-500">Company facts, billing, connections</div>
             </Link>
-            <Link href="/sngpl-taxes-explained" className="block p-4 bg-white rounded-xl border border-blue-100 hover:shadow-sm transition-shadow">
-              <div className="font-semibold text-blue-700 text-sm mb-1">Gas Bill Taxes Explained</div>
+            <Link href="/sngpl-taxes-explained" className="block p-4 bg-white rounded-xl border border-marine-100 hover:shadow-sm transition-shadow">
+              <div className="font-semibold text-marine-700 text-sm mb-1">Gas Bill Taxes Explained</div>
               <div className="text-xs text-gray-500">Worked example of a real bill</div>
             </Link>
           </div>

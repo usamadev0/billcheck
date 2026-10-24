@@ -119,9 +119,9 @@ export default function ComplaintsHubPage() {
       }) }} />
 
       {/* Hero */}
-      <section className="bg-gradient-to-br from-blue-900 to-blue-700 text-white py-14 px-4">
+      <section className="bg-gradient-to-br from-marine-600 to-marine-500 text-white py-14 px-4">
         <div className="max-w-4xl mx-auto">
-          <nav className="flex items-center gap-2 text-xs text-blue-200 mb-5">
+          <nav className="flex items-center gap-2 text-xs text-marine-200 mb-5">
             <Link href="/" className="hover:text-white">Home</Link>
             <span>/</span>
             <span className="text-white">Complaints</span>
@@ -132,7 +132,7 @@ export default function ComplaintsHubPage() {
           <h1 className="text-3xl md:text-4xl font-black mb-4 leading-tight">
             Gas Complaints &amp; Consumer Rights in Pakistan
           </h1>
-          <p className="text-blue-100 text-base md:text-lg max-w-3xl leading-relaxed">
+          <p className="text-marine-100 text-base md:text-lg max-w-3xl leading-relaxed">
             Where to actually take a gas complaint, in what order, and what the official process requires at
             each step — for SNGPL, SSGC, OGRA, and the Federal Ombudsman.
           </p>
@@ -146,12 +146,12 @@ export default function ComplaintsHubPage() {
             <strong>Independence notice:</strong> SNGPL Bill Check Hub is an independent informational resource.
             We are <strong>not affiliated with SNGPL, SSGC, OGRA, or the Federal Ombudsman</strong>, and we
             cannot lodge, track, or resolve a complaint on your behalf. Every channel and timeline below links
-            to the official source — see <a href="#sources" className="text-blue-700 underline">Sources Used</a>.
+            to the official source — see <a href="#sources" className="text-marine-700 underline">Sources Used</a>.
           </p>
         </div>
 
-        <div className="bg-blue-50 border border-blue-200 rounded-2xl p-4 mb-10">
-          <h3 className="font-bold text-blue-900 text-sm mb-3">On this page</h3>
+        <div className="bg-marine-50 border border-marine-200 rounded-2xl p-4 mb-10">
+          <h3 className="font-bold text-marine-900 text-sm mb-3">On this page</h3>
           <ol className="grid sm:grid-cols-2 gap-x-6 gap-y-1">
             {toc.map((item, i) => (
               <li key={item.id}>
@@ -172,7 +172,7 @@ export default function ComplaintsHubPage() {
             <div className="flex flex-wrap items-center gap-2 text-sm font-medium justify-center">
               {['Consumer', 'SNGPL / SSGC complaint channel', 'Utility resolution attempt', 'Escalation (if unresolved)', 'OGRA complaint mechanism', 'Regulatory decision / appeal'].map((step, i, arr) => (
                 <span key={step} className="flex items-center gap-2">
-                  <span className="badge bg-blue-100 text-blue-700">{step}</span>
+                  <span className="badge bg-marine-100 text-marine-700">{step}</span>
                   {i < arr.length - 1 && <span className="text-gray-400">→</span>}
                 </span>
               ))}
@@ -194,7 +194,7 @@ export default function ComplaintsHubPage() {
             <li><strong>Meter</strong> — suspected faulty meter, meter testing/replacement requests, disputed readings, tampering allegations, or access problems for a meter reader.</li>
             <li><strong>Supply</strong> — no gas supply, low pressure, unplanned interruptions, and seasonal/winter supply shortfalls. These are not the same thing: a <em>planned</em> shutdown (for maintenance) is typically announced in advance by the utility, while <em>low pressure</em> and <em>unplanned interruption</em> are fault- or demand-driven and are handled as active complaints — SSGC, for example, explicitly separates &quot;area low pressure&quot; from a meter/regulator-specific low-pressure complaint (see the timeline table below).</li>
             <li><strong>Connection</strong> — new connection delays, ownership/name transfer issues, disconnection, reconnection, load extension/reduction, and application or document problems. We cover the new-connection process itself on our <Link href="/companies/sngpl#new-connection">SNGPL profile</Link>.</li>
-            <li><strong>Safety</strong> — gas leaks, emergencies, unsafe installations, and suspected gas theft. These require an immediate call to your utility&apos;s emergency line, not a standard complaint filing — see <a href="#safety" className="text-blue-600 hover:underline">Gas Leak &amp; Emergency</a> below.</li>
+            <li><strong>Safety</strong> — gas leaks, emergencies, unsafe installations, and suspected gas theft. These require an immediate call to your utility&apos;s emergency line, not a standard complaint filing — see <a href="#safety" className="text-marine-600 hover:underline">Gas Leak &amp; Emergency</a> below.</li>
           </ul>
 
           <h2 id="workflow">Escalation Workflow</h2>
@@ -208,7 +208,7 @@ export default function ComplaintsHubPage() {
               { n: 6, t: 'Appeal or escalate further if needed', d: "Appeal OGRA's decision within 30 days, or raise a maladministration complaint with the Federal Ombudsman as a separate channel." },
             ].map((s) => (
               <div key={s.n} className="flex gap-4">
-                <div className="w-8 h-8 rounded-full bg-blue-600 text-white flex items-center justify-center font-bold text-sm shrink-0">{s.n}</div>
+                <div className="w-8 h-8 rounded-full bg-marine-600 text-white flex items-center justify-center font-bold text-sm shrink-0">{s.n}</div>
                 <div>
                   <div className="font-semibold text-gray-800 text-sm">{s.t}</div>
                   <div className="text-sm text-gray-600">{s.d}</div>
@@ -219,20 +219,20 @@ export default function ComplaintsHubPage() {
 
           <h2 id="sngpl-channels">SNGPL Complaint Channels</h2>
           <div className="not-prose grid sm:grid-cols-2 gap-3">
-            <a href="https://www.sngpl.com.pk/complaints.jsp?mdids=89" target="_blank" rel="noopener noreferrer" className="block p-4 bg-white rounded-xl border border-gray-200 hover:border-blue-300 hover:bg-blue-50 transition-colors">
-              <div className="font-semibold text-blue-700 text-sm mb-1">Lodge a Complaint ↗</div>
+            <a href="https://www.sngpl.com.pk/complaints.jsp?mdids=89" target="_blank" rel="noopener noreferrer" className="block p-4 bg-white rounded-xl border border-gray-200 hover:border-marine-300 hover:bg-marine-50 transition-colors">
+              <div className="font-semibold text-marine-700 text-sm mb-1">Lodge a Complaint ↗</div>
               <div className="text-xs text-gray-500">sngpl.com.pk/complaints.jsp</div>
             </a>
-            <a href="https://www.sngpl.com.pk/complaintshistory.jsp?mdids=90" target="_blank" rel="noopener noreferrer" className="block p-4 bg-white rounded-xl border border-gray-200 hover:border-blue-300 hover:bg-blue-50 transition-colors">
-              <div className="font-semibold text-blue-700 text-sm mb-1">Track Your Complaint ↗</div>
+            <a href="https://www.sngpl.com.pk/complaintshistory.jsp?mdids=90" target="_blank" rel="noopener noreferrer" className="block p-4 bg-white rounded-xl border border-gray-200 hover:border-marine-300 hover:bg-marine-50 transition-colors">
+              <div className="font-semibold text-marine-700 text-sm mb-1">Track Your Complaint ↗</div>
               <div className="text-xs text-gray-500">sngpl.com.pk/complaintshistory.jsp</div>
             </a>
-            <a href="https://www.sngpl.com.pk/page.jsp?pgids=4265" target="_blank" rel="noopener noreferrer" className="block p-4 bg-white rounded-xl border border-gray-200 hover:border-blue-300 hover:bg-blue-50 transition-colors">
-              <div className="font-semibold text-blue-700 text-sm mb-1">Guidelines for Feedback/Complaints ↗</div>
+            <a href="https://www.sngpl.com.pk/page.jsp?pgids=4265" target="_blank" rel="noopener noreferrer" className="block p-4 bg-white rounded-xl border border-gray-200 hover:border-marine-300 hover:bg-marine-50 transition-colors">
+              <div className="font-semibold text-marine-700 text-sm mb-1">Guidelines for Feedback/Complaints ↗</div>
               <div className="text-xs text-gray-500">sngpl.com.pk (published as an image; see note below)</div>
             </a>
-            <a href="https://www.sngpl.com.pk/domrecon.jsp?mdids=286" target="_blank" rel="noopener noreferrer" className="block p-4 bg-white rounded-xl border border-gray-200 hover:border-blue-300 hover:bg-blue-50 transition-colors">
-              <div className="font-semibold text-blue-700 text-sm mb-1">Reconnection of Domestic Consumer ↗</div>
+            <a href="https://www.sngpl.com.pk/domrecon.jsp?mdids=286" target="_blank" rel="noopener noreferrer" className="block p-4 bg-white rounded-xl border border-gray-200 hover:border-marine-300 hover:bg-marine-50 transition-colors">
+              <div className="font-semibold text-marine-700 text-sm mb-1">Reconnection of Domestic Consumer ↗</div>
               <div className="text-xs text-gray-500">sngpl.com.pk/domrecon.jsp</div>
             </a>
           </div>
@@ -259,20 +259,20 @@ export default function ComplaintsHubPage() {
             <Link href="/companies/ssgc">SSGC company profile</Link>.
           </p>
           <div className="not-prose grid sm:grid-cols-2 gap-3">
-            <a href="https://www.ssgc.com.pk/web/?page_id=132" target="_blank" rel="noopener noreferrer" className="block p-4 bg-white rounded-xl border border-gray-200 hover:border-blue-300 hover:bg-blue-50 transition-colors">
-              <div className="font-semibold text-blue-700 text-sm mb-1">Complaints / Feedback Form ↗</div>
+            <a href="https://www.ssgc.com.pk/web/?page_id=132" target="_blank" rel="noopener noreferrer" className="block p-4 bg-white rounded-xl border border-gray-200 hover:border-marine-300 hover:bg-marine-50 transition-colors">
+              <div className="font-semibold text-marine-700 text-sm mb-1">Complaints / Feedback Form ↗</div>
               <div className="text-xs text-gray-500">ssgc.com.pk — Customer Type, Customer/Meter Number, Address required</div>
             </a>
-            <a href="https://www.ssgc.com.pk/web/?page_id=5058" target="_blank" rel="noopener noreferrer" className="block p-4 bg-white rounded-xl border border-gray-200 hover:border-blue-300 hover:bg-blue-50 transition-colors">
-              <div className="font-semibold text-blue-700 text-sm mb-1">How Customers Can Complain ↗</div>
+            <a href="https://www.ssgc.com.pk/web/?page_id=5058" target="_blank" rel="noopener noreferrer" className="block p-4 bg-white rounded-xl border border-gray-200 hover:border-marine-300 hover:bg-marine-50 transition-colors">
+              <div className="font-semibold text-marine-700 text-sm mb-1">How Customers Can Complain ↗</div>
               <div className="text-xs text-gray-500">ssgc.com.pk</div>
             </a>
-            <a href="https://www.ssgc.com.pk/web/?page_id=5472" target="_blank" rel="noopener noreferrer" className="block p-4 bg-white rounded-xl border border-gray-200 hover:border-blue-300 hover:bg-blue-50 transition-colors">
-              <div className="font-semibold text-blue-700 text-sm mb-1">Public Complaints Resolution Mechanism ↗</div>
+            <a href="https://www.ssgc.com.pk/web/?page_id=5472" target="_blank" rel="noopener noreferrer" className="block p-4 bg-white rounded-xl border border-gray-200 hover:border-marine-300 hover:bg-marine-50 transition-colors">
+              <div className="font-semibold text-marine-700 text-sm mb-1">Public Complaints Resolution Mechanism ↗</div>
               <div className="text-xs text-gray-500">ssgc.com.pk</div>
             </a>
-            <a href="https://www.ssgc.com.pk/web/?page_id=128" target="_blank" rel="noopener noreferrer" className="block p-4 bg-white rounded-xl border border-gray-200 hover:border-blue-300 hover:bg-blue-50 transition-colors">
-              <div className="font-semibold text-blue-700 text-sm mb-1">Customer Facilitation Centers ↗</div>
+            <a href="https://www.ssgc.com.pk/web/?page_id=128" target="_blank" rel="noopener noreferrer" className="block p-4 bg-white rounded-xl border border-gray-200 hover:border-marine-300 hover:bg-marine-50 transition-colors">
+              <div className="font-semibold text-marine-700 text-sm mb-1">Customer Facilitation Centers ↗</div>
               <div className="text-xs text-gray-500">ssgc.com.pk</div>
             </a>
           </div>
@@ -290,7 +290,7 @@ export default function ComplaintsHubPage() {
           </p>
           <div className="not-prose overflow-x-auto my-4">
             <table className="w-full text-sm border border-gray-200 rounded-xl overflow-hidden">
-              <thead className="bg-blue-50">
+              <thead className="bg-marine-50">
                 <tr>
                   <th className="text-left p-3 font-semibold text-gray-700">Department</th>
                   <th className="text-left p-3 font-semibold text-gray-700">Complaint type</th>
@@ -300,7 +300,7 @@ export default function ComplaintsHubPage() {
               <tbody className="divide-y divide-gray-100">
                 {ssgcTimelines.map((r, i) => (
                   <tr key={i} className={i % 2 === 0 ? 'bg-white' : 'bg-gray-50'}>
-                    <td className="p-3 text-xs font-semibold text-blue-700 whitespace-nowrap">{r.dept}</td>
+                    <td className="p-3 text-xs font-semibold text-marine-700 whitespace-nowrap">{r.dept}</td>
                     <td className="p-3">{r.type}</td>
                     <td className="p-3 text-gray-600">{r.timeline}</td>
                   </tr>
@@ -311,7 +311,7 @@ export default function ComplaintsHubPage() {
           <p className="text-xs text-gray-500">
             Source: SSGC, &quot;Complaint Types and Estimated Resolution Timelines,&quot; referenced by SSGC to
             the Petroleum Division&apos;s Ease of Doing Business initiative — see{' '}
-            <a href="https://www.ssgc.com.pk/web/?page_id=111676" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:underline">the original page</a>{' '}
+            <a href="https://www.ssgc.com.pk/web/?page_id=111676" target="_blank" rel="noopener noreferrer" className="text-marine-600 hover:underline">the original page</a>{' '}
             for the complete list, including industrial-specific categories not reproduced here.
           </p>
 
@@ -335,12 +335,12 @@ export default function ComplaintsHubPage() {
             officers at regional offices in Karachi, Lahore, Quetta, and Peshawar.
           </p>
           <div className="not-prose grid sm:grid-cols-2 gap-3 my-4">
-            <a href="https://complaint.ogra.org.pk/complaint" target="_blank" rel="noopener noreferrer" className="block p-4 bg-white rounded-xl border border-gray-200 hover:border-blue-300 hover:bg-blue-50 transition-colors">
-              <div className="font-semibold text-blue-700 text-sm mb-1">OGRA Online Complaint Form ↗</div>
+            <a href="https://complaint.ogra.org.pk/complaint" target="_blank" rel="noopener noreferrer" className="block p-4 bg-white rounded-xl border border-gray-200 hover:border-marine-300 hover:bg-marine-50 transition-colors">
+              <div className="font-semibold text-marine-700 text-sm mb-1">OGRA Online Complaint Form ↗</div>
               <div className="text-xs text-gray-500">complaint.ogra.org.pk/complaint</div>
             </a>
-            <a href="https://ogra.org.pk/lodge-complaints" target="_blank" rel="noopener noreferrer" className="block p-4 bg-white rounded-xl border border-gray-200 hover:border-blue-300 hover:bg-blue-50 transition-colors">
-              <div className="font-semibold text-blue-700 text-sm mb-1">OGRA Complaint &amp; Tracking Portal ↗</div>
+            <a href="https://ogra.org.pk/lodge-complaints" target="_blank" rel="noopener noreferrer" className="block p-4 bg-white rounded-xl border border-gray-200 hover:border-marine-300 hover:bg-marine-50 transition-colors">
+              <div className="font-semibold text-marine-700 text-sm mb-1">OGRA Complaint &amp; Tracking Portal ↗</div>
               <div className="text-xs text-gray-500">ogra.org.pk/lodge-complaints</div>
             </a>
           </div>
@@ -449,11 +449,11 @@ export default function ComplaintsHubPage() {
 
           <h2 id="sources">Sources Used</h2>
           <ul className="text-sm">
-            <li>OGRA Complaint Resolution Procedure Regulations, 2003 — summarized via a legal-professional secondary source, <a href="https://joshandmakinternational.com/ogra-complaint-resolution-procedure-regulations-2003" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:underline">Josh and Mak International</a>, cross-checked against search-indexed OGRA process descriptions</li>
-            <li>OGRA complaint portal — <a href="https://ogra.org.pk/lodge-complaints" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:underline">ogra.org.pk/lodge-complaints</a> and <a href="https://complaint.ogra.org.pk/complaint" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:underline">complaint.ogra.org.pk</a></li>
-            <li>SNGPL official website — <a href="https://www.sngpl.com.pk/complaints.jsp?mdids=89" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:underline">complaint lodging</a> and <a href="https://www.sngpl.com.pk/page.jsp?pgids=4265" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:underline">complaint guidelines</a> pages</li>
-            <li>SSGC official website — <a href="https://www.ssgc.com.pk/web/?page_id=111676" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:underline">Complaint Types and Estimated Resolution Timelines</a>, <a href="https://www.ssgc.com.pk/web/?page_id=132" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:underline">Complaints/Feedback form</a>, and <a href="https://www.ssgc.com.pk/web/?page_id=5058" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:underline">How Customers Can Complain</a></li>
-            <li>Wafaqi Mohtasib (Federal Ombudsman) official website — <a href="https://www.mohtasib.gov.pk" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:underline">mohtasib.gov.pk</a> (helpline numbers confirmed directly on the homepage)</li>
+            <li>OGRA Complaint Resolution Procedure Regulations, 2003 — summarized via a legal-professional secondary source, <a href="https://joshandmakinternational.com/ogra-complaint-resolution-procedure-regulations-2003" target="_blank" rel="noopener noreferrer" className="text-marine-600 hover:underline">Josh and Mak International</a>, cross-checked against search-indexed OGRA process descriptions</li>
+            <li>OGRA complaint portal — <a href="https://ogra.org.pk/lodge-complaints" target="_blank" rel="noopener noreferrer" className="text-marine-600 hover:underline">ogra.org.pk/lodge-complaints</a> and <a href="https://complaint.ogra.org.pk/complaint" target="_blank" rel="noopener noreferrer" className="text-marine-600 hover:underline">complaint.ogra.org.pk</a></li>
+            <li>SNGPL official website — <a href="https://www.sngpl.com.pk/complaints.jsp?mdids=89" target="_blank" rel="noopener noreferrer" className="text-marine-600 hover:underline">complaint lodging</a> and <a href="https://www.sngpl.com.pk/page.jsp?pgids=4265" target="_blank" rel="noopener noreferrer" className="text-marine-600 hover:underline">complaint guidelines</a> pages</li>
+            <li>SSGC official website — <a href="https://www.ssgc.com.pk/web/?page_id=111676" target="_blank" rel="noopener noreferrer" className="text-marine-600 hover:underline">Complaint Types and Estimated Resolution Timelines</a>, <a href="https://www.ssgc.com.pk/web/?page_id=132" target="_blank" rel="noopener noreferrer" className="text-marine-600 hover:underline">Complaints/Feedback form</a>, and <a href="https://www.ssgc.com.pk/web/?page_id=5058" target="_blank" rel="noopener noreferrer" className="text-marine-600 hover:underline">How Customers Can Complain</a></li>
+            <li>Wafaqi Mohtasib (Federal Ombudsman) official website — <a href="https://www.mohtasib.gov.pk" target="_blank" rel="noopener noreferrer" className="text-marine-600 hover:underline">mohtasib.gov.pk</a> (helpline numbers confirmed directly on the homepage)</li>
             <li>Our own <Link href="/ogra">OGRA page</Link> and <Link href="/companies/sngpl">SNGPL profile</Link></li>
           </ul>
 
@@ -471,19 +471,19 @@ export default function ComplaintsHubPage() {
           </div>
         </article>
 
-        <section className="mt-12 bg-blue-50 rounded-2xl p-6 border border-blue-100">
-          <h3 className="font-bold text-blue-900 mb-4">Related Pages</h3>
+        <section className="mt-12 bg-marine-50 rounded-2xl p-6 border border-marine-100">
+          <h3 className="font-bold text-marine-900 mb-4">Related Pages</h3>
           <div className="grid sm:grid-cols-3 gap-3">
-            <Link href="/ogra" className="block p-4 bg-white rounded-xl border border-blue-100 hover:shadow-sm transition-shadow">
-              <div className="font-semibold text-blue-700 text-sm mb-1">OGRA</div>
+            <Link href="/ogra" className="block p-4 bg-white rounded-xl border border-marine-100 hover:shadow-sm transition-shadow">
+              <div className="font-semibold text-marine-700 text-sm mb-1">OGRA</div>
               <div className="text-xs text-gray-500">The regulator behind the complaint process</div>
             </Link>
-            <Link href="/companies/sngpl" className="block p-4 bg-white rounded-xl border border-blue-100 hover:shadow-sm transition-shadow">
-              <div className="font-semibold text-blue-700 text-sm mb-1">SNGPL Profile</div>
+            <Link href="/companies/sngpl" className="block p-4 bg-white rounded-xl border border-marine-100 hover:shadow-sm transition-shadow">
+              <div className="font-semibold text-marine-700 text-sm mb-1">SNGPL Profile</div>
               <div className="text-xs text-gray-500">Company facts, billing, connections</div>
             </Link>
-            <Link href="/tariffs" className="block p-4 bg-white rounded-xl border border-blue-100 hover:shadow-sm transition-shadow">
-              <div className="font-semibold text-blue-700 text-sm mb-1">Gas Tariffs Hub</div>
+            <Link href="/tariffs" className="block p-4 bg-white rounded-xl border border-marine-100 hover:shadow-sm transition-shadow">
+              <div className="font-semibold text-marine-700 text-sm mb-1">Gas Tariffs Hub</div>
               <div className="text-xs text-gray-500">Confirm a charge before disputing it</div>
             </Link>
           </div>

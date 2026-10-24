@@ -47,9 +47,9 @@ export default function ResearchMethodologyPage() {
         about: { '@id': 'https://checkgasbills.pk/#organization' },
       }) }} />
 
-      <section className="bg-gradient-to-br from-blue-900 to-blue-700 text-white py-14 px-4">
+      <section className="bg-gradient-to-br from-marine-600 to-marine-500 text-white py-14 px-4">
         <div className="max-w-4xl mx-auto">
-          <nav className="flex items-center gap-2 text-xs text-blue-200 mb-5">
+          <nav className="flex items-center gap-2 text-xs text-marine-200 mb-5">
             <Link href="/" className="hover:text-white">Home</Link>
             <span>/</span>
             <Link href="/about" className="hover:text-white">About</Link>
@@ -60,7 +60,7 @@ export default function ResearchMethodologyPage() {
             🔍 How We Work
           </div>
           <h1 className="text-3xl md:text-4xl font-black mb-4 leading-tight">Our Research Methodology</h1>
-          <p className="text-blue-100 text-base md:text-lg max-w-3xl leading-relaxed">
+          <p className="text-marine-100 text-base md:text-lg max-w-3xl leading-relaxed">
             How tariff figures, tax rates, and regulatory information on this site are gathered, checked
             against official sources, and kept current.
           </p>
@@ -69,8 +69,8 @@ export default function ResearchMethodologyPage() {
 
       <div className="max-w-4xl mx-auto px-4 py-12">
 
-        <div className="bg-blue-50 border border-blue-200 rounded-2xl p-4 mb-10">
-          <h3 className="font-bold text-blue-900 text-sm mb-3">On this page</h3>
+        <div className="bg-marine-50 border border-marine-200 rounded-2xl p-4 mb-10">
+          <h3 className="font-bold text-marine-900 text-sm mb-3">On this page</h3>
           <ol className="grid sm:grid-cols-2 gap-x-6 gap-y-1">
             {toc.map((item, i) => (
               <li key={item.id}>
@@ -160,19 +160,19 @@ export default function ResearchMethodologyPage() {
 
         </article>
 
-        <section className="mt-12 bg-blue-50 rounded-2xl p-6 border border-blue-100">
-          <h3 className="font-bold text-blue-900 mb-4">Related Trust Pages</h3>
+        <section className="mt-12 bg-marine-50 rounded-2xl p-6 border border-marine-100">
+          <h3 className="font-bold text-marine-900 mb-4">Related Trust Pages</h3>
           <div className="grid sm:grid-cols-3 gap-3">
-            <Link href="/about" className="block p-4 bg-white rounded-xl border border-blue-100 hover:shadow-sm transition-shadow">
-              <div className="font-semibold text-blue-700 text-sm mb-1">About This Site</div>
+            <Link href="/about" className="block p-4 bg-white rounded-xl border border-marine-100 hover:shadow-sm transition-shadow">
+              <div className="font-semibold text-marine-700 text-sm mb-1">About This Site</div>
               <div className="text-xs text-gray-500">Who we are and what we cover</div>
             </Link>
-            <Link href="/editorial-policy" className="block p-4 bg-white rounded-xl border border-blue-100 hover:shadow-sm transition-shadow">
-              <div className="font-semibold text-blue-700 text-sm mb-1">Editorial Policy</div>
+            <Link href="/editorial-policy" className="block p-4 bg-white rounded-xl border border-marine-100 hover:shadow-sm transition-shadow">
+              <div className="font-semibold text-marine-700 text-sm mb-1">Editorial Policy</div>
               <div className="text-xs text-gray-500">The standards every page follows</div>
             </Link>
-            <Link href="/sources-references" className="block p-4 bg-white rounded-xl border border-blue-100 hover:shadow-sm transition-shadow">
-              <div className="font-semibold text-blue-700 text-sm mb-1">Sources &amp; References</div>
+            <Link href="/sources-references" className="block p-4 bg-white rounded-xl border border-marine-100 hover:shadow-sm transition-shadow">
+              <div className="font-semibold text-marine-700 text-sm mb-1">Sources &amp; References</div>
               <div className="text-xs text-gray-500">Every official source we rely on</div>
             </Link>
           </div>

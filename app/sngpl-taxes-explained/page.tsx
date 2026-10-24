@@ -60,9 +60,9 @@ export default function TaxesExplainedPage() {
       }) }} />
 
       {/* Hero */}
-      <section className="bg-gradient-to-br from-blue-900 to-blue-700 text-white py-14 px-4">
+      <section className="bg-gradient-to-br from-marine-600 to-marine-500 text-white py-14 px-4">
         <div className="max-w-4xl mx-auto">
-          <nav className="flex items-center gap-2 text-xs text-blue-200 mb-5">
+          <nav className="flex items-center gap-2 text-xs text-marine-200 mb-5">
             <Link href="/" className="hover:text-white">Home</Link>
             <span>/</span>
             <Link href="/guides" className="hover:text-white">Guides</Link>
@@ -76,7 +76,7 @@ export default function TaxesExplainedPage() {
             SNGPL Gas Bill Taxes Explained 2026<br />
             <span className="text-yellow-300">GIDC, GST, Meter Rent & OGRA Charges</span>
           </h1>
-          <p className="text-blue-100 text-base md:text-lg max-w-3xl leading-relaxed">
+          <p className="text-marine-100 text-base md:text-lg max-w-3xl leading-relaxed">
             Every line item on your SNGPL gas bill — base gas charges, GIDC, GST, meter rent, and late fees — explained clearly. Includes calculation examples, legal basis, and how OGRA regulates tariff revisions.
           </p>
         </div>
@@ -91,7 +91,7 @@ export default function TaxesExplainedPage() {
           <div className="overflow-x-auto rounded-xl border border-gray-200 my-6">
             <table className="w-full text-sm">
               <thead>
-                <tr className="bg-blue-700 text-white">
+                <tr className="bg-marine-700 text-white">
                   <th className="px-4 py-3 text-left font-semibold">Charge</th>
                   <th className="px-4 py-3 text-left font-semibold">Calculation Basis</th>
                   <th className="px-4 py-3 text-left font-semibold hidden sm:table-cell">Type</th>
@@ -134,7 +134,7 @@ export default function TaxesExplainedPage() {
 
           <p>Consumers wishing to participate in the tariff revision process can register comments on OGRA's website during the public consultation period. Consumer Rights Commission of Pakistan (CRCP) also files representations at OGRA hearings on behalf of domestic consumers.</p>
 
-          <p>For a fuller explanation of OGRA itself — including the difference between the price OGRA determines and the price the Federal Government actually notifies to consumers — see our <Link href="/ogra" className="text-blue-600 hover:underline">dedicated OGRA authority page</Link>. For a fuller profile of SNGPL itself — including its official new-connection process, complaint channels, and contact details — see our <Link href="/companies/sngpl" className="text-blue-600 hover:underline">SNGPL company profile</Link>. For a dated, sourced history of how these tariffs have moved over time, see our <Link href="/tariffs" className="text-blue-600 hover:underline">Pakistan Gas Tariffs hub</Link>.</p>
+          <p>For a fuller explanation of OGRA itself — including the difference between the price OGRA determines and the price the Federal Government actually notifies to consumers — see our <Link href="/ogra" className="text-marine-600 hover:underline">dedicated OGRA authority page</Link>. For a fuller profile of SNGPL itself — including its official new-connection process, complaint channels, and contact details — see our <Link href="/companies/sngpl" className="text-marine-600 hover:underline">SNGPL company profile</Link>. For a dated, sourced history of how these tariffs have moved over time, see our <Link href="/tariffs" className="text-marine-600 hover:underline">Pakistan Gas Tariffs hub</Link>.</p>
 
           <h2>Complete Bill Calculation Example</h2>
           <p>Here is a complete calculation example for a household consuming <strong>450 HHM</strong> in December (winter peak):</p>
@@ -167,7 +167,7 @@ export default function TaxesExplainedPage() {
               <details key={i} className="group bg-white border border-gray-200 rounded-2xl overflow-hidden">
                 <summary className="flex items-center justify-between cursor-pointer p-5 hover:bg-gray-50 transition-colors">
                   <span className="font-semibold text-gray-900 text-sm pr-4">{f.q}</span>
-                  <span className="flex-shrink-0 text-blue-500 group-open:rotate-180 transition-transform">▾</span>
+                  <span className="flex-shrink-0 text-marine-500 group-open:rotate-180 transition-transform">▾</span>
                 </summary>
                 <div className="px-5 pb-5 border-t border-gray-100">
                   <p className="text-gray-600 text-sm leading-relaxed pt-4">{f.a}</p>
@@ -177,8 +177,8 @@ export default function TaxesExplainedPage() {
           </div>
         </section>
 
-        <section className="mt-12 bg-blue-50 rounded-2xl p-6 border border-blue-100">
-          <h3 className="font-bold text-blue-900 mb-4">Related Guides</h3>
+        <section className="mt-12 bg-marine-50 rounded-2xl p-6 border border-marine-100">
+          <h3 className="font-bold text-marine-900 mb-4">Related Guides</h3>
           <div className="grid sm:grid-cols-2 gap-3">
             {[
               { href: '/calculator', label: '🧮 Bill Calculator', desc: 'Compute exact bill with all taxes' },
@@ -186,8 +186,8 @@ export default function TaxesExplainedPage() {
               { href: '/bill-check', label: '🔍 Check Bill Online', desc: 'View current bill instantly' },
               { href: '/payment-guide', label: '💳 Payment Guide', desc: 'Pay via Easypaisa, JazzCash, bank' },
             ].map(l => (
-              <Link key={l.href} href={l.href} className="flex items-start gap-3 p-3 bg-white rounded-xl hover:shadow-sm transition-shadow no-underline border border-blue-100">
-                <span className="font-semibold text-blue-700 text-sm">{l.label}</span>
+              <Link key={l.href} href={l.href} className="flex items-start gap-3 p-3 bg-white rounded-xl hover:shadow-sm transition-shadow no-underline border border-marine-100">
+                <span className="font-semibold text-marine-700 text-sm">{l.label}</span>
               </Link>
             ))}
           </div>

@@ -57,9 +57,9 @@ export default function OgraPage() {
       }) }} />
 
       {/* Hero */}
-      <section className="bg-gradient-to-br from-blue-900 to-blue-700 text-white py-14 px-4">
+      <section className="bg-gradient-to-br from-marine-600 to-marine-500 text-white py-14 px-4">
         <div className="max-w-4xl mx-auto">
-          <nav className="flex items-center gap-2 text-xs text-blue-200 mb-5">
+          <nav className="flex items-center gap-2 text-xs text-marine-200 mb-5">
             <Link href="/" className="hover:text-white">Home</Link>
             <span>/</span>
             <span className="text-white">OGRA</span>
@@ -70,7 +70,7 @@ export default function OgraPage() {
           <h1 className="text-3xl md:text-4xl font-black mb-4 leading-tight">
             OGRA — Oil &amp; Gas Regulatory Authority
           </h1>
-          <p className="text-blue-100 text-base md:text-lg max-w-3xl leading-relaxed">
+          <p className="text-marine-100 text-base md:text-lg max-w-3xl leading-relaxed">
             The federal body that regulates Pakistan&apos;s gas sector and sets the framework SNGPL and SSGC
             operate within — what it does, how gas tariffs are actually determined, and where to go for
             official information.
@@ -87,12 +87,12 @@ export default function OgraPage() {
             This page explains OGRA&apos;s role using OGRA&apos;s own published material and corroborating
             public reporting — it is not a reproduction of any OGRA document, and it is not a substitute for
             OGRA&apos;s own publications. For official information, always go to{' '}
-            <a href="https://ogra.org.pk" target="_blank" rel="noopener noreferrer" className="text-blue-700 underline">ogra.org.pk</a>.
+            <a href="https://ogra.org.pk" target="_blank" rel="noopener noreferrer" className="text-marine-700 underline">ogra.org.pk</a>.
           </p>
         </div>
 
-        <div className="bg-blue-50 border border-blue-200 rounded-2xl p-4 mb-10">
-          <h3 className="font-bold text-blue-900 text-sm mb-3">On this page</h3>
+        <div className="bg-marine-50 border border-marine-200 rounded-2xl p-4 mb-10">
+          <h3 className="font-bold text-marine-900 text-sm mb-3">On this page</h3>
           <ol className="grid sm:grid-cols-2 gap-x-6 gap-y-1">
             {toc.map((item, i) => (
               <li key={item.id}>
@@ -217,20 +217,20 @@ export default function OgraPage() {
 
           <h2 id="resources">Official OGRA Resources</h2>
           <div className="grid sm:grid-cols-2 gap-3 not-prose">
-            <a href="https://ogra.org.pk" target="_blank" rel="noopener noreferrer" className="block p-4 bg-white rounded-xl border border-gray-200 hover:border-blue-300 hover:bg-blue-50 transition-colors">
-              <div className="font-semibold text-blue-700 text-sm mb-1">OGRA Official Website ↗</div>
+            <a href="https://ogra.org.pk" target="_blank" rel="noopener noreferrer" className="block p-4 bg-white rounded-xl border border-gray-200 hover:border-marine-300 hover:bg-marine-50 transition-colors">
+              <div className="font-semibold text-marine-700 text-sm mb-1">OGRA Official Website ↗</div>
               <div className="text-xs text-gray-500">ogra.org.pk</div>
             </a>
-            <a href="https://www.ogra.org.pk/introduction" target="_blank" rel="noopener noreferrer" className="block p-4 bg-white rounded-xl border border-gray-200 hover:border-blue-300 hover:bg-blue-50 transition-colors">
-              <div className="font-semibold text-blue-700 text-sm mb-1">OGRA — Introduction ↗</div>
+            <a href="https://www.ogra.org.pk/introduction" target="_blank" rel="noopener noreferrer" className="block p-4 bg-white rounded-xl border border-gray-200 hover:border-marine-300 hover:bg-marine-50 transition-colors">
+              <div className="font-semibold text-marine-700 text-sm mb-1">OGRA — Introduction ↗</div>
               <div className="text-xs text-gray-500">ogra.org.pk/introduction</div>
             </a>
-            <a href="https://ogra.org.pk/ordinance" target="_blank" rel="noopener noreferrer" className="block p-4 bg-white rounded-xl border border-gray-200 hover:border-blue-300 hover:bg-blue-50 transition-colors">
-              <div className="font-semibold text-blue-700 text-sm mb-1">OGRA Ordinance, 2002 (amended, full text) ↗</div>
+            <a href="https://ogra.org.pk/ordinance" target="_blank" rel="noopener noreferrer" className="block p-4 bg-white rounded-xl border border-gray-200 hover:border-marine-300 hover:bg-marine-50 transition-colors">
+              <div className="font-semibold text-marine-700 text-sm mb-1">OGRA Ordinance, 2002 (amended, full text) ↗</div>
               <div className="text-xs text-gray-500">ogra.org.pk/ordinance</div>
             </a>
-            <Link href="/sngpl-taxes-explained" className="block p-4 bg-white rounded-xl border border-gray-200 hover:border-blue-300 hover:bg-blue-50 transition-colors">
-              <div className="font-semibold text-blue-700 text-sm mb-1">How OGRA Tariff Regulation Affects Your Bill</div>
+            <Link href="/sngpl-taxes-explained" className="block p-4 bg-white rounded-xl border border-gray-200 hover:border-marine-300 hover:bg-marine-50 transition-colors">
+              <div className="font-semibold text-marine-700 text-sm mb-1">How OGRA Tariff Regulation Affects Your Bill</div>
               <div className="text-xs text-gray-500">Our existing guide to gas bill taxes</div>
             </Link>
           </div>
@@ -242,10 +242,10 @@ export default function OgraPage() {
             public-record sources instead of guessing at OGRA&apos;s wording.
           </p>
           <ul className="text-sm">
-            <li>OGRA official website — <a href="https://ogra.org.pk" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:underline">ogra.org.pk</a> (organizational structure, mandate)</li>
-            <li>Oil and Gas Regulatory Authority Ordinance, 2002 (amended up to 5 March 2022) — full text via <a href="https://ogra.org.pk/ordinance" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:underline">OGRA&apos;s own website</a>, cross-checked against <a href="https://www.pakistancode.gov.pk/english/UY2FqaJw1-apaUY2Fqa-apaUY2Frbpg=-sg-jjjjjjjjjjjjj" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:underline">Pakistan Code (Government of Pakistan)</a> (Sections 6 and 8 — licensing powers; prescribed price and Federal Government notification process)</li>
-            <li>&quot;Oil &amp; Gas Regulatory Authority,&quot; Wikipedia — <a href="https://en.wikipedia.org/wiki/Oil_%26_Gas_Regulatory_Authority" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:underline">en.wikipedia.org</a>, used as a corroborating secondary reference for establishment date, organizational structure, and function summary, cross-checked against the Ordinance text</li>
-            <li>&quot;Govt keeps gas tariffs unchanged despite OGRA cuts,&quot; Profit by Pakistan Today, published 7 July 2026 — <a href="https://profit.pakistantoday.com.pk/2026/07/07/govt-keeps-gas-tariffs-unchanged-despite-ogra-cut-in-prescribed-prices" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:underline">profit.pakistantoday.com.pk</a> (FY2026-27 prescribed price vs. consumer sale price example)</li>
+            <li>OGRA official website — <a href="https://ogra.org.pk" target="_blank" rel="noopener noreferrer" className="text-marine-600 hover:underline">ogra.org.pk</a> (organizational structure, mandate)</li>
+            <li>Oil and Gas Regulatory Authority Ordinance, 2002 (amended up to 5 March 2022) — full text via <a href="https://ogra.org.pk/ordinance" target="_blank" rel="noopener noreferrer" className="text-marine-600 hover:underline">OGRA&apos;s own website</a>, cross-checked against <a href="https://www.pakistancode.gov.pk/english/UY2FqaJw1-apaUY2Fqa-apaUY2Frbpg=-sg-jjjjjjjjjjjjj" target="_blank" rel="noopener noreferrer" className="text-marine-600 hover:underline">Pakistan Code (Government of Pakistan)</a> (Sections 6 and 8 — licensing powers; prescribed price and Federal Government notification process)</li>
+            <li>&quot;Oil &amp; Gas Regulatory Authority,&quot; Wikipedia — <a href="https://en.wikipedia.org/wiki/Oil_%26_Gas_Regulatory_Authority" target="_blank" rel="noopener noreferrer" className="text-marine-600 hover:underline">en.wikipedia.org</a>, used as a corroborating secondary reference for establishment date, organizational structure, and function summary, cross-checked against the Ordinance text</li>
+            <li>&quot;Govt keeps gas tariffs unchanged despite OGRA cuts,&quot; Profit by Pakistan Today, published 7 July 2026 — <a href="https://profit.pakistantoday.com.pk/2026/07/07/govt-keeps-gas-tariffs-unchanged-despite-ogra-cut-in-prescribed-prices" target="_blank" rel="noopener noreferrer" className="text-marine-600 hover:underline">profit.pakistantoday.com.pk</a> (FY2026-27 prescribed price vs. consumer sale price example)</li>
           </ul>
 
           <div className="highlight-box mt-6">
@@ -259,19 +259,19 @@ export default function OgraPage() {
           </div>
         </article>
 
-        <section className="mt-12 bg-blue-50 rounded-2xl p-6 border border-blue-100">
-          <h3 className="font-bold text-blue-900 mb-4">Related Pages</h3>
+        <section className="mt-12 bg-marine-50 rounded-2xl p-6 border border-marine-100">
+          <h3 className="font-bold text-marine-900 mb-4">Related Pages</h3>
           <div className="grid sm:grid-cols-3 gap-3">
-            <Link href="/government-sources" className="block p-4 bg-white rounded-xl border border-blue-100 hover:shadow-sm transition-shadow">
-              <div className="font-semibold text-blue-700 text-sm mb-1">Government Sources</div>
+            <Link href="/government-sources" className="block p-4 bg-white rounded-xl border border-marine-100 hover:shadow-sm transition-shadow">
+              <div className="font-semibold text-marine-700 text-sm mb-1">Government Sources</div>
               <div className="text-xs text-gray-500">Why we rely on OGRA and other official bodies</div>
             </Link>
-            <Link href="/sources-references" className="block p-4 bg-white rounded-xl border border-blue-100 hover:shadow-sm transition-shadow">
-              <div className="font-semibold text-blue-700 text-sm mb-1">Sources &amp; References</div>
+            <Link href="/sources-references" className="block p-4 bg-white rounded-xl border border-marine-100 hover:shadow-sm transition-shadow">
+              <div className="font-semibold text-marine-700 text-sm mb-1">Sources &amp; References</div>
               <div className="text-xs text-gray-500">Every official source used across this site</div>
             </Link>
-            <Link href="/sngpl-taxes-explained" className="block p-4 bg-white rounded-xl border border-blue-100 hover:shadow-sm transition-shadow">
-              <div className="font-semibold text-blue-700 text-sm mb-1">Gas Bill Taxes Explained</div>
+            <Link href="/sngpl-taxes-explained" className="block p-4 bg-white rounded-xl border border-marine-100 hover:shadow-sm transition-shadow">
+              <div className="font-semibold text-marine-700 text-sm mb-1">Gas Bill Taxes Explained</div>
               <div className="text-xs text-gray-500">GIDC, GST, and OGRA-regulated charges</div>
             </Link>
           </div>

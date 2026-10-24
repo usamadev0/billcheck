@@ -86,14 +86,14 @@ export default function BillCheckPage() {
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
 
-      <section className="bg-gradient-to-br from-blue-900 to-blue-700 text-white py-14 px-4">
+      <section className="bg-gradient-to-br from-marine-600 to-marine-500 text-white py-14 px-4">
         <div className="max-w-4xl mx-auto">
-          <nav className="flex items-center gap-2 text-xs text-blue-200 mb-5">
+          <nav className="flex items-center gap-2 text-xs text-marine-200 mb-5">
             <Link href="/" className="hover:text-white">Home</Link><span>/</span>
             <span className="text-white font-medium">Bill Check Guide</span>
           </nav>
           <h1 className="text-3xl md:text-4xl font-black mb-4">SNGPL Bill Check Online — Complete Guide 2025</h1>
-          <p className="text-blue-100 text-lg max-w-2xl">Everything you need to know about checking your SNGPL gas bill online — desktop, mobile, app, consumer number, bill components, disputes, and more.</p>
+          <p className="text-marine-100 text-lg max-w-2xl">Everything you need to know about checking your SNGPL gas bill online — desktop, mobile, app, consumer number, bill components, disputes, and more.</p>
         </div>
       </section>
 
@@ -103,8 +103,8 @@ export default function BillCheckPage() {
           {/* Sidebar */}
           <aside className="hidden lg:block w-64 flex-shrink-0">
             <div className="sticky top-24 space-y-4">
-              <div className="bg-blue-50 rounded-2xl p-4 border border-blue-100">
-                <p className="text-xs font-bold text-blue-700 uppercase tracking-wide mb-3">📋 Contents</p>
+              <div className="bg-marine-50 rounded-2xl p-4 border border-marine-100">
+                <p className="text-xs font-bold text-marine-700 uppercase tracking-wide mb-3">📋 Contents</p>
                 <nav className="space-y-0.5">
                   {tocItems.map(t => (
                     <a key={t.id} href={`#${t.id}`} className="toc-link">{t.label}</a>
@@ -250,7 +250,7 @@ export default function BillCheckPage() {
                 <details key={i} className="group border border-gray-200 rounded-xl overflow-hidden bg-white">
                   <summary className="flex items-center justify-between cursor-pointer p-4 hover:bg-gray-50 transition-colors select-none">
                     <span className="font-semibold text-gray-900 text-sm pr-4">{f.q}</span>
-                    <span className="flex-shrink-0 text-blue-500 group-open:rotate-180 transition-transform duration-200">▾</span>
+                    <span className="flex-shrink-0 text-marine-500 group-open:rotate-180 transition-transform duration-200">▾</span>
                   </summary>
                   <div className="px-4 pb-4 border-t border-gray-100">
                     <p className="text-gray-600 text-sm leading-relaxed pt-3">{f.a}</p>
@@ -259,9 +259,9 @@ export default function BillCheckPage() {
               ))}
             </div>
 
-            <div className="mt-10 p-6 bg-blue-50 rounded-2xl border border-blue-200 text-center">
-              <h3 className="font-bold text-blue-900 text-lg mb-2">Check Your SNGPL Bill Now</h3>
-              <p className="text-blue-700 text-sm mb-4">Use our free checker above or go directly to the official SNGPL portal.</p>
+            <div className="mt-10 p-6 bg-marine-50 rounded-2xl border border-marine-200 text-center">
+              <h3 className="font-bold text-marine-900 text-lg mb-2">Check Your SNGPL Bill Now</h3>
+              <p className="text-marine-700 text-sm mb-4">Use our free checker above or go directly to the official SNGPL portal.</p>
               <div className="flex flex-wrap gap-3 justify-center">
                 <Link href="/" className="btn-primary text-sm py-2.5">Check Bill Now →</Link>
                 <Link href="/calculator" className="btn-secondary text-sm py-2.5">Calculate Bill 🧮</Link>

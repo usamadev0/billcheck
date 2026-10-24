@@ -19,7 +19,7 @@ export const metadata: Metadata = {
 /* ─── DATA ──────────────────────────────────────────────────────────────── */
 
 const quickCards = [
-  { href: '/bill-check',      icon: '🔍', title: 'Bill Check Guide',     desc: 'Step-by-step guide to check your SNGPL gas bill online using your consumer number',  badge: 'Popular',   bc: 'bg-blue-100 text-blue-700' },
+  { href: '/bill-check',      icon: '🔍', title: 'Bill Check Guide',     desc: 'Step-by-step guide to check your SNGPL gas bill online using your consumer number',  badge: 'Popular',   bc: 'bg-marine-100 text-marine-700' },
   { href: '/consumer-number', icon: '🔢', title: 'Consumer Number Help',  desc: 'Find, recover, and understand your SNGPL consumer number format and usage',           badge: 'Essential', bc: 'bg-green-100 text-green-700' },
   { href: '/duplicate-bill',  icon: '📄', title: 'Duplicate Bill',        desc: 'Download a duplicate SNGPL gas bill via portal, app, WhatsApp, or SMS instantly',    badge: 'Guide',     bc: 'bg-purple-100 text-purple-700' },
   { href: '/payment-guide',   icon: '💳', title: 'Payment Guide',         desc: 'Pay SNGPL bill via Easypaisa, JazzCash, HBL, ATM, or bank branch — full guide',      badge: 'How-To',    bc: 'bg-orange-100 text-orange-700' },
@@ -125,11 +125,11 @@ export default function HomePage() {
       }) }} />
 
       {/* ══════════════════════ HERO ══════════════════════ */}
-      <section className="relative bg-gradient-to-br from-blue-900 via-blue-800 to-blue-700 text-white overflow-hidden py-14 md:py-20">
+      <section className="relative bg-gradient-to-br from-marine-600 via-marine-600 to-marine-500 text-white overflow-hidden py-14 md:py-20">
         <div className="absolute inset-0 overflow-hidden pointer-events-none select-none" aria-hidden>
           <div className="absolute -top-24 -right-24 w-80 h-80 bg-white/5 rounded-full" />
           <div className="absolute -bottom-16 -left-16 w-64 h-64 bg-white/5 rounded-full" />
-          <div className="absolute top-1/2 right-1/3 w-40 h-40 bg-blue-400/10 rounded-full animate-pulse-slow" />
+          <div className="absolute top-1/2 right-1/3 w-40 h-40 bg-marine-400/10 rounded-full animate-pulse-slow" />
         </div>
         <div className="max-w-7xl mx-auto px-4 sm:px-6 relative">
           <div className="grid lg:grid-cols-2 gap-10 xl:gap-16 items-center">
@@ -144,12 +144,12 @@ export default function HomePage() {
                 Check Your SNGPL Gas Bill{' '}
                 <span className="text-yellow-300">Online Instantly</span>
               </h1>
-              <p className="text-blue-100 text-base md:text-lg mb-6 leading-relaxed max-w-lg mx-auto lg:mx-0">
+              <p className="text-marine-100 text-base md:text-lg mb-6 leading-relaxed max-w-lg mx-auto lg:mx-0">
                 Enter your consumer number and get redirected straight to the official SNGPL portal — no registration, no waiting, completely free.
               </p>
               <div className="flex flex-wrap gap-3 justify-center lg:justify-start mb-7">
                 <Link href="#checker"
-                  className="bg-white text-blue-700 font-bold px-6 py-3 rounded-xl hover:bg-blue-50 transition-colors text-sm shadow-lg">
+                  className="bg-white text-marine-700 font-bold px-6 py-3 rounded-xl hover:bg-marine-50 transition-colors text-sm shadow-lg">
                   Check Bill Now ↓
                 </Link>
                 <Link href="/guides"
@@ -157,7 +157,7 @@ export default function HomePage() {
                   📚 View All Guides
                 </Link>
               </div>
-              <div className="flex flex-wrap gap-4 justify-center lg:justify-start text-sm text-blue-100">
+              <div className="flex flex-wrap gap-4 justify-center lg:justify-start text-sm text-marine-100">
                 {['Official Portal Redirect', 'No Registration', 'Completely Free'].map(t => (
                   <span key={t} className="flex items-center gap-1.5">
                     <svg className="w-4 h-4 text-green-400 flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2.5} d="M5 13l4 4L19 7"/></svg>
@@ -176,7 +176,7 @@ export default function HomePage() {
       </section>
 
       {/* ══════════════════════ TRUST BAR ══════════════════════ */}
-      <div className="bg-blue-700 text-white">
+      <div className="bg-marine-700 text-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6">
           <div className="grid grid-cols-2 sm:grid-cols-4 divide-x divide-white/20">
             {[
@@ -187,7 +187,7 @@ export default function HomePage() {
             ].map(s => (
               <div key={s.l} className="text-center py-4 px-2">
                 <div className="text-xl font-black text-yellow-300">{s.v}</div>
-                <div className="text-[11px] text-blue-200 mt-0.5">{s.l}</div>
+                <div className="text-[11px] text-marine-200 mt-0.5">{s.l}</div>
               </div>
             ))}
           </div>
@@ -198,7 +198,7 @@ export default function HomePage() {
       <section className="section-pad bg-white">
         <div className="max-w-5xl mx-auto px-4 sm:px-6">
           <div className="text-center mb-10">
-            <span className="badge bg-blue-100 text-blue-700 mb-3">Simple Process</span>
+            <span className="badge bg-marine-100 text-marine-700 mb-3">Simple Process</span>
             <h2 className="text-2xl md:text-3xl font-bold text-gray-900">How to Check SNGPL Bill Online</h2>
             <p className="text-gray-500 mt-2 text-sm">Takes less than 30 seconds — no account needed</p>
           </div>
@@ -207,12 +207,12 @@ export default function HomePage() {
               <div key={i} className="card text-center group hover:scale-105 transition-transform overflow-visible">
                 {i < 2 && (
                   <div className="hidden sm:flex absolute -right-3 top-9 z-10 items-center justify-center">
-                    <svg className="w-6 h-6 text-blue-300" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <svg className="w-6 h-6 text-marine-300" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7"/>
                     </svg>
                   </div>
                 )}
-                <div className="w-14 h-14 bg-gradient-to-br from-blue-600 to-blue-800 text-white rounded-2xl flex items-center justify-center mx-auto mb-4 text-lg font-black shadow-lg">
+                <div className="w-14 h-14 bg-gradient-to-br from-marine-600 to-marine-800 text-white rounded-2xl flex items-center justify-center mx-auto mb-4 text-lg font-black shadow-lg">
                   {s.n}
                 </div>
                 <h3 className="font-bold text-gray-900 mb-2 text-base">{s.title}</h3>
@@ -234,12 +234,12 @@ export default function HomePage() {
           <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-5">
             {quickCards.map(l => (
               <Link key={l.href} href={l.href}
-                className="card group hover:border-blue-200 hover:shadow-xl hover:-translate-y-1 transition-all duration-200 no-underline">
+                className="card group hover:border-marine-200 hover:shadow-xl hover:-translate-y-1 transition-all duration-200 no-underline">
                 <span className="text-3xl mb-3 block">{l.icon}</span>
                 <span className={`badge ${l.bc} mb-2`}>{l.badge}</span>
-                <h3 className="font-bold text-gray-900 mb-1 group-hover:text-blue-600 transition-colors text-base">{l.title}</h3>
+                <h3 className="font-bold text-gray-900 mb-1 group-hover:text-marine-600 transition-colors text-base">{l.title}</h3>
                 <p className="text-sm text-gray-500 leading-relaxed mb-3">{l.desc}</p>
-                <span className="flex items-center gap-1 text-blue-600 text-xs font-semibold">
+                <span className="flex items-center gap-1 text-marine-600 text-xs font-semibold">
                   Read Guide <svg className="w-3.5 h-3.5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7"/></svg>
                 </span>
               </Link>
@@ -252,14 +252,14 @@ export default function HomePage() {
       <section className="section-pad bg-white" id="slab-rates">
         <div className="max-w-4xl mx-auto px-4 sm:px-6">
           <div className="text-center mb-10">
-            <span className="badge bg-blue-100 text-blue-700 mb-3">OGRA Approved</span>
+            <span className="badge bg-marine-100 text-marine-700 mb-3">OGRA Approved</span>
             <h2 className="text-2xl md:text-3xl font-bold text-gray-900">SNGPL Gas Tariff Slab Rates 2025</h2>
             <p className="text-gray-500 mt-2 text-sm">Domestic consumer rates — GIDC (10%) and GST (17%) are charged on top of these base rates</p>
           </div>
           <div className="overflow-x-auto rounded-2xl border border-gray-200 shadow-sm">
             <table className="w-full text-sm">
               <thead>
-                <tr className="bg-blue-700 text-white">
+                <tr className="bg-marine-700 text-white">
                   <th className="px-4 py-3 text-left font-semibold">Slab</th>
                   <th className="px-4 py-3 text-left font-semibold">Consumption Range</th>
                   <th className="px-4 py-3 text-left font-semibold">Rate (before taxes)</th>
@@ -268,8 +268,8 @@ export default function HomePage() {
               </thead>
               <tbody>
                 {slabRates.map((r, i) => (
-                  <tr key={r.slab} className={`${i % 2 === 0 ? 'bg-white' : 'bg-gray-50'} border-t border-gray-100 hover:bg-blue-50 transition-colors`}>
-                    <td className="px-4 py-3 font-bold text-blue-700">{r.slab}</td>
+                  <tr key={r.slab} className={`${i % 2 === 0 ? 'bg-white' : 'bg-gray-50'} border-t border-gray-100 hover:bg-marine-50 transition-colors`}>
+                    <td className="px-4 py-3 font-bold text-marine-700">{r.slab}</td>
                     <td className="px-4 py-3 font-semibold text-gray-900">{r.range}</td>
                     <td className="px-4 py-3 text-gray-700">{r.rate}</td>
                     <td className="px-4 py-3 text-gray-500 hidden sm:table-cell">{r.note}</td>
@@ -283,7 +283,7 @@ export default function HomePage() {
               <strong>Cumulative slabs:</strong> A consumer using 400 HHM pays Slab 1 rate for 0–100 HHM, Slab 2 rate for 101–300 HHM, and Slab 3 rate for 301–400 HHM. Use our calculator for exact figures.
             </div>
             <Link href="/calculator"
-              className="inline-flex items-center justify-center gap-2 bg-blue-600 text-white font-bold px-5 py-2.5 rounded-xl hover:bg-blue-700 transition-colors text-sm whitespace-nowrap">
+              className="inline-flex items-center justify-center gap-2 bg-marine-600 text-white font-bold px-5 py-2.5 rounded-xl hover:bg-marine-700 transition-colors text-sm whitespace-nowrap">
               🧮 Calculate My Bill
             </Link>
           </div>
@@ -294,14 +294,14 @@ export default function HomePage() {
       <section className="section-pad bg-gray-50">
         <div className="max-w-4xl mx-auto px-4 sm:px-6">
           <div className="text-center mb-8">
-            <span className="badge bg-blue-100 text-blue-700 mb-3">About SNGPL</span>
+            <span className="badge bg-marine-100 text-marine-700 mb-3">About SNGPL</span>
             <h2 className="text-2xl md:text-3xl font-bold text-gray-900">What is SNGPL?</h2>
           </div>
           <div className="prose-content">
             <p>Sui Northern Gas Pipelines Limited (SNGPL) is Pakistan&apos;s largest natural gas utility, serving over 7 million consumers across Punjab, KPK, and Azad Kashmir. Every consumer receives a monthly bill showing HHM consumption, slab-based gas charges, GIDC (10%), and GST (17%).</p>
             <p>You can check your SNGPL bill online via <strong>sngpl.com.pk</strong>, the SNGPL mobile app (Android/iOS), WhatsApp, or SMS — each method takes under a minute and only requires your consumer number.</p>
             <p className="mt-2">
-              <Link href="/bill-check" className="inline-flex items-center gap-1 text-blue-600 font-semibold text-sm hover:text-blue-800">
+              <Link href="/bill-check" className="inline-flex items-center gap-1 text-marine-600 font-semibold text-sm hover:text-marine-800">
                 Read the complete bill-check guide — all 4 methods explained →
               </Link>
             </p>
@@ -351,25 +351,25 @@ export default function HomePage() {
             <div className="bg-white border border-gray-200 rounded-2xl p-6">
               <h3 className="font-bold text-gray-900 mb-2">SNGPL Consumer Number</h3>
               <p className="text-sm text-gray-600 leading-relaxed mb-3">Your 10–13 digit consumer number is the single most important identifier for your gas account — required for bill checks, payments, and complaints. It appears on every printed bill under &ldquo;Consumer No.&rdquo; Lost it? Call 1199 with your CNIC or check Easypaisa/JazzCash payment history.</p>
-              <Link href="/consumer-number" className="text-blue-600 text-sm font-semibold hover:text-blue-800">Complete consumer number guide →</Link>
+              <Link href="/consumer-number" className="text-marine-600 text-sm font-semibold hover:text-marine-800">Complete consumer number guide →</Link>
             </div>
 
             <div className="bg-white border border-gray-200 rounded-2xl p-6">
               <h3 className="font-bold text-gray-900 mb-2">Duplicate SNGPL Bill</h3>
               <p className="text-sm text-gray-600 leading-relaxed mb-3">Need a copy of your gas bill? Download instantly from sngpl.com.pk or the SNGPL app (12-month history). A duplicate PDF is accepted by all banks, ATMs, and payment apps — no stamp needed for payments.</p>
-              <Link href="/duplicate-bill" className="text-blue-600 text-sm font-semibold hover:text-blue-800">Download duplicate bill guide →</Link>
+              <Link href="/duplicate-bill" className="text-marine-600 text-sm font-semibold hover:text-marine-800">Download duplicate bill guide →</Link>
             </div>
 
             <div className="bg-white border border-gray-200 rounded-2xl p-6">
               <h3 className="font-bold text-gray-900 mb-2">Billing Problems &amp; Troubleshooting</h3>
               <p className="text-sm text-gray-600 leading-relaxed mb-3">High bill? Estimated reading? Payment not reflecting? Gas disconnected? Each issue has a structured resolution path — from self-checking your meter to filing with OGRA if needed.</p>
-              <Link href="/guides" className="text-blue-600 text-sm font-semibold hover:text-blue-800">See full troubleshooting guide →</Link>
+              <Link href="/guides" className="text-marine-600 text-sm font-semibold hover:text-marine-800">See full troubleshooting guide →</Link>
             </div>
 
             <div className="bg-white border border-gray-200 rounded-2xl p-6">
               <h3 className="font-bold text-gray-900 mb-2">7 Ways to Reduce Your Gas Bill</h3>
               <p className="text-sm text-gray-600 leading-relaxed mb-3">Insulate your home, upgrade to an instant geyser, use pressure cookers, fix gas line leaks, service appliances annually, set the geyser to 50–55°C, and read your meter monthly to catch billing errors early.</p>
-              <Link href="/guides" className="text-blue-600 text-sm font-semibold hover:text-blue-800">View all energy-saving guides →</Link>
+              <Link href="/guides" className="text-marine-600 text-sm font-semibold hover:text-marine-800">View all energy-saving guides →</Link>
             </div>
 
           </div>
@@ -380,25 +380,25 @@ export default function HomePage() {
       <section className="section-pad bg-white">
         <div className="max-w-6xl mx-auto px-4 sm:px-6">
           <div className="text-center mb-10">
-            <span className="badge bg-blue-100 text-blue-700 mb-3">City Guides</span>
+            <span className="badge bg-marine-100 text-marine-700 mb-3">City Guides</span>
             <h2 className="text-2xl md:text-3xl font-bold text-gray-900">SNGPL Bill Check by City</h2>
             <p className="text-gray-500 mt-2 text-sm">Select your city for a dedicated SNGPL guide</p>
           </div>
           <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-3">
             {cities.map(c => (
               <Link key={c.city} href={c.href}
-                className="flex items-center justify-between p-3.5 bg-gray-50 hover:bg-blue-50 border border-gray-200 hover:border-blue-300 rounded-xl transition-all group no-underline">
+                className="flex items-center justify-between p-3.5 bg-gray-50 hover:bg-marine-50 border border-gray-200 hover:border-marine-300 rounded-xl transition-all group no-underline">
                 <div>
-                  <div className="font-semibold text-gray-900 text-sm group-hover:text-blue-700 transition-colors">{c.city}</div>
+                  <div className="font-semibold text-gray-900 text-sm group-hover:text-marine-700 transition-colors">{c.city}</div>
                   <div className="text-[11px] text-gray-400 mt-0.5">{c.province}</div>
                 </div>
-                <svg className="w-4 h-4 text-gray-300 group-hover:text-blue-500 flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7"/></svg>
+                <svg className="w-4 h-4 text-gray-300 group-hover:text-marine-500 flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7"/></svg>
               </Link>
             ))}
           </div>
           <div className="mt-6 text-center">
             <Link href="/sngpl/bill-check"
-              className="inline-flex items-center gap-2 text-blue-600 font-semibold text-sm hover:text-blue-800 transition-colors">
+              className="inline-flex items-center gap-2 text-marine-600 font-semibold text-sm hover:text-marine-800 transition-colors">
               View all 44 city bill-check guides →
             </Link>
           </div>
@@ -418,7 +418,7 @@ export default function HomePage() {
               <details key={i} className="group bg-white border border-gray-200 rounded-2xl overflow-hidden">
                 <summary className="flex items-center justify-between cursor-pointer p-5 hover:bg-gray-50 transition-colors select-none">
                   <span className="font-semibold text-gray-900 text-sm pr-4">{f.q}</span>
-                  <span className="flex-shrink-0 text-blue-500 group-open:rotate-180 transition-transform duration-200 text-lg leading-none">▾</span>
+                  <span className="flex-shrink-0 text-marine-500 group-open:rotate-180 transition-transform duration-200 text-lg leading-none">▾</span>
                 </summary>
                 <div className="px-5 pb-5 border-t border-gray-100">
                   <p className="text-gray-600 text-sm leading-relaxed pt-4">{f.a}</p>
@@ -432,13 +432,13 @@ export default function HomePage() {
       {/* ══════════════════════ STATS + CTA ══════════════════════ */}
       <section className="section-pad bg-white" id="cta">
         <div className="max-w-5xl mx-auto px-4 sm:px-6">
-          <div className="bg-gradient-to-br from-blue-700 to-blue-900 rounded-3xl p-8 md:p-12 text-white text-center shadow-2xl">
+          <div className="bg-gradient-to-br from-marine-700 to-marine-900 rounded-3xl p-8 md:p-12 text-white text-center shadow-2xl">
             <h2 className="text-2xl md:text-3xl font-black mb-3">Ready to Check Your SNGPL Bill?</h2>
-            <p className="text-blue-100 mb-6 text-base max-w-lg mx-auto">
+            <p className="text-marine-100 mb-6 text-base max-w-lg mx-auto">
               Enter your consumer number above or go directly to the official SNGPL portal — free, instant, and 100% safe.
             </p>
             <div className="flex flex-wrap gap-3 justify-center">
-              <Link href="#checker" className="bg-white text-blue-700 font-bold px-8 py-3.5 rounded-xl hover:bg-blue-50 transition-colors">
+              <Link href="#checker" className="bg-white text-marine-700 font-bold px-8 py-3.5 rounded-xl hover:bg-marine-50 transition-colors">
                 Check Bill Now
               </Link>
               <a href="https://sngpl.com.pk/" target="_blank" rel="noopener noreferrer"
@@ -454,7 +454,7 @@ export default function HomePage() {
       <section className="section-pad bg-gray-50">
         <div className="max-w-6xl mx-auto px-4 sm:px-6">
           <div className="text-center mb-10">
-            <span className="badge bg-blue-100 text-blue-700 mb-3">City-by-City Guides</span>
+            <span className="badge bg-marine-100 text-marine-700 mb-3">City-by-City Guides</span>
             <h2 className="text-2xl md:text-3xl font-bold text-gray-900">SNGPL Guide Categories</h2>
             <p className="text-gray-500 mt-2 text-sm">Comprehensive guides organized by topic — covering all 44 SNGPL cities</p>
           </div>
@@ -467,9 +467,9 @@ export default function HomePage() {
               { href: '/sngpl/troubleshooting',  icon: '⚠️', label: 'Troubleshooting', count: '44 cities' },
             ].map(l => (
               <Link key={l.href} href={l.href}
-                className="card text-center hover:border-blue-200 hover:shadow-md transition-all no-underline">
+                className="card text-center hover:border-marine-200 hover:shadow-md transition-all no-underline">
                 <div className="text-2xl mb-2">{l.icon}</div>
-                <div className="font-bold text-blue-700 text-sm mb-1">{l.label}</div>
+                <div className="font-bold text-marine-700 text-sm mb-1">{l.label}</div>
                 <div className="text-xs text-gray-400">{l.count}</div>
               </Link>
             ))}

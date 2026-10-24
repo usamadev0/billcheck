@@ -23,10 +23,10 @@ export default function AboutPage() {
     <>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(aboutSchema) }} />
 
-      <div className="bg-gradient-to-br from-blue-900 to-blue-700 text-white py-14 px-4">
+      <div className="bg-gradient-to-br from-marine-600 to-marine-500 text-white py-14 px-4">
         <div className="max-w-3xl mx-auto">
           <h1 className="text-3xl font-bold mb-3">About SNGPL Bill Check Hub</h1>
-          <p className="text-blue-100 text-lg">Pakistan&apos;s independent resource for SNGPL gas consumers</p>
+          <p className="text-marine-100 text-lg">Pakistan&apos;s independent resource for SNGPL gas consumers</p>
         </div>
       </div>
 
@@ -82,16 +82,16 @@ export default function AboutPage() {
             three pages we treat as the foundation of everything else on this site:
           </p>
           <div className="grid sm:grid-cols-3 gap-3 mt-4">
-            <Link href="/editorial-policy" className="block p-4 border border-gray-200 rounded-xl hover:border-blue-300 hover:bg-blue-50 transition-colors">
-              <div className="font-semibold text-blue-700 text-sm mb-1">Editorial Policy</div>
+            <Link href="/editorial-policy" className="block p-4 border border-gray-200 rounded-xl hover:border-marine-300 hover:bg-marine-50 transition-colors">
+              <div className="font-semibold text-marine-700 text-sm mb-1">Editorial Policy</div>
               <div className="text-xs text-gray-500">The standards every page follows</div>
             </Link>
-            <Link href="/research-methodology" className="block p-4 border border-gray-200 rounded-xl hover:border-blue-300 hover:bg-blue-50 transition-colors">
-              <div className="font-semibold text-blue-700 text-sm mb-1">Research Methodology</div>
+            <Link href="/research-methodology" className="block p-4 border border-gray-200 rounded-xl hover:border-marine-300 hover:bg-marine-50 transition-colors">
+              <div className="font-semibold text-marine-700 text-sm mb-1">Research Methodology</div>
               <div className="text-xs text-gray-500">How we gather and verify information</div>
             </Link>
-            <Link href="/sources-references" className="block p-4 border border-gray-200 rounded-xl hover:border-blue-300 hover:bg-blue-50 transition-colors">
-              <div className="font-semibold text-blue-700 text-sm mb-1">Sources &amp; References</div>
+            <Link href="/sources-references" className="block p-4 border border-gray-200 rounded-xl hover:border-marine-300 hover:bg-marine-50 transition-colors">
+              <div className="font-semibold text-marine-700 text-sm mb-1">Sources &amp; References</div>
               <div className="text-xs text-gray-500">Every official source we rely on</div>
             </Link>
           </div>
@@ -110,7 +110,7 @@ export default function AboutPage() {
             <li>Regional gas billing patterns across 44+ cities</li>
           </ul>
           <p className="mt-3 text-sm text-gray-500">
-            See our <Link href="/research-methodology" className="text-blue-600 hover:underline">Research
+            See our <Link href="/research-methodology" className="text-marine-600 hover:underline">Research
             Methodology</Link> for how this information is gathered and checked.
           </p>
         </section>
@@ -124,7 +124,7 @@ export default function AboutPage() {
               (OGRA), or any Pakistani government body. This is an independent informational resource. For
               official billing queries, contact SNGPL directly at{' '}
               <strong>1199</strong> or visit{' '}
-              <a href="https://www.sngpl.com.pk" target="_blank" rel="noopener noreferrer" className="text-blue-700 underline">
+              <a href="https://www.sngpl.com.pk" target="_blank" rel="noopener noreferrer" className="text-marine-700 underline">
                 sngpl.com.pk
               </a>.
             </p>
@@ -141,8 +141,8 @@ export default function AboutPage() {
               { href: '/sngpl/cities', label: 'City Guides', desc: 'Gas bill guides for 44+ cities in Pakistan' },
             ].map(item => (
               <Link key={item.href} href={item.href}
-                className="block p-4 border border-gray-200 rounded-xl hover:border-blue-300 hover:bg-blue-50 transition-colors">
-                <div className="font-semibold text-blue-700 mb-1">{item.label}</div>
+                className="block p-4 border border-gray-200 rounded-xl hover:border-marine-300 hover:bg-marine-50 transition-colors">
+                <div className="font-semibold text-marine-700 mb-1">{item.label}</div>
                 <div className="text-sm text-gray-500">{item.desc}</div>
               </Link>
             ))}

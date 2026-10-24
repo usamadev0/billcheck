@@ -52,13 +52,13 @@ export default function GasBillCalculatorPage() {
       }) }} />
 
       {/* Hero */}
-      <section className="bg-gradient-to-r from-blue-800 to-indigo-700 text-white py-14 md:py-20 relative overflow-hidden">
+      <section className="bg-gradient-to-r from-marine-600 to-marine-500 text-white py-14 md:py-20 relative overflow-hidden">
         <div className="absolute inset-0 overflow-hidden pointer-events-none">
           <div className="absolute -top-16 -right-16 w-64 h-64 bg-white/5 rounded-full" />
           <div className="absolute bottom-0 left-1/4 w-48 h-48 bg-indigo-500/20 rounded-full animate-pulse-slow" />
         </div>
         <div className="max-w-7xl mx-auto px-4 relative">
-          <nav className="flex items-center gap-2 text-blue-200 text-sm mb-6">
+          <nav className="flex items-center gap-2 text-marine-200 text-sm mb-6">
             <Link href="/" className="hover:text-white">Home</Link><span>/</span>
             <span className="text-white">Gas Bill Calculator</span>
           </nav>
@@ -67,11 +67,11 @@ export default function GasBillCalculatorPage() {
             <h1 className="text-3xl md:text-4xl lg:text-5xl font-black mb-5 leading-tight">
               SNGPL Gas Bill Calculator Pakistan
             </h1>
-            <p className="text-blue-100 text-lg leading-relaxed mb-8">
+            <p className="text-marine-100 text-lg leading-relaxed mb-8">
               Estimate your monthly SNGPL gas bill instantly using current tariff slab rates. Enter your HHM consumption or meter readings for a complete bill breakdown including all charges and taxes.
             </p>
             <div className="flex flex-wrap gap-3 justify-center">
-              <Link href="#calculator-tool" className="btn-secondary bg-white text-blue-700 border-white py-3.5 px-7">Use Calculator ↓</Link>
+              <Link href="#calculator-tool" className="btn-secondary bg-white text-marine-700 border-white py-3.5 px-7">Use Calculator ↓</Link>
               <Link href="/sngpl-bill-check-online" className="inline-flex items-center gap-2 px-6 py-3.5 rounded-xl border-2 border-white/40 text-white font-semibold hover:bg-white/10 transition-all">Check Actual Bill</Link>
             </div>
           </div>
@@ -133,8 +133,8 @@ export default function GasBillCalculatorPage() {
             <p>SNGPL&apos;s billing system generates your bill approximately 3-5 days after the meter reading date. The bill is then posted to your address and made available on the online portal simultaneously.</p>
 
             <div className="highlight-box">
-              <p className="font-semibold text-blue-900">📊 Complete Bill Formula</p>
-              <div className="text-blue-800 text-sm mt-2 font-mono space-y-1">
+              <p className="font-semibold text-marine-900">📊 Complete Bill Formula</p>
+              <div className="text-marine-800 text-sm mt-2 font-mono space-y-1">
                 <p>Energy Charges  = Σ (consumption_in_slab × slab_rate)</p>
                 <p>Fixed Charges   = PKR 100 (flat)</p>
                 <p>Infra Cess      = Energy Charges × 5%</p>
@@ -427,7 +427,7 @@ export default function GasBillCalculatorPage() {
         </section>
 
         {/* Internal links */}
-        <section className="p-6 bg-gradient-to-br from-indigo-50 to-blue-50 rounded-2xl border border-indigo-100 mb-12">
+        <section className="p-6 bg-gradient-to-br from-indigo-50 to-marine-50 rounded-2xl border border-indigo-100 mb-12">
           <h3 className="font-bold text-gray-900 mb-3">Check Your Actual SNGPL Bill</h3>
           <p className="text-gray-600 text-sm mb-4">Our calculator gives estimates — for your exact bill amount, use our checker to visit the official SNGPL portal.</p>
           <div className="flex flex-wrap gap-3">

@@ -107,7 +107,7 @@ export default function TermsPage() {
           <h2 className="text-xl font-semibold text-gray-800 mb-3">10. Contact</h2>
           <p>
             Questions about these terms? Visit our{' '}
-            <a href="/contact" className="text-blue-600 hover:underline">Contact page</a>.
+            <a href="/contact" className="text-marine-600 hover:underline">Contact page</a>.
           </p>
         </section>
       </div>

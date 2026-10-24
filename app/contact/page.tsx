@@ -20,43 +20,43 @@ export default function ContactPage() {
     <>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(contactSchema) }} />
 
-      <div className="bg-gradient-to-br from-blue-900 to-blue-700 text-white py-14 px-4">
+      <div className="bg-gradient-to-br from-marine-600 to-marine-500 text-white py-14 px-4">
         <div className="max-w-3xl mx-auto">
           <h1 className="text-3xl font-bold mb-3">Contact Us</h1>
-          <p className="text-blue-100 text-lg">Questions, feedback, or SNGPL help</p>
+          <p className="text-marine-100 text-lg">Questions, feedback, or SNGPL help</p>
         </div>
       </div>
 
       <div className="max-w-3xl mx-auto px-4 py-12 space-y-10">
 
         {/* SNGPL Official Contact — most important */}
-        <section className="bg-blue-50 border border-blue-200 rounded-2xl p-6">
-          <h2 className="text-xl font-bold text-blue-900 mb-3">SNGPL Official Contact</h2>
-          <p className="text-blue-800 mb-4 text-sm">
+        <section className="bg-marine-50 border border-marine-200 rounded-2xl p-6">
+          <h2 className="text-xl font-bold text-marine-900 mb-3">SNGPL Official Contact</h2>
+          <p className="text-marine-800 mb-4 text-sm">
             For billing disputes, meter issues, new connections, or official SNGPL queries — contact SNGPL
             directly. We cannot assist with official billing matters.
           </p>
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 text-sm">
-            <div className="bg-white rounded-xl p-4 border border-blue-100">
+            <div className="bg-white rounded-xl p-4 border border-marine-100">
               <div className="font-semibold text-gray-700 mb-1">📞 SNGPL Helpline</div>
-              <a href="tel:1199" className="text-blue-600 font-bold text-xl hover:underline">1199</a>
+              <a href="tel:1199" className="text-marine-600 font-bold text-xl hover:underline">1199</a>
               <div className="text-gray-400 text-xs mt-1">24/7 customer service</div>
             </div>
-            <div className="bg-white rounded-xl p-4 border border-blue-100">
+            <div className="bg-white rounded-xl p-4 border border-marine-100">
               <div className="font-semibold text-gray-700 mb-1">🌐 Official Website</div>
               <a href="https://www.sngpl.com.pk" target="_blank" rel="noopener noreferrer"
-                className="text-blue-600 hover:underline break-all">sngpl.com.pk</a>
+                className="text-marine-600 hover:underline break-all">sngpl.com.pk</a>
               <div className="text-gray-400 text-xs mt-1">Bill portal &amp; self-service</div>
             </div>
-            <div className="bg-white rounded-xl p-4 border border-blue-100">
+            <div className="bg-white rounded-xl p-4 border border-marine-100">
               <div className="font-semibold text-gray-700 mb-1">💬 WhatsApp</div>
               <span className="text-gray-700">Available on 1199</span>
               <div className="text-gray-400 text-xs mt-1">Check SNGPL website for updates</div>
             </div>
-            <div className="bg-white rounded-xl p-4 border border-blue-100">
+            <div className="bg-white rounded-xl p-4 border border-marine-100">
               <div className="font-semibold text-gray-700 mb-1">🏢 Self-Service Portal</div>
               <a href="https://selfservice.sngpl.com.pk" target="_blank" rel="noopener noreferrer"
-                className="text-blue-600 hover:underline break-all">selfservice.sngpl.com.pk</a>
+                className="text-marine-600 hover:underline break-all">selfservice.sngpl.com.pk</a>
               <div className="text-gray-400 text-xs mt-1">Online account management</div>
             </div>
           </div>
@@ -88,9 +88,9 @@ export default function ContactPage() {
               { q: 'What are GIDC and other taxes on my gas bill?', href: '/sngpl-taxes-explained' },
             ].map(item => (
               <a key={item.href} href={item.href}
-                className="flex items-center justify-between p-4 border border-gray-200 rounded-xl hover:border-blue-300 hover:bg-blue-50 transition-colors group">
-                <span className="text-gray-700 text-sm group-hover:text-blue-700">{item.q}</span>
-                <span className="text-blue-500 text-xs shrink-0 ml-2">Read guide →</span>
+                className="flex items-center justify-between p-4 border border-gray-200 rounded-xl hover:border-marine-300 hover:bg-marine-50 transition-colors group">
+                <span className="text-gray-700 text-sm group-hover:text-marine-700">{item.q}</span>
+                <span className="text-marine-500 text-xs shrink-0 ml-2">Read guide →</span>
               </a>
             ))}
           </div>

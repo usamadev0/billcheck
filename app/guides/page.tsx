@@ -85,15 +85,15 @@ export default function GuidesPage() {
         ],
       }) }} />
       {/* ── Hero ─────────────────────────────────────────────────── */}
-      <section className="bg-gradient-to-br from-blue-900 to-blue-700 text-white py-14 px-4">
+      <section className="bg-gradient-to-br from-marine-600 to-marine-500 text-white py-14 px-4">
         <div className="max-w-4xl mx-auto">
-          <nav className="flex items-center gap-2 text-xs text-blue-200 mb-5">
+          <nav className="flex items-center gap-2 text-xs text-marine-200 mb-5">
             <Link href="/" className="hover:text-white">Home</Link>
             <span>/</span>
             <span className="text-white font-medium">Guides</span>
           </nav>
           <h1 className="text-3xl md:text-4xl font-black mb-4">SNGPL Complete Resource Guides 2025</h1>
-          <p className="text-blue-100 text-lg max-w-2xl">
+          <p className="text-marine-100 text-lg max-w-2xl">
             Consumer number, duplicate bills, payment methods, troubleshooting — everything a Sui Northern Gas
             consumer needs in one comprehensive guide.
           </p>
@@ -124,7 +124,7 @@ export default function GuidesPage() {
               <ul className="space-y-1 mb-2">
                 {g.sections.map((s, i) => (
                   <li key={i} className="flex items-center gap-2 text-sm text-gray-600">
-                    <span className="w-4 h-4 rounded-full bg-blue-100 text-blue-700 flex items-center justify-center text-xs font-bold flex-shrink-0">{i + 1}</span>
+                    <span className="w-4 h-4 rounded-full bg-marine-100 text-marine-700 flex items-center justify-center text-xs font-bold flex-shrink-0">{i + 1}</span>
                     {s}
                   </li>
                 ))}
@@ -377,9 +377,9 @@ export default function GuidesPage() {
             <Link
               key={l.href}
               href={l.href}
-              className="block p-4 bg-white rounded-xl border border-gray-200 hover:border-blue-300 hover:shadow-md transition-all no-underline group"
+              className="block p-4 bg-white rounded-xl border border-gray-200 hover:border-marine-300 hover:shadow-md transition-all no-underline group"
             >
-              <div className="font-bold text-blue-700 group-hover:text-blue-800">{l.label}</div>
+              <div className="font-bold text-marine-700 group-hover:text-marine-800">{l.label}</div>
               <div className="text-xs text-gray-500 mt-1">{l.desc}</div>
             </Link>
           ))}

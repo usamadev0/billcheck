@@ -150,9 +150,9 @@ export default function SafetyPage() {
         about: { '@id': 'https://checkgasbills.pk/#organization' },
       }) }} />
 
-      <section className="bg-gradient-to-br from-blue-900 to-blue-700 text-white py-14 px-4">
+      <section className="bg-gradient-to-br from-marine-600 to-marine-500 text-white py-14 px-4">
         <div className="max-w-4xl mx-auto">
-          <nav className="flex items-center gap-2 text-xs text-blue-200 mb-5">
+          <nav className="flex items-center gap-2 text-xs text-marine-200 mb-5">
             <Link href="/" className="hover:text-white">Home</Link>
             <span>/</span>
             <span className="text-white">Gas Safety &amp; Emergency Guide</span>
@@ -161,7 +161,7 @@ export default function SafetyPage() {
             🚨 Safety &amp; Emergency Authority
           </div>
           <h1 className="text-3xl md:text-4xl font-black mb-4 leading-tight">Gas Safety &amp; Emergency Guide</h1>
-          <p className="text-blue-100 text-base md:text-lg max-w-3xl leading-relaxed">
+          <p className="text-marine-100 text-base md:text-lg max-w-3xl leading-relaxed">
             What actually counts as a gas emergency, how to respond, and who to contact — SNGPL and SSGC&apos;s own
             published emergency channels, and OGRA&apos;s published safety and response-time standards, each
             verified against a primary source before publishing.
@@ -181,8 +181,8 @@ export default function SafetyPage() {
           </p>
         </div>
 
-        <div className="bg-blue-50 border border-blue-200 rounded-2xl p-4 mb-10">
-          <div className="font-bold text-blue-900 mb-3 text-sm">On this page</div>
+        <div className="bg-marine-50 border border-marine-200 rounded-2xl p-4 mb-10">
+          <div className="font-bold text-marine-900 mb-3 text-sm">On this page</div>
           <div className="grid sm:grid-cols-2 gap-x-6 gap-y-2 text-sm">
             <a href="#overview" className="toc-link">1. Overview &amp; source priority</a>
             <a href="#emergency-vs-complaint" className="toc-link">2. Emergency vs. ordinary complaint</a>
@@ -235,8 +235,8 @@ export default function SafetyPage() {
                 <div className="font-semibold text-red-800 mb-1">Is there fire, explosion risk, or building damage?</div>
                 <div className="text-gray-700">→ <strong>Emergency.</strong> Evacuate the area and contact both emergency services and your utility&apos;s emergency line.</div>
               </div>
-              <div className="border border-blue-200 bg-blue-50 rounded-xl p-4">
-                <div className="font-semibold text-blue-800 mb-1">Is it low pressure, a billing issue, a meter reading, or a connection request?</div>
+              <div className="border border-marine-200 bg-marine-50 rounded-xl p-4">
+                <div className="font-semibold text-marine-800 mb-1">Is it low pressure, a billing issue, a meter reading, or a connection request?</div>
                 <div className="text-gray-700">→ <strong>Not an emergency.</strong> Use the normal complaint channel — see our <Link href="/complaints">Complaints &amp; Consumer Rights hub</Link>.</div>
               </div>
             </div>
@@ -302,7 +302,7 @@ export default function SafetyPage() {
           <p className="text-xs text-gray-500">
             Source: SNGPL, &quot;Safety Guidelines for CNG Stations&quot; (the most detailed general gas-handling
             safety guidance SNGPL publishes that we could verify this session) —{' '}
-            <a href={'https://www.sngpl.com.pk/page.jsp?pgids=309&pgname=PAGES_NAME_a&secs=ss7xa852op845&cats=ct456712337&artcl=artuyh709123465'} target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:underline">sngpl.com.pk ↗</a>.
+            <a href={'https://www.sngpl.com.pk/page.jsp?pgids=309&pgname=PAGES_NAME_a&secs=ss7xa852op845&cats=ct456712337&artcl=artuyh709123465'} target="_blank" rel="noopener noreferrer" className="text-marine-600 hover:underline">sngpl.com.pk ↗</a>.
             We have not found a separate, general residential gas-leak safety page published by SNGPL; the
             principles above are the utility&apos;s own documented gas-safety practices, generalised carefully
             rather than presented as a residential-specific SNGPL publication.
@@ -316,15 +316,15 @@ export default function SafetyPage() {
               <div className="font-bold text-gray-900 mb-2">SNGPL</div>
               <p className="text-sm text-gray-600 mb-2">Published emergency &amp; complaint number: <strong>1199</strong></p>
               <p className="text-sm text-gray-600 mb-3">Complaint categories explicitly include gas leakage, leakage at the meter, leakage at the regulator, fire case, and blast.</p>
-              <a href="https://www.sngpl.com.pk/complaints.jsp" target="_blank" rel="noopener noreferrer" className="text-blue-600 text-sm font-medium hover:underline">Lodge a complaint with SNGPL ↗</a>
+              <a href="https://www.sngpl.com.pk/complaints.jsp" target="_blank" rel="noopener noreferrer" className="text-marine-600 text-sm font-medium hover:underline">Lodge a complaint with SNGPL ↗</a>
             </div>
             <div className="bg-white rounded-2xl border border-gray-200 p-5">
               <div className="font-bold text-gray-900 mb-2">SSGC</div>
               <p className="text-sm text-gray-600 mb-2">Published emergency &amp; complaint number: <strong>1199</strong></p>
               <p className="text-sm text-gray-600 mb-3">SSGC&apos;s own FAQ states: &quot;For emergencies and complaints, please contact SSGC call center 1199 available round the clock for 365 days.&quot;</p>
-              <a href="https://www.ssgc.com.pk/web/?page_id=111824" target="_blank" rel="noopener noreferrer" className="text-blue-600 text-sm font-medium hover:underline">SSGC FAQs (source) ↗</a>
+              <a href="https://www.ssgc.com.pk/web/?page_id=111824" target="_blank" rel="noopener noreferrer" className="text-marine-600 text-sm font-medium hover:underline">SSGC FAQs (source) ↗</a>
               <div className="mt-2">
-                <Link href="/companies/ssgc" className="text-blue-700 text-sm font-medium hover:underline">Full SSGC company profile →</Link>
+                <Link href="/companies/ssgc" className="text-marine-700 text-sm font-medium hover:underline">Full SSGC company profile →</Link>
               </div>
             </div>
           </div>
@@ -363,8 +363,8 @@ export default function SafetyPage() {
             </table>
             <p className="text-xs text-gray-500 mt-2">
               Source: OGRA Performance Standard —{' '}
-              <a href="https://www.ogra.org.pk/download/3575" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:underline">ogra.org.pk/download/3575 ↗</a>,
-              listed at <a href="https://www.ogra.org.pk/standards" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:underline">ogra.org.pk/standards ↗</a>. Verified 28 Aug 2026.
+              <a href="https://www.ogra.org.pk/download/3575" target="_blank" rel="noopener noreferrer" className="text-marine-600 hover:underline">ogra.org.pk/download/3575 ↗</a>,
+              listed at <a href="https://www.ogra.org.pk/standards" target="_blank" rel="noopener noreferrer" className="text-marine-600 hover:underline">ogra.org.pk/standards ↗</a>. Verified 28 Aug 2026.
             </p>
           </div>
 
@@ -454,7 +454,7 @@ export default function SafetyPage() {
           <p className="text-xs text-gray-500">
             Source: Mushtaq SE, &quot;From Tragedy to Prevention: Addressing Carbon Monoxide Poisoning Across
             Pakistan,&quot; Pakistan Journal of Public Health, Vol. 15 No. 4 (2025) —{' '}
-            <a href="https://pjph.org/pjph/article/view/2007" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:underline">pjph.org ↗</a>.
+            <a href="https://pjph.org/pjph/article/view/2007" target="_blank" rel="noopener noreferrer" className="text-marine-600 hover:underline">pjph.org ↗</a>.
           </p>
 
           <h2 id="winter-safety">Winter Gas Safety</h2>
@@ -511,7 +511,7 @@ export default function SafetyPage() {
                     <td className="p-3 text-gray-600">
                       {r.authority}
                       <div>
-                        <a href={r.sourceUrl} target="_blank" rel="noopener noreferrer" className="text-blue-600 text-xs hover:underline">{r.source} ↗</a>
+                        <a href={r.sourceUrl} target="_blank" rel="noopener noreferrer" className="text-marine-600 text-xs hover:underline">{r.source} ↗</a>
                       </div>
                     </td>
                     <td className="p-3 text-gray-500 text-xs whitespace-nowrap">{r.verified}</td>
@@ -534,12 +534,12 @@ export default function SafetyPage() {
 
           <h2 id="sources">Sources Used</h2>
           <ul className="text-sm">
-            <li>OGRA Performance Standard (primary regulatory source for response-time standards) — <a href="https://www.ogra.org.pk/download/3575" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:underline">ogra.org.pk/download/3575</a></li>
-            <li>SSGC Frequently Asked Questions (emergency contact, houseline responsibility, authorized usage) — <a href="https://www.ssgc.com.pk/web/?page_id=111824" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:underline">ssgc.com.pk</a></li>
-            <li>SSGC Complaint Types &amp; Estimated Resolution Timelines — <a href="https://www.ssgc.com.pk/web/?page_id=111676" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:underline">ssgc.com.pk</a></li>
-            <li>SNGPL Safety Guidelines for CNG Stations (general gas-handling safety principles) — <a href={'https://www.sngpl.com.pk/page.jsp?pgids=309&pgname=PAGES_NAME_a&secs=ss7xa852op845&cats=ct456712337&artcl=artuyh709123465'} target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:underline">sngpl.com.pk</a></li>
-            <li>SNGPL site-wide contact (1199) and complaint system — <a href="https://www.sngpl.com.pk/complaints.jsp" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:underline">sngpl.com.pk</a></li>
-            <li>Mushtaq SE, &quot;From Tragedy to Prevention: Addressing Carbon Monoxide Poisoning Across Pakistan,&quot; Pakistan Journal of Public Health (2025), published by the Health Services Academy, Government of Pakistan — <a href="https://pjph.org/pjph/article/view/2007" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:underline">pjph.org</a></li>
+            <li>OGRA Performance Standard (primary regulatory source for response-time standards) — <a href="https://www.ogra.org.pk/download/3575" target="_blank" rel="noopener noreferrer" className="text-marine-600 hover:underline">ogra.org.pk/download/3575</a></li>
+            <li>SSGC Frequently Asked Questions (emergency contact, houseline responsibility, authorized usage) — <a href="https://www.ssgc.com.pk/web/?page_id=111824" target="_blank" rel="noopener noreferrer" className="text-marine-600 hover:underline">ssgc.com.pk</a></li>
+            <li>SSGC Complaint Types &amp; Estimated Resolution Timelines — <a href="https://www.ssgc.com.pk/web/?page_id=111676" target="_blank" rel="noopener noreferrer" className="text-marine-600 hover:underline">ssgc.com.pk</a></li>
+            <li>SNGPL Safety Guidelines for CNG Stations (general gas-handling safety principles) — <a href={'https://www.sngpl.com.pk/page.jsp?pgids=309&pgname=PAGES_NAME_a&secs=ss7xa852op845&cats=ct456712337&artcl=artuyh709123465'} target="_blank" rel="noopener noreferrer" className="text-marine-600 hover:underline">sngpl.com.pk</a></li>
+            <li>SNGPL site-wide contact (1199) and complaint system — <a href="https://www.sngpl.com.pk/complaints.jsp" target="_blank" rel="noopener noreferrer" className="text-marine-600 hover:underline">sngpl.com.pk</a></li>
+            <li>Mushtaq SE, &quot;From Tragedy to Prevention: Addressing Carbon Monoxide Poisoning Across Pakistan,&quot; Pakistan Journal of Public Health (2025), published by the Health Services Academy, Government of Pakistan — <a href="https://pjph.org/pjph/article/view/2007" target="_blank" rel="noopener noreferrer" className="text-marine-600 hover:underline">pjph.org</a></li>
             <li>OGRA — for the regulator&apos;s full mandate and role, see our <Link href="/ogra">OGRA authority page</Link></li>
           </ul>
 
@@ -553,19 +553,19 @@ export default function SafetyPage() {
           </div>
         </article>
 
-        <section className="mt-12 bg-blue-50 rounded-2xl p-6 border border-blue-100">
-          <h3 className="font-bold text-blue-900 mb-4">Related Pages</h3>
+        <section className="mt-12 bg-marine-50 rounded-2xl p-6 border border-marine-100">
+          <h3 className="font-bold text-marine-900 mb-4">Related Pages</h3>
           <div className="grid sm:grid-cols-3 gap-3">
-            <Link href="/ogra" className="block p-4 bg-white rounded-xl border border-blue-100 hover:shadow-sm transition-shadow">
-              <div className="font-semibold text-blue-700 text-sm mb-1">OGRA Authority Page</div>
+            <Link href="/ogra" className="block p-4 bg-white rounded-xl border border-marine-100 hover:shadow-sm transition-shadow">
+              <div className="font-semibold text-marine-700 text-sm mb-1">OGRA Authority Page</div>
               <div className="text-xs text-gray-500">The regulator behind these standards</div>
             </Link>
-            <Link href="/complaints" className="block p-4 bg-white rounded-xl border border-blue-100 hover:shadow-sm transition-shadow">
-              <div className="font-semibold text-blue-700 text-sm mb-1">Complaints &amp; Consumer Rights</div>
+            <Link href="/complaints" className="block p-4 bg-white rounded-xl border border-marine-100 hover:shadow-sm transition-shadow">
+              <div className="font-semibold text-marine-700 text-sm mb-1">Complaints &amp; Consumer Rights</div>
               <div className="text-xs text-gray-500">For non-emergency service issues</div>
             </Link>
-            <Link href="/companies/sngpl" className="block p-4 bg-white rounded-xl border border-blue-100 hover:shadow-sm transition-shadow">
-              <div className="font-semibold text-blue-700 text-sm mb-1">SNGPL Company Profile</div>
+            <Link href="/companies/sngpl" className="block p-4 bg-white rounded-xl border border-marine-100 hover:shadow-sm transition-shadow">
+              <div className="font-semibold text-marine-700 text-sm mb-1">SNGPL Company Profile</div>
               <div className="text-xs text-gray-500">Full SNGPL entity profile</div>
             </Link>
           </div>

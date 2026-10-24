@@ -204,8 +204,8 @@ export default function SNGPLDuplicateBillPage() {
             </ol>
 
             <div className="highlight-box">
-              <p className="font-semibold text-blue-900">💡 Quick Tip for Chrome Users</p>
-              <p className="text-blue-800 text-sm mt-1">In Google Chrome, when you open the print dialog (Ctrl+P), look for the &quot;Destination&quot; dropdown on the left side. Click it and select &quot;Save as PDF&quot; at the top of the list. This creates a perfect PDF of your bill on your computer.</p>
+              <p className="font-semibold text-marine-900">💡 Quick Tip for Chrome Users</p>
+              <p className="text-marine-800 text-sm mt-1">In Google Chrome, when you open the print dialog (Ctrl+P), look for the &quot;Destination&quot; dropdown on the left side. Click it and select &quot;Save as PDF&quot; at the top of the list. This creates a perfect PDF of your bill on your computer.</p>
             </div>
 
             <h3>Alternatively: Use Our Bill Checker</h3>
@@ -292,8 +292,8 @@ export default function SNGPLDuplicateBillPage() {
             </ol>
 
             <div className="highlight-box">
-              <p className="font-semibold text-blue-900">📲 App Advantages</p>
-              <ul className="text-blue-800 text-sm mt-2 space-y-1">
+              <p className="font-semibold text-marine-900">📲 App Advantages</p>
+              <ul className="text-marine-800 text-sm mt-2 space-y-1">
                 <li>• Access bills faster without typing the portal URL each time</li>
                 <li>• View billing history more conveniently</li>
                 <li>• Receive notifications when new bill is generated</li>
@@ -458,7 +458,7 @@ export default function SNGPLDuplicateBillPage() {
         </section>
 
         {/* Internal links */}
-        <section className="p-6 bg-gradient-to-br from-purple-50 to-blue-50 rounded-2xl border border-purple-100 mb-12">
+        <section className="p-6 bg-gradient-to-br from-purple-50 to-marine-50 rounded-2xl border border-purple-100 mb-12">
           <h3 className="font-bold text-gray-900 mb-3">Related Guides</h3>
           <div className="flex flex-wrap gap-3">
             <Link href="/sngpl-bill-check-online" className="btn-primary py-2.5 px-5 text-sm">🔍 Bill Check Guide</Link>

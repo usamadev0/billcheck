@@ -5,29 +5,32 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        sngpl: {
-          50:  '#f0fdf4',
-          100: '#dcfce7',
-          200: '#bbf7d0',
-          300: '#86efac',
-          400: '#4ade80',
-          500: '#22c55e',
-          600: '#16a34a',
-          700: '#15803d',
-          800: '#166534',
-          900: '#14532d',
+        // Primary brand scale — deep petrol/marine teal (replaces generic blue)
+        marine: {
+          50:  '#eff8f8',
+          100: '#d6eeee',
+          200: '#afdcdd',
+          300: '#7ec4c6',
+          400: '#49a3a6',
+          500: '#2f868a',
+          600: '#226b70',
+          700: '#1e575c',
+          800: '#1c484c',
+          900: '#193c40',
+          950: '#0c2124',
         },
-        brand: {
-          50:  '#eff6ff',
-          100: '#dbeafe',
-          200: '#bfdbfe',
-          300: '#93c5fd',
-          400: '#60a5fa',
-          500: '#3b82f6',
-          600: '#2563eb',
-          700: '#1d4ed8',
-          800: '#1e40af',
-          900: '#1e3a8a',
+        // Accent scale — amber "gas flame" (used for primary CTAs)
+        flame: {
+          50:  '#fff8ed',
+          100: '#ffecd1',
+          200: '#ffd6a3',
+          300: '#ffb86b',
+          400: '#ff9830',
+          500: '#fd7e0c',
+          600: '#ee6303',
+          700: '#c54a05',
+          800: '#9c3a0c',
+          900: '#7e310d',
         },
       },
       fontFamily: {

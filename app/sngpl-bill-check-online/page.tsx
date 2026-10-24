@@ -68,7 +68,7 @@ export default function SNGPLBillCheckOnlinePage() {
           <div className="absolute bottom-0 left-0 w-60 h-60 bg-white/5 rounded-full" />
         </div>
         <div className="max-w-7xl mx-auto px-4 relative">
-          <nav className="flex items-center gap-2 text-blue-200 text-sm mb-6">
+          <nav className="flex items-center gap-2 text-marine-200 text-sm mb-6">
             <Link href="/" className="hover:text-white transition-colors">Home</Link>
             <span>/</span>
             <span className="text-white">SNGPL Bill Check Online</span>
@@ -79,11 +79,11 @@ export default function SNGPLBillCheckOnlinePage() {
               <h1 className="text-3xl md:text-4xl lg:text-5xl font-black mb-5 leading-tight">
                 SNGPL Bill Check Online — Complete Guide
               </h1>
-              <p className="text-blue-100 text-lg leading-relaxed mb-6">
+              <p className="text-marine-100 text-lg leading-relaxed mb-6">
                 Everything you need to know about checking your Sui Northern Gas bill online in Pakistan. Step-by-step instructions for both desktop and mobile, with screenshots and expert tips.
               </p>
               <div className="flex flex-wrap gap-3">
-                <Link href="#checker-section" className="btn-secondary bg-white text-blue-700 border-white">Check Your Bill Now</Link>
+                <Link href="#checker-section" className="btn-secondary bg-white text-marine-700 border-white">Check Your Bill Now</Link>
                 <Link href="#step-by-step-desktop" className="inline-flex items-center gap-2 px-5 py-2.5 rounded-xl border-2 border-white/40 text-white font-semibold hover:bg-white/10 transition-all text-sm">Read Guide ↓</Link>
               </div>
             </div>
@@ -129,8 +129,8 @@ export default function SNGPLBillCheckOnlinePage() {
             <p>This guide covers everything from the basics of online bill checking to advanced troubleshooting for when things go wrong. Whether you&apos;re checking your bill for the first time or looking to understand the charges on your bill, this is your complete resource.</p>
 
             <div className="highlight-box">
-              <p className="font-semibold text-blue-900">🔒 Important Safety Note</p>
-              <p className="text-blue-800 text-sm mt-1">Always check your bill at the official SNGPL portal (sngpl.com.pk). Our website safely redirects you there — we never display or store your bill data. Beware of unofficial websites that claim to show your bill data.</p>
+              <p className="font-semibold text-marine-900">🔒 Important Safety Note</p>
+              <p className="text-marine-800 text-sm mt-1">Always check your bill at the official SNGPL portal (sngpl.com.pk). Our website safely redirects you there — we never display or store your bill data. Beware of unofficial websites that claim to show your bill data.</p>
             </div>
 
             <h3>What is SNGPL?</h3>
@@ -239,8 +239,8 @@ export default function SNGPLBillCheckOnlinePage() {
             </ol>
 
             <div className="highlight-box">
-              <p className="font-semibold text-blue-900">💡 Pro Tip</p>
-              <p className="text-blue-800 text-sm mt-1">Bookmark the SNGPL portal in your browser so you can access it quickly every month. You can also save your consumer number in a secure note app for quick reference.</p>
+              <p className="font-semibold text-marine-900">💡 Pro Tip</p>
+              <p className="text-marine-800 text-sm mt-1">Bookmark the SNGPL portal in your browser so you can access it quickly every month. You can also save your consumer number in a secure note app for quick reference.</p>
             </div>
 
             <h3>What Information is Displayed</h3>
@@ -357,7 +357,7 @@ export default function SNGPLBillCheckOnlinePage() {
               <li>3 to 4 HHM: PKR 800 per HHM</li>
               <li>Above 4 HHM: PKR 1,200 per HHM</li>
             </ul>
-            <p>These rates are set by OGRA and may be revised periodically. Use our <Link href="/gas-bill-calculator" className="text-blue-600 underline font-semibold">Gas Bill Calculator</Link> to estimate your charges based on these slabs.</p>
+            <p>These rates are set by OGRA and may be revised periodically. Use our <Link href="/gas-bill-calculator" className="text-marine-600 underline font-semibold">Gas Bill Calculator</Link> to estimate your charges based on these slabs.</p>
 
             <h3>Fixed Charges</h3>
             <p>SNGPL charges a fixed monthly service charge regardless of how much gas you use. This covers the basic cost of maintaining your gas connection, meter reading services, and administrative expenses. The fixed charge is approximately PKR 100 per month for residential consumers.</p>
@@ -420,7 +420,7 @@ export default function SNGPLBillCheckOnlinePage() {
               <li>Your duplicate bill is now saved as a PDF</li>
             </ol>
 
-            <p>For a complete, dedicated guide on downloading duplicate bills, visit our <Link href="/sngpl-duplicate-bill" className="text-blue-600 underline font-semibold">SNGPL Duplicate Bill Guide</Link>.</p>
+            <p>For a complete, dedicated guide on downloading duplicate bills, visit our <Link href="/sngpl-duplicate-bill" className="text-marine-600 underline font-semibold">SNGPL Duplicate Bill Guide</Link>.</p>
 
             <div className="success-box">
               <p className="font-semibold text-green-800">✅ Duplicate Bill Tip</p>
@@ -489,7 +489,7 @@ export default function SNGPLBillCheckOnlinePage() {
             <ul>
               <li>Compare with your previous months&apos; bills</li>
               <li>Check if it&apos;s a high-consumption winter month</li>
-              <li>Use our <Link href="/gas-bill-calculator" className="text-blue-600 underline">Gas Bill Calculator</Link> to verify the calculation</li>
+              <li>Use our <Link href="/gas-bill-calculator" className="text-marine-600 underline">Gas Bill Calculator</Link> to verify the calculation</li>
               <li>File a complaint at SNGPL helpline 1199</li>
               <li>Visit your local SNGPL subdivision office with your meter reading</li>
             </ul>
@@ -553,8 +553,8 @@ export default function SNGPLBillCheckOnlinePage() {
             </ul>
 
             <div className="highlight-box">
-              <p className="font-semibold text-blue-900">💡 Payment Tip</p>
-              <p className="text-blue-800 text-sm mt-1">Always pay your SNGPL bill before the due date printed on your bill. Late payments attract a 10% surcharge on the outstanding amount. Keep the payment receipt (physical or screenshot) for at least 30 days after payment as proof.</p>
+              <p className="font-semibold text-marine-900">💡 Payment Tip</p>
+              <p className="text-marine-800 text-sm mt-1">Always pay your SNGPL bill before the due date printed on your bill. Late payments attract a 10% surcharge on the outstanding amount. Keep the payment receipt (physical or screenshot) for at least 30 days after payment as proof.</p>
             </div>
           </div>
         </section>
@@ -612,14 +612,14 @@ export default function SNGPLBillCheckOnlinePage() {
         </section>
 
         {/* Related Guides */}
-        <section className="p-6 bg-gradient-to-br from-blue-50 to-green-50 rounded-2xl border border-blue-100 mb-12">
+        <section className="p-6 bg-gradient-to-br from-marine-50 to-green-50 rounded-2xl border border-marine-100 mb-12">
           <h3 className="font-bold text-gray-900 mb-4">Related SNGPL Guides</h3>
           <div className="grid sm:grid-cols-3 gap-3">
             <Link href="/sngpl-consumer-number-guide" className="card-green hover:border-green-300 transition-colors p-4">
               <span className="text-xl mb-2 block">🔢</span>
               <span className="font-semibold text-sm text-gray-900">Consumer Number Guide</span>
             </Link>
-            <Link href="/sngpl-duplicate-bill" className="card hover:border-blue-300 transition-colors p-4">
+            <Link href="/sngpl-duplicate-bill" className="card hover:border-marine-300 transition-colors p-4">
               <span className="text-xl mb-2 block">📄</span>
               <span className="font-semibold text-sm text-gray-900">Duplicate Bill Download</span>
             </Link>

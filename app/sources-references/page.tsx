@@ -84,7 +84,7 @@ function SourceCard({ s }: { s: Source }) {
     <div className="bg-white rounded-2xl border border-gray-200 p-5">
       <div className="font-bold text-gray-900 mb-1">{s.name}</div>
       <p className="text-sm text-gray-600 mb-3 leading-relaxed">{s.purpose}</p>
-      <a href={s.url} target="_blank" rel="noopener noreferrer" className="text-blue-600 text-sm font-medium hover:underline break-all">
+      <a href={s.url} target="_blank" rel="noopener noreferrer" className="text-marine-600 text-sm font-medium hover:underline break-all">
         {s.url} ↗
       </a>
       <div className="mt-3 pt-3 border-t border-gray-100">
@@ -93,7 +93,7 @@ function SourceCard({ s }: { s: Source }) {
       </div>
       {s.internalLink && (
         <div className="mt-3">
-          <Link href={s.internalLink.href} className="text-blue-700 text-sm font-medium hover:underline">
+          <Link href={s.internalLink.href} className="text-marine-700 text-sm font-medium hover:underline">
             {s.internalLink.label} →
           </Link>
         </div>
@@ -123,9 +123,9 @@ export default function SourcesReferencesPage() {
         about: { '@id': 'https://checkgasbills.pk/#organization' },
       }) }} />
 
-      <section className="bg-gradient-to-br from-blue-900 to-blue-700 text-white py-14 px-4">
+      <section className="bg-gradient-to-br from-marine-600 to-marine-500 text-white py-14 px-4">
         <div className="max-w-4xl mx-auto">
-          <nav className="flex items-center gap-2 text-xs text-blue-200 mb-5">
+          <nav className="flex items-center gap-2 text-xs text-marine-200 mb-5">
             <Link href="/" className="hover:text-white">Home</Link>
             <span>/</span>
             <Link href="/about" className="hover:text-white">About</Link>
@@ -136,7 +136,7 @@ export default function SourcesReferencesPage() {
             📚 Primary Sources
           </div>
           <h1 className="text-3xl md:text-4xl font-black mb-4 leading-tight">Sources &amp; References</h1>
-          <p className="text-blue-100 text-base md:text-lg max-w-3xl leading-relaxed">
+          <p className="text-marine-100 text-base md:text-lg max-w-3xl leading-relaxed">
             We are an independent, secondary source. Every regulatory, tariff, and procedural claim on this
             site traces back to one of the official bodies below — this page lists them directly so you can
             verify anything for yourself. For why we source this way, see{' '}
@@ -194,7 +194,7 @@ export default function SourcesReferencesPage() {
               circulars, and notifications (by document number and date) are being added as each is
               individually verified. We do not cite a specific document title or number until we have
               confirmed it against OGRA&apos;s own publication. Until then, consult{' '}
-              <a href="https://ogra.org.pk" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:underline">
+              <a href="https://ogra.org.pk" target="_blank" rel="noopener noreferrer" className="text-marine-600 hover:underline">
                 ogra.org.pk
               </a>{' '}
               directly for official determinations.
@@ -202,19 +202,19 @@ export default function SourcesReferencesPage() {
           </div>
         </section>
 
-        <section className="bg-blue-50 rounded-2xl p-6 border border-blue-100">
-          <h3 className="font-bold text-blue-900 mb-4">Related Trust Pages</h3>
+        <section className="bg-marine-50 rounded-2xl p-6 border border-marine-100">
+          <h3 className="font-bold text-marine-900 mb-4">Related Trust Pages</h3>
           <div className="grid sm:grid-cols-3 gap-3">
-            <Link href="/about" className="block p-4 bg-white rounded-xl border border-blue-100 hover:shadow-sm transition-shadow">
-              <div className="font-semibold text-blue-700 text-sm mb-1">About This Site</div>
+            <Link href="/about" className="block p-4 bg-white rounded-xl border border-marine-100 hover:shadow-sm transition-shadow">
+              <div className="font-semibold text-marine-700 text-sm mb-1">About This Site</div>
               <div className="text-xs text-gray-500">Who we are and what we cover</div>
             </Link>
-            <Link href="/editorial-policy" className="block p-4 bg-white rounded-xl border border-blue-100 hover:shadow-sm transition-shadow">
-              <div className="font-semibold text-blue-700 text-sm mb-1">Editorial Policy</div>
+            <Link href="/editorial-policy" className="block p-4 bg-white rounded-xl border border-marine-100 hover:shadow-sm transition-shadow">
+              <div className="font-semibold text-marine-700 text-sm mb-1">Editorial Policy</div>
               <div className="text-xs text-gray-500">The standards every page follows</div>
             </Link>
-            <Link href="/research-methodology" className="block p-4 bg-white rounded-xl border border-blue-100 hover:shadow-sm transition-shadow">
-              <div className="font-semibold text-blue-700 text-sm mb-1">Research Methodology</div>
+            <Link href="/research-methodology" className="block p-4 bg-white rounded-xl border border-marine-100 hover:shadow-sm transition-shadow">
+              <div className="font-semibold text-marine-700 text-sm mb-1">Research Methodology</div>
               <div className="text-xs text-gray-500">How we gather and verify information</div>
             </Link>
           </div>

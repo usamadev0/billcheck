@@ -84,9 +84,9 @@ export default function GovernmentSourcesPage() {
         about: { '@id': 'https://checkgasbills.pk/#organization' },
       }) }} />
 
-      <section className="bg-gradient-to-br from-blue-900 to-blue-700 text-white py-14 px-4">
+      <section className="bg-gradient-to-br from-marine-600 to-marine-500 text-white py-14 px-4">
         <div className="max-w-4xl mx-auto">
-          <nav className="flex items-center gap-2 text-xs text-blue-200 mb-5">
+          <nav className="flex items-center gap-2 text-xs text-marine-200 mb-5">
             <Link href="/" className="hover:text-white">Home</Link>
             <span>/</span>
             <Link href="/about" className="hover:text-white">About</Link>
@@ -97,7 +97,7 @@ export default function GovernmentSourcesPage() {
             🏛️ Why We Cite Official Sources
           </div>
           <h1 className="text-3xl md:text-4xl font-black mb-4 leading-tight">Government Sources</h1>
-          <p className="text-blue-100 text-base md:text-lg max-w-3xl leading-relaxed">
+          <p className="text-marine-100 text-base md:text-lg max-w-3xl leading-relaxed">
             We are a secondary source. This page explains why every regulatory or financial claim on this
             site traces back to a government or regulatory body, and what each one is actually responsible
             for.
@@ -135,37 +135,37 @@ export default function GovernmentSourcesPage() {
         <div className="grid sm:grid-cols-2 gap-4 mt-10">
           {categories.map(c => (
             <div key={c.name} className="bg-white rounded-2xl border border-gray-200 p-5">
-              <span className="badge bg-blue-100 text-blue-700 mb-2">{c.label}</span>
+              <span className="badge bg-marine-100 text-marine-700 mb-2">{c.label}</span>
               <div className="font-bold text-gray-900 mb-2">{c.name}</div>
               <p className="text-sm text-gray-600 mb-3"><strong className="text-gray-800">Governs:</strong> {c.governs}</p>
               <p className="text-sm text-gray-600 mb-3"><strong className="text-gray-800">Used for:</strong> {c.usedFor}</p>
-              <a href={c.url} target="_blank" rel="noopener noreferrer" className="text-blue-600 text-sm font-medium hover:underline break-all">
+              <a href={c.url} target="_blank" rel="noopener noreferrer" className="text-marine-600 text-sm font-medium hover:underline break-all">
                 {c.url} ↗
               </a>
               {c.internalLink && (
                 <div className="mt-2">
-                  <Link href={c.internalLink.href} className="text-blue-700 text-sm font-medium hover:underline">
+                  <Link href={c.internalLink.href} className="text-marine-700 text-sm font-medium hover:underline">
                     {c.internalLink.label} →
                   </Link>
                 </div>
               )}
               {c.secondaryLink && (
                 <div className="mt-1">
-                  <Link href={c.secondaryLink.href} className="text-blue-700 text-sm font-medium hover:underline">
+                  <Link href={c.secondaryLink.href} className="text-marine-700 text-sm font-medium hover:underline">
                     {c.secondaryLink.label} →
                   </Link>
                 </div>
               )}
               {c.tertiaryLink && (
                 <div className="mt-1">
-                  <Link href={c.tertiaryLink.href} className="text-blue-700 text-sm font-medium hover:underline">
+                  <Link href={c.tertiaryLink.href} className="text-marine-700 text-sm font-medium hover:underline">
                     {c.tertiaryLink.label} →
                   </Link>
                 </div>
               )}
               {c.quaternaryLink && (
                 <div className="mt-1">
-                  <Link href={c.quaternaryLink.href} className="text-blue-700 text-sm font-medium hover:underline">
+                  <Link href={c.quaternaryLink.href} className="text-marine-700 text-sm font-medium hover:underline">
                     {c.quaternaryLink.label} →
                   </Link>
                 </div>
@@ -187,19 +187,19 @@ export default function GovernmentSourcesPage() {
           </div>
         </section>
 
-        <section className="mt-12 bg-blue-50 rounded-2xl p-6 border border-blue-100">
-          <h3 className="font-bold text-blue-900 mb-4">Related Trust Pages</h3>
+        <section className="mt-12 bg-marine-50 rounded-2xl p-6 border border-marine-100">
+          <h3 className="font-bold text-marine-900 mb-4">Related Trust Pages</h3>
           <div className="grid sm:grid-cols-3 gap-3">
-            <Link href="/sources-references" className="block p-4 bg-white rounded-xl border border-blue-100 hover:shadow-sm transition-shadow">
-              <div className="font-semibold text-blue-700 text-sm mb-1">Sources &amp; References</div>
+            <Link href="/sources-references" className="block p-4 bg-white rounded-xl border border-marine-100 hover:shadow-sm transition-shadow">
+              <div className="font-semibold text-marine-700 text-sm mb-1">Sources &amp; References</div>
               <div className="text-xs text-gray-500">The full source list with official links</div>
             </Link>
-            <Link href="/research-methodology" className="block p-4 bg-white rounded-xl border border-blue-100 hover:shadow-sm transition-shadow">
-              <div className="font-semibold text-blue-700 text-sm mb-1">Research Methodology</div>
+            <Link href="/research-methodology" className="block p-4 bg-white rounded-xl border border-marine-100 hover:shadow-sm transition-shadow">
+              <div className="font-semibold text-marine-700 text-sm mb-1">Research Methodology</div>
               <div className="text-xs text-gray-500">How we verify against these sources</div>
             </Link>
-            <Link href="/editorial-policy" className="block p-4 bg-white rounded-xl border border-blue-100 hover:shadow-sm transition-shadow">
-              <div className="font-semibold text-blue-700 text-sm mb-1">Editorial Policy</div>
+            <Link href="/editorial-policy" className="block p-4 bg-white rounded-xl border border-marine-100 hover:shadow-sm transition-shadow">
+              <div className="font-semibold text-marine-700 text-sm mb-1">Editorial Policy</div>
               <div className="text-xs text-gray-500">Our government-first sourcing principle</div>
             </Link>
           </div>

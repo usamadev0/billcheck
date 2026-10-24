@@ -186,15 +186,15 @@ export default async function CategoryIndexPage({
   return (
     <>
       {/* ── Hero ─────────────────────────────────────────────────── */}
-      <section className="bg-gradient-to-br from-blue-900 to-blue-700 text-white py-14 px-4">
+      <section className="bg-gradient-to-br from-marine-600 to-marine-500 text-white py-14 px-4">
         <div className="max-w-5xl mx-auto">
-          <nav className="flex items-center gap-2 text-xs text-blue-200 mb-5">
+          <nav className="flex items-center gap-2 text-xs text-marine-200 mb-5">
             <Link href="/" className="hover:text-white">Home</Link>
             <span>/</span>
             <span className="text-white font-medium">{label}</span>
           </nav>
           <h1 className="text-3xl md:text-4xl font-black mb-4">SNGPL {label} — All Cities 2025</h1>
-          <p className="text-blue-100 text-lg max-w-2xl">
+          <p className="text-marine-100 text-lg max-w-2xl">
             Detailed {label.toLowerCase()} guides for every city served by SNGPL across Punjab,
             Khyber Pakhtunkhwa, and Islamabad Capital Territory.
           </p>
@@ -233,23 +233,23 @@ export default async function CategoryIndexPage({
         </section>
 
         {/* ── How This Guide Network Works ─────────────────────── */}
-        <section className="mb-14 bg-blue-50 border border-blue-100 rounded-2xl p-6 md:p-8">
-          <h2 className="text-xl font-bold text-blue-900 mb-4">How Our City-Specific Guide Network Works</h2>
+        <section className="mb-14 bg-marine-50 border border-marine-100 rounded-2xl p-6 md:p-8">
+          <h2 className="text-xl font-bold text-marine-900 mb-4">How Our City-Specific Guide Network Works</h2>
           <div className="grid md:grid-cols-3 gap-6">
             <div>
-              <div className="w-10 h-10 bg-blue-600 rounded-xl flex items-center justify-center text-white font-bold text-lg mb-3">1</div>
-              <h3 className="font-bold text-blue-900 mb-2">Select Your City</h3>
-              <p className="text-blue-800 text-sm leading-relaxed">Each city below links to a dedicated guide tailored to that city&apos;s SNGPL distribution circle, local office address, service areas, consumer base, and any city-specific billing nuances.</p>
+              <div className="w-10 h-10 bg-marine-600 rounded-xl flex items-center justify-center text-white font-bold text-lg mb-3">1</div>
+              <h3 className="font-bold text-marine-900 mb-2">Select Your City</h3>
+              <p className="text-marine-800 text-sm leading-relaxed">Each city below links to a dedicated guide tailored to that city&apos;s SNGPL distribution circle, local office address, service areas, consumer base, and any city-specific billing nuances.</p>
             </div>
             <div>
-              <div className="w-10 h-10 bg-blue-600 rounded-xl flex items-center justify-center text-white font-bold text-lg mb-3">2</div>
-              <h3 className="font-bold text-blue-900 mb-2">Choose Your Topic</h3>
-              <p className="text-blue-800 text-sm leading-relaxed">Within each city, select from {types.length} specific guide topics — covering every aspect of {label.toLowerCase()} for that location. Each topic page provides step-by-step instructions tailored to local requirements.</p>
+              <div className="w-10 h-10 bg-marine-600 rounded-xl flex items-center justify-center text-white font-bold text-lg mb-3">2</div>
+              <h3 className="font-bold text-marine-900 mb-2">Choose Your Topic</h3>
+              <p className="text-marine-800 text-sm leading-relaxed">Within each city, select from {types.length} specific guide topics — covering every aspect of {label.toLowerCase()} for that location. Each topic page provides step-by-step instructions tailored to local requirements.</p>
             </div>
             <div>
-              <div className="w-10 h-10 bg-blue-600 rounded-xl flex items-center justify-center text-white font-bold text-lg mb-3">3</div>
-              <h3 className="font-bold text-blue-900 mb-2">Get Actionable Help</h3>
-              <p className="text-blue-800 text-sm leading-relaxed">Every guide page includes the local SNGPL office address, areas served, consumer numbers for that city, and specific instructions — not generic advice, but city-calibrated guidance.</p>
+              <div className="w-10 h-10 bg-marine-600 rounded-xl flex items-center justify-center text-white font-bold text-lg mb-3">3</div>
+              <h3 className="font-bold text-marine-900 mb-2">Get Actionable Help</h3>
+              <p className="text-marine-800 text-sm leading-relaxed">Every guide page includes the local SNGPL office address, areas served, consumer numbers for that city, and specific instructions — not generic advice, but city-calibrated guidance.</p>
             </div>
           </div>
         </section>
@@ -258,7 +258,7 @@ export default async function CategoryIndexPage({
         {Object.entries(byProvince).map(([province, cities]) => (
           <section key={province} className="mb-12">
             <h2 className="text-xl font-bold text-gray-900 mb-5 flex items-center gap-2">
-              <span className="w-2 h-6 bg-blue-600 rounded-full block" />
+              <span className="w-2 h-6 bg-marine-600 rounded-full block" />
               {province} — SNGPL {label}
             </h2>
             <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4">
@@ -269,13 +269,13 @@ export default async function CategoryIndexPage({
                       <h3 className="font-bold text-gray-900">{city.name}</h3>
                       <p className="text-xs text-gray-500">{city.division}</p>
                     </div>
-                    <span className="text-xs font-medium text-blue-600 bg-blue-50 px-2 py-0.5 rounded-full">
+                    <span className="text-xs font-medium text-marine-600 bg-marine-50 px-2 py-0.5 rounded-full">
                       {city.consumers}
                     </span>
                   </div>
                   <Link
                     href={`/sngpl/cities/${city.slug}`}
-                    className="inline-block text-xs font-semibold bg-blue-50 hover:bg-blue-100 text-blue-700 rounded-lg px-3 py-1.5 transition-colors no-underline"
+                    className="inline-block text-xs font-semibold bg-marine-50 hover:bg-marine-100 text-marine-700 rounded-lg px-3 py-1.5 transition-colors no-underline"
                   >
                     View {city.name} Guide →
                   </Link>
@@ -290,7 +290,7 @@ export default async function CategoryIndexPage({
           <h2>Frequently Asked Questions — SNGPL {label}</h2>
           <div className="mt-6 space-y-4">
             {faqs.map((faq, i) => (
-              <div key={i} className="bg-white border border-gray-200 rounded-xl p-5 hover:border-blue-200 transition-colors">
+              <div key={i} className="bg-white border border-gray-200 rounded-xl p-5 hover:border-marine-200 transition-colors">
                 <h3 className="text-base font-bold text-gray-900 mt-0 mb-2">{faq.q}</h3>
                 <p className="mb-0">{faq.a}</p>
               </div>
@@ -308,16 +308,16 @@ export default async function CategoryIndexPage({
         </section>
 
         {/* ── Bottom CTA ────────────────────────────────────────── */}
-        <section className="bg-blue-50 border border-blue-200 rounded-2xl p-8 text-center mt-8">
-          <h2 className="text-xl font-bold text-blue-900 mb-2">Check Your SNGPL Bill Now</h2>
-          <p className="text-blue-700 text-sm mb-4 max-w-md mx-auto">
+        <section className="bg-marine-50 border border-marine-200 rounded-2xl p-8 text-center mt-8">
+          <h2 className="text-xl font-bold text-marine-900 mb-2">Check Your SNGPL Bill Now</h2>
+          <p className="text-marine-700 text-sm mb-4 max-w-md mx-auto">
             Enter your consumer number to instantly redirect to the official SNGPL bill portal and check your latest bill.
           </p>
           <div className="flex flex-wrap justify-center gap-3">
             <Link href="/" className="btn-primary inline-flex">
               Check Bill → Official Portal
             </Link>
-            <Link href="/guides" className="bg-white border border-blue-300 text-blue-700 hover:bg-blue-50 font-semibold px-5 py-2.5 rounded-xl transition-colors inline-flex items-center gap-2 text-sm">
+            <Link href="/guides" className="bg-white border border-marine-300 text-marine-700 hover:bg-marine-50 font-semibold px-5 py-2.5 rounded-xl transition-colors inline-flex items-center gap-2 text-sm">
               Read Full Guides
             </Link>
           </div>

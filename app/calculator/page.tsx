@@ -77,11 +77,11 @@ export default function CalculatorPage() {
       }) }} />
 
       {/* Hero */}
-      <section className="bg-gradient-to-br from-blue-900 to-blue-700 text-white py-14 px-4">
+      <section className="bg-gradient-to-br from-marine-600 to-marine-500 text-white py-14 px-4">
         <div className="max-w-3xl mx-auto text-center">
           <span className="inline-flex items-center gap-2 bg-white/15 rounded-full px-4 py-1.5 text-sm font-medium mb-4 border border-white/20">🧮 Free Calculator Tool</span>
           <h1 className="text-3xl md:text-4xl font-black mb-4">SNGPL Gas Bill Calculator 2025</h1>
-          <p className="text-blue-100 text-lg max-w-xl mx-auto">
+          <p className="text-marine-100 text-lg max-w-xl mx-auto">
             Estimate your monthly gas bill before it arrives. Enter HHM units or meter readings for a full breakdown with all slabs, GIDC, and GST.
           </p>
         </div>
@@ -90,7 +90,7 @@ export default function CalculatorPage() {
       {/* Breadcrumb */}
       <nav className="bg-gray-50 border-b border-gray-100 py-2 px-4 text-sm text-gray-500">
         <div className="max-w-5xl mx-auto flex items-center gap-1">
-          <Link href="/" className="hover:text-blue-600">Home</Link>
+          <Link href="/" className="hover:text-marine-600">Home</Link>
           <span>/</span>
           <span className="text-gray-800 font-medium">Calculator</span>
         </div>
@@ -118,7 +118,7 @@ export default function CalculatorPage() {
         <div className="overflow-x-auto rounded-2xl border border-gray-200 shadow-sm">
           <table className="w-full text-sm">
             <thead>
-              <tr className="bg-blue-700 text-white">
+              <tr className="bg-marine-700 text-white">
                 <th className="px-4 py-3 text-left font-semibold">Slab</th>
                 <th className="px-4 py-3 text-left font-semibold">Consumption Range</th>
                 <th className="px-4 py-3 text-left font-semibold">Rate</th>
@@ -128,7 +128,7 @@ export default function CalculatorPage() {
             <tbody>
               {slabTable.map((r, i) => (
                 <tr key={r.slab} className={`${i % 2 === 0 ? 'bg-white' : 'bg-gray-50'} border-t border-gray-100`}>
-                  <td className="px-4 py-3 font-bold text-blue-700">{r.slab}</td>
+                  <td className="px-4 py-3 font-bold text-marine-700">{r.slab}</td>
                   <td className="px-4 py-3 font-semibold text-gray-900">{r.range}</td>
                   <td className="px-4 py-3 text-gray-700">{r.rate}</td>
                   <td className="px-4 py-3 text-gray-500 hidden sm:table-cell">{r.perHHM}</td>
@@ -219,7 +219,7 @@ export default function CalculatorPage() {
               {appliances.map((a, i) => (
                 <tr key={a.name} className={`${i % 2 === 0 ? 'bg-white' : 'bg-gray-50'} border-t border-gray-100`}>
                   <td className="px-4 py-3 font-semibold text-gray-900">{a.name}</td>
-                  <td className="px-4 py-3 text-blue-700 font-bold">{a.usage}</td>
+                  <td className="px-4 py-3 text-marine-700 font-bold">{a.usage}</td>
                   <td className="px-4 py-3 text-gray-500 hidden sm:table-cell">{a.season}</td>
                   <td className="px-4 py-3 text-gray-500 text-xs hidden md:table-cell">{a.note}</td>
                 </tr>
@@ -276,7 +276,7 @@ export default function CalculatorPage() {
             <details key={i} className="group bg-white border border-gray-200 rounded-2xl overflow-hidden">
               <summary className="flex items-center justify-between cursor-pointer p-5 hover:bg-gray-50 transition-colors select-none">
                 <span className="font-semibold text-gray-900 text-sm pr-4">{f.q}</span>
-                <span className="flex-shrink-0 text-blue-500 group-open:rotate-180 transition-transform duration-200 text-lg leading-none">▾</span>
+                <span className="flex-shrink-0 text-marine-500 group-open:rotate-180 transition-transform duration-200 text-lg leading-none">▾</span>
               </summary>
               <div className="px-5 pb-5 border-t border-gray-100">
                 <p className="text-gray-600 text-sm leading-relaxed pt-4">{f.a}</p>
@@ -286,8 +286,8 @@ export default function CalculatorPage() {
         </div>
 
         <div className="mt-10 highlight-box">
-          <p className="text-blue-800 font-semibold mb-1">Ready to check your actual bill?</p>
-          <p className="text-blue-700 text-sm mb-3">Use our bill checker to see your real current bill on the official SNGPL portal — free and instant.</p>
+          <p className="text-marine-800 font-semibold mb-1">Ready to check your actual bill?</p>
+          <p className="text-marine-700 text-sm mb-3">Use our bill checker to see your real current bill on the official SNGPL portal — free and instant.</p>
           <div className="flex flex-wrap gap-3">
             <Link href="/" className="btn-primary text-sm py-2.5 px-5">Check SNGPL Bill Now →</Link>
             <Link href="/bill-check" className="btn-secondary text-sm py-2.5 px-5">Bill Check Guide →</Link>

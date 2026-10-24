@@ -40,7 +40,7 @@ const paymentMethods = [
     note: 'USSD *786# works on basic feature phones without internet — menu-driven payment using keypad only. Very useful in low-connectivity areas.',
   },
   {
-    icon: '🏦', name: 'HBL Mobile / HBL Online', badge: 'Bank Transfer', badgeColor: 'bg-blue-100 text-blue-700',
+    icon: '🏦', name: 'HBL Mobile / HBL Online', badge: 'Bank Transfer', badgeColor: 'bg-marine-100 text-marine-700',
     steps: [
       'Log in to HBL Mobile app or hbl.com online banking',
       'Navigate to "Pay Bills" → "Utility Bills" → "Gas"',
@@ -146,14 +146,14 @@ export default function PaymentGuidePage() {
       }) }} />
 
       {/* Hero */}
-      <section className="bg-gradient-to-br from-blue-900 to-blue-700 text-white py-14 px-4">
+      <section className="bg-gradient-to-br from-marine-600 to-marine-500 text-white py-14 px-4">
         <div className="max-w-4xl mx-auto">
-          <nav className="flex items-center gap-2 text-xs text-blue-200 mb-5">
+          <nav className="flex items-center gap-2 text-xs text-marine-200 mb-5">
             <Link href="/" className="hover:text-white">Home</Link><span>/</span>
             <span className="text-white font-medium">Payment Guide</span>
           </nav>
           <h1 className="text-3xl md:text-4xl font-black mb-4">SNGPL Gas Bill Payment Guide 2025</h1>
-          <p className="text-blue-100 text-lg max-w-2xl">Complete step-by-step guide for every SNGPL payment method — Easypaisa, JazzCash, HBL, UBL, MCB, ATM, bank branch, and franchise centers. Plus comparison table, late payment policy, and 13 FAQs.</p>
+          <p className="text-marine-100 text-lg max-w-2xl">Complete step-by-step guide for every SNGPL payment method — Easypaisa, JazzCash, HBL, UBL, MCB, ATM, bank branch, and franchise centers. Plus comparison table, late payment policy, and 13 FAQs.</p>
           <div className="flex flex-wrap gap-2 mt-5">
             {['Easypaisa', 'JazzCash', 'HBL', 'UBL', 'MCB', 'ATM', 'Bank Branch', 'Franchise'].map(m => (
               <span key={m} className="bg-white/15 border border-white/20 rounded-full px-3 py-1 text-xs font-medium">{m}</span>
@@ -163,10 +163,10 @@ export default function PaymentGuidePage() {
       </section>
 
       {/* Check bill first */}
-      <section className="bg-blue-50 border-b border-blue-100 py-7 px-4">
+      <section className="bg-marine-50 border-b border-marine-100 py-7 px-4">
         <div className="max-w-xl mx-auto text-center">
-          <p className="text-sm text-blue-700 font-semibold mb-1">Step 1: Always check your bill amount before paying</p>
-          <p className="text-xs text-blue-500 mb-3">Enter consumer number to see the exact amount due:</p>
+          <p className="text-sm text-marine-700 font-semibold mb-1">Step 1: Always check your bill amount before paying</p>
+          <p className="text-xs text-marine-500 mb-3">Enter consumer number to see the exact amount due:</p>
           <BillChecker compact />
         </div>
       </section>
@@ -203,7 +203,7 @@ export default function PaymentGuidePage() {
               <ol className="space-y-2 mb-4">
                 {m.steps.map((step, si) => (
                   <li key={si} className="flex gap-2.5 text-sm text-gray-700">
-                    <span className="flex-shrink-0 w-5 h-5 bg-blue-100 text-blue-700 rounded-full flex items-center justify-center text-xs font-bold mt-0.5">{si + 1}</span>
+                    <span className="flex-shrink-0 w-5 h-5 bg-marine-100 text-marine-700 rounded-full flex items-center justify-center text-xs font-bold mt-0.5">{si + 1}</span>
                     <span className="leading-relaxed">{step}</span>
                   </li>
                 ))}
@@ -221,7 +221,7 @@ export default function PaymentGuidePage() {
         <div className="overflow-x-auto rounded-2xl border border-gray-200 shadow-sm">
           <table className="w-full text-xs">
             <thead>
-              <tr className="bg-blue-700 text-white">
+              <tr className="bg-marine-700 text-white">
                 <th className="px-3 py-3 text-left font-semibold">Method</th>
                 <th className="px-3 py-3 text-left font-semibold">Reflection Speed</th>
                 <th className="px-3 py-3 text-left font-semibold">Typical Fee</th>
@@ -289,7 +289,7 @@ export default function PaymentGuidePage() {
             <details key={i} className="group border border-gray-200 rounded-xl overflow-hidden bg-white">
               <summary className="flex items-center justify-between cursor-pointer p-4 hover:bg-gray-50 transition-colors select-none">
                 <span className="font-semibold text-gray-900 text-sm pr-4">{f.q}</span>
-                <span className="flex-shrink-0 text-blue-500 group-open:rotate-180 transition-transform duration-200">▾</span>
+                <span className="flex-shrink-0 text-marine-500 group-open:rotate-180 transition-transform duration-200">▾</span>
               </summary>
               <div className="p-4 pt-0 bg-white border-t border-gray-100">
                 <p className="text-gray-600 text-sm leading-relaxed">{f.a}</p>
@@ -306,8 +306,8 @@ export default function PaymentGuidePage() {
             { href: '/duplicate-bill',  label: '📄 Duplicate Bill',     desc: 'Download bill PDF' },
             { href: '/consumer-number', label: '🔢 Consumer Number',    desc: 'Find your account number' },
           ].map(l => (
-            <Link key={l.href} href={l.href} className="block p-4 bg-white rounded-xl border border-gray-200 hover:border-blue-300 hover:shadow-md transition-all no-underline group">
-              <div className="font-bold text-blue-700 group-hover:text-blue-800">{l.label}</div>
+            <Link key={l.href} href={l.href} className="block p-4 bg-white rounded-xl border border-gray-200 hover:border-marine-300 hover:shadow-md transition-all no-underline group">
+              <div className="font-bold text-marine-700 group-hover:text-marine-800">{l.label}</div>
               <div className="text-xs text-gray-500 mt-1">{l.desc}</div>
             </Link>
           ))}

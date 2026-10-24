@@ -71,14 +71,14 @@ const categoryMeta: Record<Category, { icon: string; color: string; topTypes: st
 };
 
 const colorMap: Record<string, string> = {
-  blue:   'bg-blue-50 border-blue-200 hover:border-blue-400',
+  blue:   'bg-marine-50 border-marine-200 hover:border-marine-400',
   green:  'bg-green-50 border-green-200 hover:border-green-400',
   purple: 'bg-purple-50 border-purple-200 hover:border-purple-400',
   orange: 'bg-orange-50 border-orange-200 hover:border-orange-400',
   red:    'bg-red-50 border-red-200 hover:border-red-400',
 };
 const iconBg: Record<string, string> = {
-  blue:   'bg-blue-100 text-blue-700',
+  blue:   'bg-marine-100 text-marine-700',
   green:  'bg-green-100 text-green-700',
   purple: 'bg-purple-100 text-purple-700',
   orange: 'bg-orange-100 text-orange-700',
@@ -125,9 +125,9 @@ export default async function CityHubPage({
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
 
       {/* ── Hero ── */}
-      <section className="bg-gradient-to-br from-blue-900 to-blue-700 text-white py-14 px-4">
+      <section className="bg-gradient-to-br from-marine-600 to-marine-500 text-white py-14 px-4">
         <div className="max-w-5xl mx-auto">
-          <nav className="flex items-center flex-wrap gap-1.5 text-xs text-blue-200 mb-5">
+          <nav className="flex items-center flex-wrap gap-1.5 text-xs text-marine-200 mb-5">
             <Link href="/" className="hover:text-white">Home</Link>
             <span>/</span>
             <Link href="/sngpl/cities" className="hover:text-white">City Guides</Link>
@@ -140,7 +140,7 @@ export default async function CityHubPage({
             <span className="bg-green-500/20 border border-green-400/30 rounded-full px-3 py-1 text-xs font-medium text-green-200">{city.consumers} Consumers</span>
           </div>
           <h1 className="text-3xl md:text-4xl font-black mb-4">SNGPL {city.name} — Complete Consumer Hub</h1>
-          <p className="text-blue-100 text-lg max-w-3xl leading-relaxed">
+          <p className="text-marine-100 text-lg max-w-3xl leading-relaxed">
             Everything SNGPL consumers in {city.name} need: bill checking, consumer number, duplicate bills, payment guide, and troubleshooting — all in one place.
           </p>
         </div>
@@ -152,8 +152,8 @@ export default async function CityHubPage({
           <div className="grid grid-cols-2 sm:grid-cols-4 gap-4 text-sm">
             <div><span className="text-gray-400 block text-xs">Province</span><span className="font-semibold text-gray-900">{city.province}</span></div>
             <div><span className="text-gray-400 block text-xs">Region</span><span className="font-semibold text-gray-900">{city.region}</span></div>
-            <div><span className="text-gray-400 block text-xs">Consumers</span><span className="font-semibold text-blue-700">{city.consumers}</span></div>
-            <div><span className="text-gray-400 block text-xs">Helpline</span><a href="tel:1199" className="font-bold text-blue-600">1199 (24/7)</a></div>
+            <div><span className="text-gray-400 block text-xs">Consumers</span><span className="font-semibold text-marine-700">{city.consumers}</span></div>
+            <div><span className="text-gray-400 block text-xs">Helpline</span><a href="tel:1199" className="font-bold text-marine-600">1199 (24/7)</a></div>
           </div>
         </div>
       </div>
@@ -179,7 +179,7 @@ export default async function CityHubPage({
                         <h3 className="font-bold text-gray-900 text-lg">{getCategoryLabel(cat)}</h3>
                         <Link
                           href={`/sngpl/${cat}`}
-                          className="text-xs font-semibold text-blue-600 hover:text-blue-800 hover:underline"
+                          className="text-xs font-semibold text-marine-600 hover:text-marine-800 hover:underline"
                         >
                           View All →
                         </Link>
@@ -198,7 +198,7 @@ export default async function CityHubPage({
                     ))}
                     <Link
                       href={`/sngpl/${cat}`}
-                      className="bg-white border border-dashed border-gray-300 hover:border-blue-400 rounded-xl px-3 py-2 text-xs font-medium text-blue-600 hover:text-blue-700 transition-all no-underline flex items-center justify-center col-span-2 sm:col-span-1"
+                      className="bg-white border border-dashed border-gray-300 hover:border-marine-400 rounded-xl px-3 py-2 text-xs font-medium text-marine-600 hover:text-marine-700 transition-all no-underline flex items-center justify-center col-span-2 sm:col-span-1"
                     >
                       Read full {getCategoryLabel(cat)} guide →
                     </Link>
@@ -218,17 +218,17 @@ export default async function CityHubPage({
               <p className="text-gray-700 text-sm leading-relaxed mb-3">{city.office}</p>
               <p className="text-gray-500 text-xs">Working Hours: Monday–Friday, 9:00 AM – 5:00 PM</p>
               <div className="mt-4 space-y-2">
-                <a href="tel:1199" className="flex items-center gap-2 text-sm font-bold text-blue-700">📞 1199 — SNGPL Helpline (24/7)</a>
-                <a href="https://selfservice.sngpl.com.pk" target="_blank" rel="noopener noreferrer" className="flex items-center gap-2 text-sm font-semibold text-blue-600 hover:underline">🌐 selfservice.sngpl.com.pk</a>
-                <a href="https://sngpl.com.pk" target="_blank" rel="noopener noreferrer" className="flex items-center gap-2 text-sm font-semibold text-blue-600 hover:underline">🔍 sngpl.com.pk</a>
+                <a href="tel:1199" className="flex items-center gap-2 text-sm font-bold text-marine-700">📞 1199 — SNGPL Helpline (24/7)</a>
+                <a href="https://selfservice.sngpl.com.pk" target="_blank" rel="noopener noreferrer" className="flex items-center gap-2 text-sm font-semibold text-marine-600 hover:underline">🌐 selfservice.sngpl.com.pk</a>
+                <a href="https://sngpl.com.pk" target="_blank" rel="noopener noreferrer" className="flex items-center gap-2 text-sm font-semibold text-marine-600 hover:underline">🔍 sngpl.com.pk</a>
               </div>
             </div>
             <div>
               <h3 className="font-bold text-gray-900 mb-3 text-sm">Areas Served in {city.name}</h3>
               <p className="text-gray-700 text-sm leading-relaxed">{city.areas}</p>
-              <div className="mt-4 p-3 bg-blue-50 rounded-xl">
-                <p className="text-xs text-blue-800 font-semibold mb-1">Quick Emergency Contact</p>
-                <p className="text-xs text-blue-700">For gas leakage or emergency: Call 1199 immediately, evacuate premises, do not use electrical switches.</p>
+              <div className="mt-4 p-3 bg-marine-50 rounded-xl">
+                <p className="text-xs text-marine-800 font-semibold mb-1">Quick Emergency Contact</p>
+                <p className="text-xs text-marine-700">For gas leakage or emergency: Call 1199 immediately, evacuate premises, do not use electrical switches.</p>
               </div>
             </div>
           </div>
@@ -286,7 +286,7 @@ export default async function CityHubPage({
               <details key={i} className="group bg-white border border-gray-200 rounded-xl overflow-hidden">
                 <summary className="flex items-center justify-between cursor-pointer p-4 hover:bg-gray-50 transition-colors">
                   <span className="font-semibold text-gray-900 text-sm pr-4">{faq.q}</span>
-                  <span className="flex-shrink-0 text-blue-500 group-open:rotate-180 transition-transform">▾</span>
+                  <span className="flex-shrink-0 text-marine-500 group-open:rotate-180 transition-transform">▾</span>
                 </summary>
                 <div className="p-4 pt-0 border-t border-gray-100">
                   <p className="text-gray-600 text-sm leading-relaxed">{faq.a}</p>
@@ -304,7 +304,7 @@ export default async function CityHubPage({
               <Link
                 key={c.slug}
                 href={`/sngpl/cities/${c.slug}`}
-                className="block p-3 bg-gray-50 hover:bg-blue-50 border border-gray-200 hover:border-blue-300 rounded-xl transition-all no-underline"
+                className="block p-3 bg-gray-50 hover:bg-marine-50 border border-gray-200 hover:border-marine-300 rounded-xl transition-all no-underline"
               >
                 <div className="font-semibold text-gray-900 text-xs">{c.name}</div>
                 <div className="text-[11px] text-gray-400 mt-0.5">{c.province}</div>
@@ -314,10 +314,10 @@ export default async function CityHubPage({
         </section>
 
         {/* ── CTA ── */}
-        <div className="bg-blue-600 rounded-2xl p-6 md:p-8 text-white text-center">
+        <div className="bg-marine-600 rounded-2xl p-6 md:p-8 text-white text-center">
           <h2 className="text-xl font-black mb-2">Check Your {city.name} SNGPL Bill Now</h2>
-          <p className="text-blue-100 text-sm mb-4">Instant redirect to official SNGPL portal. Free — no registration needed.</p>
-          <Link href="/" className="inline-flex items-center gap-2 bg-white text-blue-700 font-bold px-6 py-3 rounded-xl hover:bg-blue-50 transition-colors text-sm">
+          <p className="text-marine-100 text-sm mb-4">Instant redirect to official SNGPL portal. Free — no registration needed.</p>
+          <Link href="/" className="inline-flex items-center gap-2 bg-white text-marine-700 font-bold px-6 py-3 rounded-xl hover:bg-marine-50 transition-colors text-sm">
             Check Bill Now →
           </Link>
         </div>
