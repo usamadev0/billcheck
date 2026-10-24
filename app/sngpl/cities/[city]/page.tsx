@@ -1,6 +1,7 @@
 import type { Metadata } from 'next';
 import Link from 'next/link';
 import { notFound } from 'next/navigation';
+import SectionImage from '../../../components/SectionImage';
 import {
   CITIES,
   CATEGORIES,
@@ -236,6 +237,12 @@ export default async function CityHubPage({
 
         {/* ── Comprehensive City Content ── */}
         <section className="mb-14 prose-content">
+          <SectionImage
+            src="https://images.unsplash.com/photo-1631427761971-ba40e488279f?auto=format&fit=crop&w=1200&q=80"
+            alt={`Natural gas flame — SNGPL domestic gas supply serving ${city.name}`}
+            height={260}
+            className="not-prose"
+          />
           <h2>SNGPL Gas Service in {city.name} — Consumer Guide</h2>
 
           <p>Sui Northern Gas Pipelines Limited (SNGPL) serves {city.consumers} consumers in {city.name} and the surrounding {city.division} area. {city.name} is one of the key cities in SNGPL's {city.region} service territory, with distribution infrastructure covering {city.areas}. The local Service Delivery Center at {city.office} manages all consumer services for the city, from new connection applications to billing disputes and meter replacements.</p>

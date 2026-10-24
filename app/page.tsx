@@ -1,6 +1,7 @@
 import type { Metadata } from 'next';
 import Link from 'next/link';
 import BillChecker from './components/BillChecker';
+import SectionImage from './components/SectionImage';
 
 export const metadata: Metadata = {
   title: 'SNGPL Bill Check Online | Pakistan Gas Bill Hub — Free Tool',
@@ -297,6 +298,11 @@ export default function HomePage() {
             <span className="badge bg-marine-100 text-marine-700 mb-3">About SNGPL</span>
             <h2 className="text-2xl md:text-3xl font-bold text-gray-900">What is SNGPL?</h2>
           </div>
+          <SectionImage
+            src="https://images.unsplash.com/photo-1631427761971-ba40e488279f?auto=format&fit=crop&w=1200&q=80"
+            alt="Blue natural gas flame burning — illustrating SNGPL domestic gas supply"
+            height={280}
+          />
           <div className="prose-content">
             <p>Sui Northern Gas Pipelines Limited (SNGPL) is Pakistan&apos;s largest natural gas utility, serving over 7 million consumers across Punjab, KPK, and Azad Kashmir. Every consumer receives a monthly bill showing HHM consumption, slab-based gas charges, GIDC (10%), and GST (17%).</p>
             <p>You can check your SNGPL bill online via <strong>sngpl.com.pk</strong>, the SNGPL mobile app (Android/iOS), WhatsApp, or SMS — each method takes under a minute and only requires your consumer number.</p>
